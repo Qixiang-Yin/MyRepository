@@ -1,0 +1,1504 @@
+\documentclass{book}
+\usepackage[UTF8]{ctex}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{geometry} %调整页边距
+\usepackage{graphicx}
+\usepackage{physics}
+\usepackage{simpler-wick}
+\usepackage{mdframed} %文字框
+\usepackage{dsfont} %空心数字
+\usepackage{tikz-feynman} %费曼图
+\usepackage{tikz}
+\usepackage{ulem} %波浪线
+\usepackage{mathrsfs}
+
+\mdfsetup{linewidth=1pt}
+%\setlength{\parindent}{0pt} %段前不空两格
+\geometry{left=3cm,right=3cm,top=3.5cm,bottom=3.5cm} %页边距
+\usepackage[breaklinks,colorlinks,linkcolor=black,citecolor=black,urlcolor=black]{hyperref} %书签
+%默认字号是10pt
+%使用XeLaTeX编译
+%左右页边距3cm
+%例题开头分别空10pt，53pt，73pt
+
+
+
+\title{量子场论}
+\author{殷麒翔}
+\date{2024年4月3日}
+
+
+
+\begin{document}
+\maketitle
+\clearpage  % 开始重新编号
+\pagenumbering{Roman}  % 目录页码为大写罗马数字
+\tableofcontents  % 生成目录
+\clearpage  % 开始重新编号
+\pagenumbering{arabic}  % 正文页码为小写阿拉伯数字
+\pagestyle{headings}  %页眉 
+
+\part{自由场论}
+\chapter{狭义相对论与经典场论}
+\noindent Notation：取自然单位制$c=\hbar=\varepsilon_0=\mu_0=1$，取Bjorken-Drell度规：$\mathrm{diag}(+,-,-,-)$，默认采用Einstein求和约定。
+\section{狭义相对论}
+\subsection{Lorentz变换}
+狭义相对论中两个惯性系之间的时空坐标变换是Lorentz变换：
+\begin{equation}
+	t'=\gamma(t-\beta x)\quad x'=\gamma(x-\beta t)\quad y'=y\quad z'=z
+	\label{1.1}
+\end{equation}
+由公式(\ref{1.1})可知，时空间隔$t^2-x^2-y^2-z^2$在变换下具有不变性，是一个\textbf{Lorentz标量}。
+
+在狭义相对论的时空观中，时间与空间并不是相互独立的。为了将时间与空间统一使用一个坐标来描述，我们引入逆变4-矢量$x^\mu=(x^0,\mathbf{x})=(t,\mathbf{x})$。同时，我们希望定义4-矢量的内积，为此需要引入度规：
+\begin{equation}
+	g_{\mu\nu}=g_{\nu\mu}=\begin{pmatrix}+1\\&-1\\&&-1\\&&&-1\end{pmatrix}
+\end{equation}
+
+度规矩阵$g_{\mu\nu}$中，$\mu$指标表示行，$\nu$指标表示列。协变4-矢量就可以通过度规作用在逆变4-矢量上得到：$x_\mu=g_{\mu\nu}x^\nu=(x^0,-\mathbf{x})$，度规$g_{\mu\nu}$将$x^\nu$的指标降低为$x_\mu$。逆变与协变4-矢量的内积就定义为它们各自的分量相乘再相加，这样就得到了前面的Lorentz标量：
+\begin{equation}
+	x^2=x_\mu x^\mu=(x^0)^2-x^2-y^2-z^2
+\end{equation}
+在上式中，同一指标在上标和下标中同时出现，因此可以相消，称为指标缩并。缩并后没有自由指标，这是Lorentz标量的特点。而Lorentz矢量在缩并后具有一个自由指标，例如$x^\mu$。 
+
+由于$x^\nu=g^{\nu\mu}x_\mu$，所以$g_{\mu\nu},g^{\nu\mu}$是互逆矩阵，并且：
+\begin{equation}
+	g^{\mu\nu}=g^{\nu\mu}=\begin{pmatrix}+1\\&-1\\&&-1\\&&&-1\end{pmatrix}
+\end{equation}
+它们满足：$g^{\mu\rho}g_{\rho\nu}=\delta^\mu{}_\nu$，其中Kronecker符号定义为：
+\begin{equation}
+	\delta^a{}_b=\delta_a{}^b=\delta^{ab}=\delta_{ab}=\begin{cases}1,&a=b\\[2ex]0,&a\neq b\end{cases}
+\end{equation}
+度规矩阵不仅可以用来对Lorentz矢量进行指标升降，它也可以用于对自身的指标进行升降：
+\begin{equation}
+	g^{\mu\nu}=g^{\mu\rho}g^{\nu\sigma}g_{\rho\sigma}
+\end{equation}
+
+沿$x$轴方向的Lorentz boost也可以表示为矩阵：
+\begin{equation}
+	\begin{pmatrix}x^{\prime\mathbf{0}}\\x^{\prime1}\\x^{\prime2}\\x^{\prime3}\end{pmatrix}=\begin{pmatrix}\gamma&-\gamma\beta\\-\gamma\beta&\gamma\\&&1\\&&&1\end{pmatrix}\begin{pmatrix}x^0\\x^1\\x^2\\x^3\end{pmatrix}
+\end{equation}
+即：
+\begin{equation}
+	x^{\prime\mu}=\Lambda^{\mu}{}_{\nu}x^{\nu}
+	\label{1.8}
+\end{equation}
+
+我们约定$\Lambda^{\mu}{}_{\nu}$矩阵中偏左的指标$\mu$为行指标，偏右的指标$\nu$为列指标，在时空变换下具有以上变换形式的物理量称为\textbf{Lorentz矢量}。(\ref{1.8})式变换的特点是保证四维Lorentz矢量的内积$x^\mu x_\mu$不变，从这个角度，我们可以定义保证四维Lorentz矢量的内积保持不变的变换为Lorentz变换。Lorentz变换构成Lorentz群，boost变换、三维空间中的转动变换与时空坐标原点的平移变换均属于Lorentz变换。（注：时空坐标原点的平移实际上应属于Poincare变换）
+
+
+由Lorentz变换的特性可知，矩阵$\Lambda^{\mu}{}_{\nu}$应具有如下性质。由于4-矢量的内积定义为：
+\begin{equation}
+	x^{\prime\mu}x_\mu^\prime =g_{\mu\nu}x^{\prime\mu}x^{\prime\nu}=g_{\mu\nu}\Lambda^\mu{}_\alpha\Lambda^\nu {}_\beta x^\alpha x^\beta=x_\beta x^\beta=g_{\alpha\beta} x^\alpha x^\beta
+\end{equation}
+所以保持内积不变就必须要求：
+\begin{equation}
+	g_{\mu\nu}\Lambda^\mu{}_\alpha\Lambda^\nu {}_\beta=g_{\alpha\beta}
+	\label{1.10}
+\end{equation}
+称为\textbf{保度规条件}。
+
+\begin{mdframed}[frametitle={Example}]
+
+由于空间转动变换并不改变矢量的模长$|\mathbf{x}|^2$，也不改变时间$t$，所以绕$z$轴的空间转动变换将保持4-矢量的内积不变，因此属于Lorentz变换。矩阵$[R_z(\theta)]^{\mu}{}_\nu $满足保度规条件：
+\begin{equation}
+	[R_z(\theta)]^{\mu}{}_\nu=\begin{pmatrix}1\\&\cos\theta&\sin\theta\\&-\sin\theta&\cos\theta\\&&&1\end{pmatrix}
+\end{equation}
+矩阵$\delta^\mu{}_\nu$是一个单位矩阵，使得$x'^\mu=\delta^\mu{}_\nu x^\nu=x^\mu $，这是一个恒等变换，因此同属于Lorentz变换。
+\end{mdframed}
+
+根据定义，Lorentz变换的逆变换$\Lambda^{-1}$应满足$\Lambda^{-1}\Lambda=1$。若写成矩阵元乘积的形式：
+\begin{equation}
+(\Lambda^{-1})^\mu{}_\rho\Lambda^\rho{}_\nu=\delta^\mu{}_\nu=g^{\mu\beta}g_{\beta\nu}=g^{\mu\beta}g_{\alpha\rho}\Lambda^\alpha{}_\beta\Lambda^\rho{}_\nu	
+\end{equation}
+所以$\Lambda$的逆变换定义为：
+\begin{equation}
+	(\Lambda^{-1})^{\mu}{}_{\rho}\equiv g^{\mu\beta}g_{\rho\alpha}\Lambda^{\alpha}{}_{\beta}
+\end{equation}
+并且，$\Lambda^{-1}$也是一个Lorentz变换：
+\begin{equation}
+(\Lambda^{-1})_\mu{}^\sigma x_{\sigma}^{\prime}=(\Lambda^{-1})_\mu{}^\sigma\Lambda_\sigma{}^\tau x_\tau=\delta_\mu{}^\tau x_\tau=x_\mu\Rightarrow x_\mu=(\Lambda^{-1})_\mu{}^\sigma x_\sigma'
+\end{equation}
+
+将$\Lambda^\mu{}_\nu$视为矩阵$\Lambda$，则其转置矩阵$\Lambda^\mathrm{T}$的矩阵元满足$(\Lambda^\mathrm{T})_\nu{}^\mu\equiv\Lambda^\mu{}_\nu$，即矩阵元从$\mu$行$\nu$列变为$\nu$行$\mu$列。由保度规条件可知：
+\begin{equation}
+	g_{\alpha\beta}=g_{\mu\nu}\Lambda^\mu{}_\alpha\Lambda^\nu {}_\beta=(\Lambda^{\mathrm{T}})_\alpha{}^\mu g_{\mu\nu}\Lambda^\nu{}_\beta
+\end{equation}
+在右侧的表达式中，重复的相邻指标缩并，对应于矩阵乘法。所以，Lorentz变换矩阵和度规矩阵满足：
+\begin{equation}
+	\Lambda^\mathrm{T} g\Lambda=g
+\end{equation}
+于是，矩阵行列式满足：
+\begin{equation}
+	\det(g)=\det(\Lambda^{\mathrm{T}})\det(g)\det(\Lambda)=\det(g)[\det(\Lambda)]^2
+\end{equation}
+因此有$[\det(\Lambda)]^2=1$，故：
+\begin{equation}
+	\det(\Lambda)=\pm1
+\end{equation}
+
+Lorentz变换$x^{\prime\mu}=\Lambda^\mu{}_\nu x^\nu$的Jacobi行列式为：
+\begin{equation}
+\mathcal{J}=\det\left[\frac{\partial(x^{\prime0},x^{\prime1},x^{\prime2},x^{\prime3})}{\partial(x^0,x^1,x^2,x^3)}\right]=\det\left(\frac{\partial x^{\prime\mu}}{\partial x^{\nu}}\right)=\det(\Lambda) 
+\end{equation}
+于是Lorentz变换对体积元$\mathrm{d}^4x$的变换为：
+\begin{equation}
+	\mathrm{d}^4x^\prime=\left|\mathcal{J}\right|\mathrm{d}^4x=\left|\det(\Lambda)\right|\mathrm{d}^4x=\mathrm{d}^4x
+\end{equation}
+所以$\mathrm{d}^4x$属于Lorentz标量。
+
+除4-坐标以外，我们还可以定义4-动量$p^\mu=(E,\mathbf{p})$，4-偏导$\partial_\mu=\frac{\partial}{\partial x^\mu}=(\frac{\partial}{\partial t},\nabla)$，它们都是Lorentz矢量。对于偏导$\partial_\mu$，它是对$x^\mu$的求导，这是因为：
+\begin{equation}
+	\partial_\mu x^\nu=\frac{\partial x^\nu}{\partial x^\mu}=\delta_\mu{}^\nu
+\end{equation}
+这样的写法将会使得指标安排更为合理。
+\subsection{Lorentz张量}
+在Lorentz变换下，具有如下变换规则的物理量称为\textbf{Lorentz张量}：
+\begin{equation}
+	T^{\mu_1\cdots\mu_p}{}_{\nu_1\cdots\nu_q}=\Lambda^{\mu_1}{}_{\rho_1}\cdots\Lambda^{\mu_p}{}_{\rho_p}T^{\rho_1\cdots\rho_p}{}_{\sigma_1\cdots\sigma_q}(\Lambda^{-1})^{\sigma_1}{}_{\nu_1}\cdots(\Lambda^{-1})^{\sigma_q}{}_{\nu_q}
+\end{equation}
+
+注意到：
+\begin{equation}
+	x^{\prime\rho}=\Lambda^\rho{}_\nu x^\nu\quad x^\prime_\rho=\Lambda_\rho{}^\mu x_\mu
+\end{equation}
+由Lorentz变换保持内积不变的性质可知：
+\begin{equation}
+	x^{\prime\rho}x^\prime_\rho=\Lambda^\rho{}_\nu\Lambda_\rho{}^\mu x^\nu x_\mu=x^\mu x_\mu=\delta^\mu{}_\nu x^\nu x_\mu
+\end{equation}
+所以：
+\begin{equation}
+	\Lambda_\rho{}^\mu\Lambda^\rho{}_\nu=\delta^\mu{} _\nu
+\end{equation}
+即$\Lambda_\rho{}^\mu$和$\Lambda^\rho{}_\mu$是互逆的，这与之前的保度规条件(\ref{1.10})是等价的。注意到前面对Lorentz逆变换的定义：$(\Lambda^{-1})^\mu{}_\rho\Lambda^\rho{}_\nu=\delta^\mu{}_\nu$，所以有：
+\begin{equation}
+	\Lambda_\rho{}^\mu=(\Lambda^{-1})^\mu{}_\rho
+\end{equation}
+这样，Lorentz张量的变换就可以写成：
+\begin{equation}
+	T^{\mu_1\cdots\mu_p}{}_{\nu_1\cdots\nu_q}=\Lambda^{\mu_1}{}_{\rho_1}\cdots\Lambda^{\mu_p}{}_{\rho_p}\Lambda_{\nu_1}{}^{\sigma_1}\cdots\Lambda_{\nu_q}{}^{\sigma_q}T^{\rho_1\cdots\rho_p}{}_{\sigma_1\cdots\sigma_q}
+\end{equation}
+
+$\Lambda^\rho{}_\mu$和$\Lambda_\rho{}^\mu$的关系不难从Lorentz变换矩阵中看出。逆变矢量的Lorentz变换矩阵为：
+\begin{equation}
+	\Lambda^\rho{}_\mu=\begin{pmatrix}\gamma&-\gamma\beta\\-\gamma\beta&\gamma\\&&1\\&&&1\end{pmatrix}
+\end{equation}
+而逆变换矩阵就是将$\beta=v$变号：
+\begin{equation}
+	(\Lambda^{-1})^\mu{}_\rho=\begin{pmatrix}\gamma&+\gamma\beta\\+\gamma\beta&\gamma\\&&1\\&&&1\end{pmatrix}
+\end{equation}
+而对于协变矢量$x_\rho=(t,-\mathbf{x})$，它的Lorentz变换矩阵为：
+\begin{equation}
+	\Lambda_\rho{}^\mu=\begin{pmatrix}\gamma&+\gamma\beta\\+\gamma\beta&\gamma\\&&1\\&&&1\end{pmatrix}=(\Lambda^{-1})^\mu{}_\rho
+\end{equation}
+即：$\Lambda_\rho{}^\mu=(\Lambda^{-1})^\mu{}_\rho$。
+
+前面我们指出，Lorentz变换矩阵的转置为：$\Lambda^\mu{}_\nu=(\Lambda^\mathrm{T})_\nu{}^\mu$，而逆变换矩阵满足$\Lambda^\mu{}_\nu=(\Lambda^{-1})_\nu{}^\mu$，所以有：
+\begin{equation}
+	\Lambda^\mathrm{T}=\Lambda^{-1}
+\end{equation}
+即变换矩阵是\textbf{正交矩阵}，Lorentz变换是一种正交变换，这与三维Euclid空间中的正交变换是相似的。三维Euclid空间中的正交变换不改变矢量的模长，而这里的Lorentz变换是四维Minkowski时空中的正交变换，它不会改变4-矢量的模长。
+
+需要注意，Lorentz变换矩阵$\Lambda_\mu{}^\nu,\Lambda^\mu{}_\nu$并不是Lorentz张量，它们并不遵循张量变换的规则，也不能使用度规对其进行指标升降。
+
+我们还可以定义4维\textbf{Levi-Civita符号}：$\varepsilon^{\mu\nu\rho\sigma}$，约定$\varepsilon^{0123}=+1$，并规定$\varepsilon^{\mu\nu\rho\sigma}$交换任意两个指标时改变一次符号，且$\mu\nu\rho\sigma$按$0\to1\to2\to3$轮换时取$+1$。$\varepsilon^{\mu\nu\rho\sigma}$是一个四维张量，属于\textbf{全反对称张量}。它的协变形式为：
+\begin{equation}
+\varepsilon_{\mu\nu\rho\sigma}=g_{\mu\alpha}g_{\nu\beta}g_{\rho\gamma}g_{\sigma\delta}{\varepsilon}^{\alpha\beta\gamma\delta}	
+\end{equation}
+且：$\varepsilon_{0123}=-1$，它也属于全反对称张量。可以证明：
+\begin{equation}
+	\varepsilon^{\mu\nu\rho\sigma}\varepsilon_{\mu\nu\rho\sigma}=4!\varepsilon^{0123}\varepsilon_{0123}=-4!
+\end{equation}
+3维Levi-Civita符号也可以类似定义，它具有如下的性质：
+\begin{gather}
+    \varepsilon^{ijk}\varepsilon^{imn}=\delta^{jm}\delta^{kn}-\delta^{jn}\delta^{km} \\
+\varepsilon^{ijk}\varepsilon^{ijl}=2\delta^{kl}
+\end{gather}
+\section{电动力学的协变形式}
+Maxwell方程组可以写成明显的Lorentz协变形式，也就是把相关物理量使用Lorentz标量、矢量和张量表示。
+
+定义4-电流密度矢量：$J^\mu=(\rho,\mathbf{J})$，于是电荷守恒定律：
+\begin{equation}
+	\frac{\partial\rho}{\partial t}+\nabla\cdot\mathbf{J}=0\Rightarrow \partial_\mu J^\mu=0
+\end{equation}
+
+电场强度$\mathbf{E}$和磁感应强度$\mathbf{B}$可以使用标势$\phi$和矢势$\mathbf{A}$表示：
+\begin{equation}
+	\mathbf{E}=-\nabla\phi-\frac{\partial\mathbf{A}}{\partial t}\quad\mathbf{B}=\nabla\times\mathbf{A}
+\end{equation}
+
+引入四维势$A^\mu=(\phi,\mathbf{A})$，于是电场和磁场的分量可以表示为：
+\begin{equation}
+	E^i=-\partial_iA^0-\partial_0A^i\quad B^i=\varepsilon^{ijk}\partial_jA^k\quad (i,j,k=1,2,3)
+\end{equation}
+
+引入电磁场的\textbf{场强张量}：
+\begin{equation}
+	F^{\mu\nu}\equiv\partial^\mu A^\nu-\partial^\nu A^\mu=-F^{\nu\mu}
+\end{equation}
+它是一个全反对称张量（交换指标$\mu,\nu$改变符号），可以写成矩阵形式：
+\begin{equation}
+	F^{\mu\nu}=\begin{pmatrix}0&-E^1&-E^2&-E^3\\E^1&0&-B^3&B^2\\E^2&B^3&0&-B^1\\E^3&-B^2&B^1&0\end{pmatrix}
+\end{equation}
+利用偏导次序的可交换性：
+\begin{equation}
+\begin{aligned}
+\partial^{\rho}F^{\mu\nu} &= \partial^\rho(\partial^\mu A^\nu - \partial^\nu A^\mu) \\
+&= \partial^\mu\partial^\rho A^\nu - \partial^\mu\partial^\nu A^\rho 
++ \partial^\nu\partial^\mu A^\rho - \partial^\nu\partial^\rho A^\mu \\
+&= \partial^{\mu}F^{\rho\nu} + \partial^{\nu}F^{\mu\rho} \\
+&= -\partial^{\mu}F^{\nu\rho} - \partial^{\nu}F^{\rho\mu}
+\end{aligned}
+\end{equation}
+可得\textbf{Bianchi恒等式}：
+\begin{equation}
+	\partial^\rho F^{\mu\nu}+\partial^\mu F^{\nu\rho}+\partial^\nu F^{\rho\mu}=0
+\end{equation}
+
+利用场强张量，电动力学中的Maxwell方程组就可以明显地表述成协变形式。
+
+Gauss定理：
+\begin{equation}
+	\nabla\cdot\mathbf{E}=\rho
+\end{equation}
+等价于：
+\begin{equation}
+	J^0=\rho=\partial_iE^i=-\partial_iF^{0i}=\partial_iF^{i0}=\partial_iF^{i0}+\partial_0F^{00}=\partial_\mu F^{\mu0}
+\end{equation}
+环路定理：
+\begin{equation}
+	\nabla\times\mathbf{B}=\mathbf{J}+\frac{\partial\mathbf{E}}{\partial t}
+\end{equation}
+等价于：
+\begin{equation}
+	\begin{aligned}J^i&=\varepsilon^{ijk}\partial_jB^k-\partial_0E^i=-\partial_jF^{ij}+\partial_0F^{0i}=\partial_jF^{ji}+\partial_0F^{0i}=\partial_\mu F^{\mu i}\end{aligned}
+\end{equation}
+归纳起来，得到Maxwell方程：
+\begin{equation}
+\partial_{\mu}F^{\mu\nu}=J^{\nu}	
+\end{equation}
+
+
+通常，我们还可以定义电磁场的对偶场强张量：
+\begin{equation}
+	\widetilde{F}^{\mu\nu}\equiv\frac12\varepsilon^{\mu\nu\rho\sigma}F_{\rho\sigma}=-\widetilde{F}^{\nu\mu}
+\end{equation}
+\section{经典场论}
+量子场论的建立是与经典场论密不可分的，量子场论中的许多重要概念都来源于经典场论。所以，我们需要对经典力学和经典场论做一个简要的回顾。
+
+类比于经典力学中广义坐标是时间的函数，场论中，场$\phi(t,\mathbf{x})$是系统的广义坐标，它是时空坐标$x^\mu$的函数，并且每一个空间坐标都是一个独立自由度，所以经典场论是无穷自由度的质点力学。
+
+在经典力学中，由于我们讨论的是力学系统可能的运动路径，这是一个空间概念，所以我们假定做等时变分$\delta t=0$，即不做时间坐标的改变，于是：
+\begin{equation}
+	\delta\dot{q}_i=\delta\frac{\mathrm{d}q_i}{\mathrm{d}t}=\frac{\mathrm{d}}{\mathrm{d}t}\delta q_i
+\end{equation}
+利用作用量原理，对系统的拉氏量变分取极值：
+\begin{equation}
+	\delta S=\delta\int_{t_1}^{t_2} L(q_i,\dot{q}_i,t)\ \mathrm{d}t=0
+\end{equation}
+即可得到运动方程—\textbf{拉格朗日方程}：
+\begin{equation}
+	\frac{\mathrm{d}}{\mathrm{d}t}\frac{\partial L}{\partial\dot{q_i}}-\frac{\partial L}{\partial q_i}=0\quad (i=1,\cdots,n)
+\end{equation}
+并且定义\textbf{广义动量}与\textbf{哈密顿量}：
+\begin{equation}
+	p_i\equiv\frac{\partial L}{\partial\dot{q}_i}\quad H(q_i,p_i)\equiv p_i\dot{q_i}-L
+\end{equation}
+
+在经典场论中，由于我们讨论的是场$\phi$可能的形式，所以需要对$\phi$进行变分，而不用对时空坐标$x^\mu$变分，即：$\delta x^\mu=0$。于是有：
+\begin{equation}
+	\delta(\partial_\mu\phi_a)=\partial_\mu(\delta\phi_a)
+\end{equation}
+利用作用量原理，对系统的拉氏量密度变分取极值：
+\begin{equation}
+	\delta S=\delta \int\mathrm{d}^4x \ \mathscr{L}(\phi,\partial_\mu\phi)=0
+\end{equation}
+得到场的\textbf{欧拉-拉格朗日方程}，它给出场的运动方程：
+\begin{equation}
+	\partial_{\mu}\left(\frac{\partial\mathscr{L}}{\partial(\partial_{\mu}\phi)}\right)-\frac{\partial\mathscr{L}}{\partial\phi}=0
+\end{equation}
+我们同样可以定义场的共轭动量密度与哈密顿量密度：
+\begin{equation}
+	\pi(\mathbf{x},t)\equiv\frac{\partial\mathscr{L}}{\partial \dot{\phi}}\quad \mathscr{H}\equiv\pi\dot{\phi}-\mathscr{L}
+\end{equation}
+
+\section{对称性与守恒律}
+经典场论的另一个重要部分就是对称性与守恒定律。所谓物理中的对称性是指，一个物理系统在某种变换下具有不变性，那么就称它具有某种对称性。而每一个连续对称性都与一个守恒定律所对应，这就是Noether定理。
+
+\subsection{Noether定理}
+\textbf{场的Noether定理}：如果一个系统具有某种连续对称性，并且当运动方程满足时，则该系统存在一个相应的守恒流（守恒律）。
+
+下面给出证明。
+
+假设考虑时空中的物理点$P$，在参考系变换前后的坐标分别为$x^{\mu}$和$x^{\prime\mu}$。在变换前该点处的场是坐标$x^\mu$的函数$f(x^\mu)$，而变换后该点处的场为$f^\prime(x^{\prime\mu})$。
+
+考虑无穷小变换：$x^\mu\to x^{\prime\mu}=x^{\mu}+\delta x^{\mu},f(x^\mu)\to f^\prime(x^{\prime\mu})=f(x^\mu)+\delta f(x^\mu)$，注意到：
+\begin{equation}
+\begin{aligned}
+\delta f(x^\mu)&=f^\prime(x^{\prime \mu})-f(x^\mu)=f^\prime(x^{\mu}+\delta x^{\mu})-f(x^\mu)\\&\simeq f^\prime(x^\mu)-f(x^\mu)+\delta x^\mu \partial_\mu f^\prime(x^\mu)
+=\delta_0 f(x^\mu)+\delta x^\mu \partial_\mu f^\prime(x^\mu)\\&\simeq\delta_0 f(x^\mu)+\delta x^\mu \partial_\mu f(x^\mu)
+\end{aligned}
+\end{equation}
+即：$\delta=\delta_0+\delta x^\mu \partial_\mu$。其中$\delta_0$是固定坐标点（即在变换前后的两个参考系中坐标都是$x^\mu$）处的变分，满足：
+\begin{equation}
+	\delta_0 f(x)=f^\prime(x)-f(x)\quad \delta_0(\partial_\mu f)=\partial_\mu(\delta_0 f)
+\end{equation}
+而$\delta$是对物理点处的变分，包含对时空坐标的改变，因此不能与时空导数随意交换。
+
+\begin{mdframed}[frametitle={Example}]
+    考虑时空平移变换$x^\mu\to x^{\prime\mu}=x^\mu+a^\mu$。
+    在参考系变换下，$P$点的坐标从$x^\mu$变换到$x^{\prime\mu}=x^\mu+a^\mu$。显然，时空平移并不改变场$\phi$的函数形式，在物理点$P$这一处$\delta \phi=0$，那么同一坐标点处的改变为$\delta_0 \phi=-a^\mu\partial_\mu\phi$。
+\end{mdframed}
+
+若在上述的无穷小变换下有：
+\begin{equation}
+	0=\delta S=\int\left[\delta(\mathrm{d}^4x)\mathscr{L}+\mathrm{d}^4x\ \delta \mathscr{L}\right]
+	\label{1.59}
+\end{equation}
+即无穷小变换引起的作用量改变为$0$，则称体系具有相应的\textbf{连续对称性}，连续体现在“无穷小”上。
+
+考虑(\ref{1.59})式中的各项。
+
+第一项：$\delta(\mathrm{d}^4 x)$
+
+时空体积元的改变：
+\begin{equation}
+	\delta(\mathrm{d}^4 x)=\mathrm{d}^4x^\prime-\mathrm{d}^4 x=|\mathcal{J}|\mathrm{d}^4x-\mathrm{d}^4x
+\end{equation}
+其中：
+\begin{equation}
+	\mathcal{J}=\det\left(\frac{\partial x^{\prime\mu}}{\partial x^{\nu}}\right)\simeq\det\left[\frac{\partial}{\partial x^\nu}(x^\mu+\delta x^\mu)\right]=\det\left[\delta^{\mu}{}_{\nu}+\frac{\partial(\delta x^{\mu})}{\partial x^{\nu}}\right]
+\end{equation}
+对于任意方阵$A$，可以证明：$\det({e}^A)={e}^{\mathrm{tr}(A)}$，其中：$\exp(A)\equiv\sum_{n=0}^\infty\frac{A^n}{n!}$。若展开到一阶小量，则有：$\det(\mathbf{1}+A)\simeq1+\mathrm{tr}(A)$。所以：
+\begin{equation}
+	\begin{aligned}
+		\mathcal{J}&\simeq\det\left[\mathrm{diag}\Big(1+\frac{\partial(\delta x^{\mu})}{\partial x^{\mu}}\Big)\right]=\det\left[\mathds{1}+\mathrm{diag}\left(\frac{\partial(\delta x^{\mu})}{\partial x^{\mu}}\right)\right]=1+\mathrm{tr}\left(\frac{\partial(\delta x^{\mu})}{\partial x^{\mu}} \right)\\&=1+\partial_\mu(\delta x^\mu)
+	\end{aligned}
+\end{equation}
+因此，体积元的改变为：
+\begin{equation}
+	\delta(\mathrm{d}^4 x)=\mathrm{d}^4x^\prime-\mathrm{d}^4 x=|\mathcal{J}|\mathrm{d}^4x-\mathrm{d}^4x=\mathrm{d}^4 x(\partial_\mu\delta x^\mu)
+\end{equation}
+
+\begin{mdframed}[frametitle={Example}]
+例如，在时空平移变换下：$\delta x^\mu=a^\mu,\partial_\mu a^\mu=0$，于是$\mathrm{d}^4x'=\mathrm{d}^4x$。\\
+在Lorentz变换下，无穷小Lorentz变换可以写作：$x^{\prime\mu}=\Lambda^\mu{}_\nu x^\nu=(\delta ^\mu{}_\nu+\omega^\mu{}_\nu)x^\nu=x^\mu+\delta x^\mu$，例如绕$z$轴的转动：
+\begin{equation}
+	[R_z(\theta)]^{\mu}{}_\nu=\begin{pmatrix}1\\&\cos\theta&\sin\theta\\&-\sin\theta&\cos\theta\\&&&1\end{pmatrix}\simeq\begin{pmatrix}1\\&1&\theta\\&-\theta&1\\&&&1\end{pmatrix}=\delta ^\mu{}_\nu+\omega^\mu{}_\nu
+\end{equation}
+可以证明，$\omega$是四阶全反对称张量，因此$\omega^\mu{}_\mu=0$，而$\delta x^\mu=\omega^\mu{}_\nu x^\nu$，所以$\partial_\mu\delta x^\mu=\omega^\mu{}_\nu\delta_\mu{}^\nu=0$，于是$\mathrm{d}^4x'=\mathrm{d}^4x$。
+\end{mdframed}
+
+第二项：$\delta \mathscr{L}$
+
+拉氏量的改变：
+\begin{equation}
+    \begin{aligned}
+        \delta\mathscr{L}&=\delta_{0}\mathscr{L}+\delta x^{\mu}\partial_{\mu}\mathscr{L}=\delta x^{\mu}\partial_{\mu}\mathscr{L}+\frac{\partial\mathscr{L}}{\partial\phi}\delta_{0}\phi+\frac{\partial\mathscr{L}}{\partial(\partial_{\mu}\phi)}\delta_{0}(\partial_{\mu}\phi)\\&=\delta x^\mu\partial_\mu\mathscr{L}+\left[\frac{\partial\mathscr{L}}{\partial\phi}-\partial_\mu\left(\frac{\partial\mathscr{L}}{\partial(\partial_\mu\phi)}\right)\right]\delta_0\phi+\partial_\mu\left(\frac{\partial\mathscr{L}}{\partial(\partial_\mu\phi)}\delta_0\phi\right)
+    \end{aligned}
+\end{equation}
+Noether定理的条件要求拉氏量$\mathscr{L}$满足运动方程，故上式第二项等于$0$。即：
+\begin{equation}
+	\delta \mathscr{L}=\delta x^\mu\partial_\mu\mathscr{L}+\partial_\mu\left(\frac{\partial\mathscr{L}}{\partial(\partial_\mu\phi)}\delta_0\phi\right)
+\end{equation}
+
+综合考虑体积元与拉氏量的改变，得到作用量的变分为：
+\begin{equation}
+\begin{aligned}
+    0=\delta S&=\int \mathrm{d}^4x\left[\partial_\mu\delta x^\mu\mathscr{L}+\delta x^\mu\partial_\mu\mathscr{L}+\partial_\mu\left(\frac{\partial\mathscr{L}}{\partial\left(\partial_\mu\phi\right)}\delta_0\phi\right)\right]\\
+&=\left.\int \mathrm{d}^4x\left[\partial_\mu(\mathscr{L}\delta x^\mu)+\partial_\mu\left(\frac{\partial\mathscr{L}}{\partial(\partial_\mu\phi)}\delta_0\phi\right.\right)\right]\\
+&=\int \mathrm{d}^4x\ \partial_\mu\Big[\mathscr{L}\delta x^\mu+\frac{\partial\mathscr{L}}{\partial(\partial_\mu\phi)}\delta_0\phi\Big]
+\end{aligned}
+\end{equation}
+利用$\delta=\delta_0+\delta x^\mu \partial_\mu$，把对同一坐标点处的变分$\delta_0$变为对同一物理点处的变分$\delta$：
+\begin{equation}
+\begin{aligned}
+    0=\delta S&=\int \mathrm{d}^4x\ \partial_\mu\left[\mathscr{L}\delta x^\mu+\frac{\partial\mathscr{L}}{\partial\bigl(\partial_\mu\phi\bigr)}(\delta\phi-\delta x^\nu\partial_\nu\phi)\right]\\&=\int \mathrm{d}^4x\ \partial_\mu\left[\left(\mathscr{L}\delta^\mu{}_\nu-\frac{\partial\mathscr{L}}{\partial\left(\partial_\mu\phi\right)}\partial_\nu\phi\right)\delta x^\nu+\frac{\partial\mathscr{L}}{\partial\big(\partial_\mu\phi\big)}\delta\phi\right]
+\end{aligned}
+\end{equation}
+定义\textbf{守恒流}：
+\begin{equation}
+j^\mu=\left(\mathscr{L}\delta^\mu{}_\nu-\frac{\partial\mathscr{L}}{\partial\big(\partial_\mu\phi\big)}\partial_\nu\phi\right)\delta x^\nu+\frac{\partial\mathscr{L}}{\partial\big(\partial_\mu\phi\big)}\delta\phi	
+\label{1.69}
+\end{equation}
+满足\textbf{流守恒方程}：
+\begin{equation}
+	\partial_\mu j^\mu=0
+	\label{1.70}
+\end{equation}
+
+对(\ref{1.70})式做空间积分：
+\begin{equation}
+	\begin{aligned}
+		0&=\int\mathrm{d}^3 x\ \partial_\mu j^\mu=\int\mathrm{d}^3x\ \left(\frac{\partial j^0}{\partial t}+\nabla\cdot\mathbf{j}\right)=\int\mathrm{d}^3x\ \partial_0 j^0+\int\mathrm{d}^3x\ \nabla\cdot\mathbf{j}\\&=\frac{\mathrm{d}}{\mathrm{d}t}\int \mathrm{d}^3x\ j^0+\oint\mathbf{j}\cdot\mathrm{d}\mathbf{S}
+	\end{aligned}
+\end{equation}
+定义\textbf{守恒荷}：
+\begin{equation}
+	Q(t)=\int \mathrm{d}^3x \ j^0
+\end{equation}
+当边界面趋于无穷远时，面积分一项为$0$，此时：
+\begin{equation}
+\frac{\mathrm{d}Q}{\mathrm{d}t}=\frac{\mathrm{d}}{\mathrm{d}t}\int_{-\infty}^{+\infty}\mathrm{d}^3x\ j^0=0	
+\end{equation}
+
+在场论中，如果一个系统具有某种连续对称性，则存在相应的守恒流，它满足流守恒方程，而全空间的守恒荷不随时间变化。这样就证明了Noether定理。
+\subsection{时空平移对称性}
+时空平移变换为：
+\begin{equation}
+x^\mu\to x^{\prime\mu}=x^\mu+\delta x^\mu=x^\mu+a^\mu	
+\end{equation}
+
+
+若场$\phi$在时空平移变换下保持不变：
+\begin{equation}
+	\phi(x^\mu)\to \phi^\prime(x^{\prime\mu})=\phi^\prime(x^\mu+a^\mu)=\phi(x^\mu)
+\end{equation}
+则称该场具有时空平移对称性，存在相应的守恒流与守恒荷。此时$\delta x^\mu=a^\mu,\delta \phi=0$，代入Noether守恒流公式：
+\begin{equation}
+	j^\mu=\left(\mathscr{L}\delta^\mu{}_\nu-\frac{\partial\mathscr{L}}{\partial\big(\partial_\mu\phi\big)}\partial_\nu\phi\right)\delta x^\nu+\frac{\partial\mathscr{L}}{\partial(\partial_\mu\phi)}\delta\phi=\Bigg(\mathscr{L}\delta^\mu{}_\nu-\frac{\partial\mathscr{L}}{\partial(\partial_\mu\phi)}\partial_\nu\phi\Bigg)a^\nu
+\end{equation}
+流守恒方程(\ref{1.70})给出：
+\begin{equation}
+	\partial_\mu j^\mu=\partial_\mu\left(\mathscr{L}\delta^\mu{}_\nu-\frac{\partial\mathscr{L}}{\partial\big(\partial_\mu\phi\big)}\partial_\nu\phi\right)a^\nu=0
+\end{equation}
+即：
+\begin{equation}
+	\partial_\mu\left(\mathscr{L}\delta^\mu{}_\nu-\frac{\partial\mathscr{L}}{\partial\big(\partial_\mu\phi\big)}\partial_\nu\phi\right)=0
+\end{equation}
+做指标替换，得到：
+\begin{equation}
+	\partial_\mu\left(\frac{\partial\mathscr{L}}{\partial\big(\partial_\mu\phi\big)}\partial_\rho\phi-\mathscr{L}\delta^\mu{}_\rho\right)=0
+\end{equation}
+上式两侧同乘度规$g^{\rho\nu}$缩并：
+\begin{equation}
+	\begin{aligned}
+		\partial_\mu\left(\frac{\partial\mathscr{L}}{\partial\big(\partial_\mu\phi\big)}\partial_\rho\phi-\mathscr{L}\delta^\mu{}_\rho\right)&=\partial_\mu\left(\frac{\partial\mathscr{L}}{\partial\big(\partial_\mu\phi\big)}g^{\rho\nu}\partial_\rho\phi-\mathscr{L}\delta^\mu{}_\rho g^{\rho\nu}\right)\\&=\partial_\mu\left(\frac{\partial\mathscr{L}}{\partial\big(\partial_\mu\phi\big)}\partial^\nu\phi-\mathscr{L}g^{\mu\nu}\right)=0
+	\end{aligned}
+	\label{1.80}
+\end{equation}
+
+(\ref{1.80})式的括号部分是场的\textbf{能动张量}：
+\begin{equation}
+	T^{\mu\nu}\equiv\frac{\partial\mathscr{L}}{\partial\big(\partial_\mu\phi\big)}\partial^\nu\phi-\mathscr{L}g^{\mu\nu}
+\end{equation}
+它满足守恒方程：
+\begin{equation}
+	\partial_\mu T^{\mu\nu}=0
+\end{equation}
+并且只要场的拉氏量$\mathscr{L}$是Lorentz标量，那么能动张量$T^{\mu\nu}$就是Lorentz张量。
+
+当拉氏量$\mathscr{L}$满足时空平移对称性时，有：
+\begin{equation}
+	\partial_\mu T^{\mu\nu}=\partial_\mu \left(\frac{\partial\mathscr{L}}{\partial(\partial_\mu\phi)}\partial^\nu\phi-\mathscr{L}g^{\mu\nu}\right)=0
+\end{equation}
+对$T^{0\nu}$做全空间积分，就得到了$4$个守恒荷。
+
+$00$分量：
+\begin{equation}
+	T^{00}=\frac{\partial\mathscr{L}}{\partial \dot{\phi}}\dot{\phi}-\mathscr{L}=\pi\dot{\phi}-\mathscr{L}=\mathscr{H}
+\end{equation}
+所以$T^{00}$就是场的哈密顿量密度。$T^{00}$的全空间积分：
+\begin{equation}
+	H=\int\mathrm{d}^3 x\ T^{00}=\int\mathrm{d}^3 x \ \mathscr{H}
+\end{equation}
+就是场的哈密顿量，它是时间平移变换的守恒荷，满足：
+\begin{equation}
+	\frac{\mathrm{d}H}{\mathrm{d}t}=0
+\end{equation}
+即时间平移对称性对应能量守恒。
+
+${0i}$分量：
+\begin{equation}
+	T^{0i}=\frac{\partial\mathscr{L}}{\partial\dot{\phi}}\partial^i\phi=\pi\partial^i\phi
+\end{equation}
+是场的动量密度。$T^{0i}$的全空间积分：
+\begin{equation}
+	P^i=\int\mathrm{d}^3 x\ T^{0i}=\int\mathrm{d}^3 x\ \pi\partial^i\phi
+\end{equation}
+是场的总动量。写成三维矢量的形式：
+\begin{equation}
+	\mathbf{P}=-\int\mathrm{d}^3 x\ \pi\nabla\phi
+\end{equation}
+总动量是空间平移变换的守恒荷，满足：
+\begin{equation}
+	\frac{\mathrm{d}\mathbf{P}}{\mathrm{d}t}=0
+\end{equation}
+即空间平移对称性对应动量守恒。
+
+所以，4-动量$p^\mu=(H,\mathbf{P})$的每一个分量都是一个守恒荷。
+\subsection{Lorentz对称性}
+在相对论性场论中，我们希望拉氏量$\mathcal{L}$是Lorentz不变的，这样得到的作用量与运动方程就都是Lorentz不变的，在不同参考系中具有相同的数学形式，所以Lorentz对称性是量子场论中的基本对称性。
+
+考虑无穷小Lorentz变换：
+\begin{equation}
+	\Lambda^\mu{}_\nu=\delta^\mu{}_\nu+\omega^\mu{}_\nu
+\end{equation}
+其中$\omega^\mu{}_\nu$是无穷小变换的参数。由保度规条件(\ref{1.10})式可知：
+\begin{equation}
+\begin{aligned}
+g_{\alpha\beta}&=g_{\mu\nu}\Lambda^{\mu}{}_{\alpha}\Lambda^{\nu}{}_{\beta}\\&=g_{\mu\nu}(\delta^{\mu}{}_{\alpha}+\omega^{\mu}{}_{\alpha})(\delta^{\nu}{}_{\beta}+\omega^{\nu}{}_{\beta})\simeq g_{\mu\nu}\delta^{\mu}{}_{\alpha}\delta^{\nu}{}_{\beta}+g_{\mu\nu}\delta^{\mu}{}_{\alpha}\omega^{\nu}{}_{\beta}+g_{\mu\nu}\omega^{\mu}{}_{\alpha}\delta^{\nu}{}_{\beta}\\&=g_{\alpha\beta}+\omega_{\alpha\beta}+\omega_{\beta\alpha}
+\end{aligned}
+\label{1.92}
+\end{equation}
+若定义：
+\begin{equation}
+	\omega_{\mu\nu}\equiv g_{\mu\rho}\omega^\rho{}_\nu
+\end{equation}
+则由(\ref{1.92})式可知：
+\begin{equation}
+	\omega_{\mu\nu}=-\omega_{\nu\mu}
+\end{equation}
+是一个全反对称张量，只包含六个独立分量，分别对应沿三个方向的boost变换与绕三个空间轴的空间转动变换。
+\begin{mdframed}[frametitle={Example}]
+例如：绕$z$轴转动$\theta$角的空间转动变换：
+\begin{equation}
+	\Lambda^\mu{}_\nu=[R_z(\theta)]^{\mu}{}_\nu=\begin{pmatrix}1\\&\cos\theta&\sin\theta\\&-\sin\theta&\cos\theta\\&&&1\end{pmatrix}\Rightarrow \delta^\mu{}_\nu+\omega^\mu{}_\nu=\mathbf{1}+\begin{pmatrix}0\\&0&\theta\\&-\theta&0\\&&&0\end{pmatrix} 
+\end{equation}
+\end{mdframed}
+
+boost变换可以使用快度来表示。对于沿$x$轴的boost，定义快度：
+\begin{equation}
+	\xi=\tanh^{-1}\beta
+\end{equation}
+利用双曲函数的性质：
+\begin{equation}
+	\tanh\xi=\frac{\sinh\xi}{\cosh\xi}\quad \cosh^2\xi-\sinh^2\xi=1
+\end{equation}
+可推出：
+\begin{gather}
+\gamma=\frac{1}{\sqrt{1-\beta^2}}=\frac{1}{\sqrt{1-\tanh^2\xi}}=\Big(\frac{\cosh^2\xi-\sinh^2\xi}{\cosh^2\xi}\Big)^{-\frac12}=\cosh\xi \\
+\beta\gamma=\tanh\xi\cosh\xi=\sinh\xi
+\end{gather}
+所以：
+\begin{equation}
+	\Lambda^\mu{}_\nu=\begin{pmatrix}\gamma&-\gamma\beta&&\\-\gamma\beta&\gamma&&\\&&1&\\&&&1\end{pmatrix}=\begin{pmatrix}\cosh\xi&-\sinh\xi\\-\sinh\xi&\cosh\xi\\&&1\\&&&1\end{pmatrix}
+\end{equation}
+相应的无穷小变换为：
+\begin{equation}
+	\omega^\mu{}_\nu=\begin{pmatrix}0&-\xi&&\\-\xi&0&&\\&&0&\\&&&0\end{pmatrix}\quad \omega_{\mu\nu}=g_{\mu\rho}\omega^\rho{}_\nu=\begin{pmatrix}0&-\xi&&\\\xi&0&&\\&&0&\\&&&0\end{pmatrix}
+\end{equation}
+
+在无穷小Lorentz变换下：
+\begin{equation}
+	x^\mu\to x'^{\mu}=\Lambda^{\mu}{}_{\nu}x^{\nu}=(\delta^{\mu}{}_{\nu}+\omega^{\mu}{}_{\nu})x^{\nu}=x^{\mu}+\omega^{\mu}{}_{\nu}x^{\nu}=x^\mu+\delta x^\mu
+\end{equation}
+场的变换为：
+\begin{equation}
+	\phi_a(x)\to \phi^\prime_a(x^\prime)=\phi_a(x)+\delta\phi_a(x)
+\end{equation}
+对变换后的场在$\omega_{\mu\nu}=0$附近做Taylor展开，保留到$\omega$的一次项：
+\begin{equation}
+	\begin{aligned}
+		\phi^\prime(x^\prime)&\sim\phi(x)+\left. \omega_{\mu\nu}\frac{\partial \phi^\prime(x^\prime)}{\partial\omega_{\mu\nu}}\right|_{\omega_{\mu\nu}=0}=\phi(x)-\frac{\mathrm{i}}{2}\omega_{\mu\nu}I^{\mu\nu}\phi(x) \\&
+=\left(1-\frac{\mathrm{i}}{2}\omega_{\mu\nu}I^{\mu\nu}\right)\phi(x)
+	\end{aligned}
+\end{equation}
+其中$I_{\mu\nu}$称为Lorentz群表示的生成元。由$\omega_{\mu\nu}$的全反对称性可知：$I_{\mu\nu}=-I_{\nu\mu}$，它也是一个全反对称张量。
+
+下面我们可以计算与Lorentz对称性相对应的守恒流。时空坐标和场的无穷小变换为：
+\begin{equation}
+	\delta x^\mu=\omega^\mu{}_\nu x^\mu\quad \delta\phi=-\frac{\mathrm{i}}{2}\omega_{\mu\nu}I^{\mu\nu}\phi(x)
+\end{equation}
+故Noether流：
+\begin{equation}
+	\begin{aligned}
+		j^\mu&=\left(\mathscr{L}\delta^\mu{}_\nu-\frac{\partial\mathscr{L}}{\partial(\partial_\mu\phi)}\partial_\nu\phi\right)\delta x^\nu+\frac{\partial\mathscr{L}}{\partial(\partial_\mu\phi)}\delta\phi \\
+		&=-\left(\frac{\partial\mathscr{L}}{\partial(\partial_\mu\phi)}\partial_\nu\phi-\mathscr{L}\delta^\mu{}_\nu\right)\omega^\nu{}_\rho x^\rho-\frac{\mathrm{i}}{2}\omega_{\nu\rho}\frac{\partial\mathscr{L}}{\partial(\partial_\mu\phi)}I^{\nu\rho}\phi\\&=-T^\mu{}_\nu\omega^\nu{}_\rho x^\rho-\frac{\mathrm{i}}{2}\omega_{\nu\rho}\frac{\partial\mathscr{L}}{\partial(\partial_\mu\phi)}I^{\nu\rho}\phi
+	\end{aligned}
+	\label{1.106}
+\end{equation}
+其中：
+\begin{equation}
+	T^\mu{}_\nu=g_{\rho\nu}T^{\mu\rho}
+\end{equation}
+是场的能动张量。利用度规可得：
+\begin{equation}
+	T^\mu{}_\nu\omega^{\nu}{}_\rho=T^{\mu}{}_{\nu}\delta^{\nu}{}_{\sigma}\omega^{\sigma}{}_{\rho}=T^{\mu}{}_{\nu}g^{\nu\alpha}g_{\alpha\sigma}\omega^{\sigma}{}_{\rho}=T^{\mu\alpha}\omega_{\alpha\rho}=T^{\mu\nu}\omega_{\nu\rho}
+\end{equation}
+再利用$\omega_{\mu\nu}$的反对称性可得：
+\begin{equation}
+	\begin{aligned}
+		T^{\mu}{}_{\nu}\omega^{\nu}{}_{\rho}x^{\rho}&=T^{\mu\nu}\omega_{\nu\rho}x^{\rho}=\frac{1}{2}(T^{\mu\nu}\omega_{\nu\rho}x^{\rho}-T^{\mu\nu}\omega_{\rho\nu}x^{\rho})=\frac{1}{2}(T^{\mu\nu}\omega_{\nu\rho}x^{\rho}-T^{\mu\rho}\omega_{\nu\rho}x^{\nu}) \\
+&=\frac12\omega_{\nu\rho}(T^{\mu\nu}x^\rho-T^{\mu\rho}x^\nu)
+	\end{aligned}
+\end{equation}
+现在，Noether流(\ref{1.106})式就可以化为：
+\begin{equation}
+	j^{\mu}=-\frac{{\mathrm{i}}}{2}\omega_{\nu\rho}\frac{\partial\mathscr{L}}{\partial(\partial_{\mu}\phi)}I^{\nu\rho}\phi-\frac{1}{2}\omega_{\nu\rho}(T^{\mu\nu}x^{\rho}-T^{\mu\rho}x^{\nu})=\frac{1}{2}\mathbb{J}^{\mu\nu\rho}\omega_{\nu\rho}
+\end{equation}
+其中：
+\begin{equation}
+	\mathbb{J}^{\mu\nu\rho}\equiv T^{\mu\rho}x^{\nu}-T^{\mu\nu}x^{\rho}-\mathrm{i}\frac{\partial\mathscr{L}}{\partial(\partial_{\mu}\phi)}I^{\nu\rho}\phi
+\end{equation}
+流守恒方程$\partial_\mu j^\mu=0$给出：
+\begin{equation}
+	\partial_\mu\mathbb{J}^{\mu\nu\rho}=0
+\end{equation}
+而守恒荷为：
+\begin{equation}
+	J^{\nu\rho}\equiv\int\mathrm{d}^3x\ \mathbb{J}^{0\nu\rho}=\int\mathrm{d}^3x\left(T^{0\rho}x^\nu-T^{0\nu}x^\rho-\mathrm{i}\pi I^{\nu\rho}\phi\right)
+\end{equation}
+其中$\pi=\frac{\partial\mathscr{L}}{\partial\dot{\phi}}$是场的共轭动量密度。显然守恒荷也是一个全反对称张量：$J^{\nu\rho}=-J^{\rho\nu}$，共包含有六个独立分量，且满足：
+\begin{equation}
+	\frac{\mathrm{d}J^{\nu\rho}}{\mathrm{d}t}=0
+\end{equation}
+
+$J^{\nu\rho}$可以分解为两项之和：
+\begin{equation}
+	J^{\nu\rho}=L^{\nu\rho}+S^{\nu\rho}
+\end{equation}
+第一项为：
+\begin{equation}
+	L^{\nu\rho}\equiv\int\mathrm{d}^3x\left(T^{0\rho}x^\nu-T^{0\nu}x^\rho\right)
+\end{equation}
+$L^{\nu\rho}$的六个独立分量中，其中三个是空间分量。空间分量$L^{jk}$可以表述为三维矢量$L^i$：
+\begin{equation}
+	L^i\equiv\frac12\varepsilon^{ijk}L^{jk}
+\end{equation}
+由此推出：
+\begin{equation}
+	L^{i}=\frac{1}{2}\varepsilon^{ijk}\int\mathrm{d}^{3}x\ (T^{0k}x^{j}-T^{0j}x^{k})=\int\mathrm{d}^{3}x\ \varepsilon^{ijk}x^{j}T^{0k}=\int\mathrm{d}^{3}x\ \varepsilon^{ijk}x^{j}\pi\partial^{k}\phi
+\end{equation}
+其中$T^{0k}=\pi\partial^k\phi$是场的动量密度。写成矢量形式：
+\begin{equation}
+	\mathbf{L}=-\int\mathrm{d}^3x\ \mathbf{x}\times(\pi\nabla\phi)
+\end{equation}
+这是场的\textbf{轨道角动量}。
+
+第二项为：
+\begin{equation}
+	S^{\nu\rho}\equiv-\mathrm{i}\int\mathrm{d}^3x\ \pi I^{\nu\rho}\phi
+\end{equation}
+其空间分量同样可以写成三维矢量的形式：
+\begin{equation}
+	S^i\equiv\frac{1}{2}\varepsilon^{ijk}S^{jk}=-\frac{\mathrm{i}}{2}\varepsilon^{ijk}\int\mathrm{d}^{3}x\ \pi I^{jk}\phi
+\end{equation}
+这是场的\textbf{自旋角动量}。于是，$J^{\nu\rho}$的空间分量对应的三维矢量为：
+\begin{equation}
+	J^i\equiv\frac{1}{2}\varepsilon^{ijk}J^{jk}=L^i+S^i
+\end{equation}
+这是场的\textbf{总角动量}。
+
+以上讨论的是守恒荷的空间分量，它们对应Lorentz变换中的空间转动变换。若系统具有空间旋转对称性，则相应的守恒荷是不随时间变化的，而这些守恒荷就是角动量。因此，空间旋转对称性对应角动量守恒定律。
+\subsection{$U(1)$对称性}
+考虑由复标量场$\phi(x)$及其复共轭$\phi^\dagger(x)$构成的拉氏量：
+\begin{equation}
+	\mathscr{L}=\partial_\mu\phi^\dagger\partial^\mu\phi-m^2\phi^\dagger\phi
+	\label{1.123}
+\end{equation}
+其中，$\phi$与$\phi^\dagger$是相互独立的标量场。复标量场的\textbf{$U(1)$整体变换}定义为：
+\begin{equation}
+	\phi(x)\to\phi'(x)=e^{\mathrm{i}q\theta}\phi(x)
+\end{equation}
+其中，$q$是一个常数，$\theta$是连续变换的参数。所谓“整体”体现在变换参数$\theta$是一个不依赖于时空坐标$x^\mu$的实数，因而以上变换对于时空中任一点处的标量场都是相同的。
+
+相位因子$e^{\mathrm{i}q\theta}$可以看作是一个一维幺正矩阵$U(\theta)=e^{\mathrm{i}q\theta}$，满足$U^\dagger U=UU^\dagger=1$，而集合$\{U(\theta)|\theta\in[0,2\pi/q]\}$构成一个群，称为\textbf{$U(1)$群}。显然，$U(1)$群是一个阿贝尔群：
+\begin{equation}
+	U(\theta_1)U(\theta_2)=e^{\mathrm{i}q\theta_1}e^{\mathrm{i}q\theta_2}=e^{\mathrm{i}q(\theta_1+\theta_2)}=e^{\mathrm{i}q\theta_2}e^{\mathrm{i}q\theta_1}=U(\theta_2)U(\theta_1)
+\end{equation}
+
+在$U(1)$整体变换下，标量场$\phi(x)$的复共轭$\phi^\dagger(x)$的变换为：
+\begin{equation}
+	\phi^\dagger(x)\to\phi^{\dagger\prime}(x)=e^{-\mathrm{i}q\theta}\phi^\dagger(x)
+\end{equation}
+因此，复标量场的拉氏量(\ref{1.123})式在$U(1)$整体变换下保持不变，具有$U(1)$整体对称性：
+\begin{equation}
+	\mathscr{L}\to\mathscr{L}'=\partial_\mu\phi^{\dagger\prime}\partial^\mu\phi'-m^2\phi^{\dagger\prime}\phi'=e^{\mathrm{i}q\theta}e^{-\mathrm{i}q\theta}\mathscr{L}=\mathscr{L}
+\end{equation}
+其中，$q$称为相应的\textbf{$U(1)$荷}。若考虑无穷小$U(1)$整体变换：
+\begin{gather}
+	\phi(x)\to\phi'(x)=\phi(x)+\mathrm{i}q\theta\phi(x)\\
+	 \phi^\dagger(x)\to\phi^{\dagger\prime}(x)=\phi^\dagger(x)-\mathrm{i}q\theta\phi^\dagger(x)
+\end{gather}
+即：$\delta x^\mu=0,\delta\phi=\mathrm{i}q\theta\phi,\delta\phi^\dagger=-\mathrm{i}q\theta\phi^\dagger$。代入守恒流的定义(\ref{1.69})式可得：
+\begin{equation}
+    \begin{aligned}
+        j^\mu&=\frac{\partial\mathscr{L}}{\partial(\partial_\mu\phi)}\delta\phi+\frac{\partial\mathscr{L}}{\partial(\partial_\mu\phi^\dagger)}\delta\phi^\dagger=(\partial^\mu\phi^\dagger)\mathrm{i}q\theta\phi-(\partial^\mu\phi)\mathrm{i}q\theta\phi^\dagger\\
+        &=-\mathrm{i}q\theta[\phi^\dagger(\partial^\mu\phi)-\phi(\partial^\mu\phi^\dagger)]\\
+        &=-\mathrm{i}q\theta\phi^\dagger\overset{\leftrightarrow}{\partial}{}^\mu\phi
+    \end{aligned}
+\end{equation}
+它满足流守恒方程(\ref{1.70})式。其中，$\phi^\dagger\overset{\leftrightarrow}{\partial}{}^\mu\phi$定义为：
+\begin{equation}
+	\phi^\dagger\overset{\leftrightarrow}{\partial}{}^\mu\phi\equiv\phi^\dagger(\partial^\mu\phi)-\phi(\partial^\mu\phi^\dagger)
+\end{equation}
+
+定义\textbf{$U(1)$守恒流}：
+\begin{equation}
+	J^\mu\equiv \mathrm{i}q\phi^\dagger\overset{{\leftrightarrow}}{\partial}{}^\mu\phi
+\end{equation}
+于是Noether定理给出：$\partial_\mu J^\mu=0$，相应的守恒荷为：
+\begin{equation}
+	Q\equiv\int\mathrm{d}^3x\ J^0=\int\mathrm{d}^3x\ \mathrm{i}q\phi^\dagger\overset{{\leftrightarrow}}{\partial}{}^0\phi
+\end{equation}
+满足荷守恒方程：
+\begin{equation}
+	\frac{\mathrm{d}Q}{\mathrm{d}t}=0
+\end{equation}
+在实际的理论中，$q$是由场所携带的某种荷，例如电荷，因而$U(1)$整体对称性对应相应的荷守恒定律。例如，电磁场的$U(1)$整体对称性对应电荷守恒定律。
+
+\chapter{Klein-Gordon标量场量子化}
+\section{K-G场的等时量子化}
+实K-G经典场的拉氏量为：
+$$
+\mathcal{L}_{\mathrm{KG}}=\frac{1}{2}\partial_{\mu}\phi\partial^{\mu}\phi-\frac{1}{2}m^2\phi^2=\frac{1}{2}\dot{\phi}^2-\frac12(\nabla\phi)^2-\frac12 m^2\phi^2
+$$
+引入共轭动量密度：$\pi=\partial \mathcal{L}/\partial\dot{\phi}=\dot{\phi}$，所以K-G场的哈密顿量为：
+$$
+\mathcal{H}(\phi,\pi)=\pi\dot{\phi}-\mathcal{L}=T^{00}=\frac12\pi^2+\frac12(\nabla\phi)^2+\frac12m^2\phi^2
+$$
+将拉氏量代入E-L方程，即得到K-G经典场的运动方程—\textbf{Klein-Gordon方程}：
+$$
+(\Box+m^2)\phi=0
+$$
+\subsection{经典谐振子}
+回顾非相对论量子力学中，对谐振子进行量子化的过程。一维谐振子的哈密顿量为：
+$$
+H=\frac{1}{2}p^2+\frac12 \omega^2q^2
+$$
+将经典谐振子量子化的关键在于把坐标和动量提升为算符，并要求它们满足对易关系：
+$$
+[q,p]=i
+$$
+引入算符$a,a^\dagger$，将坐标和动量改写为：
+$$
+q=\frac1{\sqrt{2\omega}}(a+a^\dagger)\quad p=-i\sqrt{\frac\omega2}(a-a^\dagger)
+$$
+根据$q,p$的对易关系，容易验证：
+$$
+[a,a^\dagger]=1
+$$
+把用$a,a^\dagger$表示的$q,p$代入哈密顿量，可得：
+$$
+H=\omega(a^\dagger a+\frac12)
+$$
+它满足对易子：
+$$
+[H,a^\dagger]=\omega a^\dagger\quad [H,a]=-\omega a
+$$
+满足$a|0\rangle=0$的态称为体系的基态，对应能量本征值$\omega/2$：
+$$
+H|0\rangle=\omega(a^\dagger a|0\rangle+\frac12 |0\rangle)=\frac\omega2|0\rangle
+$$
+相应的第一激发态为$a^\dagger|0\rangle$：
+$$
+H(a^\dagger|0\rangle)=[H,a^\dagger](|0\rangle)+a^\dagger H(|0\rangle)=\omega(1+\frac12)(a^\dagger|0\rangle)
+$$
+由此，我们可以定义体系的能量本征态：
+$$
+|n\rangle\equiv(a^\dagger)^n |0\rangle
+$$
+对应能量$\omega(n+1/2)$。与哈密顿量相比较，根据$H|n\rangle=\omega(n+1/2)|n\rangle$，可知粒子数算符$\hat{N}$的形式：
+$$
+N=a^\dagger a\quad N|n\rangle=n|n\rangle
+$$
+使用粒子数算符和$a,a^\dagger$的对易关系，可以证明：
+$$
+a^\dagger|n\rangle=|n+1\rangle \quad a|n\rangle=n|n-1\rangle
+$$
+所以，算符$a^\dagger$使体系的能级上升一级，称为\textbf{升算符}，而算符$a$使体系的能级下降一阶，称为\textbf{降算符}。
+
+我们可以将$|0\rangle$看作谐振子的基态，而将$|n\rangle$看作谐振子的激发态。这样就完成了简谐振子的量子化。
+
+总结来说，将经典谐振子量子化的关键在于把$q,p$提升为算符，并且要求它们满足正则对易关系：
+$$
+[q_i,p_j]=i\delta_{ij}\quad [q_i,q_j]=[p_i,p_j]=0
+$$
+\subsection{K-G场的量子化}
+在动量空间对K-G场做Fourier变换：
+$$
+\phi(\mathbf{x},t)=\int\frac{\mathrm{d}^3p}{(2\pi)^3}{e}^{{i}\mathbf{p}\cdot\mathbf{x}}{\phi}(\mathbf{p},t)
+$$
+代入K-G方程：
+$$
+\left(\frac{\partial^2}{\partial t^2}-\nabla^2+m^2\right)\phi(\mathbf{x},t)=0
+$$
+得：
+$$
+\left(\frac{\partial^2}{\partial t^2}+\omega_{\mathbf{p}}^2\right)\phi(\mathbf{p},t)=0
+$$
+这就是动量空间中K-G场的运动方程，与简谐振子的运动方程有着完全相同的形式。其中，$\omega_{\mathbf{p}}=\sqrt{\mathbf{p}^2+m^2}$是谐振子的频率，方程的解是${e}^{\pm{i}\omega_{\mathbf{p}}t}$线性独立的两个解。所以，K-G场与谐振子之间存在很高的相似性，我们可以类比经典谐振子量子化的过程，对K-G场进行量子化。
+
+仿照经典谐振子量子化的步骤，在K-G场论中，我们可以把经典场$\phi(\mathbf{x})$和共轭动量$\pi(\mathbf{x})$提升为算符，并将离散的$i,j$连续化。猜测场和动量满足正则对易关系：
+$$
+[\phi(\mathbf{x}),\pi(\mathbf{y})]=i\delta^{(3)}(\mathbf{x}-\mathbf{y})\quad [\phi(\mathbf{x}),\phi(\mathbf{y})]=[\pi(\mathbf{x}),\pi(\mathbf{y})]=0
+$$
+类比：
+$$
+q=\frac1{\sqrt{2\omega}}(a+a^\dagger)\quad p=-i\sqrt{\frac\omega2}(a-a^\dagger)
+$$
+将K-G场量子化后也对应一个厄米算符：
+$$
+\begin{gathered}
+\hat{\phi}(\mathbf{x}) =\int\frac{\mathrm{d}^{3}p}{(2\pi)^{3}}\left.\frac1{\sqrt{2\omega_{\mathbf{p}}}}\left(a_{\mathbf{p}}{e}^{{i}\mathbf{p}\cdot\mathbf{x}}+a_{\mathbf{p}}^{\dagger}{e}^{-{i}\mathbf{p}\cdot\mathbf{x}}\right);\right.  \\
+\hat{\pi}(\mathbf{x}) =\int\frac{\mathrm{d}^3p}{(2\pi)^3}\left(-{i}\right)\sqrt{\frac{\omega_{\mathbf{p}}}2}\left(a_{\mathbf{p}}{e}^{{i}\mathbf{p}\cdot\mathbf{x}}-a_{\mathbf{p}}^{\dagger}{e}^{-{i}\mathbf{p}\cdot\mathbf{x}}\right). 
+\end{gathered}
+$$
+这里的场是无穷多自由度的，所以对于每一个动量模式引入一个$a_{\mathbf{p}}$，然后再对动量积分。
+
+为了满足场的量子化条件，此处$a_{\mathbf{p}},a_{\mathbf{p}}^\dagger$也应满足一定的对易关系：
+\begin{gather*}
+[a_{\mathbf{p}},a_{\mathbf{p}^{\prime}}^{\dagger}]=(2\pi)^3\delta^{(3)}(\mathbf{p}-\mathbf{p}^{\prime}) \\
+[a_{\mathbf{p}},a_{\mathbf{p^\prime}}]=[a_{\mathbf{p}}^\dagger,a_{\mathbf{p^\prime}}^\dagger]=0    
+\end{gather*}
+对$\phi(\mathbf{x})$的第二部分做变量替换$\mathbf{p}\to-\mathbf{p}$，因为积分区间是从$-\infty$到$+\infty$对称的，且$\omega_{\mathbf{p}}=\sqrt{\mathbf{p}^2+m^2}$，因此：
+$$
+\int_{-\infty}^{+\infty}\frac{\mathrm{d}^3p}{(2\pi)^3}\frac{1}{\sqrt{2\omega_{\mathbf{p}}}}(a_{\mathbf{p}}^\dagger {e}^{-{i}\mathbf{p}\cdot\mathbf{x}})=\int_{+\infty}^{-\infty}\frac{\mathrm{d}^3(-p)}{(2\pi)^3}\frac{1}{\sqrt{2\omega_{\mathbf{-p}}}}(a_{-\mathbf{p}}^\dagger {e}^{{i}\mathbf{p}\cdot\mathbf{x}})\\
+=\int_{-\infty}^{+\infty}\frac{\mathrm{d}^3p}{(2\pi)^3}\frac{1}{\sqrt{2\omega_{\mathbf{p}}}}(a_{-\mathbf{p}}^\dagger {e}^{{i}\mathbf{p}\cdot\mathbf{x}})
+$$
+所以，场和动量算符可以改写为：
+$$
+\begin{gathered}
+\phi(\mathbf{x}) =\int\frac{\mathrm{d}^{3}p}{(2\pi)^{3}}\frac1{\sqrt{2\omega_{\mathbf{p}}}}(a_{\mathbf{p}}+a_{-\mathbf{p}}^{\dagger}){e}^{{i}\mathbf{p}\cdot\mathbf{x}}; \\
+\pi(\mathbf{x}) =\int\frac{\mathrm{d}^{3}p}{(2\pi)^{3}}\left(-{i}\right)\sqrt{\frac{\omega_{\mathbf{p}}}2}(a_{\mathbf{p}}-a_{-\mathbf{p}}^{\dagger}){e}^{{i}\mathbf{p}\cdot\mathbf{x}}. 
+\end{gathered}
+$$
+则：
+\begin{gather*}
+    [\phi(\mathbf{x}),\pi(\mathbf{y})]=\int\frac{\mathrm{d}^3p \mathrm{d}^3p^\prime}{(2\pi)^6}\frac{-{i}}{2}\sqrt{\frac{\omega_{\mathbf{p^\prime}}}{\omega_{\mathbf{p}}}}\left[(a_{\mathbf{p}}+a_{-\mathbf{p}}^\dagger)(a_{\mathbf{p}^\prime}-a_{-\mathbf{p}^\prime}^\dagger)-(a_{\mathbf{p}^\prime}-a_{-\mathbf{p}^\prime}^\dagger)(a_{\mathbf{p}}+a_{-\mathbf{p}}^\dagger)\right]{e}^{{i}(\mathbf{p}\cdot\mathbf{x}+\mathbf{p}^\prime\cdot\mathbf{y})} \\
+=\int\frac{\mathrm{d}^3p \mathrm{d}^3p^\prime}{(2\pi)^6}\frac{-{i}}{2}\sqrt{\frac{\omega_{\mathbf{p^\prime}}}{\omega_{\mathbf{p}}}}\left([a_{-\mathbf{p}}^\dagger,a_{\mathbf{p}^\prime}]-[a_{\mathbf{p}},a_{-\mathbf{p}^\prime}^\dagger]
+\right){e}^{{i}(\mathbf{p}\cdot\mathbf{x}+\mathbf{p}^\prime\cdot\mathbf{y})} \\=\int\frac{\mathrm{d}^3p \mathrm{d}^3p^\prime}{(2\pi)^6}\frac{-{i}}{2}\sqrt{\frac{\omega_{\mathbf{p^\prime}}}{\omega_{\mathbf{p}}}}\left[-(2\pi)^3\delta^{(3)}(\mathbf{p}^\prime+\mathbf{p})-(2\pi)^3\delta^{(3)}(\mathbf{p}+\mathbf{p}^\prime)
+\right]{e}^{{i}(\mathbf{p}\cdot\mathbf{x}+\mathbf{p}^\prime\cdot\mathbf{y})}\\
+=\int\frac{\mathrm{d}^3p}{(2\pi)^3}{i}{e}^{{i}\mathbf{p}\cdot(\mathbf{x}-\mathbf{y})}={i}\delta^{(3)}(\mathbf{x}-\mathbf{y})
+\end{gather*}
+与之前的猜测相符。
+
+场的哈密顿量为：
+$$
+\begin{aligned}
+H&=\int\mathrm{d}^3x\ \mathcal{H}=\int \mathrm{d}^3x\left[\frac{1}{2}\pi^2+\frac{1}{2}(\nabla\phi)^2+\frac{1}{2}m^2\phi^2\right]\\
+&=\int \mathrm{d}^3x\frac{\mathrm{d}^3p\mathrm{d}^3p^\prime}{(2\pi)^6}\left[\frac12(-i)^2\frac{\sqrt{\omega_{\mathbf{p}}\omega_{\mathbf{p}^\prime}}}{2}(a_\mathbf{p}-a_{-\mathbf{p}}^\dagger)(a_{\mathbf{p}^\prime}-a_{-\mathbf{p}^\prime}^\dagger) e^{i(\mathbf{p}+\mathbf{p}^\prime)\cdot\mathbf{x}} 
+\right]\\&\quad\quad\quad\quad\quad\quad\quad+\left[\frac12\frac{1}{2\sqrt{\omega_{\mathbf{p}}\omega_{\mathbf{p}^\prime}}}(a_\mathbf{p}+a_{-\mathbf{p}}^\dagger)(a_{\mathbf{p}^\prime}+a_{-\mathbf{p}^\prime}^\dagger)i^2\mathbf{p}\cdot\mathbf{p}^\prime e^{i(\mathbf{p}+\mathbf{p}^\prime)\cdot\mathbf{x}}\right] \\
+&\quad\quad\quad\quad\quad\quad\quad+\left[\frac12 m^2\frac{1}{2\sqrt{\omega_{\mathbf{p}}\omega_{\mathbf{p}^\prime}}}(a_\mathbf{p}+a_{-\mathbf{p}}^\dagger)(a_{\mathbf{p}^\prime}+a_{-\mathbf{p}^\prime}^\dagger)e^{i(\mathbf{p}+\mathbf{p}^\prime)\cdot\mathbf{x}}\right] \\&=\int \mathrm{d}^3x\frac{\mathrm{d}^3p\mathrm{d}^3p^\prime}{(2\pi)^6}e^{i(\mathbf{p}+\mathbf{p}^\prime)\cdot\mathbf{x}}\left[-\frac{\sqrt{\omega_{\mathbf{p}}\omega_{\mathbf{p}^\prime}}}{4}(a_\mathbf{p}-a_{-\mathbf{p}}^\dagger)(a_{\mathbf{p}^\prime}-a_{-\mathbf{p}^\prime}^\dagger)\right]\\&\quad\quad\quad\quad\quad\quad\quad+\left[\frac{m^2-\mathbf{p}\cdot\mathbf{p}^\prime}{4\sqrt{\omega_{\mathbf{p}}\omega_{\mathbf{p}^\prime}}}(a_\mathbf{p}+a_{-\mathbf{p}}^\dagger)(a_{\mathbf{p}^\prime}+a_{-\mathbf{p}^\prime}^\dagger)\right] \\
+&=\int\frac{\mathrm{d}^3p\mathrm{d}^3p^\prime}{(2\pi)^3}\delta(\mathbf{p}+\mathbf{p}^\prime)\left[-\frac{\sqrt{\omega_{\mathbf{p}}\omega_{\mathbf{p}^\prime}}}{4}(a_\mathbf{p}-a_{-\mathbf{p}}^\dagger)(a_{\mathbf{p}^\prime}-a_{-\mathbf{p}^\prime}^\dagger)\right]\\&\quad\quad\quad\quad\quad\quad\quad+\left[\frac{m^2-\mathbf{p}\cdot\mathbf{p}^\prime}{4\sqrt{\omega_{\mathbf{p}}\omega_{\mathbf{p}^\prime}}}(a_\mathbf{p}+a_{-\mathbf{p}}^\dagger)(a_{\mathbf{p}^\prime}+a_{-\mathbf{p}^\prime}^\dagger)\right] 
+\\&=\int\frac{\mathrm{d}^3p}{(2\pi)^3}\frac{\omega_{\mathbf{p}}}{4}\left[-(a_\mathbf{p}-a_{-\mathbf{p}}^\dagger)(a_{\mathbf{p}}-a_{-\mathbf{p}}^\dagger)+\frac{m^2+\mathbf{p}^2}{\omega_{\mathbf{p}}^2}(a_\mathbf{p}+a_{-\mathbf{p}}^\dagger)(a_{\mathbf{p}}+a_{-\mathbf{p}}^\dagger)\right]
+\\&=\int \frac{\mathrm{d}^3p}{(2\pi)^3}\omega_{\mathbf{p}}\left(a_\mathbf{p}^\dagger a_{\mathbf{p}}+\frac{1}{2}[a_\mathbf{p},a_{\mathbf{p}}^\dagger]\right)
+\end{aligned}
+$$
+即：
+$$
+H_{\mathrm{K-G}}=\int \frac{\mathrm{d}^3p}{(2\pi)^3}\omega_{\mathbf{p}}\left(a_\mathbf{p}^\dagger a_{\mathbf{p}}+\frac{1}{2}[a_\mathbf{p},a_{\mathbf{p}}^\dagger]\right)
+$$
+$H_{\mathrm{K-G}}$非常类似于$H_{\mathrm{SHO}}$，只是$H_{\mathrm{K-G}}$是对无穷多简谐振子的动量积分。
+
+至此，我们完成了K-G场的量子化。这里，我们是在Schrodinger绘景中对K-G场进行量子化。Schrodinger绘景的特点是算符不随时间演化，即场算符与时间无关。
+\subsection{基态和激发态}
+由于$[a_\mathbf{p},a_\mathbf{p}^\dagger]=(2\pi)^3\delta^{(3)}(0)\to\infty$，因此哈密顿量的第二项趋于无穷大。这是很好理解的，因为它是所有模式的零点能$\omega_{\mathbf{p}}/2$之和，这一项对应于真空能。所谓真空，就是一个无穷大体系的基态。因为物理上讨论的是能级差，而不是基态能量的绝对值，所以我们可以重新定义基态，使得$H|0\rangle=0$，并重新给出：
+$$
+H=\int \frac{\mathrm{d}^3p}{(2\pi)^3}\omega_{\mathbf{p}}a_\mathbf{p}^\dagger a_{\mathbf{p}}
+$$
+对所有的$\mathbf{p}$，满足$a_{\mathbf{p}}|0\rangle=0$的态称为基态，因此丢掉无穷大后，便有$H|0\rangle=0$。
+
+可以验证，哈密顿量满足对易关系：
+$$
+[H,a_\mathbf{p}^\dagger]=\omega_{\mathbf{p}}a_\mathbf{p}^\dagger\quad  [H,a_\mathbf{p}]=-\omega_{\mathbf{p}}a_\mathbf{p}
+$$
+可以构造$H$的第一激发态：
+$$
+H(a_\mathbf{p}^\dagger|0\rangle)=a_\mathbf{p}^\dagger H|0\rangle+[H,a_\mathbf{p}^\dagger]|0\rangle=\omega_\mathbf{p}(a_\mathbf{p}^\dagger|0\rangle)
+$$
+因此$a_\mathbf{p}^\dagger|0\rangle$是$H$的本征态，对应本征能量为$\omega_\mathbf{p}$，我们将$a_\mathbf{p}^\dagger|0\rangle$诠释为第一激发态。因为量子场论认为粒子是场的激发，所以$a_\mathbf{p}^\dagger|0\rangle$可以诠释为单粒子态。由于$a_\mathbf{p}^\dagger$使粒子数增加1，所以称为\textbf{产生算符}。而：
+$$
+H(a_\mathbf{p}a_\mathbf{p}^\dagger|0\rangle)=(a_\mathbf{p}H-\omega_\mathbf{p}a_\mathbf{p})a_\mathbf{p}^\dagger |0\rangle=(a_\mathbf{p}\omega_\mathbf{p}-\omega_\mathbf{p}a_\mathbf{p})a_\mathbf{p}^\dagger |0\rangle=0
+$$
+由于$a_\mathbf{p}$使粒子数减少1，所以称为\textbf{湮灭算符}。
+
+双粒子态可以验证是$a_{\mathbf{p}}^\dagger a_{\mathbf{q}}^\dagger|0\rangle$，对应能量是$\omega_{\mathbf{p}}+\omega_{\mathbf{q}}$。因为$[a_p^\dagger,a_q^\dagger]=0$，所以两个产生算符作用的效果与作用顺序没有关系，湮灭算符亦是如此。
+
+体系的能量即为：$\omega_{\mathbf{p}}=\sqrt{\mathbf{p}^2+m^2}=E_\mathbf{p}$
+
+类似地，还可以将经典场论中用Noether定理得到的总动量$\mathbf{P}$提升为量子场算符：
+$$
+\mathbf{P}=-\int \mathrm{d}^3x\mathrm{~}\pi(\mathbf{x})\nabla\phi(\mathbf{x})=\int\frac{\mathrm{d}^3p}{(2\pi)^3}\mathbf{p}a_\mathbf{p}^\dagger a_\mathbf{p}
+$$
+称为**总动量算符**。总动量算符满足对易关系：
+$$
+[\mathbf{P},a_\mathbf{p}^\dagger]=\mathbf{P}a_\mathbf{p}^\dagger \quad [\mathbf{P},a_\mathbf{p}]=-\mathbf{P}a_\mathbf{p}
+$$
+观察到$H$和$\mathbf{P}$有相似的形式，且对易关系也十分相似。不难证明，$a_\mathbf{p}^\dagger|0\rangle$不仅是能量本征态，也是动量本征态：
+$$
+\mathbf{P}(a^\dagger_{\mathbf{p}}|0\rangle)=\mathbf{p}(a^\dagger_{\mathbf{p}}|0\rangle)
+$$
+这样，多粒子态就为：
+$$
+a_{\mathbf{p_1}}^\dagger a_{\mathbf{p_2}}^\dagger\cdots|0\rangle
+$$
+它满足：
+$$
+H(a_{\mathbf{p_1}}^\dagger a_{\mathbf{p_2}}^\dagger\cdots|0\rangle)=(\omega_{\mathbf{p_1}}+\omega_{\mathbf{p_2}}+\cdots)(a_{\mathbf{p_1}}^\dagger a_{\mathbf{p_2}}^\dagger\cdots|0\rangle)
+\\
+\mathbf{P}(a_{\mathbf{p_1}}^\dagger a_{\mathbf{p_2}}^\dagger\cdots|0\rangle)=(\mathbf{p_1}+\mathbf{p_2}+\cdots)(a_{\mathbf{p_1}}^\dagger a_{\mathbf{p_2}}^\dagger\cdots|0\rangle)
+$$
+所以，多粒子态是$H,\mathbf{P}$的共同本征态，具有确定的能量和动量。
+
+对于量子谐振子，有：$[H,q]=-ip,[H,p]=iq$。利用哈密顿算符与产生湮灭算符的对易关系，可以验证：
+$$
+[H,\phi(\mathbf{x})]=-i\pi(\mathbf{x})\quad [H,\pi(\mathbf{x})]=i\phi(\mathbf{x})
+$$
+\subsection{归一化}
+选定真空态是归一化的：
+$$
+\langle 0| 0\rangle=1
+$$
+如果直接定义单粒子态$|\mathbf{p}\rangle$的归一化为：$\langle \mathbf{p}|\mathbf{q}\rangle=(2\pi)^3\delta^{(3)}(\mathbf{p}-\mathbf{q})$，我们发现它并不是Lorentz不变的。因此需要对单粒子态做一个修改。
+
+考虑沿$z$方向的boost：
+$$
+p_3^\prime=\gamma(p_3+\beta E) \quad E^\prime=\gamma(E+\beta p_3)
+$$
+那么在新旧参考系下$\delta^{(3)}(\mathbf{p}-\mathbf{q})$和$\delta^{(3)}(\mathbf{p}^\prime-\mathbf{q}^\prime)$有何关系呢。$\delta$函数有这样的性质：
+$$
+\delta(f(x)-f(x_0))=\frac1{|f^{\prime}(x_0)|}\delta(x-x_0)
+$$
+则：
+$$
+\delta^{(3)}(\mathbf{p}^{\prime}-\mathbf{q}^{\prime})=\frac{1}{\frac{\mathrm{d}p_{3}^{\prime}}{\mathrm{d}p_{3}}}\delta^{(3)}(\mathbf{p}-\mathbf{q})
+$$
+因为：
+$$
+\frac{\mathrm{d}p_{3}^{\prime}}{\mathrm{d}p_{3}}=\gamma+\gamma\beta\frac{\mathrm{d}E}{\mathrm{d}p_3}=\gamma(1+\beta\frac{\mathrm{d}}{\mathrm{d}p_3}\sqrt{p_1^2+p_2^2+p_3^2+m^2})\\=\gamma(1+\beta\frac{p_3}E)=\frac{\gamma}{E}(E+\beta p_3)=\frac{E^\prime}{E}
+$$
+所以：
+$$
+E^\prime\delta^{(3)}(\mathbf{p}^{\prime}-\mathbf{q}^{\prime})=E\delta^{(3)}(\mathbf{p}-\mathbf{q})
+$$
+即$E\delta^{(3)}(\mathbf{p}-\mathbf{q})$是Lorentz不变的。于是，我们规定单粒子态的归一化条件为：
+$$
+\langle\mathbf{p}|\mathbf{q}\rangle=2E_\mathbf{p}(2\pi)^3\delta^{(3)}(\mathbf{p}-\mathbf{q})
+$$
+由此，就可以给出单粒子态：
+$$
+|\mathbf{p}\rangle=\sqrt{2E_\mathbf{p}}a_\mathbf{p}^\dagger|0\rangle
+$$
+因为：
+$$
+\langle\mathbf{p}|=\sqrt{2E_\mathbf{p}}\langle 0|a_\mathbf{p}
+\\|\mathbf{q}\rangle=\sqrt{2E_\mathbf{q}}a_\mathbf{q}^\dagger|0\rangle
+$$
+所以：
+$$
+\langle\mathbf{p}|\mathbf{q}\rangle=2\sqrt{E_\mathbf{p}E_\mathbf{q}}\langle0|a_\mathbf{p}a_\mathbf{q}^\dagger|0\rangle=2\sqrt{E_\mathbf{p}E_\mathbf{q}}\langle0|[a_\mathbf{p},a_\mathbf{q}^\dagger]+a_\mathbf{q}^\dagger a_\mathbf{p}|0\rangle=2E_\mathbf{p}(2\pi)^3\delta^{(3)}(\mathbf{p}-\mathbf{q})
+$$
+这样，我们就重新得到了单粒子态的归一化条件。
+\subsection{场算符的物理含义}
+考虑场算符作用在真空上：
+$$
+\phi(\mathbf{x})|0\rangle=\int\frac{\mathrm{d}^{3}p}{(2\pi)^{3}}\frac1{\sqrt{2E_{\mathbf{p}}}}\left(a_{\mathbf{p}}{e}^{{i}\mathbf{p}\cdot\mathbf{x}}+a_{\mathbf{p}}^{\dagger}{e}^{-{i}\mathbf{p}\cdot\mathbf{x}}\right)|0\rangle\\
+=\int\frac{\mathrm{d}^3p}{(2\pi)^3}\frac1{2E_\mathbf{p}}e^{-i\mathbf{p}\cdot\mathbf{x}}\left|\mathbf{p}\right\rangle
+$$
+这个式子与非相对论量子力学中的位置本征矢$|\mathbf{x}\rangle$十分相似，我们将它诠释为算符$\phi(\mathbf{x})$作用在真空上将会在$\mathbf{x}$位置产生一个单粒子态。
+
+此外，注意到：
+$$
+\langle0|\phi(\mathbf{x})=(\phi(\mathbf{x})|0\rangle)^\dagger=\int\frac{\mathrm{d}^3 p^\prime}{(2\pi)^3}\frac{1}{2E_{\mathbf{p}^\prime}}e^{i\mathbf{p}^\prime\cdot\mathbf{x}}\langle\mathbf{p^\prime}|
+$$
+所以：
+$$
+\begin{aligned}
+\langle0|\phi(\mathbf{x})|\mathbf{p}\rangle&=\int\frac{\mathrm{d}^3 p^\prime}{(2\pi)^3}\frac{1}{2E_{\mathbf{p}^\prime}}e^{i\mathbf{p}^\prime\cdot\mathbf{x}}\langle\mathbf{p^\prime}|\mathbf{p}\rangle \\&=\int\frac{\mathrm{d}^3 p^\prime}{(2\pi)^3}\frac{1}{2E_{\mathbf{p}^\prime}}e^{i\mathbf{p}^\prime\cdot\mathbf{x}}(2\pi)^32E_{\mathbf{p}}\delta^{(3)}(\mathbf{p}-\mathbf{p}^\prime)\\&=e^{i\mathbf{p}\cdot\mathbf{x}}
+\end{aligned}
+$$
+我们将上式诠释为坐标表象中单粒子态$|\mathbf{p}\rangle$的波函数。而在非相对论量子力学中，$\langle\mathbf{x}|\mathbf{p}\rangle=e^{i\mathbf{p}\cdot\mathbf{x}}$。
+\section{Heisenberg绘景下的K-G场}
+前面我们讨论了K-G场的等时（$t=0$）量子化，即在Schrodinger绘景中，约定算符与时间无关。现在我们在Heisenberg绘景中讨论问题，这时场算符是坐标与时间的函数：$\phi(\mathbf{x},t)$。
+
+Heisenberg绘景中的算符：
+$$
+\phi(\mathbf{x},t)=e^{iHt}\phi(\mathbf{x})e^{-iHt}
+$$
+对共轭动量$\pi(\mathbf{x},t)$亦是如此。Heisenberg绘景中的算符随时间的演化遵循Heisenberg运动方程：
+$$
+i\frac\partial{\partial t}{\mathcal{O}}=[\mathcal{O},H]
+$$
+通过计算场和动量算符的Heisenberg方程，可以得到Klein-Gordon方程：
+$$
+(\Box+m^2)\phi(\mathbf{x},t)=0
+$$
+由于：
+$$
+\phi(\mathbf{x})=\int\frac{\mathrm{d}^3p}{(2\pi)^3}\frac{1}{\sqrt{2E_{\mathbf{p}}}}(a_\mathbf{p}+a_{-\mathbf{p}}^\dagger)e^{i\mathbf{p}\cdot\mathbf{x}}
+$$
+所以：
+$$
+\phi(\mathbf{x},t)=e^{iHt}\phi(\mathbf{x})e^{-iHt}=\int\frac{\mathrm{d}^3p}{(2\pi)^3}\frac{1}{\sqrt{2E_{\mathbf{p}}}}(e^{iHt}a_\mathbf{p}e^{-iHt}+e^{iHt}a_{-\mathbf{p}}^\dagger e^{-iHt})e^{i\mathbf{p}\cdot\mathbf{x}}
+$$
+则在Heisenberg绘景中产生、湮灭算符的形式为：
+$$
+a_{\mathbf{p}}\left({t}\right)=e^{iHt}a_{\mathbf{p}}e^{-iHt}\quad a_{\mathbf{p}}^{\dagger}({t})=e^{iHt}a_{\mathbf{p}}^{\dagger}e^{-iHt}
+$$
+上式对时间求导（或直接代入Heisenberg方程）：
+$$
+i\frac{\mathrm{d}}{\mathrm{d}t}a_{\mathbf{p}}(t)=e^{iHt}[a_\mathbf{p},H]e^{-iHt}=E_\mathbf{p}a_\mathbf{p}(t)
+$$
+解得：
+$$
+a_{\mathbf{p}}(t)=a_\mathbf{p}e^{-iE_\mathbf{p}t} \quad a_{\mathbf{p}}^\dagger(t)=a_\mathbf{p}^\dagger e^{iE_\mathbf{p}t}
+$$
+将它们带回$\phi(\mathbf{x},t)$，得到：
+$$
+\phi(\mathbf{x},t)=\int\frac{\mathrm{d}^3p}{(2\pi)^3}\frac{1}{\sqrt{2E_{\mathbf{p}}}}\biggl(a_{\mathbf{p}}e^{-iE_{\mathbf{p}}t+i\mathbf{p}\cdot\mathbf{x}}+a_{\mathbf{p}}^{\dagger}e^{iE_{\mathbf{p}}t-i\mathbf{p}\cdot\mathbf{x}}\biggr)
+$$
+引入4-动量$p^\mu=(E_\mathbf{p},\mathbf{p})$，则上式可以改写为：
+$$
+\phi(x)=\int\frac{\mathrm{d}^3p}{(2\pi)^3}\frac{1}{\sqrt{2E_{\mathbf{p}}}}\biggl(a_{\mathbf{p}}e^{-ip\cdot x}+a_{\mathbf{p}}^{\dagger}e^{ip\cdot x}\biggr)
+$$
+其中：$p^0=E_{\mathbf{p}}=\sqrt{\mathbf{p}^2+m^2}$。这就是Heisenberg绘景中的场算符。
+
+因为：
+$$
+[G(x),p_x]\psi=\left(i\frac{\partial G}{\partial x}\psi+iG\frac{\partial \psi}{\partial x}-iG\frac{\partial \psi}{\partial x}\right)=i\frac{\partial G}{\partial x}\psi\Rightarrow \frac{\partial G(\mathbf{x})}{\partial x^i}=-i[G(\mathbf{x}),p^i]
+$$
+所以，对于场算符：
+$$
+i\frac{\partial}{\partial x^i}\phi(\mathbf{x})=[\phi(\mathbf{x}),P_i]
+$$
+使用4-矢量的形式，将能量和动量写在一起：
+$$
+i\frac{\partial}{\partial x^\mu}\phi(x)=[\phi(x),P_\mu]
+$$
+上式的解为：
+$$
+\phi(x)=e^{iP\cdot x}\phi(0)e^{-iP\cdot x}=e^{i(Ht-\mathbf{P}\cdot\mathbf{x})}\phi(0)e^{-i(Ht-\mathbf{P}\cdot\mathbf{x})}
+$$
+当然，你也可以把这里的$\phi(x)$换成$a_{\mathbf{p}}(x)$，这会得到相同的结论。这里$H,\mathbf{P}$都是算符。上式是做时空平移将场从$\phi(\mathbf{x}=0,t=0)$平移到$\phi(\mathbf{x},t)$。
+
+现在我们可以重新看待在固定粒子数的相对论波动力学中遇到的问题。
+\subsection{负能解问题}
+在相对论波动力学的视角，$\phi(x)$满足K-G方程，由于是二阶微分方程，所以有两个线性独立的解，$e^{\pm ip\cdot x}$分别称为负频解和正频解，对应负能量和正能量。
+
+而在QFT当中，我们把$\phi(x)$提升为量子场算符，场方程的负频解的系数作为一个算符，可以产生一个粒子，而正频解的系数也作为一个算符，可以湮灭一个粒子。这样，就与正能量或负能量无关了，只是粒子的产生与湮灭而已。
+\subsection{因果性问题}
+在非相对论量子力学中，我们引入了粒子从$|\mathbf{r^{\prime}},t^{\prime}\rangle$状态到$|\mathbf{r^{\prime\prime}},t^{\prime\prime}\rangle$状态的传播子：
+$$
+\langle \mathbf{r^{\prime\prime}},t^{\prime\prime}|e^{-iH(t^{\prime\prime}-t^\prime)}|\mathbf{r^{\prime}},t^{\prime}\rangle
+$$
+在K-G场被量子化后，我们也可以类似地引入4维Minkowski时空中的从时空坐标$y\to x$的传播子：
+$$
+\langle x|e^{-iH(x^0-y^0)t}|y\rangle
+$$
+前面我们指出：
+$$
+\phi(\mathbf{x})|0\rangle
+=\int\frac{\mathrm{d}^3p}{(2\pi)^3}\frac1{2E_\mathbf{p}}e^{-i\mathbf{p}\cdot\mathbf{x}}\left|\mathbf{p}\right\rangle
+$$
+可以类比$|\mathbf{x}\rangle$。所以：
+$$
+\phi(\mathbf{x})e^{-iHx^0}|0\rangle =\phi(\mathbf{x})e^{-iEx^0}|0\rangle=e^{-iEt}|\mathbf{x}\rangle=|x\rangle
+$$
+注意到实K-G场满足$\phi^\dagger(\mathbf{x})=\phi(\mathbf{x})$。因此，传播子可以写成：
+$$
+\langle x|e^{-iH(x^0-y^0)t}|y\rangle=\langle x|e^{-iHx^0}e^{iHy^0}|y\rangle=\langle0|e^{iHx^0}\phi(\mathbf{x})e^{-iHx^0}e^{iHy^0}\phi(\mathbf{y})e^{-iHy^0}|0\rangle\\=\langle 0|\phi(x)\phi(y)|0\rangle
+$$
+定义Heisenberg绘景下的两点关联函数：
+$$
+D(x-y)=\langle0|\phi(x)\phi(y)|0\rangle
+$$
+它的物理意义是：$\phi(y)|0\rangle$在$y$处产生一个粒子传播到$x$处由$\langle0|\phi(x)$湮灭。其中：
+$$
+\phi(x)=\int\frac{\mathrm{d}^3p}{(2\pi)^3}\frac{1}{\sqrt{2E_{\mathbf{p}}}}\biggl(a_{\mathbf{p}}e^{-ip\cdot x}+a_{\mathbf{p}}^{\dagger}e^{ip\cdot x}\biggr) \\
+\phi(y)=\int\frac{\mathrm{d}^3q}{(2\pi)^3}\frac{1}{\sqrt{2E_{\mathbf{q}}}}\biggl(a_{\mathbf{q}}e^{-iq\cdot y}+a_{\mathbf{q}}^{\dagger}e^{iq\cdot y}\biggr)
+$$
+根据$a_\mathbf{p}|0\rangle=0$，取复共轭：$\langle 0|a_{\mathbf{p}}^\dagger=0$，因此上式中产生湮灭算符的四个乘积中只有：
+$$
+\langle 0|a_\mathbf{p}a_\mathbf{q}^\dagger|0\rangle=\langle 0|[a_\mathbf{p},a_\mathbf{q}^\dagger]+a_\mathbf{q}^\dagger a_\mathbf{p}|0\rangle=(2\pi)^3\delta^{(3)}(\mathbf{p}-\mathbf{q})
+$$
+不为零。因此：
+$$
+D(x-y)={\int\frac{\mathrm{d}^3p}{(2\pi)^3}\frac1{2E_{\mathbf{p}}}e^{-ip\cdot(x-y)}}
+$$
+它是一个Lorentz不变量，我们现在来证明它。引入阶跃函数：
+$$
+\theta(x)=\begin{cases}1,&x>0,\\[2ex] \dfrac{1}{2},&x=0 \\[2ex]0,&x<0.\end{cases}
+$$
+于是：
+\begin{gather*}
+    \int \mathrm{d}p^0\ \delta(p^2-m^2)\theta(p^0)=\int \mathrm{d}p^0\ \delta\Big({(p^0)}^2-\mathbf{p}^2-m^2\Big)\theta(p^0)=\int \mathrm{d}p^0\ \delta\Big({(p^0)}^2-E_\mathbf{p}^2\Big)\theta(p^0) \\=\int\mathrm{d}p^0\ \frac{1}{2E_\mathbf{p}}\delta(p^0-E_\mathbf{p})=\frac{1}{2E_\mathbf{p}}
+\end{gather*}
+其中$\delta\Big({(p^0)}^2-E_\mathbf{p}^2\Big)=\dfrac{1}{\frac{\mathrm{d}(p^0)^2}{\mathrm{d}p^0}|_{p^0=+E_\mathbf{p}}}\delta(p^0-E_\mathbf{p})$。上面用到$\theta(p^0)$，是用来挑选出$p_0=+ E_\mathbf{p}$的正根。改写成四维积分后，所有量都是Lorentz标量，所以关联函数也是Lorentz不变的：
+$$
+D(x-y)={\int\frac{\mathrm{d}^3p}{(2\pi)^3}\frac1{2E_{\mathbf{p}}}e^{-ip\cdot(x-y)}}=\int\frac{\mathrm{d}^4p}{(2\pi)^4}(2\pi)\delta(p^2-m^2)\theta(p^0)e^{-ip\cdot(x-y)}
+$$
+下面考虑关联函数$D(x-y)$在类时、类空中的情形。
+\subsubsection{$x-y$是类时的：$t^2-\mathbf{x}^2>0$}
+总可以选取一个参考系使$x^0-y^0=t,\mathbf{x}-\mathbf{y}=0$，于是关联函数：
+\begin{gather*}
+D(x-y)={\int\frac{\mathrm{d}^3p}{(2\pi)^3}\frac1{2E_{\mathbf{p}}}e^{-ip\cdot(x-y)}}={\int\frac{\mathrm{d}^3p}{(2\pi)^3}\frac1{2E_{\mathbf{p}}}e^{-iE_{\mathbf{p}}t}}\\=4\pi\int_0^\infty\frac{\mathrm{d}p}{(2\pi)^3}\mathbf{p}^2\frac{1}{2\sqrt{\mathbf{p}^2+m^2}}e^{-i\sqrt{\mathbf{p}^2+m^2}t}
+\end{gather*}
+因为$E=\sqrt{\mathbf{p}^2+m^2}$，所以$\mathrm{d}E=\mathbf{p}\cdot\mathrm{d}\mathbf{p}/E$，代入上式：
+\begin{gather*}
+D(x-y)=\frac{4\pi}{(2\pi)^3}\int_0^\infty\mathrm{d}p\ \frac{p^2}{2E}e^{-iEt}=\frac{4\pi}{(2\pi)^3}\int_m^\infty\mathrm{d}E\ \frac{p}{2}e^{-iEt} \\
+=\frac{4\pi}{(2\pi)^3}\int_m^\infty\mathrm{d}E\ \frac{\sqrt{E^2-m^2}}{2}e^{-iEt}\sim e^{-imt}
+\end{gather*}
+类时本来就有时空间隔，有振荡因子也很正常。
+\subsubsection{$x-y$是类空的：$t^2-\mathbf{x}^2<0$}
+总可以选取一个参考系使$x^0-y^0=0,\mathbf{x}-\mathbf{y}=\mathbf{r}$，于是关联函数：
+\begin{gather*}
+    D(x-y)={\int\frac{\mathrm{d}^3p}{(2\pi)^3}\frac1{2E_{\mathbf{p}}}e^{-ip\cdot(x-y)}}={\int\frac{\mathrm{d}^3p}{(2\pi)^3}\frac1{2E_{\mathbf{p}}}e^{i\mathbf{p}\cdot\mathbf{r}}}\\=\int_0^\infty\mathrm{d}p\ \frac{1}{(2\pi)^3}\frac{1}{2E_\mathbf{p}}2\pi p\frac{e^{ipr}-e^{-ipr}}{ir}=\frac{-i}{(2\pi)^2r}\int_{-\infty}^\infty\mathrm{d}p\frac{pe^{ipr}}{2\sqrt{\mathbf{p}^2+m^2}}
+\end{gather*}
+延拓到复平面，由$1/\sqrt{\mathbf{p}^2+m^2}$可知，$p=\pm im$是函数的两个奇点，在选择积分围道的时候应该绕开。我们选择在上半平面选取积分围道。做变量代换，令$\rho=-ip$，我们得到：
+$$
+\begin{aligned}\frac{1}{4\pi^2r}\int_{{m}}^{\infty}\mathrm{d}\rho\frac{\rho e^{-\rho r}}{\sqrt{\rho^2-m^2}}\operatorname*{\sim}_{r\to\infty}e^{-mr}\end{aligned}
+$$
+我们发现，在光锥之外，积分按指数衰减，但不为零。这是否与狭义相对论矛盾呢？
+
+$D(x-y)$在类空间隔不为零并不意味着破坏因果性，因果性在QFT中如何体现呢？
+
+为讨论真正的因果性，我们应该知道，粒子在类空间隔传播并不意味着因果性的破坏，因果性应该是指在某一点的测量是否会影响另一点的测量结果。
+
+考虑如果$x-y$是类空间隔，则在$x$处的测量必须和在$y$处的测量互不影响。即当$(x-y)^2=\Delta t^2-\mathbf{x}^2<0$时，在$x,y$处的两个物理量算符对易：$[O(x),O(y)]=0$，先测量$x$处和先测量$y$处没有区别。
+
+下面验证场算符对易子$[\phi(x),\phi(y)]$在类空间隔是否严格等于零。
+$$
+\begin{aligned}
+[\phi(x),\phi(y)]&=\int\frac{\mathrm{d}^{3}p}{(2\pi)^{3}}\frac{1}{\sqrt{2E_{\mathbf{p}}}}\int\frac{\mathrm{d}^{3}q}{(2\pi)^{3}}\frac{1}{\sqrt{2E_{\mathbf{q}}}}  \\
+&\quad\quad\quad\quad\quad\quad\quad\quad\times\left[(a_{\mathbf{p}}e^{-ip\cdot x}+a_{\mathbf{p}}^{\dagger}e^{i{p}\cdot x}),(a_{\mathbf{q}}e^{-i{q}\cdot y}+a_{\mathbf{q}}^{\dagger}e^{iq\cdot y})\right] \\
+&=\int\frac{\mathrm{d}^3p\mathrm{d}^3 q}{(2\pi)^6}\frac{1}{2\sqrt{E_\mathbf{p}E_\mathbf{q}}}\Big([a_\mathbf{p},a_{\mathbf{q}}]e^{-i(p\cdot x+q\cdot y)}+[a_\mathbf{p},a_\mathbf{q}^\dagger]e^{i(q\cdot y-p\cdot x)}
+\\&\quad\quad\quad\quad\quad\quad\quad\quad +[a_\mathbf{p}^\dagger,a_{\mathbf{q}}]e^{i(p\cdot x-q\cdot y)} +[a_\mathbf{p}^\dagger,a_{\mathbf{q}}^\dagger]e^{i(p\cdot x+q\cdot y)}\Big)
+\\
+&=\int\frac{\mathrm{d}^3p}{(2\pi)^3}\left.\frac1{2E_\mathbf{p}}(e^{-ip\cdot(x-y)}-e^{ip\cdot(x-y)})\right. \\
+&=D(x-y)-D(y-x)
+\end{aligned}
+$$
+当$x-y$类空时，因为因果性不再保证，所以我们总可以进行Lorentz变换使得$(x-y)\to(y-x)$，因为关联函数$D(x-y)$是Lorentz不变的，所以$D(x-y)=D(y-x)$，因此$[\phi(x),\phi(y)]=0$，因果性得以保证。这样我们就得到，在Klein-Gordon理论中，光锥外一点的测量不影响到另一点的测量。
+
+\subsection{因果性的后果}
+考虑复K-G标量场：
+$$
+\mathcal{L}=|\partial_\mu \phi|^2-m^2|\phi|^2=\partial_\mu\phi\partial^\mu\phi^\ast-m^2\phi\phi^\ast
+$$
+复的经典场量子化后不再是厄米的，$\phi^\dagger\ne\phi$，因此引入新的产生算符$b_\mathbf{p}^\dagger$：
+$$
+\phi(x)=\int\frac{\mathrm{d}^3p}{(2\pi)^3}\frac{1}{\sqrt{2E_\mathbf{p}}}(a_\mathbf{p}e^{-ip\cdot x}+b_\mathbf{p}^\dagger e^{ip\cdot x})
+$$
+算符的物理意义是：$a_\mathbf{p}$湮灭一个粒子，$b_\mathbf{p}^\dagger$产生一个反粒子。对易关系为：
+$$
+[a_\mathbf{p},a_{\mathbf{p^\prime}}^\dagger]=(2\pi)^3\delta^{(3)}(\mathbf{p}-\mathbf{p}^\prime) \quad [b_\mathbf{p},b_{\mathbf{p^\prime}}^\dagger]=(2\pi)^3\delta^{(3)}(\mathbf{p}-\mathbf{p}^\prime)
+$$
+其他全为$0$。
+
+验证CKG中的因果性：
+
+前面指出：
+$$
+[\phi(x),\phi(y)]=D(x-y)-D(y-x)=\langle0|\phi(x)\phi(y)|0\rangle-\langle0|\phi(y)\phi(x)|0\rangle=\langle 0|[\phi(x),\phi(y)]|0\rangle
+$$
+在第一项中，对关联函数$D(x-y)$唯一有贡献的是$\langle0|ab^\dagger|0\rangle$这一项，即产生一个反粒子并且湮灭一个正粒子（$a,b^\dagger$都作用在右矢），而粒子态和反粒子态的内积等于$0$，所以$[\phi(x),\phi(y)]=0$。其他项含有$a|0\rangle,b|0\rangle$及其复共轭，所以都等于零。
+
+如果考虑：
+\begin{gather*}
+[\phi(x),\phi^\dagger(y)]=\langle 0|[\phi(x),\phi^\dagger(y)]|0\rangle=\langle 0|\phi(x)\phi^\dagger(y)|0\rangle-\langle 0|\phi^\dagger(y)\phi(x)|0\rangle\\\sim\langle 0|(a+b^\dagger)(a^\dagger+b)|0\rangle-\langle 0|(a^\dagger+b)(a+b^\dagger)|0\rangle\sim\langle0|aa^\dagger|0\rangle-\langle0|bb^\dagger|0\rangle
+\end{gather*}
+因此，保证因果性必须要求这两项在类空间隔严格相消，则要求必须存在反粒子（$a,b$分别对应正反粒子）。此外，由于：
+$$
+D(x-y)={\int\frac{\mathrm{d}^3p}{(2\pi)^3}\frac1{2E_{\mathbf{p}}}e^{-ip\cdot(x-y)}}
+$$
+其中$E_\mathbf{p}=\sqrt{\mathbf{p}^2+m^2}$。两项严格相消必须要求正反粒子的$E_\mathbf p$严格相等，即质量完全相同。
+\section{K-G传播子}
+\subsection{推迟传播子}
+进一步研究传播子$\langle0|\left[\phi(x),\phi(y)\right]|0\rangle$。假设$x^0>y^0$，传播子可以写成：
+$$
+\langle0|\left[\phi(x),\phi(y)\right]|0\rangle=\int\frac{\mathrm{d}^3p}{(2\pi)^3}\frac1{2E_\mathbf{p}}(e^{-ip\cdot(x-y)}-e^{ip\cdot(x-y)})
+$$
+分析其中的$(e^{-ip\cdot(x-y)}-e^{ip\cdot(x-y)})$一项：
+\begin{gather*}
+e^{-ip\cdot(x-y)}=e^{-i\left(p^0(x^0-y^0)-\mathbf{p}\cdot(\mathbf{x}-\mathbf{y})\right)}=\left. e^{-i\left(E_\mathbf{p}(x^0-y^0)-\mathbf{p}\cdot(\mathbf{x}-\mathbf{y})\right)}\right|_{p^0=+E_\mathbf p} \\
+e^{ip\cdot(x-y)}=\left.e^{i\left(p^0(x^0-y^0)-\mathbf{p}\cdot(\mathbf{x}-\mathbf{y})\right)}\right|_{p^0=+E_\mathbf{p}}=e^{-i\left((-E_\mathbf{p})(x^0-y^0)-(-\mathbf{p})\cdot(\mathbf{x}-\mathbf{y})\right)}\\=\left.e^{-ip\cdot(x-y)}\right|_{p^0=-E_\mathbf{p},\mathbf{p}\to-\mathbf{p}}
+\end{gather*}
+上式中的替换是由于积分在变量替换$\mathbf{p}\to -\mathbf{p}$下不变，因此：
+$$
+\begin{aligned}
+\langle0|\left[\phi(x),\phi(y)\right]|0\rangle&=\int\frac{\mathrm{d}^3p}{(2\pi)^3}\frac1{2E_\mathbf{p}}(e^{-ip\cdot(x-y)}-e^{ip\cdot(x-y)})\\&=\int\frac{\mathrm{d}^3p}{(2\pi)^3}\frac{1}{2E_\mathbf{p}}(e^{-i(p^0(x^0-y^0)-\mathbf{p}\cdot(\mathbf{x}-\mathbf{y}))}-e^{i(p^0(x^0-y^0)-\mathbf{p}\cdot(\mathbf{x}-\mathbf{y}))}) \\
+&=\int\frac{\mathrm{d}^3p}{(2\pi)^3}\frac{1}{2E_\mathbf{p}}(e^{-i(p^0(x^0-y^0)-\mathbf{p}\cdot(\mathbf{x}-\mathbf{y}))}-e^{i(p^0(x^0-y^0)+\mathbf{p}\cdot(\mathbf{x}-\mathbf{y}))}) \\
+&=\int\frac{\mathrm{d}^3p}{(2\pi)^3}\frac{1}{2E_\mathbf{p}}e^{i\mathbf{p}\cdot(\mathbf{x}-\mathbf{y})}(e^{-i(p^0(x^0-y^0))}-e^{i(p^0(x^0-y^0))})
+\end{aligned}
+$$
+所以传播子：
+$$
+\langle0|\left[\phi(x),\phi(y)\right]|0\rangle
+=\int\frac{\mathrm{d}^3p}{(2\pi)^3}\left\{\left.\frac1{2E_{\mathbf{p}}}e^{-ip\cdot(x-y)}\right|_{p^0=+E_{\mathbf{p}}}\left.+\frac1{-2E_{\mathbf{p}}}e^{-ip\cdot(x-y)}\right|_{p^0=-E_{\mathbf{p}}}\right\}
+$$
+要计算这个式子，我们首先来回顾复变函数计算定积分的基本定理。上面这个式子是Peskin书上的形式，我们采取更直观的表达：
+$$
+\begin{aligned}
+\langle0|\left[\phi(x),\phi(y)\right]|0\rangle=\int\frac{\mathrm{d}^3p}{(2\pi)^3}\frac{1}{2E_\mathbf{p}}e^{i\mathbf{p}\cdot(\mathbf{x}-\mathbf{y})}(e^{-i(p^0(x^0-y^0))}-e^{i(p^0(x^0-y^0))}) 
+\end{aligned}
+$$
+需要注意，$e^{-ip\cdot x}=e^{-i(p^0t-\mathbf{p}\cdot\mathbf{x})}$是平面波展开的标准形式，因此$e^{-i(E_\mathbf{p}t-\mathbf{p}\cdot\mathbf{x})}$中的$E_\mathbf{p}$是正能量。
+
+\textbf{留数定理：}解析函数$f(z)$在复平面上的回路积分等于该回路所包含奇点的留数之和的$2\pi i$倍：
+$$
+\oint_\Gamma f(z)\mathrm{d}z=2\pi i\sum_{i=1}^n \mathrm{Res}[f(z),b_k]
+$$
+其中$\Gamma$是正向封闭曲线（围道），而留数$\mathrm{Res}[f(z),b_k]=a_{-1}$是解析函数$f(z)$在以奇点$b_k$为圆心的环域内展开的洛朗级数$-1$次幂前的系数。一阶奇点（极点）留数可以这样计算：
+$$
+\mathrm{Res}[f(z),b_k]=\lim_{z\to b_k}(z-b_k)f(z)
+$$
+还要介绍三个引理。
+
+\textbf{小圆弧引理：}如果函数$f(z)$在$z=a$点的空心邻域内连续，并且在$\theta_1\leqslant\arg(z-a)\leqslant \theta_2$中，当$|z-a|\to 0$时，$(z-a)f(z)\to k$，则：
+$$
+\operatorname*{lim}_{\delta\to0}\int_{C_{\delta}}f(z)\mathrm{d}z={i}k(\theta_{2}-\theta_{1})
+$$
+其中$C_\delta$是以$z=a$为圆心，$\delta$为半径，张角为$\theta_2-\theta_1$的圆弧，$|z-a|=\delta$。简单来说，就是如果我们在实轴或虚轴上遇到奇点时，可以做一个小半圆弧绕开它，函数在这个小圆弧上的积分可以按照小圆弧引理来计算。
+
+\textbf{大圆弧引理：}设$f(z)$在$\infty$点的邻域内连续，在$\theta_1\leqslant\arg z\leqslant \theta_2$中，当$|z|\to\infty$时，$zf(z)\to K$，则：
+$$
+\lim_{R\to\infty}\int_{C_{R}}f(z)\mathrm{d}z={i}K(\theta_{2}-\theta_{1})
+$$
+其中$C_R$是以原点为圆心，$R$为半径，张角为$\theta_2-\theta_1$的圆弧，$|z|=R$。简单来说，就是如果我们要在上半平面或下半平面做一个无穷大的半圆弧来构成一个闭合围道，则函数在这个大圆弧上的积分可以按照大圆弧引理来计算，而且一般情况下都等于$0$。
+
+\textbf{Jordan引理：}设在$0\leqslant \arg z\leqslant \pi$的范围（上半平面）内，当$|z|\to\infty$时，$Q(z)\to 0$，则：
+$$
+\lim_{R\to\infty}\int_{C_R}Q(z)e^{ipz}\mathrm{d}z=0
+$$
+其中$p>0$，$C_R$是以原点为圆心，$R$为半径的半圆弧。这是上半平面的Jordan引理，如果将$e^{ipz}$中的$z$换成$-z,\pm iz$即可得到下半平面和右、左半平面的Jordan引理。
+
+现在我们来计算传播子。由于假设$x^0>y^0$，所以$e^{-ip^0(x^0-y^0)}$呈指数衰减，积分也呈指数衰减，所以应当从下半平面无穷远处绕围道，包住两个极点。从下半平面选取围道时，$p^0$具有非常大的虚部，和$-i$相乘后是$e^{-mt}$的指数衰减形式。
+
+我们选取的围道是：从实轴上$-R$点到$-E_\mathbf{p}$点，在$-E_\mathbf{p}$点处做一小圆弧，\textbf{规定}从上方绕过$-E_\mathbf{p}$点，再继续沿实轴到$+E_\mathbf{p}$点，在$+E_\mathbf{p}$点处做一小圆弧，规定从上方绕过$+E_\mathbf{p}$点，继续沿实轴到$+R$点，然后从下半平面做半圆弧绕回到实轴上的$-R$点。
+
+现在我们来证明：
+$$
+\frac{1}{2E_\mathbf{p}}\left(e^{-i(E_\mathbf{p}(x^0-y^0))}-e^{i(E_\mathbf{p}(x^0-y^0))}\right)=\int\frac{\mathrm{d}p_0}{2\pi i}\frac{-1}{(p^0)^2-(E_\mathbf p)^2}e^{-ip^0(x^0-y^0)}
+$$
+对于右式：
+$$
+\int\frac{\mathrm{d}p_0}{2\pi i}\frac{-1}{(p^0)^2-(E_\mathbf p)^2}e^{-ip^0(x^0-y^0)}=-\frac{1}{2E_\mathbf{p}}\int\frac{\mathrm{d}p_0}{2\pi i}\Big(\frac{1}{p^{0}-E_\mathbf p}-\frac{1}{p^{0}+E_\mathbf p}\Big)e^{-ip^0(x^0-y^0)}
+$$
+计算围道积分：
+$$
+-\frac{1}{2E_\mathbf{p}}\oint\frac{\mathrm{d}p_0}{2\pi i}\Big(\frac{1}{p^{0}-E_\mathbf p}e^{-ip^0(x^0-y^0)}-\frac{1}{p^{0}+E_\mathbf p}e^{-ip^0(x^0-y^0)}\Big)
+$$
+由下半平面Jordon引理知，半圆弧上的积分等于$0$，所以有：
+$$
+\oint\Big(\cdots\Big)=\int\Big(\cdots\Big)
+$$
+计算留数：
+$$
+\mathrm{Res}(-E_\mathbf{p})=\lim_{p^0\to -E_\mathbf p}(p^0+E_\mathbf p)\frac{e^{-ip^0(x^0-y^0)}}{p^0+E_\mathbf{p}}=e^{iE_\mathbf{p}(x^0-y^0)} \\
+\mathrm{Res}(+E_\mathbf{p})=\lim_{p^0\to +E_\mathbf p}(p^0+E_\mathbf p)\frac{e^{-ip^0(x^0-y^0)}}{p^0+E_\mathbf{p}}=e^{-iE_\mathbf{p}(x^0-y^0)} \\
+$$
+利用Cauchy积分公式：
+$$
+\begin{aligned}
+\int\frac{\mathrm{d}p_0}{2\pi i}\frac{-1}{(p^0)^2-(E_\mathbf p)^2}e^{-ip^0(x^0-y^0)}&=-\frac{1}{2E_\mathbf{p}}\oint\frac{\mathrm{d}p_0}{2\pi i}\Big(\frac{1}{p^{0}-E_\mathbf p}e^{-ip^0(x^0-y^0)}-\frac{1}{p^{0}+E_\mathbf p}e^{-ip^0(x^0-y^0)}\Big)\\&=-\Big(-\frac{1}{2E_\mathbf{p}}\frac{1}{2\pi i}2\pi i(\mathrm{Res}(+E_\mathbf{p})-\mathrm{Res}(-E_\mathbf{p}))\Big)\\&=\frac{1}{2E_\mathbf{p}}( e^{-iE_\mathbf{p}(x^0-y^0)}-e^{iE_\mathbf{p}(x^0-y^0)} )
+\end{aligned}
+$$
+第二行前的负号来源于积分围道是顺时针。于是：
+$$
+\begin{aligned}
+\langle0|\left[\phi(x),\phi(y)\right]|0\rangle&=\int\frac{\mathrm{d}^3p}{(2\pi)^3}\frac{1}{2E_\mathbf{p}}e^{i\mathbf{p}\cdot(\mathbf{x}-\mathbf{y})}(e^{-i(E_\mathbf{p}(x^0-y^0))}-e^{i(E_\mathbf{p}(x^0-y^0))}) \\
+&=\int\frac{\mathrm{d}^3p}{(2\pi)^3}e^{i\mathbf{p}\cdot(\mathbf{x}-\mathbf{y})}\int\frac{\mathrm{d}p_0}{2\pi i}\frac{-1}{(p^0)^2-(E_\mathbf p)^2}e^{-ip^0(x^0-y^0)} \\
+&=\int\frac{\mathrm{d}^{3}p}{(2\pi)^{3}}\int\frac{\mathrm{d}p^{0}}{2\pi i}\frac{-1}{p^{2}-m^{2}}e^{-ip\cdot(x-y)}
+\end{aligned}
+$$
+上式用到了四维动量内积$p^2=(p^0)^2-\mathbf{p}^2$及相对论能量公式$E_\mathbf{p}^2=\mathbf{p}^2+m^2$。
+
+以上我们就得到了传播子$\langle0|\phi(x)\phi(y)|0\rangle$表达成四维积分的形式。需要注意的是，我们在计算传播子时规定了围道的选取：\textbf{从上半平面绕过极点}。
+
+现在，我们就可以定义\textbf{推迟传播子}：
+$$
+D_R(x-y)=\theta(x^0-y^0)\langle0|\left[\phi(x),\phi(y)\right]|0\rangle=\int\frac{\mathrm{d}^4p}{(2\pi)^4}\frac{i}{p^2-m^2}e^{-ip\cdot(x-y)}
+$$
+且规定绕开极点规则：\textbf{从上半平面绕过极点，围道积分回路包含两个极点}。其中，$\theta$函数保证$D_R(x-y)$是在$x^0>y^0$的条件下写出的。
+
+$D_R(x-y)$是Klein-Gordon场的格林函数算符：
+$$
+(\partial^2+m^2)D_R(x-y)=-i\delta^{(4)}(x-y)
+$$
+证明：首先说明$\theta(x)$函数和$\delta(x)$函数的性质：
+$$
+\frac{\mathrm{d}\theta(x)}{\mathrm{d}x}=\delta(x)\quad f(x)\frac{\mathrm{d}\delta(x)}{\mathrm{d}x}=-\delta(x)\frac{\mathrm{d}f(x)}{\mathrm{d}x}
+$$
+已知：
+$$
+\langle 0|[\phi(x),\phi(y)]|0\rangle=\int\frac{\mathrm{d}^3p}{(2\pi)^3}\frac1{2E_\mathbf{p}}(e^{-ip\cdot(x-y)}-e^{ip\cdot(x-y)})
+$$
+而：
+$$
+\pi(\mathbf{x})=\int\frac{\mathrm{d}^3p}{(2\pi)^3}\left(-{i}\right)\sqrt{\frac{E_{\mathbf{p}}}2}\left(a_{\mathbf{p}}{e}^{{i}\mathbf{p}\cdot\mathbf{x}}-a_{\mathbf{p}}^{\dagger}{e}^{-{i}\mathbf{p}\cdot\mathbf{x}}\right) \\
+\pi(x)=\int\frac{\mathrm{d}^3p}{(2\pi)^3}\left(-{i}\right)\sqrt{\frac{E_{\mathbf{p}}}2}\left(a_{\mathbf{p}}{e}^{-ip\cdot x}-a_{\mathbf{p}}^{\dagger}{e}^{ip\cdot x}\right)
+$$
+作用在基态右矢上，及其共轭左矢：
+$$
+\pi(x)|0\rangle=\int\frac{\mathrm{d}^3p}{(2\pi)^3}\left(+{i}\right)\sqrt{\frac{E_{\mathbf{p}}}2}a_{\mathbf{p}}^{\dagger}{e}^{ip\cdot x}|0\rangle \\
+\langle 0|\pi(x)=\langle 0|\int\frac{\mathrm{d}^3p}{(2\pi)^3}\left(-{i}\right)\sqrt{\frac{E_{\mathbf{p}}}2}a_{\mathbf{p}}{e}^{-ip\cdot x}
+$$
+因此：
+$$
+\begin{aligned}
+\langle 0|\pi(x)\phi(y)|0\rangle&=\int\frac{\mathrm{d}^3p\mathrm{d}^3q}{(2\pi)^6}\frac{-i}{2}\sqrt{\frac{E_\mathbf{p}}{E_\mathbf{q}}}(\langle0|a_\mathbf{p}a_\mathbf{q}^\dagger|0\rangle e^{i(q\cdot y-p\cdot x)} ) \\
+&=\int\frac{\mathrm{d}^3p\mathrm{d}^3q}{(2\pi)^6}\frac{-i}{2}\sqrt{\frac{E_\mathbf{p}}{E_\mathbf{q}}}((2\pi)^3\delta^{(3)}(\mathbf{p}-\mathbf{q}) e^{i(q\cdot y-p\cdot x)} ) \\
+&=\int\frac{\mathrm{d}^3p}{(2\pi)^3}\frac{-i}{2}e^{-ip\cdot(x-y)}
+\end{aligned}
+$$
+共轭式：
+$$
+\langle0|\phi(y)\pi(x)|0\rangle=\int\frac{\mathrm{d}^3p}{(2\pi)^3}\frac{i}{2}e^{ip\cdot(x-y)}
+$$
+所以：
+$$
+\langle0|[\pi(x),\phi(y)]|0\rangle=\int\frac{\mathrm{d}^3p}{(2\pi)^3}\frac{-i}{2}[e^{-ip\cdot(x-y)}+e^{ip\cdot(x-y)}]
+$$
+且：
+\begin{gather*}
+\frac{\partial}{\partial x^0}\langle 0|[\phi(x),\phi(y)]|0\rangle=\frac{\partial}{\partial x^0}\int\frac{\mathrm{d}^3p}{(2\pi)^3}\frac1{2E_\mathbf{p}}(e^{-ip\cdot(x-y)}-e^{ip\cdot(x-y)}) \\
+=\int\frac{\mathrm{d}^3p}{(2\pi)^3}\frac1{2E_\mathbf{p}}(-iE_\mathbf{p})(e^{-ip\cdot(x-y)}+e^{ip\cdot(x-y)})=\langle0|[\pi(x),\phi(y)]|0\rangle
+\end{gather*}
+因此：
+$$
+\begin{aligned}
+(\partial^2+m^2)D_R(x-y)&=(\partial^2+m^2)\theta(x^0-y^0)\langle0|\left[\phi(x),\phi(y)\right]|0\rangle\\
+&=(\partial^2\theta(x^0-y^0))\langle0|\left[\phi(x),\phi(y)\right]|0\rangle\\&\quad\quad\quad\quad\quad+2(\partial_\mu\theta(x^0-y^0))(\partial^\mu\langle0|\left[\phi(x),\phi(y)\right]|0\rangle)\\&\quad\quad\quad\quad\quad+\theta(x^0-y^0)(\partial^2+m^2)\langle0|\left[\phi(x),\phi(y)\right]|0\rangle
+\end{aligned}
+$$
+第一项：
+\begin{gather*}
+(\partial^2\theta(x^0-y^0))\langle0|\left[\phi(x),\phi(y)\right]|0\rangle=\Big(\frac{\partial^2}{\partial (x^0)^2}\theta(x^0-y^0)\Big)\langle0|\left[\phi(x),\phi(y)\right]|0\rangle\\
+=\Big(\frac{\partial}{\partial x^0}\delta(x^0-y^0)\Big)\langle0|\left[\phi(x),\phi(y)\right]|0\rangle=-\delta(x^0-y^0)\Big(\frac{\partial}{\partial x^0}\langle0|\left[\phi(x),\phi(y)\right]|0\rangle\Big)\\=-\delta(x^0-y^0)\langle0|[\pi(x),\phi(y)]|0\rangle
+\end{gather*}
+第二项：
+$$
+2(\partial_\mu\theta(x^0-y^0))(\partial^\mu\langle0|\left[\phi(x),\phi(y)\right]|0\rangle)=2\delta(x^0-y^0)\langle0|[\pi(x),\phi(y)]|0\rangle
+$$
+第三项：根据K-G方程：$(\partial^2+m^2)\phi=0$，第三项等于$0$。所以：
+\begin{gather*}
+(\partial^2+m^2)D_R(x-y)=-\delta(x^0-y^0)\cdot (-i\delta^{(3)}(\mathbf{x}-\mathbf{y}))+2\delta(x^0-y^0)(-i\delta^{(3)}(\mathbf{x}-\mathbf{y})) \\
+=-i\delta^{(4)}(x-y)
+\end{gather*}
+$\widetilde{D}_R(p)$是动量空间推迟传播子，它由坐标空间的推迟传播子$D_R(x-y)$做四维Fourier变换得到：
+$$
+D_{R}(x-y)=\int\frac{\mathrm{d}^4p}{(2\pi)^4}e^{-ip\cdot(x-y)}\widetilde{D}_R(p)
+$$
+将上面证明过的：$(\Box+m^2)D_R(x-y)=-i\delta^{(4)}(\mathbf{x}-\mathbf{y})$代入上式：
+\begin{gather*}
+(\Box+m^2)D_R(x-y)=(\Box+m^2)\int\frac{\mathrm{d}^4p}{(2\pi)^4}e^{-ip\cdot(x-y)}\widetilde{D}_R(p)\\=\int\frac{\mathrm{d}^4p}{(2\pi)^4}[(-i)^2p_\mu p^\mu+m^2]e^{-ip\cdot(x-y)}\widetilde{D}_R(p)=\int\frac{\mathrm{d}^4p}{(2\pi)^4}[-p^2+m^2]e^{-ip\cdot(x-y)}\widetilde{D}_R(p)\\=-i\delta^{(4)}(\mathbf{x}-\mathbf{y})
+\end{gather*}
+即得到：
+$$
+(-p^2+m^2)\widetilde{D}_R=-i
+$$
+则：
+$$
+\widetilde{D}_R(p)=\frac{i}{p^2-m^2}
+$$
+推迟传播子$D_R(x-y)$是在$x^0>y^0$的条件下定义的。类似地，还可以定义超前传播子$D_A(x-y)$，要求$x^0<y^0$，规定从下半平面绕过极点，大圆弧在上半平面。
+\subsection{Feynman传播子}
+在QFT中，最常用的传播子是Feynman传播子：
+$$
+D_F(x-y)=\int\frac{\mathrm{d}^4p}{(2\pi)^4}\frac{i}{p^2-m^2}e^{-ip\cdot(x-y)}
+$$
+规定从下半平面绕过极点$-E_\mathbf{p}$，从上半平面绕过极点$+E_\mathbf{p}$。这样，不论是超前还是推迟，即不论是从上半平面还是从下半平面做大圆弧围道，积分都不为$0$。大圆弧围道的选取方式与$x^0,y^0$的次序有关，这是为了保证积分随时间指数衰减。
+
+若$x^0>y^0$，需从下半平面绕大围道，包含$+E_\mathbf{p}$极点，积分不为零；若$x^0<y^0$，需从上半平面绕大围道，包含$-E_\mathbf{p}$极点，积分也不为零。
+
+Feynman考虑把极点处的半圆推平，即把极点分别沿虚轴向上、下移动一小段$\epsilon$，这样就可以沿实轴积分而不用做小圆弧了。其代价是给极点加了一个小虚部：$i\epsilon$，这称为\textbf{Feynman处方}。原来极点位于实轴上：$-E_\mathbf{p},+E_\mathbf{p}$，现在极点位于：$-E_\mathbf p+i\epsilon,+E_\mathbf p-i\epsilon$。
+
+可以证明，此时：
+$$
+D_F(x-y)=\int\frac{\mathrm{d}^4p}{(2\pi)^4}\frac{i}{p^2-m^2+i\epsilon}e^{-ip\cdot(x-y)}
+$$
+此时不用再强调绕行规则，完全沿实轴对$p^0$积分。
+
+类似地，我们也能得到标量场的动量空间Feynman传播子：
+$$
+\widetilde{D}_F(p)=\frac{i}{p^2-m^2+i\epsilon}
+$$
+可以用两点关联函数定义Feynman传播子：
+\begin{gather*}
+	D_F(x-y) = 
+	\begin{cases}
+		D(x-y) & \text{when } x^0 > y^0 \\
+		D(y-x) & \text{when } x^0 < y^0
+	\end{cases} \\
+	= \theta(x^0 - y^0)\langle 0|\phi(x)\phi(y)|0\rangle 
+	+ \theta(y^0 - x^0)\langle 0|\phi(y)\phi(x)|0\rangle \\
+	= \langle 0|T\phi(x)\phi(y)|0\rangle
+\end{gather*}
+其中$T$称为\textbf{编时算符}，谁最先发生就放在最右边，谁最后发生就放在最左边，即挨着算符。例如，当$x^0>y^0$时，$y^0$先发生，所以$\theta(x^0-y^0)\langle0|\phi(x)\phi(y)|0\rangle$中$\phi(y)$放在最右边。从上式可以看出，Feynman传播子是一半超前，一半推迟。
+
+下面我们来证明：
+$$
+D_F(x-y)=\int\frac{\mathrm{d}^4p}{(2\pi)^4}\frac{i}{p^2-m^2+i\epsilon}e^{-ip\cdot(x-y)}=\langle0|T\phi(x)\phi(y)|0\rangle
+$$
+等式右边：
+$$
+\begin{aligned}
+\langle0|T\phi(x)\phi(y)|0\rangle&=
+\theta(x^0-y^0)\langle0|\phi(x)\phi(y)|0\rangle+\theta(y^0-x^0)\langle0|\phi(y)\phi(x)|0\rangle\\
+&=\theta(x^0-y^0){\int\frac{\mathrm{d}^3p}{(2\pi)^3}\frac1{2E_{\mathbf{p}}}e^{-ip\cdot(x-y)}}+\theta(y^0-x^0){\int\frac{\mathrm{d}^3p}{(2\pi)^3}\frac1{2E_{\mathbf{p}}}e^{+ip\cdot(x-y)}} \\
+&={\int\frac{\mathrm{d}^3p}{(2\pi)^3}\frac1{2E_{\mathbf{p}}}}e^{i\mathbf{p}\cdot(\mathbf{x}-\mathbf{y})}\Big[e^{-iE_\mathbf{p}(x^0-y^0)}\theta(x^0-y^0)+e^{iE_\mathbf{p}(x^0-y^0)}\theta(y^0-x^0)\Big] \\
+\end{aligned}
+$$
+最后一行对第二项做了$-\mathbf{p}\to\mathbf{p}$的替换。现在我们要证明：
+$$
+-\frac1{2E_{\mathbf{p}}}\Big[e^{-iE_\mathbf{p}(x^0-y^0)}\theta(x^0-y^0)+e^{iE_\mathbf{p}(x^0-y^0)}\theta(y^0-x^0)\Big] =\int\frac{\mathrm{d}p^0}{2\pi i}\frac{e^{ip^0(x^0-y^0)}}{(p^0)^2-E_\mathbf{p}^2+i\epsilon}
+$$
+其中$\epsilon\to 0$。令$\eta=\frac{\epsilon}{2E_\mathbf{p}}$，上式右边化简为：
+$$
+\frac{1}{2E_\mathbf{p}}\int\frac{\mathrm{d}p^0}{2\pi i}\Big(\frac{1}{p^0-(E_\mathbf{p}-i\eta)}-\frac{1}{p^0+(E_\mathbf{p}-i\eta)}\Big)e^{ip^0(x^0-y^0)}
+$$
+当$x^0>y^0$时，我们选取的积分围道是实轴+上半平面圆弧（$p^0$有很大的虚部，保证$e^{ip^0(x^0-y^0)}$呈指数衰减），包含有极点$-E_\mathbf{p}+i\eta$，积分路径是逆时针。计算如下围道积分：
+$$
+\frac{1}{2E_\mathbf{p}}\oint\frac{\mathrm{d}p^0}{2\pi i}\Big(\frac{1}{p^0-(E_\mathbf{p}-i\eta)}-\frac{1}{p^0+(E_\mathbf{p}-i\eta)}\Big)e^{ip^0(x^0-y^0)}
+$$
+使用留数定理：
+$$
+\begin{aligned}
+\oint(\cdots)&=-\frac{1}{2E_{\mathbf{p}}}\frac{1}{2\pi i}2\pi i\ \mathrm{Res}(-E_\mathbf{p}+i\eta)\\&=-\frac{1}{2E_{\mathbf{p}}}\lim_{p^0\to-E_\mathbf{p}+i\eta}\Big((p^0+E_\mathbf{p}-i\eta)\frac{e^{ip^0(x^0-y^0)}}{p^0+E_\mathbf{p}-i\eta}\Big) \\
+&=-\frac{1}{2E_{\mathbf{p}}}e^{i(-E_\mathbf{p}+i\eta)(x^0-y^0)}
+\end{aligned}
+$$
+因为$\eta\to 0$，所以上式化为：$-\frac{1}{2E_{\mathbf{p}}}e^{-iE_\mathbf{p}(x^0-y^0)}$
+
+根据Jordon引理，圆弧上积分为零，因此：$\oint(\cdots)=\int(\cdots)$，上式化为：
+$$
+\int(\cdots)=-\frac{1}{2E_{\mathbf{p}}}e^{-iE_\mathbf{p}(x^0-y^0)}
+$$
+当$x^0<y^0$时，我们选取的积分围道是实轴+下半平面圆弧，包含有极点$E_\mathbf{p}-i\eta$，积分路径是顺时针。计算如下围道积分：
+$$
+\frac{1}{2E_\mathbf{p}}\oint\frac{\mathrm{d}p^0}{2\pi i}\Big(\frac{1}{p^0-(E_\mathbf{p}-i\eta)}-\frac{1}{p^0+(E_\mathbf{p}-i\eta)}\Big)e^{ip^0(x^0-y^0)}
+$$
+使用留数定理：
+$$
+\begin{aligned}
+\oint(\cdots)&=-\frac{1}{2E_{\mathbf{p}}}\frac{1}{2\pi i}2\pi i\ \mathrm{Res}(E_\mathbf{p}-i\eta)\\&=-\frac{1}{2E_{\mathbf{p}}}\lim_{p^0\to-E_\mathbf{p}+i\eta}\Big((p^0-E_\mathbf{p}+i\eta)\frac{e^{ip^0(x^0-y^0)}}{p^0-E_\mathbf{p}+i\eta}\Big) \\
+&=-\frac{1}{2E_{\mathbf{p}}}e^{i(E_\mathbf{p}-i\eta)(x^0-y^0)}
+\end{aligned}
+$$
+因为$\eta\to 0$，所以上式化为：$-\frac{1}{2E_{\mathbf{p}}}e^{iE_\mathbf{p}(x^0-y^0)}$
+
+根据Jordon引理，圆弧上积分为零，因此：$\oint(\cdots)=\int(\cdots)$，上式化为：
+$$
+\int(\cdots)=-\frac{1}{2E_{\mathbf{p}}}e^{iE_\mathbf{p}(x^0-y^0)}
+$$
+因此：
+\begin{gather*}
+	\theta(x^0-y^0)\Big(-\frac{1}{2E_{\mathbf{p}}}e^{-iE_\mathbf{p}(x^0-y^0)}\Big)+\theta(y^0-x^0)\Big(-\frac{1}{2E_{\mathbf{p}}}e^{iE_\mathbf{p}(x^0-y^0)}\Big)\\
+=\frac{1}{2E_\mathbf{p}}\int\frac{\mathrm{d}p^0}{2\pi i}\Big(\frac{1}{p^0-(E_\mathbf{p}-i\eta)}-\frac{1}{p^0+(E_\mathbf{p}-i\eta)}\Big)e^{ip^0(x^0-y^0)} \\
+=\int\frac{\mathrm{d}p^0}{2\pi i}\frac{e^{ip^0(x^0-y^0)}}{(p^0)^2-E_\mathbf{p}^2+i\epsilon}
+\end{gather*}
+得证：
+$$
+-\frac1{2E_{\mathbf{p}}}\Big[e^{-iE_\mathbf{p}(x^0-y^0)}\theta(x^0-y^0)+e^{iE_\mathbf{p}(x^0-y^0)}\theta(y^0-x^0)\Big] =\int\frac{\mathrm{d}p^0}{2\pi i}\frac{e^{ip^0(x^0-y^0)}}{(p^0)^2-E_\mathbf{p}^2+i\epsilon}
+$$
+因为沿实轴$p^0$积分，所以可以做代换：$p^0\to-p^0$，上式右边可以化为：
+$$
+-\int\frac{\mathrm{d}p^0}{2\pi }\frac{ie^{-ip^0(x^0-y^0)}}{(p^0)^2-E_\mathbf{p}^2+i\epsilon}=-\int\frac{\mathrm{d}p^0}{2\pi }\frac{ie^{-ip^0(x^0-y^0)}}{p^2-m^2+i\epsilon}
+$$
+因此：
+$$
+\frac1{2E_{\mathbf{p}}}\Big[e^{-iE_\mathbf{p}(x^0-y^0)}\theta(x^0-y^0)+e^{iE_\mathbf{p}(x^0-y^0)}\theta(y^0-x^0)\Big]=\int\frac{\mathrm{d}p^0}{2\pi }\frac{ie^{-ip^0(x^0-y^0)}}{p^2-m^2+i\epsilon}
+$$
+所以：
+\begin{gather*}
+	\langle0|T\phi(x)\phi(y)|0\rangle={\int\frac{\mathrm{d}^3p}{(2\pi)^3}\frac1{2E_{\mathbf{p}}}}e^{i\mathbf{p}\cdot(\mathbf{x}-\mathbf{y})}\Big[e^{-iE_\mathbf{p}(x^0-y^0)}\theta(x^0-y^0)+e^{iE_\mathbf{p}(x^0-y^0)}\theta(y^0-x^0)\Big] \\
+=\int\frac{\mathrm{d}^3p}{(2\pi)^3}e^{i\mathbf{p}\cdot(\mathbf{x}-\mathbf{y})}\int\frac{\mathrm{d}p^0}{2\pi }\frac{ie^{-ip^0(x^0-y^0)}}{p^2-m^2+i\epsilon}=\int\frac{\mathrm{d}^4p}{(2\pi)^4}\frac{i}{p^2-m^2+i\epsilon}e^{-ip\cdot(x-y)}
+\end{gather*}
+得证。
+\chapter{Dirac旋量场量子化}
+\section{Lorentz群的旋量表示}
+\end{document}
