@@ -1,0 +1,23 @@
+[0] Config.pm:307> INFO - This is Biber 2.19
+[0] Config.pm:310> INFO - Logfile is '/Users/qixiangyin/Documents/ç§ç /å­¦ä¹ /è®ºæ/2017-ä¸­å¾®å­æ¯è¡ç»¼è¿°/.texpadtmp/main.blg'
+[20] biber-darwin:340> INFO - === Mon Jun 23, 2025, 22:53:03
+[84] Biber.pm:419> INFO - Reading '/Users/qixiangyin/Documents/科研/学习/论文/2017-中微子振荡综述/.texpadtmp/main.bcf'
+[108] Biber.pm:979> INFO - Found 41 citekeys in bib section 0
+[112] Biber.pm:4419> INFO - Processing section 0
+[116] Biber.pm:4610> INFO - Looking for bibtex file '/Users/qixiangyin/Documents/科研/学习/论文/2017-中微子振荡综述/references.bib' for section 0
+[117] bibtex.pm:1713> INFO - LaTeX decoding ...
+[129] bibtex.pm:1519> INFO - Found BibTeX data source '/Users/qixiangyin/Documents/科研/学习/论文/2017-中微子振荡综述/references.bib'
+[204] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[204] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[204] Biber.pm:4239> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
+[204] Biber.pm:4245> INFO - No sort tailoring available for locale 'en-US'
+[211] bbl.pm:660> INFO - Writing '/Users/qixiangyin/Documents/ç§ç /å­¦ä¹ /è®ºæ/2017-ä¸­å¾®å­æ¯è¡ç»¼è¿°/.texpadtmp/main.bbl' with encoding 'UTF-8'
+[216] bbl.pm:763> INFO - Output to /Users/qixiangyin/Documents/ç§ç /å­¦ä¹ /è®ºæ/2017-ä¸­å¾®å­æ¯è¡ç»¼è¿°/.texpadtmp/main.bbl
+[216] Biber.pm:131> WARN - ISBN '978-3540439645' in entry 'FukugitaYanagida2003' is invalid - run biber with '--validate_datamodel' for details.
+[216] Biber.pm:131> WARN - ISBN '978-9812380712' in entry 'MohapatraPal2004' is invalid - run biber with '--validate_datamodel' for details.
+[216] Biber.pm:131> WARN - ISBN '978-3642061911' in entry 'Bilenky2010' is invalid - run biber with '--validate_datamodel' for details.
+[216] Biber.pm:131> WARN - ISBN '978-1439830757' in entry 'Zuber2011' is invalid - run biber with '--validate_datamodel' for details.
+[216] Biber.pm:131> WARN - ISBN '978-0691157496' in entry 'Barger2012' is invalid - run biber with '--validate_datamodel' for details.
+[216] Biber.pm:131> WARN - ISBN '978-3527411013' in entry 'ValleRomao2015' is invalid - run biber with '--validate_datamodel' for details.
+[216] Biber.pm:131> WARN - ISBN '978-4431556962' in entry 'Suekane2015' is invalid - run biber with '--validate_datamodel' for details.
+[216] Biber.pm:133> INFO - WARNINGS: 7

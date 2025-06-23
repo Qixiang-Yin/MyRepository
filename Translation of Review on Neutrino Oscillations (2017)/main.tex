@@ -1,0 +1,82 @@
+\documentclass{article}
+\usepackage[UTF8]{ctex}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{geometry} %调整页边距
+\usepackage{graphicx}
+\geometry{left=3cm,right=3cm, top=2.5cm, bottom=2.5cm} %页边距
+\usepackage{float}
+\usepackage{caption}
+
+\usepackage{mathptmx} %公式字体
+\usepackage[colorlinks=true, linkcolor=blue]{hyperref}
+\usepackage{mathrsfs} %花写字体
+
+\usepackage[backend=biber, style=numeric, sorting=none]{biblatex}
+\addbibresource{references.bib}
+
+\newcommand{\dd}{\mathrm{d}}
+\newcommand{\bb}{\mathbf}
+\newcommand\subtitle[1]{{\small #1}}
+
+\title{中微子振荡：PMNS范式\\ \subtitle{Neutrino Oscillations: The Rise of the PMNS Paradigm}}  
+\author{译者：殷麒翔}
+\date{2025/6/23}
+
+\begin{document}
+	\maketitle
+	\begin{abstract}
+		在中微子振荡发现后的过去20年里，有关中微子振荡的实验取得了显著的成果。物理学家精确测量了中微子的质量平方差与混合角，其中包括我们在实验上测得的最后一个混合角—$\theta_{13}$。
+		
+		目前，我们观察到的一系列中微子振荡的实验结果都可以使用包含三个有质量的活性中微子的模型来解释，其质量本征态与味道本征态之间可以使用一个$3\times3$幺正混合矩阵—PMNS（Pontecorvo-Maki-Nakagawa-Sakata）矩阵相关联，并且PMNS矩阵可以被参数化为三个混合角$\theta_{12},\theta_{23},\theta_{13}$和一个CP破坏相位$\delta_\mathrm{CP}$。除此之外，中微子的质量平方差$\Delta m_{ji}^2=m_j^2-m_i^2$也主导着中微子振荡，其中$m_i$是中微子的第$i$个质量本征态的本征值。本综述将主要介绍三种味道的中微子混合的PMNS范式与当前实验对振荡参数的测量。
+		
+		在未来的几年里，一系列的中微子振荡实验将会取得丰硕的成果，最终将解决中微子振荡剩下的三个谜题，即：
+		\begin{itemize}
+			\item $\theta_{23}$混合角的象限（octant）与精确值的测量
+			\item 中微子质量顺序（$m_1<m_2<m_3$或$m_3<m_1<m_2$）的确定
+			\item CP破坏相位$\delta_\mathrm{CP}$的测量
+		\end{itemize}
+	\end{abstract}
+	\section{简介}
+	在经过长期的理论和实验的研究后，Pontecorvo于1957年\cite{Pontecorvo1957}\cite{Pontecorvo1958b}提出的中微子振荡的假说终于在1998年到2002年的几年间得到证实。物理学家在超级神冈实验（Super-Kamiokande, Super-KamiokaNeutrino Detection Experiment）\cite{Fukuda1998}和萨德伯里实验（SNO, Sudbury Neutrino Observatory）\cite{Ahmad2002}中分别发现了来自大气和太阳中微子的振荡，随后KamLAND实验（Kamioka Liquid Scintillator Antineutrino Detector）\cite{Eguchi2003}证实了这一发现。为此，梶田隆章与麦克唐纳获得了2015年度诺贝尔物理学奖。
+
+	自从中微子振荡被超级神冈实验和SNO实验证实以后，有关中微子振荡的实验进展迅速。先前的实验测量了$\theta_{12}$与$\theta_{23}$，而$\theta_{13}$是我们最后一个未知的混合角。长基线的加速器中微子实验—T2K实验（Tokai-to-Kamioka）\cite{Abe2011}首次发现了$\theta_{13}$非零的迹象，随后的反应堆实验—大亚湾实验（Daya Bay）\cite{An2012}、RENO实验（Reactor Experiment for Neutrino Oscillations）\cite{Ahn2012}与Double Chooz实验\cite{Abe2012D}发现了由$\theta_{13}$驱动的振荡。2013年，T2K实验首次发现了$\nu_\mu\to\nu_e$的出现\cite{Abe2014}，随后被NO$\nu$A实验（NuMI Off-Axis $\nu_e$ Appearance）证实\cite{Adamson2017}，这是我们首次以直接的方式探测到中微子的出现而非消失，并为我们探测中微子三种味道的效应开辟了道路。发现中微子振荡的实验多以天然的中微子源作为基础，但精确测量中微子振荡参数的实验多以人工中微子源作为来源，例如核反应堆或加速器中微子束流。
+	
+	在理论方面，Pontecorvo受到$K-\bar{K}$介子振荡的启发，于1957年首次提出若轻子数发生破坏，将会发生$\nu-\bar{\nu}$振荡的现象\cite{Pontecorvo1957}\cite{Pontecorvo1958b}。这个现象我们在今天描述为活性-惰性中微子的振荡，这需要中微子具有质量，与当时人们普遍认为的中微子无质量相矛盾。不久之后，随着$\nu_\mu$的发现，Maki、Nakagawa和Sakata首次提出了中微子味混合的概念\cite{Maki1962}。随后，1967年，Pontecorvo提出了中微子味振荡的概念\cite{Pontecorvo1967}，并由Gribov和Pontecorvo在1969年表述成了如今的形式\cite{Gribov1969}。
+	
+	目前，我们观察到的一系列中微子振荡的实验结果都可以使用包含三个有质量的活性中微子的模型来解释，其质量本征态与味道本征态之间可以使用一个$3\times3$幺正混合矩阵—PMNS矩阵相联系，并且PMNS矩阵可以被参数化为三个混合角$\theta_{12},\theta_{23},\theta_{13}$和一个CP破坏相位$\delta_\mathrm{CP}$（对于Majorana中微子的情形，将会引入额外两个相位，但它们不会对振荡产生影响）。除此之外，中微子的质量平方差$\Delta m_{ji}^2=m_j^2-m_i^2$也主导着中微子振荡，其中$m_i$是中微子的第$i$个质量本征态的本征值。三种味道的中微子发生味混合从而引起振荡的模型（PMNS范式）在过去的20年里经过了许多实验的验证，在未来的几年里，一系列的中微子振荡实验将会取得丰硕的成果，最终将解决中微子振荡剩下的三个谜题，即$\theta_{23}$的象限与精确值、三代中微子的质量顺序与CP破坏相位$\delta_\mathrm{CP}$的测量。
+	
+	研究中微子，特别是中微子振荡，对我们认识基本粒子物理有着重要的意义。仅在实验中观测到的中微子的非零质量是目前唯一的超出标准模型之外的新物理的迹象\cite{Mohapatra2007}。此外，轻子PMNS混合矩阵中的三个混合角的数值较大，这与夸克区的CKM（Cabibbo-Kobayashi-Maskawa）混合矩阵\cite{Cabibbo1963}\cite{Kobayashi1973}明显不同，这本身也蕴含着深刻的物理问题。
+	
+	有趣的是，PMNS矩阵中较大的混合角意味着轻子区将有可能出现较大程度的CP破坏，这有助于我们理解宇宙中的重子-反重子不对称性的起源，其中最可信的机制是轻子生成（leptogenesis）机制\cite{Fukugita1986}（详见综述\cite{Davidson2008}）。轻子生成机制预言了除目前已经观测到的三种较轻的中微子以外，还存在较重的Majorana中微子，它可以解释宇宙中的重子-反重子不对称性。此外，较重的Majorana中微子也可以通过跷跷板（seesaw）机制赋予较轻的中微子质量\cite{Minkowski1977}\cite{GellMann1979}\cite{Yanagida1979}\cite{Glashow1980}\cite{Mohapatra1980}。
+	
+	本综述将主要介绍近期与中微子振荡参数测量有关的进展，以及未来测量未知振荡参数的实验。文章的结构如下：
+	\begin{itemize}
+		\item 第\ref{section2}部分：介绍有质量的中微子在真空与物质中振荡的理论
+		\item 第3-5部分：概括由$\theta_{12},\theta_{23},\theta_{13}$混合角驱动的$\nu_1-\nu_2,\nu_2-\nu_3,\nu_1-\nu_3$模式的振荡，即两种味道的中微子引起的振荡
+		\item 第6部分：介绍仅由三种味道的中微子共同振荡才能够解释的实验现象，以及由T2K实验和NO$\nu$A实验发现的中微子CP破坏效应
+		\item 第7部分：简要总结我们目前对PMNS混合参数的理解，以及全局拟合（global fit）的作用
+		\item 第8部分：介绍由PMNS范式无法解释的反常现象
+		\item 第9部分：概述未来的中微子实验
+	\end{itemize}
+	
+	鉴于中微子振荡研究的丰富性与多样性，我们在本篇综述里不可能阐述与理论发展、实验方法和测量结果有关的所有细节与微妙之处。因此，我们推荐感兴趣的读者阅读书籍\cite{FukugitaYanagida2003}\cite{MohapatraPal2004}\cite{GiuntiKim2007}\cite{Bilenky2010}，以及\cite{Zuber2011}\cite{Barger2012}\cite{ValleRomao2015}\cite{Suekane2015}。PDG的综述也介绍了与中微子的质量、混合、振荡有关的内容\cite{Patrignani2016}。也有一部分综述介绍了与中微子相关的专题，例如中微子在物质中的传播\cite{Blennow2013}\cite{Kuo1989}、太阳中微子\cite{Ianni2017}、通过反应堆实验测量$\theta_{13}$混合角\cite{Lachenmaier2015}、中微子的质量顺序与未来的相关实验\cite{Qian2015}、实验中观测到的在PMNS范式下的反常现象与惰性中微子\cite{Abazajian2012}\cite{Gariazzo2016}。最后，\cite{Bilenky2013}从教学的角度全面介绍了中微子物理的发展历史，包括理论和实验的进展。
+	
+	\section{中微子振荡的理论与唯象学\label{section2}}
+	\subsection{轻子区的味混合}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	\newpage
+	\printbibliography
+\end{document}

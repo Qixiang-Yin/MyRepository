@@ -1,0 +1,1298 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{none/global//global/global}
+    \entry{Pontecorvo1957}{article}{}
+      \name{author}{1}{}{%
+        {{hash=216e1073c2e5bdc13465c81d7a74251b}{%
+           family={Pontecorvo},
+           familyi={P\bibinitperiod},
+           given={B.},
+           giveni={B\bibinitperiod}}}%
+      }
+      \strng{namehash}{216e1073c2e5bdc13465c81d7a74251b}
+      \strng{fullhash}{216e1073c2e5bdc13465c81d7a74251b}
+      \strng{bibnamehash}{216e1073c2e5bdc13465c81d7a74251b}
+      \strng{authorbibnamehash}{216e1073c2e5bdc13465c81d7a74251b}
+      \strng{authornamehash}{216e1073c2e5bdc13465c81d7a74251b}
+      \strng{authorfullhash}{216e1073c2e5bdc13465c81d7a74251b}
+      \field{extraname}{1}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Zh. Eksp. Teor. Fiz.}
+      \field{note}{[Sov. Phys. JETP 6 (1958) 429]}
+      \field{title}{Mesonium and anti-mesonium}
+      \field{volume}{33}
+      \field{year}{1957}
+      \field{pages}{549\bibrangedash 551}
+      \range{pages}{3}
+    \endentry
+    \entry{Pontecorvo1958b}{article}{}
+      \name{author}{1}{}{%
+        {{hash=216e1073c2e5bdc13465c81d7a74251b}{%
+           family={Pontecorvo},
+           familyi={P\bibinitperiod},
+           given={B.},
+           giveni={B\bibinitperiod}}}%
+      }
+      \strng{namehash}{216e1073c2e5bdc13465c81d7a74251b}
+      \strng{fullhash}{216e1073c2e5bdc13465c81d7a74251b}
+      \strng{bibnamehash}{216e1073c2e5bdc13465c81d7a74251b}
+      \strng{authorbibnamehash}{216e1073c2e5bdc13465c81d7a74251b}
+      \strng{authornamehash}{216e1073c2e5bdc13465c81d7a74251b}
+      \strng{authorfullhash}{216e1073c2e5bdc13465c81d7a74251b}
+      \field{extraname}{2}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Sov. Phys. JETP}
+      \field{note}{[Zh. Eksp. Teor. Fiz. 34 (1957) 247]}
+      \field{title}{Inverse beta processes and nonconservation of lepton charge}
+      \field{volume}{7}
+      \field{year}{1958}
+      \field{pages}{172\bibrangedash 173}
+      \range{pages}{2}
+    \endentry
+    \entry{Fukuda1998}{article}{}
+      \name{author}{2}{}{%
+        {{hash=951fb69202e8f740806bc2468aeda06c}{%
+           family={Fukuda},
+           familyi={F\bibinitperiod},
+           given={Y.},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=38026ba4ee6b102b47bf3ffb41325c8f}{%
+           family={al.},
+           familyi={a\bibinitperiod},
+           prefix={et},
+           prefixi={e\bibinitperiod}}}%
+      }
+      \strng{namehash}{6a919e522daf5baf2623f0adb122b7a8}
+      \strng{fullhash}{6a919e522daf5baf2623f0adb122b7a8}
+      \strng{bibnamehash}{6a919e522daf5baf2623f0adb122b7a8}
+      \strng{authorbibnamehash}{6a919e522daf5baf2623f0adb122b7a8}
+      \strng{authornamehash}{6a919e522daf5baf2623f0adb122b7a8}
+      \strng{authorfullhash}{6a919e522daf5baf2623f0adb122b7a8}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Phys. Rev. Lett.}
+      \field{title}{Evidence for Oscillation of Atmospheric Neutrinos}
+      \field{volume}{81}
+      \field{year}{1998}
+      \field{pages}{1562\bibrangedash 1567}
+      \range{pages}{6}
+    \endentry
+    \entry{Ahmad2002}{article}{}
+      \name{author}{2}{}{%
+        {{hash=b3f3d0754e6fd3add10a7713eabe2009}{%
+           family={Ahmad},
+           familyi={A\bibinitperiod},
+           given={Q.},
+           giveni={Q\bibinitperiod}}}%
+        {{hash=38026ba4ee6b102b47bf3ffb41325c8f}{%
+           family={al.},
+           familyi={a\bibinitperiod},
+           prefix={et},
+           prefixi={e\bibinitperiod}}}%
+      }
+      \strng{namehash}{655b5252aadf9910e0d53f8319f9f0ab}
+      \strng{fullhash}{655b5252aadf9910e0d53f8319f9f0ab}
+      \strng{bibnamehash}{655b5252aadf9910e0d53f8319f9f0ab}
+      \strng{authorbibnamehash}{655b5252aadf9910e0d53f8319f9f0ab}
+      \strng{authornamehash}{655b5252aadf9910e0d53f8319f9f0ab}
+      \strng{authorfullhash}{655b5252aadf9910e0d53f8319f9f0ab}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Phys. Rev. Lett.}
+      \field{title}{Measurement of the Rate of $\nu_e + d \to p + p + e^-$ Interactions Produced by $^8$B Solar Neutrinos at the Sudbury Neutrino Observatory}
+      \field{volume}{89}
+      \field{year}{2002}
+      \field{pages}{011301}
+      \range{pages}{1}
+    \endentry
+    \entry{Eguchi2003}{article}{}
+      \name{author}{2}{}{%
+        {{hash=50a66d76d7ddbc9eda023601f7db244f}{%
+           family={Eguchi},
+           familyi={E\bibinitperiod},
+           given={K.},
+           giveni={K\bibinitperiod}}}%
+        {{hash=38026ba4ee6b102b47bf3ffb41325c8f}{%
+           family={al.},
+           familyi={a\bibinitperiod},
+           prefix={et},
+           prefixi={e\bibinitperiod}}}%
+      }
+      \strng{namehash}{d499fc0b23f19e7ca6a28609e429d13d}
+      \strng{fullhash}{d499fc0b23f19e7ca6a28609e429d13d}
+      \strng{bibnamehash}{d499fc0b23f19e7ca6a28609e429d13d}
+      \strng{authorbibnamehash}{d499fc0b23f19e7ca6a28609e429d13d}
+      \strng{authornamehash}{d499fc0b23f19e7ca6a28609e429d13d}
+      \strng{authorfullhash}{d499fc0b23f19e7ca6a28609e429d13d}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{hep-ex}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{Phys. Rev. Lett.}
+      \field{title}{First Results from KamLAND: Evidence for Reactor Antineutrino Disappearance}
+      \field{volume}{90}
+      \field{year}{2003}
+      \field{pages}{093004}
+      \range{pages}{1}
+      \verb{eprint}
+      \verb hep-ex/0212021
+      \endverb
+    \endentry
+    \entry{Abe2011}{article}{}
+      \name{author}{2}{}{%
+        {{hash=87ca4e44d6c1beeda93993a24d605806}{%
+           family={Abe},
+           familyi={A\bibinitperiod},
+           given={K.},
+           giveni={K\bibinitperiod}}}%
+        {{hash=38026ba4ee6b102b47bf3ffb41325c8f}{%
+           family={al.},
+           familyi={a\bibinitperiod},
+           prefix={et},
+           prefixi={e\bibinitperiod}}}%
+      }
+      \strng{namehash}{3a7511ab1c4c3dc03695ab72525351fb}
+      \strng{fullhash}{3a7511ab1c4c3dc03695ab72525351fb}
+      \strng{bibnamehash}{3a7511ab1c4c3dc03695ab72525351fb}
+      \strng{authorbibnamehash}{3a7511ab1c4c3dc03695ab72525351fb}
+      \strng{authornamehash}{3a7511ab1c4c3dc03695ab72525351fb}
+      \strng{authorfullhash}{3a7511ab1c4c3dc03695ab72525351fb}
+      \field{extraname}{1}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Phys. Rev. Lett.}
+      \field{title}{Indication of Electron Neutrino Appearance from an Accelerator-produced Off-axis Muon Neutrino Beam}
+      \field{volume}{107}
+      \field{year}{2011}
+      \field{pages}{041801}
+      \range{pages}{1}
+    \endentry
+    \entry{An2012}{article}{}
+      \name{author}{2}{}{%
+        {{hash=1bb598472c1d5151509d7f37d83550e4}{%
+           family={An},
+           familyi={A\bibinitperiod},
+           given={F.},
+           giveni={F\bibinitperiod}}}%
+        {{hash=38026ba4ee6b102b47bf3ffb41325c8f}{%
+           family={al.},
+           familyi={a\bibinitperiod},
+           prefix={et},
+           prefixi={e\bibinitperiod}}}%
+      }
+      \strng{namehash}{6f7d619c880b8fe607265e658a2829ec}
+      \strng{fullhash}{6f7d619c880b8fe607265e658a2829ec}
+      \strng{bibnamehash}{6f7d619c880b8fe607265e658a2829ec}
+      \strng{authorbibnamehash}{6f7d619c880b8fe607265e658a2829ec}
+      \strng{authornamehash}{6f7d619c880b8fe607265e658a2829ec}
+      \strng{authorfullhash}{6f7d619c880b8fe607265e658a2829ec}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Phys. Rev. Lett.}
+      \field{title}{Observation of Electron-Antineutrino Disappearance at Daya Bay}
+      \field{volume}{108}
+      \field{year}{2012}
+      \field{pages}{171803}
+      \range{pages}{1}
+    \endentry
+    \entry{Ahn2012}{article}{}
+      \name{author}{2}{}{%
+        {{hash=ea917da3358e6127c0bdf1c53e87d72e}{%
+           family={Ahn},
+           familyi={A\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod}}}%
+        {{hash=38026ba4ee6b102b47bf3ffb41325c8f}{%
+           family={al.},
+           familyi={a\bibinitperiod},
+           prefix={et},
+           prefixi={e\bibinitperiod}}}%
+      }
+      \strng{namehash}{8accaacf4c27199d898ebd2c0acafd1b}
+      \strng{fullhash}{8accaacf4c27199d898ebd2c0acafd1b}
+      \strng{bibnamehash}{8accaacf4c27199d898ebd2c0acafd1b}
+      \strng{authorbibnamehash}{8accaacf4c27199d898ebd2c0acafd1b}
+      \strng{authornamehash}{8accaacf4c27199d898ebd2c0acafd1b}
+      \strng{authorfullhash}{8accaacf4c27199d898ebd2c0acafd1b}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Phys. Rev. Lett.}
+      \field{title}{Observation of Reactor Electron Antineutrino Disappearance in the RENO Experiment}
+      \field{volume}{108}
+      \field{year}{2012}
+      \field{pages}{191802}
+      \range{pages}{1}
+    \endentry
+    \entry{Abe2012D}{article}{}
+      \name{author}{2}{}{%
+        {{hash=f9b929e2465cdc9a24248c838a29da81}{%
+           family={Abe},
+           familyi={A\bibinitperiod},
+           given={Y.},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=38026ba4ee6b102b47bf3ffb41325c8f}{%
+           family={al.},
+           familyi={a\bibinitperiod},
+           prefix={et},
+           prefixi={e\bibinitperiod}}}%
+      }
+      \strng{namehash}{89904e8eaeea35057b8e2cb64768665f}
+      \strng{fullhash}{89904e8eaeea35057b8e2cb64768665f}
+      \strng{bibnamehash}{89904e8eaeea35057b8e2cb64768665f}
+      \strng{authorbibnamehash}{89904e8eaeea35057b8e2cb64768665f}
+      \strng{authornamehash}{89904e8eaeea35057b8e2cb64768665f}
+      \strng{authorfullhash}{89904e8eaeea35057b8e2cb64768665f}
+      \field{extraname}{2}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Phys. Rev. D}
+      \field{title}{Indication for the disappearance of reactor electron antineutrinos in the Double Chooz experiment}
+      \field{volume}{86}
+      \field{year}{2012}
+      \field{pages}{052008}
+      \range{pages}{1}
+    \endentry
+    \entry{Abe2014}{article}{}
+      \name{author}{2}{}{%
+        {{hash=87ca4e44d6c1beeda93993a24d605806}{%
+           family={Abe},
+           familyi={A\bibinitperiod},
+           given={K.},
+           giveni={K\bibinitperiod}}}%
+        {{hash=38026ba4ee6b102b47bf3ffb41325c8f}{%
+           family={al.},
+           familyi={a\bibinitperiod},
+           prefix={et},
+           prefixi={e\bibinitperiod}}}%
+      }
+      \strng{namehash}{3a7511ab1c4c3dc03695ab72525351fb}
+      \strng{fullhash}{3a7511ab1c4c3dc03695ab72525351fb}
+      \strng{bibnamehash}{3a7511ab1c4c3dc03695ab72525351fb}
+      \strng{authorbibnamehash}{3a7511ab1c4c3dc03695ab72525351fb}
+      \strng{authornamehash}{3a7511ab1c4c3dc03695ab72525351fb}
+      \strng{authorfullhash}{3a7511ab1c4c3dc03695ab72525351fb}
+      \field{extraname}{3}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Phys. Rev. Lett.}
+      \field{title}{Observation of Electron Neutrino Appearance in a Muon Neutrino Beam}
+      \field{volume}{112}
+      \field{year}{2014}
+      \field{pages}{061802}
+      \range{pages}{1}
+    \endentry
+    \entry{Adamson2017}{article}{}
+      \name{author}{2}{}{%
+        {{hash=817ae083bd2222356a9efedab0c7fdde}{%
+           family={Adamson},
+           familyi={A\bibinitperiod},
+           given={P.},
+           giveni={P\bibinitperiod}}}%
+        {{hash=38026ba4ee6b102b47bf3ffb41325c8f}{%
+           family={al.},
+           familyi={a\bibinitperiod},
+           prefix={et},
+           prefixi={e\bibinitperiod}}}%
+      }
+      \strng{namehash}{f1b6701e7d5523cfe04540eaf0f35415}
+      \strng{fullhash}{f1b6701e7d5523cfe04540eaf0f35415}
+      \strng{bibnamehash}{f1b6701e7d5523cfe04540eaf0f35415}
+      \strng{authorbibnamehash}{f1b6701e7d5523cfe04540eaf0f35415}
+      \strng{authornamehash}{f1b6701e7d5523cfe04540eaf0f35415}
+      \strng{authorfullhash}{f1b6701e7d5523cfe04540eaf0f35415}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{hep-ex}
+      \field{eprinttype}{arXiv}
+      \field{note}{arXiv:1703.03328 [hep-ex]}
+      \field{title}{Constraints on oscillation parameters from $\nu_e$ appearance and $\nu_\mu$ disappearance in NOvA}
+      \field{year}{2017}
+      \verb{eprint}
+      \verb 1703.03328
+      \endverb
+    \endentry
+    \entry{Maki1962}{article}{}
+      \name{author}{3}{}{%
+        {{hash=9ea79070cd53e6a7749797fab81d11cf}{%
+           family={Maki},
+           familyi={M\bibinitperiod},
+           given={Z.},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=761f370c8ec42cee1c27455af9207478}{%
+           family={Nakagawa},
+           familyi={N\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+        {{hash=284581a755e19eba6ce23bb3c6d45f19}{%
+           family={Sakata},
+           familyi={S\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{4a842ae2d567cb6582a0b9a05aa6c4a5}
+      \strng{fullhash}{4a842ae2d567cb6582a0b9a05aa6c4a5}
+      \strng{bibnamehash}{4a842ae2d567cb6582a0b9a05aa6c4a5}
+      \strng{authorbibnamehash}{4a842ae2d567cb6582a0b9a05aa6c4a5}
+      \strng{authornamehash}{4a842ae2d567cb6582a0b9a05aa6c4a5}
+      \strng{authorfullhash}{4a842ae2d567cb6582a0b9a05aa6c4a5}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Progress of Theoretical Physics}
+      \field{title}{Remarks on the Unified Model of Elementary Particles}
+      \field{volume}{28}
+      \field{year}{1962}
+      \field{pages}{870\bibrangedash 880}
+      \range{pages}{11}
+    \endentry
+    \entry{Pontecorvo1967}{article}{}
+      \name{author}{1}{}{%
+        {{hash=216e1073c2e5bdc13465c81d7a74251b}{%
+           family={Pontecorvo},
+           familyi={P\bibinitperiod},
+           given={B.},
+           giveni={B\bibinitperiod}}}%
+      }
+      \strng{namehash}{216e1073c2e5bdc13465c81d7a74251b}
+      \strng{fullhash}{216e1073c2e5bdc13465c81d7a74251b}
+      \strng{bibnamehash}{216e1073c2e5bdc13465c81d7a74251b}
+      \strng{authorbibnamehash}{216e1073c2e5bdc13465c81d7a74251b}
+      \strng{authornamehash}{216e1073c2e5bdc13465c81d7a74251b}
+      \strng{authorfullhash}{216e1073c2e5bdc13465c81d7a74251b}
+      \field{extraname}{3}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Zh. Eksp. Teor. Fiz.}
+      \field{note}{[Sov. Phys. JETP 26 (1968) 984]}
+      \field{title}{Neutrino Experiments and the Problem of Conservation of Leptonic Charge}
+      \field{volume}{53}
+      \field{year}{1967}
+      \field{pages}{1717}
+      \range{pages}{1}
+    \endentry
+    \entry{Gribov1969}{article}{}
+      \name{author}{2}{}{%
+        {{hash=d17f5208375b276b9532c8908ecfa685}{%
+           family={Gribov},
+           familyi={G\bibinitperiod},
+           given={V.\bibnamedelimi N.},
+           giveni={V\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
+        {{hash=216e1073c2e5bdc13465c81d7a74251b}{%
+           family={Pontecorvo},
+           familyi={P\bibinitperiod},
+           given={B.},
+           giveni={B\bibinitperiod}}}%
+      }
+      \strng{namehash}{27e476ff2c3399c3c8290a8fd561ca70}
+      \strng{fullhash}{27e476ff2c3399c3c8290a8fd561ca70}
+      \strng{bibnamehash}{27e476ff2c3399c3c8290a8fd561ca70}
+      \strng{authorbibnamehash}{27e476ff2c3399c3c8290a8fd561ca70}
+      \strng{authornamehash}{27e476ff2c3399c3c8290a8fd561ca70}
+      \strng{authorfullhash}{27e476ff2c3399c3c8290a8fd561ca70}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Phys. Lett. B}
+      \field{title}{Neutrino astronomy and lepton charge}
+      \field{volume}{28}
+      \field{year}{1969}
+      \field{pages}{493\bibrangedash 496}
+      \range{pages}{4}
+    \endentry
+    \entry{Mohapatra2007}{article}{}
+      \name{author}{2}{}{%
+        {{hash=757c0ce85850aec24d1b921708ff27d3}{%
+           family={Mohapatra},
+           familyi={M\bibinitperiod},
+           given={R.\bibnamedelimi N.},
+           giveni={R\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
+        {{hash=38026ba4ee6b102b47bf3ffb41325c8f}{%
+           family={al.},
+           familyi={a\bibinitperiod},
+           prefix={et},
+           prefixi={e\bibinitperiod}}}%
+      }
+      \strng{namehash}{b7b3b8c52734985d6ff83265265bb629}
+      \strng{fullhash}{b7b3b8c52734985d6ff83265265bb629}
+      \strng{bibnamehash}{b7b3b8c52734985d6ff83265265bb629}
+      \strng{authorbibnamehash}{b7b3b8c52734985d6ff83265265bb629}
+      \strng{authornamehash}{b7b3b8c52734985d6ff83265265bb629}
+      \strng{authorfullhash}{b7b3b8c52734985d6ff83265265bb629}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Reports on Progress in Physics}
+      \field{title}{Theory of neutrinos: A white paper}
+      \field{volume}{70}
+      \field{year}{2007}
+      \field{pages}{1757\bibrangedash 1867}
+      \range{pages}{111}
+    \endentry
+    \entry{Cabibbo1963}{article}{}
+      \name{author}{1}{}{%
+        {{hash=73e31acea8c6106363473a40291edfd6}{%
+           family={Cabibbo},
+           familyi={C\bibinitperiod},
+           given={N.},
+           giveni={N\bibinitperiod}}}%
+      }
+      \strng{namehash}{73e31acea8c6106363473a40291edfd6}
+      \strng{fullhash}{73e31acea8c6106363473a40291edfd6}
+      \strng{bibnamehash}{73e31acea8c6106363473a40291edfd6}
+      \strng{authorbibnamehash}{73e31acea8c6106363473a40291edfd6}
+      \strng{authornamehash}{73e31acea8c6106363473a40291edfd6}
+      \strng{authorfullhash}{73e31acea8c6106363473a40291edfd6}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Phys. Rev. Lett.}
+      \field{title}{Unitary Symmetry and Leptonic Decays}
+      \field{volume}{10}
+      \field{year}{1963}
+      \field{pages}{531\bibrangedash 533}
+      \range{pages}{3}
+    \endentry
+    \entry{Kobayashi1973}{article}{}
+      \name{author}{2}{}{%
+        {{hash=4e44d19b7ce67c237010638558301764}{%
+           family={Kobayashi},
+           familyi={K\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+        {{hash=9dbc0f7f2526ff13b335eee248082bac}{%
+           family={Maskawa},
+           familyi={M\bibinitperiod},
+           given={T.},
+           giveni={T\bibinitperiod}}}%
+      }
+      \strng{namehash}{d8f8b52c191da614e927248ba56ad622}
+      \strng{fullhash}{d8f8b52c191da614e927248ba56ad622}
+      \strng{bibnamehash}{d8f8b52c191da614e927248ba56ad622}
+      \strng{authorbibnamehash}{d8f8b52c191da614e927248ba56ad622}
+      \strng{authornamehash}{d8f8b52c191da614e927248ba56ad622}
+      \strng{authorfullhash}{d8f8b52c191da614e927248ba56ad622}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Progress of Theoretical Physics}
+      \field{title}{CP-Violation in the Renormalizable Theory of Weak Interaction}
+      \field{volume}{49}
+      \field{year}{1973}
+      \field{pages}{652\bibrangedash 657}
+      \range{pages}{6}
+    \endentry
+    \entry{Fukugita1986}{article}{}
+      \name{author}{2}{}{%
+        {{hash=72ed371dc98ba7c921bcbccbaac9b5b0}{%
+           family={Fukugita},
+           familyi={F\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+        {{hash=9568fa1cfc13f0c43855036ff3d0da95}{%
+           family={Yanagida},
+           familyi={Y\bibinitperiod},
+           given={T.},
+           giveni={T\bibinitperiod}}}%
+      }
+      \strng{namehash}{5e889912fcb5e002bbf227bd7e103999}
+      \strng{fullhash}{5e889912fcb5e002bbf227bd7e103999}
+      \strng{bibnamehash}{5e889912fcb5e002bbf227bd7e103999}
+      \strng{authorbibnamehash}{5e889912fcb5e002bbf227bd7e103999}
+      \strng{authornamehash}{5e889912fcb5e002bbf227bd7e103999}
+      \strng{authorfullhash}{5e889912fcb5e002bbf227bd7e103999}
+      \field{extraname}{1}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Phys. Lett. B}
+      \field{title}{Baryogenesis Without Grand Unification}
+      \field{volume}{174}
+      \field{year}{1986}
+      \field{pages}{45\bibrangedash 47}
+      \range{pages}{3}
+    \endentry
+    \entry{Davidson2008}{article}{}
+      \name{author}{3}{}{%
+        {{hash=bfe56003b501b26c95a6c74c84b3cfbc}{%
+           family={Davidson},
+           familyi={D\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod}}}%
+        {{hash=cffe93725c5fe9375b1e3030d7d6d376}{%
+           family={Nardi},
+           familyi={N\bibinitperiod},
+           given={E.},
+           giveni={E\bibinitperiod}}}%
+        {{hash=4cc03c145668f9bf68e8502d5a9dfb06}{%
+           family={Nir},
+           familyi={N\bibinitperiod},
+           given={Y.},
+           giveni={Y\bibinitperiod}}}%
+      }
+      \strng{namehash}{d0e34d8696896cc4ace4efe3e0f5c14f}
+      \strng{fullhash}{d0e34d8696896cc4ace4efe3e0f5c14f}
+      \strng{bibnamehash}{d0e34d8696896cc4ace4efe3e0f5c14f}
+      \strng{authorbibnamehash}{d0e34d8696896cc4ace4efe3e0f5c14f}
+      \strng{authornamehash}{d0e34d8696896cc4ace4efe3e0f5c14f}
+      \strng{authorfullhash}{d0e34d8696896cc4ace4efe3e0f5c14f}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Physics Reports}
+      \field{title}{Leptogenesis}
+      \field{volume}{466}
+      \field{year}{2008}
+      \field{pages}{105\bibrangedash 177}
+      \range{pages}{73}
+    \endentry
+    \entry{Minkowski1977}{article}{}
+      \name{author}{1}{}{%
+        {{hash=f3c84406a8d7f3ac7bacdfc71751f081}{%
+           family={Minkowski},
+           familyi={M\bibinitperiod},
+           given={P.},
+           giveni={P\bibinitperiod}}}%
+      }
+      \strng{namehash}{f3c84406a8d7f3ac7bacdfc71751f081}
+      \strng{fullhash}{f3c84406a8d7f3ac7bacdfc71751f081}
+      \strng{bibnamehash}{f3c84406a8d7f3ac7bacdfc71751f081}
+      \strng{authorbibnamehash}{f3c84406a8d7f3ac7bacdfc71751f081}
+      \strng{authornamehash}{f3c84406a8d7f3ac7bacdfc71751f081}
+      \strng{authorfullhash}{f3c84406a8d7f3ac7bacdfc71751f081}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Phys. Lett. B}
+      \field{title}{$\mu \to e\gamma$ at a Rate of One Out of 10$^{9}$ Muon Decays?}
+      \field{volume}{67}
+      \field{year}{1977}
+      \field{pages}{421\bibrangedash 428}
+      \range{pages}{8}
+    \endentry
+    \entry{GellMann1979}{inproceedings}{}
+      \name{author}{3}{}{%
+        {{hash=13fc9674bd1a57cf7c265f9a25b37ce7}{%
+           family={Gell-Mann},
+           familyi={G\bibinithyphendelim M\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+        {{hash=76845637f6937063f6d146edc3efee01}{%
+           family={Ramond},
+           familyi={R\bibinitperiod},
+           given={P.},
+           giveni={P\bibinitperiod}}}%
+        {{hash=b12839f641adb6716d0787aaf7afa8e5}{%
+           family={Slansky},
+           familyi={S\bibinitperiod},
+           given={R.},
+           giveni={R\bibinitperiod}}}%
+      }
+      \name{editor}{2}{}{%
+        {{hash=7ce8ed393a2c20fc8bd27c56a93fda45}{%
+           family={Nieuwenhuizen},
+           familyi={N\bibinitperiod},
+           given={P.},
+           giveni={P\bibinitperiod},
+           prefix={van},
+           prefixi={v\bibinitperiod}}}%
+        {{hash=41693ea808f17b7ea6c6c5d4426dcfa3}{%
+           family={Freedman},
+           familyi={F\bibinitperiod},
+           given={D.\bibnamedelimi Z.},
+           giveni={D\bibinitperiod\bibinitdelim Z\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Amsterdam}%
+      }
+      \strng{namehash}{7603f7407dedc1e0874eb6e506d879f8}
+      \strng{fullhash}{7603f7407dedc1e0874eb6e506d879f8}
+      \strng{bibnamehash}{7603f7407dedc1e0874eb6e506d879f8}
+      \strng{authorbibnamehash}{7603f7407dedc1e0874eb6e506d879f8}
+      \strng{authornamehash}{7603f7407dedc1e0874eb6e506d879f8}
+      \strng{authorfullhash}{7603f7407dedc1e0874eb6e506d879f8}
+      \strng{editorbibnamehash}{9295a3496691a51194f50979992af388}
+      \strng{editornamehash}{9295a3496691a51194f50979992af388}
+      \strng{editorfullhash}{9295a3496691a51194f50979992af388}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Supergravity}
+      \field{note}{Published in the Proceedings of the Workshop on Supergravity, Stony Brook, New York, 27-29 Sept 1979}
+      \field{series}{North-Holland Physics Publishing}
+      \field{title}{Complex Spinors and Unified Theories}
+      \field{volume}{C 790927}
+      \field{year}{1979}
+      \field{pages}{315\bibrangedash 321}
+      \range{pages}{7}
+    \endentry
+    \entry{Yanagida1979}{inproceedings}{}
+      \name{author}{1}{}{%
+        {{hash=9568fa1cfc13f0c43855036ff3d0da95}{%
+           family={Yanagida},
+           familyi={Y\bibinitperiod},
+           given={T.},
+           giveni={T\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Tsukuba, Japan}%
+      }
+      \strng{namehash}{9568fa1cfc13f0c43855036ff3d0da95}
+      \strng{fullhash}{9568fa1cfc13f0c43855036ff3d0da95}
+      \strng{bibnamehash}{9568fa1cfc13f0c43855036ff3d0da95}
+      \strng{authorbibnamehash}{9568fa1cfc13f0c43855036ff3d0da95}
+      \strng{authornamehash}{9568fa1cfc13f0c43855036ff3d0da95}
+      \strng{authorfullhash}{9568fa1cfc13f0c43855036ff3d0da95}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the Workshop on the Unified Theory and the Baryon Number in the Universe}
+      \field{note}{Workshop held at KEK, Tsukuba, February 1979}
+      \field{series}{Conf. Proc. C 7902131}
+      \field{title}{Horizontal Symmetry and Masses of Neutrinos}
+      \field{year}{1979}
+      \field{pages}{95\bibrangedash 99}
+      \range{pages}{5}
+    \endentry
+    \entry{Glashow1980}{inproceedings}{}
+      \name{author}{1}{}{%
+        {{hash=fdc67cd69f482037e96009aec70a2312}{%
+           family={Glashow},
+           familyi={G\bibinitperiod},
+           given={S.\bibnamedelimi L.},
+           giveni={S\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Plenum Press}%
+      }
+      \strng{namehash}{fdc67cd69f482037e96009aec70a2312}
+      \strng{fullhash}{fdc67cd69f482037e96009aec70a2312}
+      \strng{bibnamehash}{fdc67cd69f482037e96009aec70a2312}
+      \strng{authorbibnamehash}{fdc67cd69f482037e96009aec70a2312}
+      \strng{authornamehash}{fdc67cd69f482037e96009aec70a2312}
+      \strng{authorfullhash}{fdc67cd69f482037e96009aec70a2312}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the 1979 Cargèse Summer Institute on Quarks and Leptons}
+      \field{note}{Cargèse, France, 1979}
+      \field{series}{NATO Science Series B: Physics}
+      \field{title}{The Future of Elementary Particle Physics}
+      \field{volume}{61}
+      \field{year}{1980}
+      \field{pages}{687\bibrangedash 713}
+      \range{pages}{27}
+    \endentry
+    \entry{Mohapatra1980}{article}{}
+      \name{author}{2}{}{%
+        {{hash=757c0ce85850aec24d1b921708ff27d3}{%
+           family={Mohapatra},
+           familyi={M\bibinitperiod},
+           given={R.\bibnamedelimi N.},
+           giveni={R\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
+        {{hash=b551d53991c8fea5ee64e8495c89f003}{%
+           family={Senjanović},
+           familyi={S\bibinitperiod},
+           given={G.},
+           giveni={G\bibinitperiod}}}%
+      }
+      \strng{namehash}{718880559ae15b07adcd735097713698}
+      \strng{fullhash}{718880559ae15b07adcd735097713698}
+      \strng{bibnamehash}{718880559ae15b07adcd735097713698}
+      \strng{authorbibnamehash}{718880559ae15b07adcd735097713698}
+      \strng{authornamehash}{718880559ae15b07adcd735097713698}
+      \strng{authorfullhash}{718880559ae15b07adcd735097713698}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Phys. Rev. Lett.}
+      \field{title}{Neutrino Mass and Spontaneous Parity Nonconservation}
+      \field{volume}{44}
+      \field{year}{1980}
+      \field{pages}{912\bibrangedash 915}
+      \range{pages}{4}
+    \endentry
+    \entry{FukugitaYanagida2003}{book}{}
+      \name{author}{2}{}{%
+        {{hash=72ed371dc98ba7c921bcbccbaac9b5b0}{%
+           family={Fukugita},
+           familyi={F\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+        {{hash=9568fa1cfc13f0c43855036ff3d0da95}{%
+           family={Yanagida},
+           familyi={Y\bibinitperiod},
+           given={T.},
+           giveni={T\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Berlin}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{5e889912fcb5e002bbf227bd7e103999}
+      \strng{fullhash}{5e889912fcb5e002bbf227bd7e103999}
+      \strng{bibnamehash}{5e889912fcb5e002bbf227bd7e103999}
+      \strng{authorbibnamehash}{5e889912fcb5e002bbf227bd7e103999}
+      \strng{authornamehash}{5e889912fcb5e002bbf227bd7e103999}
+      \strng{authorfullhash}{5e889912fcb5e002bbf227bd7e103999}
+      \field{extraname}{2}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{978-3540439645}
+      \field{title}{Physics of Neutrinos and Applications to Astrophysics}
+      \field{year}{2003}
+    \endentry
+    \entry{MohapatraPal2004}{book}{}
+      \name{author}{2}{}{%
+        {{hash=757c0ce85850aec24d1b921708ff27d3}{%
+           family={Mohapatra},
+           familyi={M\bibinitperiod},
+           given={R.\bibnamedelimi N.},
+           giveni={R\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
+        {{hash=52b5d260285f6ea2c067487c26b2ee3a}{%
+           family={Pal},
+           familyi={P\bibinitperiod},
+           given={P.\bibnamedelimi B.},
+           giveni={P\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Singapore}%
+      }
+      \list{publisher}{1}{%
+        {World Scientific}%
+      }
+      \strng{namehash}{dcbcdebe02fd18dd7309f8311391e378}
+      \strng{fullhash}{dcbcdebe02fd18dd7309f8311391e378}
+      \strng{bibnamehash}{dcbcdebe02fd18dd7309f8311391e378}
+      \strng{authorbibnamehash}{dcbcdebe02fd18dd7309f8311391e378}
+      \strng{authornamehash}{dcbcdebe02fd18dd7309f8311391e378}
+      \strng{authorfullhash}{dcbcdebe02fd18dd7309f8311391e378}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{3rd}
+      \field{isbn}{978-9812380712}
+      \field{title}{Massive Neutrinos in Physics and Astrophysics}
+      \field{year}{2004}
+    \endentry
+    \entry{GiuntiKim2007}{book}{}
+      \name{author}{2}{}{%
+        {{hash=ac695cbe5e51f9fc6da12ff314fff8a3}{%
+           family={Giunti},
+           familyi={G\bibinitperiod},
+           given={C.},
+           giveni={C\bibinitperiod}}}%
+        {{hash=550fb2133a1e80c043d2bfefb5dd76d9}{%
+           family={Kim},
+           familyi={K\bibinitperiod},
+           given={C.\bibnamedelimi W.},
+           giveni={C\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Oxford}%
+      }
+      \list{publisher}{1}{%
+        {Oxford University Press}%
+      }
+      \strng{namehash}{2421e6011ce3436b4dbd854fe102109a}
+      \strng{fullhash}{2421e6011ce3436b4dbd854fe102109a}
+      \strng{bibnamehash}{2421e6011ce3436b4dbd854fe102109a}
+      \strng{authorbibnamehash}{2421e6011ce3436b4dbd854fe102109a}
+      \strng{authornamehash}{2421e6011ce3436b4dbd854fe102109a}
+      \strng{authorfullhash}{2421e6011ce3436b4dbd854fe102109a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{978-0198508717}
+      \field{title}{Fundamentals of Neutrino Physics and Astrophysics}
+      \field{year}{2007}
+    \endentry
+    \entry{Bilenky2010}{book}{}
+      \name{author}{1}{}{%
+        {{hash=ee4ebf10f55b82e860dace45efad0e89}{%
+           family={Bilenky},
+           familyi={B\bibinitperiod},
+           given={S.\bibnamedelimi M.},
+           giveni={S\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Berlin}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{ee4ebf10f55b82e860dace45efad0e89}
+      \strng{fullhash}{ee4ebf10f55b82e860dace45efad0e89}
+      \strng{bibnamehash}{ee4ebf10f55b82e860dace45efad0e89}
+      \strng{authorbibnamehash}{ee4ebf10f55b82e860dace45efad0e89}
+      \strng{authornamehash}{ee4ebf10f55b82e860dace45efad0e89}
+      \strng{authorfullhash}{ee4ebf10f55b82e860dace45efad0e89}
+      \field{extraname}{1}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{978-3642061911}
+      \field{title}{Introduction to the Physics of Massive and Mixed Neutrinos}
+      \field{year}{2010}
+    \endentry
+    \entry{Zuber2011}{book}{}
+      \name{author}{1}{}{%
+        {{hash=d0e7e7f2b85606fe573d5e88a695bd05}{%
+           family={Zuber},
+           familyi={Z\bibinitperiod},
+           given={K.},
+           giveni={K\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Boca Raton}%
+      }
+      \list{publisher}{1}{%
+        {Taylor \& Francis}%
+      }
+      \strng{namehash}{d0e7e7f2b85606fe573d5e88a695bd05}
+      \strng{fullhash}{d0e7e7f2b85606fe573d5e88a695bd05}
+      \strng{bibnamehash}{d0e7e7f2b85606fe573d5e88a695bd05}
+      \strng{authorbibnamehash}{d0e7e7f2b85606fe573d5e88a695bd05}
+      \strng{authornamehash}{d0e7e7f2b85606fe573d5e88a695bd05}
+      \strng{authorfullhash}{d0e7e7f2b85606fe573d5e88a695bd05}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{978-1439830757}
+      \field{title}{Neutrino Physics}
+      \field{year}{2011}
+    \endentry
+    \entry{Barger2012}{book}{}
+      \name{author}{3}{}{%
+        {{hash=90901f582afc882fd70fd4bc63b94c86}{%
+           family={Barger},
+           familyi={B\bibinitperiod},
+           given={V.},
+           giveni={V\bibinitperiod}}}%
+        {{hash=81ac0856291770699696b93c9ca5f797}{%
+           family={Marfatia},
+           familyi={M\bibinitperiod},
+           given={D.},
+           giveni={D\bibinitperiod}}}%
+        {{hash=a5b034160e3126f6df05b0d9cd523273}{%
+           family={Whisnant},
+           familyi={W\bibinitperiod},
+           given={K.},
+           giveni={K\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Princeton, NJ}%
+      }
+      \list{publisher}{1}{%
+        {Princeton University Press}%
+      }
+      \strng{namehash}{31f637553fbba0585e79c8ce14773c7e}
+      \strng{fullhash}{31f637553fbba0585e79c8ce14773c7e}
+      \strng{bibnamehash}{31f637553fbba0585e79c8ce14773c7e}
+      \strng{authorbibnamehash}{31f637553fbba0585e79c8ce14773c7e}
+      \strng{authornamehash}{31f637553fbba0585e79c8ce14773c7e}
+      \strng{authorfullhash}{31f637553fbba0585e79c8ce14773c7e}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{978-0691157496}
+      \field{title}{The Physics of Neutrinos}
+      \field{year}{2012}
+    \endentry
+    \entry{ValleRomao2015}{book}{}
+      \name{author}{2}{}{%
+        {{hash=27702ea2b17853b42b2fb5623353a826}{%
+           family={Valle},
+           familyi={V\bibinitperiod},
+           given={J.\bibnamedelimi W.\bibnamedelimi F.},
+           giveni={J\bibinitperiod\bibinitdelim W\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
+        {{hash=d1b53dbc89b9a6eec9e0d1761c8db65b}{%
+           family={Romão},
+           familyi={R\bibinitperiod},
+           given={J.\bibnamedelimi C.},
+           giveni={J\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Weinheim}%
+      }
+      \list{publisher}{1}{%
+        {Wiley-VCH}%
+      }
+      \strng{namehash}{26107b4546012099ee4311a25d3c1c5f}
+      \strng{fullhash}{26107b4546012099ee4311a25d3c1c5f}
+      \strng{bibnamehash}{26107b4546012099ee4311a25d3c1c5f}
+      \strng{authorbibnamehash}{26107b4546012099ee4311a25d3c1c5f}
+      \strng{authornamehash}{26107b4546012099ee4311a25d3c1c5f}
+      \strng{authorfullhash}{26107b4546012099ee4311a25d3c1c5f}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{978-3527411013}
+      \field{title}{Neutrinos in High Energy and Astroparticle Physics}
+      \field{year}{2015}
+    \endentry
+    \entry{Suekane2015}{book}{}
+      \name{author}{1}{}{%
+        {{hash=e5604642094f22ec398b61eb945891b4}{%
+           family={Suekane},
+           familyi={S\bibinitperiod},
+           given={F.},
+           giveni={F\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Tokyo}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{e5604642094f22ec398b61eb945891b4}
+      \strng{fullhash}{e5604642094f22ec398b61eb945891b4}
+      \strng{bibnamehash}{e5604642094f22ec398b61eb945891b4}
+      \strng{authorbibnamehash}{e5604642094f22ec398b61eb945891b4}
+      \strng{authornamehash}{e5604642094f22ec398b61eb945891b4}
+      \strng{authorfullhash}{e5604642094f22ec398b61eb945891b4}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{978-4431556962}
+      \field{title}{Neutrino Oscillations}
+      \field{year}{2015}
+    \endentry
+    \entry{Patrignani2016}{article}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{1}{}{%
+        {{hash=c920fcd3bc4490318639f9320a553f82}{%
+           family={Patrignani},
+           familyi={P\bibinitperiod},
+           given={C.},
+           giveni={C\bibinitperiod}}}%
+      }
+      \strng{namehash}{87e7f1eb970809d627a79cc35bce51e9}
+      \strng{fullhash}{87e7f1eb970809d627a79cc35bce51e9}
+      \strng{bibnamehash}{87e7f1eb970809d627a79cc35bce51e9}
+      \strng{authorbibnamehash}{87e7f1eb970809d627a79cc35bce51e9}
+      \strng{authornamehash}{87e7f1eb970809d627a79cc35bce51e9}
+      \strng{authorfullhash}{87e7f1eb970809d627a79cc35bce51e9}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Chin. Phys. C}
+      \field{title}{Review of Particle Physics}
+      \field{volume}{40}
+      \field{year}{2016}
+      \field{pages}{100001}
+      \range{pages}{1}
+    \endentry
+    \entry{Blennow2013}{article}{}
+      \name{author}{2}{}{%
+        {{hash=24ef74298be4652ed018fd3a4dfc2716}{%
+           family={Blennow},
+           familyi={B\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+        {{hash=5447098af507bb8924df18903c2be5d5}{%
+           family={Smirnov},
+           familyi={S\bibinitperiod},
+           given={A.\bibnamedelimi Yu.},
+           giveni={A\bibinitperiod\bibinitdelim Y\bibinitperiod}}}%
+      }
+      \strng{namehash}{74d83f1069d43c2a800d292df53d1ee5}
+      \strng{fullhash}{74d83f1069d43c2a800d292df53d1ee5}
+      \strng{bibnamehash}{74d83f1069d43c2a800d292df53d1ee5}
+      \strng{authorbibnamehash}{74d83f1069d43c2a800d292df53d1ee5}
+      \strng{authornamehash}{74d83f1069d43c2a800d292df53d1ee5}
+      \strng{authorfullhash}{74d83f1069d43c2a800d292df53d1ee5}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Adv. High Energy Phys.}
+      \field{title}{Neutrino Propagation in Matter}
+      \field{volume}{2013}
+      \field{year}{2013}
+      \field{pages}{972485}
+      \range{pages}{1}
+    \endentry
+    \entry{Kuo1989}{article}{}
+      \name{author}{2}{}{%
+        {{hash=b2643d7797c4725056427c15d0a2c75e}{%
+           family={Kuo},
+           familyi={K\bibinitperiod},
+           given={T.-K.},
+           giveni={T\bibinithyphendelim K\bibinitperiod}}}%
+        {{hash=00d7c4c2ee19f2a9baaa0a3890a1e27b}{%
+           family={Pantaleone},
+           familyi={P\bibinitperiod},
+           given={J.T.},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{233330f7761b41448c190860ccd92d9e}
+      \strng{fullhash}{233330f7761b41448c190860ccd92d9e}
+      \strng{bibnamehash}{233330f7761b41448c190860ccd92d9e}
+      \strng{authorbibnamehash}{233330f7761b41448c190860ccd92d9e}
+      \strng{authornamehash}{233330f7761b41448c190860ccd92d9e}
+      \strng{authorfullhash}{233330f7761b41448c190860ccd92d9e}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Rev. Mod. Phys.}
+      \field{title}{Neutrino Oscillations in Matter}
+      \field{volume}{61}
+      \field{year}{1989}
+      \field{pages}{937\bibrangedash 979}
+      \range{pages}{43}
+    \endentry
+    \entry{Ianni2017}{article}{}
+      \name{author}{1}{}{%
+        {{hash=cb1872301e869dad352c3db33ab99da4}{%
+           family={Ianni},
+           familyi={I\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{cb1872301e869dad352c3db33ab99da4}
+      \strng{fullhash}{cb1872301e869dad352c3db33ab99da4}
+      \strng{bibnamehash}{cb1872301e869dad352c3db33ab99da4}
+      \strng{authorbibnamehash}{cb1872301e869dad352c3db33ab99da4}
+      \strng{authornamehash}{cb1872301e869dad352c3db33ab99da4}
+      \strng{authorfullhash}{cb1872301e869dad352c3db33ab99da4}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Prog. Part. Nucl. Phys.}
+      \field{title}{Solar Neutrinos and the Borexino Experiment}
+      \field{volume}{94}
+      \field{year}{2017}
+      \field{pages}{257\bibrangedash 281}
+      \range{pages}{25}
+    \endentry
+    \entry{Lachenmaier2015}{article}{}
+      \name{author}{1}{}{%
+        {{hash=32147cbf039e5d872a10fb170a45eeb9}{%
+           family={Lachenmaier},
+           familyi={L\bibinitperiod},
+           given={T.},
+           giveni={T\bibinitperiod}}}%
+      }
+      \strng{namehash}{32147cbf039e5d872a10fb170a45eeb9}
+      \strng{fullhash}{32147cbf039e5d872a10fb170a45eeb9}
+      \strng{bibnamehash}{32147cbf039e5d872a10fb170a45eeb9}
+      \strng{authorbibnamehash}{32147cbf039e5d872a10fb170a45eeb9}
+      \strng{authornamehash}{32147cbf039e5d872a10fb170a45eeb9}
+      \strng{authorfullhash}{32147cbf039e5d872a10fb170a45eeb9}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Prog. Part. Nucl. Phys.}
+      \field{title}{The Borexino Experiment}
+      \field{volume}{83}
+      \field{year}{2015}
+      \field{pages}{31\bibrangedash 58}
+      \range{pages}{28}
+    \endentry
+    \entry{Qian2015}{article}{}
+      \name{author}{2}{}{%
+        {{hash=e5891b0b53310c582812d133b7ffd2d2}{%
+           family={Qian},
+           familyi={Q\bibinitperiod},
+           given={X.},
+           giveni={X\bibinitperiod}}}%
+        {{hash=ee5d1ab41d88baa14410788139a1590d}{%
+           family={Vogel},
+           familyi={V\bibinitperiod},
+           given={P.},
+           giveni={P\bibinitperiod}}}%
+      }
+      \strng{namehash}{47fbe197daebabac922f9f5bb723b4ed}
+      \strng{fullhash}{47fbe197daebabac922f9f5bb723b4ed}
+      \strng{bibnamehash}{47fbe197daebabac922f9f5bb723b4ed}
+      \strng{authorbibnamehash}{47fbe197daebabac922f9f5bb723b4ed}
+      \strng{authornamehash}{47fbe197daebabac922f9f5bb723b4ed}
+      \strng{authorfullhash}{47fbe197daebabac922f9f5bb723b4ed}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Prog. Part. Nucl. Phys.}
+      \field{title}{Neutrino Mass Hierarchy}
+      \field{volume}{83}
+      \field{year}{2015}
+      \field{pages}{1\bibrangedash 30}
+      \range{pages}{30}
+    \endentry
+    \entry{Abazajian2012}{article}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{1}{}{%
+        {{hash=ab60200ea0dd09dc21683c4ba4e78654}{%
+           family={Abazajian},
+           familyi={A\bibinitperiod},
+           given={K.N.},
+           giveni={K\bibinitperiod}}}%
+      }
+      \strng{namehash}{1e50bddc07ea2636f933889e63e5847c}
+      \strng{fullhash}{1e50bddc07ea2636f933889e63e5847c}
+      \strng{bibnamehash}{1e50bddc07ea2636f933889e63e5847c}
+      \strng{authorbibnamehash}{1e50bddc07ea2636f933889e63e5847c}
+      \strng{authornamehash}{1e50bddc07ea2636f933889e63e5847c}
+      \strng{authorfullhash}{1e50bddc07ea2636f933889e63e5847c}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{hep-ph}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{arXiv preprint}
+      \field{title}{Light Sterile Neutrinos: A White Paper}
+      \field{year}{2012}
+      \verb{eprint}
+      \verb 1204.5379
+      \endverb
+    \endentry
+    \entry{Gariazzo2016}{article}{}
+      \name{author}{5}{}{%
+        {{hash=bc69bcc789d2b19edcab799ff75d959b}{%
+           family={Gariazzo},
+           familyi={G\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod}}}%
+        {{hash=ac695cbe5e51f9fc6da12ff314fff8a3}{%
+           family={Giunti},
+           familyi={G\bibinitperiod},
+           given={C.},
+           giveni={C\bibinitperiod}}}%
+        {{hash=dc7e51437578a458371c659848a551b5}{%
+           family={Laveder},
+           familyi={L\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+        {{hash=453fdbe5efe061e24506a42674e0d423}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Y.F.},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=48d669f9274e3bbd5b8a2405d19f0c2c}{%
+           family={Zavanin},
+           familyi={Z\bibinitperiod},
+           given={E.M.},
+           giveni={E\bibinitperiod}}}%
+      }
+      \strng{namehash}{8938b4d61dfe3ed0c1b7294d49faf251}
+      \strng{fullhash}{fe56f2ab73836274fb60df5b811afde4}
+      \strng{bibnamehash}{8938b4d61dfe3ed0c1b7294d49faf251}
+      \strng{authorbibnamehash}{8938b4d61dfe3ed0c1b7294d49faf251}
+      \strng{authornamehash}{8938b4d61dfe3ed0c1b7294d49faf251}
+      \strng{authorfullhash}{fe56f2ab73836274fb60df5b811afde4}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{J. Phys. G}
+      \field{number}{3}
+      \field{title}{Light sterile neutrinos}
+      \field{volume}{43}
+      \field{year}{2016}
+      \field{pages}{033001}
+      \range{pages}{1}
+    \endentry
+    \entry{Bilenky2013}{article}{}
+      \name{author}{1}{}{%
+        {{hash=ee4ebf10f55b82e860dace45efad0e89}{%
+           family={Bilenky},
+           familyi={B\bibinitperiod},
+           given={S.M.},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{ee4ebf10f55b82e860dace45efad0e89}
+      \strng{fullhash}{ee4ebf10f55b82e860dace45efad0e89}
+      \strng{bibnamehash}{ee4ebf10f55b82e860dace45efad0e89}
+      \strng{authorbibnamehash}{ee4ebf10f55b82e860dace45efad0e89}
+      \strng{authornamehash}{ee4ebf10f55b82e860dace45efad0e89}
+      \strng{authorfullhash}{ee4ebf10f55b82e860dace45efad0e89}
+      \field{extraname}{2}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Eur. Phys. J. H}
+      \field{title}{Introduction to the physics of massive and mixed neutrinos}
+      \field{volume}{38}
+      \field{year}{2013}
+      \field{pages}{345\bibrangedash 404}
+      \range{pages}{60}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+
