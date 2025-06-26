@@ -2,20 +2,27 @@
 \usepackage[UTF8]{ctex}
 \usepackage{amsmath}
 \usepackage{amssymb}
-\usepackage{geometry} %调整页边距
+\usepackage{geometry} % 调整页边距
 \usepackage{graphicx}
-\geometry{left=3cm,right=3cm, top=2.5cm, bottom=2.5cm} %页边距
+\geometry{left=3cm,right=3cm, top=2.5cm, bottom=2.5cm} % 页边距
 \usepackage{float}
 \usepackage{caption}
 
-\usepackage{mathptmx} %公式字体
+%\usepackage{mathptmx} % 公式字体
 \usepackage[colorlinks=true, linkcolor=blue]{hyperref}
-\usepackage{mathrsfs} %花写字体
+\usepackage{mathrsfs} % 花写字体
 
 \usepackage[backend=biber, style=numeric, sorting=none]{biblatex}
 \addbibresource{references.bib}
+% 期刊名使用正体
+\DeclareFieldFormat{title}{#1}
+\DeclareFieldFormat{booktitle}{#1}
+\DeclareFieldFormat{journaltitle}{#1}
+\DeclareFieldFormat{journal}{#1}
+\renewcommand{\mkbibemph}[1]{#1}
 
 \newcommand{\dd}{\mathrm{d}}
+\newcommand{\ii}{\mathrm{i}}
 \newcommand{\bb}{\mathbf}
 \newcommand\subtitle[1]{{\small #1}}
 
@@ -28,7 +35,7 @@
 	\begin{abstract}
 		在中微子振荡发现后的过去20年里，有关中微子振荡的实验取得了显著的成果。物理学家精确测量了中微子的质量平方差与混合角，其中包括我们在实验上测得的最后一个混合角—$\theta_{13}$。
 		
-		目前，我们观察到的一系列中微子振荡的实验结果都可以使用包含三个有质量的活性中微子的模型来解释，其质量本征态与味道本征态之间可以使用一个$3\times3$幺正混合矩阵—PMNS（Pontecorvo-Maki-Nakagawa-Sakata）矩阵相关联，并且PMNS矩阵可以被参数化为三个混合角$\theta_{12},\theta_{23},\theta_{13}$和一个CP破坏相位$\delta_\mathrm{CP}$。除此之外，中微子的质量平方差$\Delta m_{ji}^2=m_j^2-m_i^2$也主导着中微子振荡，其中$m_i$是中微子的第$i$个质量本征态的本征值。本综述将主要介绍三种味道的中微子混合的PMNS范式与当前实验对振荡参数的测量。
+		目前，我们观察到的一系列中微子振荡的实验结果都可以使用包含三个有质量的活性中微子的模型来解释，其质量本征态与味道本征态之间可以使用一个$3\times3$幺正混合矩阵—PMNS（Pontecorvo-Maki-Nakagawa-Sakata）矩阵相关联，并且PMNS矩阵可以被参数化为3个混合角$\theta_{12},\theta_{23},\theta_{13}$和1个CP破坏相位$\delta_\mathrm{CP}$。除此之外，中微子的质量平方差$\Delta m_{ji}^2=m_j^2-m_i^2$也主导着中微子振荡，其中$m_i$是中微子的第$i$个质量本征态的本征值。本综述将主要介绍三种味道的中微子混合的PMNS范式与当前实验对振荡参数的测量。
 		
 		在未来的几年里，一系列的中微子振荡实验将会取得丰硕的成果，最终将解决中微子振荡剩下的三个谜题，即：
 		\begin{itemize}
@@ -44,7 +51,7 @@
 	
 	在理论方面，Pontecorvo受到$K-\bar{K}$介子振荡的启发，于1957年首次提出若轻子数发生破坏，将会发生$\nu-\bar{\nu}$振荡的现象\cite{Pontecorvo1957}\cite{Pontecorvo1958b}。这个现象我们在今天描述为活性-惰性中微子的振荡，这需要中微子具有质量，与当时人们普遍认为的中微子无质量相矛盾。不久之后，随着$\nu_\mu$的发现，Maki、Nakagawa和Sakata首次提出了中微子味混合的概念\cite{Maki1962}。随后，1967年，Pontecorvo提出了中微子味振荡的概念\cite{Pontecorvo1967}，并由Gribov和Pontecorvo在1969年表述成了如今的形式\cite{Gribov1969}。
 	
-	目前，我们观察到的一系列中微子振荡的实验结果都可以使用包含三个有质量的活性中微子的模型来解释，其质量本征态与味道本征态之间可以使用一个$3\times3$幺正混合矩阵—PMNS矩阵相联系，并且PMNS矩阵可以被参数化为三个混合角$\theta_{12},\theta_{23},\theta_{13}$和一个CP破坏相位$\delta_\mathrm{CP}$（对于Majorana中微子的情形，将会引入额外两个相位，但它们不会对振荡产生影响）。除此之外，中微子的质量平方差$\Delta m_{ji}^2=m_j^2-m_i^2$也主导着中微子振荡，其中$m_i$是中微子的第$i$个质量本征态的本征值。三种味道的中微子发生味混合从而引起振荡的模型（PMNS范式）在过去的20年里经过了许多实验的验证，在未来的几年里，一系列的中微子振荡实验将会取得丰硕的成果，最终将解决中微子振荡剩下的三个谜题，即$\theta_{23}$的象限与精确值、三代中微子的质量顺序与CP破坏相位$\delta_\mathrm{CP}$的测量。
+	目前，我们观察到的一系列中微子振荡的实验结果都可以使用包含三个有质量的活性中微子的模型来解释，其质量本征态与味道本征态之间可以使用一个$3\times3$幺正混合矩阵—PMNS矩阵相联系，并且PMNS矩阵可以被参数化为3个混合角$\theta_{12},\theta_{23},\theta_{13}$和1个CP破坏相位$\delta_\mathrm{CP}$（对于Majorana中微子的情形，将会引入额外2个相位，但它们不会对振荡产生影响）。除此之外，中微子的质量平方差$\Delta m_{ji}^2=m_j^2-m_i^2$也主导着中微子振荡，其中$m_i$是中微子的第$i$个质量本征态的本征值。三种味道的中微子发生味混合从而引起振荡的模型（PMNS范式）在过去的20年里经过了许多实验的验证，在未来的几年里，一系列的中微子振荡实验将会取得丰硕的成果，最终将解决中微子振荡剩下的三个谜题，即$\theta_{23}$的象限与精确值、三代中微子的质量顺序与CP破坏相位$\delta_\mathrm{CP}$的测量。
 	
 	研究中微子，特别是中微子振荡，对我们认识基本粒子物理有着重要的意义。仅在实验中观测到的中微子的非零质量是目前唯一的超出标准模型之外的新物理的迹象\cite{Mohapatra2007}。此外，轻子PMNS混合矩阵中的三个混合角的数值较大，这与夸克区的CKM（Cabibbo-Kobayashi-Maskawa）混合矩阵\cite{Cabibbo1963}\cite{Kobayashi1973}明显不同，这本身也蕴含着深刻的物理问题。
 	
@@ -64,19 +71,190 @@
 	
 	\section{中微子振荡的理论与唯象学\label{section2}}
 	\subsection{轻子区的味混合}
+	真空中的中微子振荡是一种量子力学现象\cite{Pontecorvo1957}\cite{Pontecorvo1958b}\cite{Pontecorvo1967}，来源于非简并的中微子质量与轻子味道的混合\cite{Maki1962}\cite{Pontecorvo1967}。类似夸克，轻子区的味混合来源于弱作用本征态与质量本征态的不重合，即以味本征态作为基矢表述的中微子质量矩阵是非对角的，其中味本征态定义为与带电轻子的质量本征态$e,\mu,\tau$所对应的弱作用本征态$\nu_e,\nu_\mu,\nu_\tau$。联系左手中微子场的味本征态和质量本征态的幺正变换称为\textbf{轻子混合矩阵}，即PMNS矩阵：
+	\begin{equation}
+		\begin{pmatrix}\nu_e(x)\\\nu_\mu(x)\\\nu_\tau(x)\end{pmatrix}_L=U\begin{pmatrix}\nu_1(x)\\\nu_2(x)\\\nu_3(x)\end{pmatrix}_L=\begin{pmatrix}U_{e1}&U_{e2}&U_{e3}\\U_{\mu1}&U_{\mu2}&U_{\mu3}\\U_{\tau1}&U_{\tau2}&U_{\tau3}\end{pmatrix}\begin{pmatrix}\nu_1(x)\\\nu_2(x)\\\nu_3(x)\end{pmatrix}_L
+		\label{eq1}
+	\end{equation}
+	在方程(\ref{eq1})中，$\nu_{eL}(x),\nu_{\mu L}(x),\nu_{\tau L}(x)$是与处于左手\textbf{味本征态}的中微子对应的场，其中左手味本征态的中微子通过弱带电流分别与$e,\mu,\tau$耦合。而$\nu_{1L}(x),\nu_{2L}(x),\nu_{3L}(x)$分别描述了质量为$m_1,m_2,m_3$的中微子左手质量本征态。方程(\ref{eq1})可以被简写为：
+	\begin{equation}
+		\nu_{\alpha L}(x)=\sum_i U_{\alpha i}\nu_{iL}(x)
+		\label{eq2}
+	\end{equation}
+	其中，$\alpha=e,\mu,\tau$以及$i=1,2,3$。为了简化记号，之后我们将省略$\nu_L(x)$中的“$L$”与“$x$”。味混合的结果是中微子不是以它的质量本征态去与给定味道的带电轻子$\bar{\ell}_{\alpha L}$通过弱带电流（CC, charged current）耦合，而是以质量本征态的相干叠加去进行耦合：
+	\begin{equation}
+		\mathcal{L}_{\mathrm{CC}}=\frac{g}{\sqrt{2}}W_{\mu}^{-}\sum_{\alpha=e,\mu,\tau}\bar{\ell}_{\alpha L}\gamma^{\mu}\nu_{\alpha L}+\mathrm{h.c.}=\frac{g}{\sqrt{2}}W_{\mu}^{-}\sum_{\alpha=e,\mu,\tau}\bar{\ell}_{\alpha L}\gamma^{\mu}\sum_{i=1,2,3}U_{\alpha i}\nu_{iL}+\mathrm{h.c.}
+		\label{eq3}
+	\end{equation}
+	正是这种相干性使得中微子可能会发生振荡。
+	
+	由于PMNS矩阵是两组正交完备基矢的变换矩阵，因此它满足幺正性，即$UU^\dagger=U^\dagger U=\mathbf{1}$：
+	\begin{equation}
+		\sum_i U_{\alpha i}U_{\beta i}^*=\delta_{\alpha\beta}\quad(\alpha,\beta=e,\mu,\tau)\quad\sum_\alpha U_{\alpha i}^*U_{\alpha j}=\delta_{ij}\quad(i,j=1,2,3)
+	\end{equation}
+	对于任意的$3\times 3$幺正矩阵$U$，可以证明它可以被参数化为3个混合角和6个相位。然而，并不是所有相位都是物理的，我们可以通过相位转动重新定义轻子场，从而吸收额外的相位。即如果中微子是Dirac费米子，我们可以同时对轻子场和中微子场做相位转动：$\ell_\alpha(x)\to e^{\ii\phi_\alpha}\ell_\alpha(x),\nu_i(x)\to e^{\ii\phi_i}\nu_i(x)$，其中$\ell_\alpha(x),\nu_i(x)$是4分量的Dirac场（即对左手和右手的轻子场做相同的相位转动，使得质量项$-\sum_\alpha m_{\ell_\alpha}\bar{\ell}_{\alpha R}\ell_{\alpha L}-\sum_i m_i\bar{\nu}_{iR}\nu_{iL}+\mathrm{h.c.}$保持不变）。在做如上的相位转动后，我们只需要重新定义PMNS矩阵：
+	\begin{equation}
+		U_{\alpha i}\to e^{\ii (\phi_\alpha-\phi_i)} U_{\alpha i}
+	\end{equation}
+	即可使得带电流项(\ref{eq3})式保持不变。已知对于9个相位差$\phi_\alpha-\phi_i$，其中只有5个是相互独立的，并且它们都可以通过矩阵元的重新定义从而被吸收。因此我们可以从PMNS中移除5个相位，只保留一个物理的相位—CP破坏相位$\delta_\mathrm{CP}$。但如果中微子是Majorana费米子，那么我们无法对左手中微子场做相位转动，因为这样会导致它带有复的质量（Majorana质量项为$-\frac{1}{2}m_i\nu_{iL}^\mathrm{T}C\nu_{iL}+\mathrm{h.c.}$，其中$C$是电荷共轭矩阵，满足$C\gamma_\mu C^{-1}=-\gamma_\mu^\mathrm{T}$。关于Majorana中微子，可以参考\cite{petcov2013nature}）。因此我们只能对带电轻子场做相位转动，这种转动可以通过PMNS矩阵元的重新定义而被吸收：
+	\begin{equation}
+		U_{\alpha i}\to e^{\ii\phi_\alpha}U_{\alpha i}
+	\end{equation}
+	因此，与Dirac中微子不同，Majorana中微子具有3个物理的CP破坏相位\footnote{以上的参数化方法可以推广至任意$N$代轻子的情形。我们发现，在Dirac中微子的情形下，$N$代轻子混合将导致混合矩阵中包含$\frac{N(N-1)}{2}$个混合角与$\frac{(N-1)(N-2)}{2}$个相位，对于Majorana中微子将会有额外$N-1$个相位\cite{bilenky1980oscillations}\cite{schechter1980neutrino}\cite{doi1981cp}。因此，与夸克区不同，若中微子是Majorana中微子，则CP破坏在2代轻子中就可以出现，但振荡中的CP破坏至少需要3代轻子（见\ref{2.3}节）。}。
+	
+	基于以上讨论，我们可以将PMNS矩阵写作三个关于角度$\theta_{23},\theta_{13},\theta_{12}$的转动矩阵和一个关于相位的对角矩阵$P$的乘积。其中关于$\theta_{13}$的转动矩阵与相位$\delta_\mathrm{CP}$有关，并且由于关于$\theta_{13}$的转动矩阵中包含$e^{\ii\delta_\mathrm{CP}}$，因此它不是一般的正交转动实矩阵，而是一个幺正矩阵。于是：
+	\begin{equation}
+		\begin{aligned}
+			U&=\begin{pmatrix}1&0&0\\0&c_{23}&s_{23}\\0&-s_{23}&c_{23}\end{pmatrix}\begin{pmatrix}c_{13}&0&s_{13}e^{-\ii\delta_{\mathrm{CP}}}\\0&1&0\\-s_{13}e^{\ii\delta_{\mathrm{CP}}}&0&c_{13}\end{pmatrix}\begin{pmatrix}c_{12}&s_{12}&0\\-s_{12}&c_{12}&0\\0&0&1\end{pmatrix}P\\
+			&=\begin{pmatrix}c_{12}c_{13}&s_{12}c_{13}&s_{13}e^{-\ii\delta_{\mathrm{CP}}}\\-s_{12}c_{23}-c_{12}s_{13}s_{23}e^{\ii\delta_{\mathrm{CP}}}&c_{12}c_{23}-s_{12}s_{13}s_{23}e^{\ii\delta_{\mathrm{CP}}}&c_{13}s_{23}\\s_{12}s_{23}-c_{12}s_{13}c_{23}e^{\ii\delta_{\mathrm{CP}}}&-c_{12}s_{23}-s_{12}s_{13}c_{23}e^{\ii\delta_{\mathrm{CP}}}&c_{13}c_{23}\end{pmatrix}P
+		\end{aligned}
+		\label{eq7}
+	\end{equation}
+	方程(\ref{eq7})中，$c_{ij}\equiv\cos\theta_{ij},s_{ij}\equiv\sin\theta_{ij}$。对于对角矩阵$P$，在Dirac中微子的情形下$P=\mathbf{1}$，在Majorana中微子的情形下包含了与中微子的Majorana属性有关的2个相位。不失一般性地，我们可以取$\theta_{ij}\in[0,\frac{\pi}{2}]$和$\delta_\mathrm{CP}\in[0,2\pi)$。以上的参数化方法已经成为了一种标准，但Majorana中微子情形下的对角矩阵$P$的形式并无统一约定。以下几种记法在文献中都有出现：
+	\begin{equation}
+		P_\mathrm{Majorana}=\begin{pmatrix}e^{\ii\alpha_1}&0&0\\0&e^{\ii\alpha_2}&0\\0&0&1\end{pmatrix},\begin{pmatrix}1&0&0\\0&e^{\ii\phi_2}&0\\0&0&e^{\ii(\phi_3+\delta_{\mathrm{CP}})}\end{pmatrix},\begin{pmatrix}e^{\ii\rho}&0&0\\0&1&0\\0&0&e^{\ii\sigma}\end{pmatrix}
+	\end{equation}
+	这些记法与带电轻子场的相位转动有关，它们彼此在物理上是完全等价的。PMNS矩阵中的$\delta_\mathrm{CP}$通常称为“Dirac相位”，而对角矩阵$P$中的相位通常称为“Majorana相位”。不失一般性地，Majorana相位的取值范围可以选为$[0,\pi)$。我们在本综述中将不会过度关注Majorana相位，因为之后我们将会看到，它并不会影响中微子的振荡概率。Majorana相位仅在轻子数破坏的过程中出现，例如无中微子双$\beta$衰变（$0\nu\beta\beta$），在这一类过程中Majorana属性将至关重要（关于$0\nu\beta\beta$的综述，理论方面可参考\cite{vergados2012theory}\cite{dell2016neutrinoless}，实验方面可参考\cite{cremonesi2018neutrino}）。而Dirac相位$\delta_\mathrm{CP}$与振荡概率相关，并且导致真空中的中微子振荡和反中微子振荡的不对称性，详见\ref{2.3}节。
+	\subsection{真空中的中微子振荡}
+	一般的中微子振荡实验需要包含三个步骤。第一步，从带电流过程产生一束处于纯的味本征态的中微子束流，例如$\pi^+\to\mu^+\nu_\mu$过程可以产生纯的$\nu_\mu$束流。而味本征态是质量本征态的相干叠加\footnote{注意，正中微子态的味道和质量本征态之间通过PMNS矩阵的复共轭相联系，而正中微子场的味道和质量本征态之间通过PMNS矩阵相联系，例如方程(\ref{eq2})。这是因为量子中微子场$\nu_\alpha(x)$可以湮灭一个味道为$\alpha$的中微子，而中微子态$|\nu_\alpha(\vec{p})\rangle$需要通过产生算符$a_\alpha^\dagger(\vec{p})$作用在真空态上得到。对于反中微子，我们有$\bar{\nu}_\alpha(x)=\sum_i U_{\alpha i}^*\bar{\nu}_i(x)$与$|\bar{\nu}_\alpha\rangle=\sum_i U_{\alpha i}|\bar{\nu}_i\rangle$。}：
+	\begin{equation}
+		|\nu(t=0)\rangle=|\nu_\alpha\rangle=\sum_i U_{\alpha i}^*|\nu_i\rangle
+		\label{eq9}
+	\end{equation}
+	注意，前面我们描述味混合时采用的形式为$\nu_{\alpha}(x)=\sum_iU_{\alpha i}\nu_{i}(x)$，但在(\ref{eq9})式中我们采用其复共轭$U_{\alpha i}^*$，其原因是$\nu_\alpha(x)$是一个Dirac量子场算符，其中包含正粒子的湮灭算符，负责湮灭正中微子。但其复共轭场$\nu_\alpha^\dagger(x)=\sum_i U_{\alpha i}^*\nu_i^\dagger(x)$包含正粒子的产生算符，将其作用于真空态即可得到正中微子态，即$\nu_\alpha^\dagger(x)|0\rangle=|\nu_\alpha\rangle$。
+	第二步，中微子束流在空间中传播。由于每个质量本征态都是真空中的哈密顿量本征态，所以随时间演化时带有因子$e^{-\ii E_it}$，其中$E_i=\sqrt{p^2+m_i^2}$是第$i$个质量本征态的能量（取自然单位制$c=\hbar=1$）。由于不同质量本征态的时间演化因子不同，因此质量本征态的含时演化将使得中微子束流不再是一个纯的味本征态：
+	\begin{equation}
+		|\nu(t)\rangle=\sum_{i} U_{\alpha i}^*e^{-\ii E_it}|\nu_i\rangle=\sum_iU_{\alpha i}^*e^{-\ii E_it}\sum_\beta U_{\beta i}|\nu_\beta\rangle
+	\end{equation}
+	最后一步是通过特定的带电流相互作用探测中微子束流。从$\alpha$味道振荡至$\beta$味道的概率振幅为$\langle\nu_\beta|\nu(t)\rangle$，相应的振荡概率为：
+	\begin{equation}
+		P(\nu_\alpha\to\nu_\beta)=\left|\langle\nu_\beta|\nu(t)\rangle\right|^2=\left|\sum_i U_{\beta i}U_{\alpha i}^* e^{-\ii E_it}\right|^2
+		\label{eq11}
+	\end{equation}
+	在绝大多数情况下，中微子是极端相对论的，因此中微子的能量可以展开为$E_i=\sqrt{p^2+m_i^2}=p\sqrt{1+m_i^2/p^2}\simeq p\sqrt{1+m_i^2/E^2}\simeq p(1+m_i^2/2E^2)\simeq p+m_i^2/2E$（使用近似$E\simeq p$）。于是，中微子的振荡公式可以写作\footnote{在推导(\ref{eq12})式的过程中，我们进行了如下简化：假设中微子传播中的质量本征态可以使用平面单色波描述，带有动量$\vec{p}_i$，并假设不同质量本征态的动量相同，即$\vec{p}_i=\vec{p}$。而恰当的处理方式应当是将质量本征态看作是波包的叠加，或在QFT的框架下计算。然而，在适当的相干性条件下，以上方法得到的振荡概率是相同的，即(\ref{eq12})式。详细讨论见\cite{akhmedov2009paradoxes}。}：
+	\begin{equation}
+		\begin{aligned}
+			P(\nu_\alpha\to\nu_\beta)&=\delta_{\alpha\beta}-4\sum_{i<j}\mathrm{Re}(U_{\alpha i}U_{\beta i}^\ast U_{\alpha j}^\ast U_{\beta j})\sin^2\left(\frac{\Delta m_{ji}^2L}{4E}\right)\\&+2\sum_{i<j}\mathrm{Im}(U_{\alpha i}U_{\beta i}^\ast U_{\alpha j}^\ast U_{\beta j})\sin\left(\frac{\Delta m_{ji}^2L}{2E}\right)
+		\end{aligned}
+		\label{eq12}
+	\end{equation}
+	其中，$\Delta m_{ji}^2\equiv m_j^2-m_i^2$为质量平方差，$L\simeq ct$是中微子的传播距离。对于反中微子振荡，我们需要将方程(\ref{eq12})中的$U$替换为$U^*$，这将会改变最后一项的符号：
+	\begin{equation*}
+		\begin{aligned}
+			P(\bar{\nu}_\alpha\to\bar{\nu}_\beta)&=\delta_{\alpha\beta}-4\sum_{i<j}\mathrm{Re}(U_{\alpha i}^*U_{\beta i} U_{\alpha j} U_{\beta j}^*)\sin^2\left(\frac{\Delta m_{ji}^2L}{4E}\right)\\&-2\sum_{i<j}\mathrm{Im}(U_{\alpha i}^*U_{\beta i} U_{\alpha j} U_{\beta j}^*)\sin\left(\frac{\Delta m_{ji}^2L}{2E}\right)
+		\end{aligned}
+	\end{equation*}
+	公式(\ref{eq12})的推导如下。由(\ref{eq11})式可知：
+	\begin{equation*}
+		P(\nu_\alpha\to\nu_\beta)=\sum_{i,j}U_{\beta j}U_{\alpha j}^*U_{\beta i}^* U_{\alpha i}e^{-\ii (E_j-E_i)t}=\sum_{i,j}U_{\beta j}U_{\alpha j}^*U_{\beta i}^* U_{\alpha i}e^{-\ii \frac{\Delta m_{ji}^2}{2E} t}
+	\end{equation*}
+	当$i=j$时：
+	\begin{equation*}
+		P(\nu_\alpha\to\nu_\beta)=\sum_{i} U_{\beta i}U_{\alpha i}^*U_{\beta i}^*U_{\alpha i}=\sum_i\left|U_{\beta i}U_{\alpha i}^*\right|^2
+	\end{equation*}
+	当$i\ne j$时：
+	\begin{equation*}
+		\begin{aligned}
+			P(\nu_\alpha\to\nu_\beta)&=\left(\sum_{i<j}+\sum_{i>j}\right)U_{\beta j}U_{\alpha j}^*U_{\beta i}^* U_{\alpha i}e^{-\ii \frac{\Delta m_{ji}^2}{2E} t}\\&=\sum_{i<j}\left(U_{\beta j}U_{\alpha j}^*U_{\beta i}^* U_{\alpha i}e^{-\ii \frac{\Delta m_{ji}^2}{2E} t}+U_{\beta i}U_{\alpha i}^*U_{\beta j}^*U_{\alpha j}e^{\ii\frac{\Delta m_{ji}^2}{2E}t}\right)\\
+			&=2\sum_{i<j}\mathrm{Re}\left(U_{\beta j}U_{\alpha j}^*U_{\beta i}^* U_{\alpha i}e^{-\ii \frac{\Delta m_{ji}^2}{2E} t}\right)
+		\end{aligned}
+	\end{equation*}
+	可以证明：
+	\begin{equation*}
+		\mathrm{Re}\left(ze^{\ii x}\right)=\mathrm{Re}\left[(a+b\ii)(\cos x+\ii\sin x)\right]=a\cos x-b\sin x=\mathrm{Re}(z)\cos x-\mathrm{Im}(z)\sin x
+	\end{equation*}
+	因此，当$i\ne j$时有：
+	\begin{equation*}
+		\begin{aligned}
+			P(\nu_\alpha\to\nu_\beta)&=2\sum_{i<j}\mathrm{Re}\left(U_{\beta j}U_{\alpha j}^*U_{\beta i}^* U_{\alpha i}\right)\cos\left(\frac{\Delta m_{ji}^2}{2E}t\right)+2\sum_{i<j}\mathrm{Im}\left(U_{\beta j}U_{\alpha j}^*U_{\beta i}^* U_{\alpha i}\right)\sin\left(\frac{\Delta m_{ji}^2}{2E}t\right)\\
+			&=2\sum_{i<j}\mathrm{Re}\left(U_{\beta j}U_{\alpha j}^*U_{\beta i}^* U_{\alpha i}\right)-4\sum_{i<j}\mathrm{Re}\left(U_{\beta j}U_{\alpha j}^*U_{\beta i}^* U_{\alpha i}\right)\sin^2\left(\frac{\Delta m_{ji}^2}{4E}t\right)\\
+			&+2\sum_{i<j}\mathrm{Im}\left(U_{\beta j}U_{\alpha j}^*U_{\beta i}^* U_{\alpha i}\right)\sin\left(\frac{\Delta m_{ji}^2}{2E}t\right)
+		\end{aligned}
+	\end{equation*}
+	又已知恒等式：
+	\begin{equation*}
+		\begin{aligned}
+			\sum_i|z_i|^2+2\sum_{i<j}\mathrm{Re}(z_iz_j^*)&=\sum_{i}|z_i|^2+\sum_{i<j}(z_iz_j^*+z_i^*z_j)=\sum_i|z_i|^2+\left(\sum_{i<j}+\sum_{i>j}\right)z_iz_j^*\\&=\sum_{i,j}z_iz_j^*=\left|\sum_i z_i\right|^2
+		\end{aligned}
+	\end{equation*}
+	于是可得(\ref{eq12})式：
+	\begin{equation*}
+		\begin{aligned}
+			P(\nu_\alpha\to\nu_\beta)&=\sum_i\left|U_{\beta i}U_{\alpha i}^*\right|^2+2\sum_{i<j}\mathrm{Re}\left(U_{\beta j}U_{\alpha j}^*U_{\beta i}^* U_{\alpha i}\right)-4\sum_{i<j}\mathrm{Re}\left(U_{\beta j}U_{\alpha j}^*U_{\beta i}^* U_{\alpha i}\right)\sin^2\left(\frac{\Delta m_{ji}^2}{4E}t\right)\\
+			&+2\sum_{i<j}\mathrm{Im}\left(U_{\beta j}U_{\alpha j}^*U_{\beta i}^* U_{\alpha i}\right)\sin\left(\frac{\Delta m_{ji}^2}{2E}t\right)\\
+			&=\left|\sum_iU_{\beta i}U_{\alpha i}^*\right|^2-4\sum_{i<j}\mathrm{Re}\left(U_{\beta j}U_{\alpha j}^*U_{\beta i}^* U_{\alpha i}\right)\sin^2\left(\frac{\Delta m_{ji}^2}{4E}t\right)\\
+			&+2\sum_{i<j}\mathrm{Im}\left(U_{\beta j}U_{\alpha j}^*U_{\beta i}^* U_{\alpha i}\right)\sin\left(\frac{\Delta m_{ji}^2}{2E}t\right)\\
+			&=\delta_{\alpha\beta}-4\sum_{i<j}\mathrm{Re}(U_{\alpha i}U_{\beta i}^\ast U_{\alpha j}^\ast U_{\beta j})\sin^2\left(\frac{\Delta m_{ji}^2L}{4E}\right)+2\sum_{i<j}\mathrm{Im}(U_{\alpha i}U_{\beta i}^\ast U_{\alpha j}^\ast U_{\beta j})\sin\left(\frac{\Delta m_{ji}^2L}{2E}\right)
+		\end{aligned}
+	\end{equation*}
+	最后一步利用了PMNS矩阵的幺正性$\sum_iU_{\beta i}U_{\alpha i}^*=\delta_{\alpha\beta}$，以及中微子的传播距离$L\simeq ct=t$。对于反中微子振荡，我们只需将其中的$i\leftrightarrow j$交换即可。
+	
+	从(\ref{eq12})式中，我们可以定性地获得一些有关中微子振荡的性质。首先，振荡发生的前提是中微子必须具有非简并的质量（$\Delta m_{ji}^2\ne0$）以及非平凡味混合（$U\ne\mathbf{1}$）。振荡概率$P(\nu_\alpha\to\nu_\beta)$依赖于3个混合角$\theta_{12},\theta_{23},\theta_{13}$和2个独立的质量平方差$\Delta m_{21}^2,\Delta m_{31}^2$（$\Delta m_{32}^2=\Delta m_{31}^2-\Delta m_{21}^2$）。振荡同样依赖于Dirac相位$\delta_\mathrm{CP}$，而与Majorana相位无关，这是因为振荡概率的公式(\ref{eq12})中只包含类似$U_{\alpha i}U_{\beta i}^*$的项，因此(\ref{eq7})中的对角矩阵$P$中的相位相互抵消，不会对振荡产生贡献。因此，Dirac中微子和Majorana中微子具有相同的振荡概率。我们可以从更一般的角度来理解这个事实，因为中微子振荡中的总轻子数是守恒的，然而中微子的Majorana属性体现在轻子数破坏的过程中，例如$0\nu\beta\beta$，所以Majorana中微子的振荡性质应该与Dirac中微子一致。从(\ref{eq12})式中我们还可以得知CP破坏（即$P(\bar{\nu}_\alpha\to\bar{\nu}_\beta)\ne P(\nu_\alpha\to\nu_\beta)$）仅在出现过程（$\beta\ne\alpha$，即从$\nu_\alpha$束流中出现了$\nu_\beta$）中发生，在消失过程（$\beta=\alpha$，由于$P(\nu_\alpha\to\nu_\alpha)<1$，说明$\nu_\alpha$消失，振荡到其它味道）中不会发生。同时，中微子和反中微子的存活（即不发生振荡）概率相等：
+		\begin{equation}
+			P(\nu_\alpha\to\nu_\alpha)=1-4\sum_{i<j}|U_{\alpha i}U_{\alpha j}|^2\sin^2\left(\frac{\Delta m_{ji}^2L}{4E}\right)=P(\bar{\nu}_\alpha\to\bar{\nu}_\beta)
+		\end{equation}
+		其原因是当$\alpha=\beta$时，$U_{\alpha i}U_{\beta i}^*U_{\alpha j}^*U_{\beta j}$一项为实数。
+		
+		虽然在精确描述中微子振荡时，例如考虑次级效应和CP破坏效应时，我们必须使用三种味道的中微子振荡公式(\ref{eq12})式，但在许多振荡实验的条件下，我们可以考虑取(\ref{eq12})式的近似，忽略其中的次级项。此时，振荡公式就可以简化为由单一质量平方差$\Delta m^2$与单一混合角$\theta$驱动的有效振荡，这种振荡只是两种味道的中微子振荡：
+		\begin{equation}
+			P(\nu_\alpha\to\nu_\beta)=P(\bar{\nu}_\alpha\to\bar{\nu}_\beta)=\sin^22\theta\sin^2\left(\frac{\Delta m^2 L}{4E}\right)\quad (\beta\ne\alpha)
+			\label{eq14}
+		\end{equation}
+		若只考虑两种味道的中微子振荡的情况，令PMNS矩阵中$\theta_{13}=\theta_{23}=0$，混合矩阵可以约化成：
+		\begin{equation*}
+			U=\begin{pmatrix}
+				\cos\theta_{12}&\sin\theta_{12}\\
+				-\sin\theta_{12}&\cos\theta_{12}
+			\end{pmatrix}
+		\end{equation*}
+		因此，振荡概率为：
+		\begin{equation*}
+			\begin{aligned}
+				P(\nu_\alpha\to\nu_\beta)&=\delta_{\alpha\beta}-4(U_{\alpha 1}U_{\beta 1}^\ast U_{\alpha 2}^\ast U_{\beta 2})\sin^2\left(\frac{\Delta m_{21}^2L}{4E}\right)\\
+				&=-4(-\sin^2\theta_{12}\cos^2\theta_{12})\sin^2\left(\frac{\Delta m_{21}^2L}{4E}\right)\\
+				&=\sin^22\theta_{12}\sin^2\left(\frac{\Delta m_{21}^2L}{4E}\right)
+			\end{aligned}
+		\end{equation*}
+		即得到(\ref{eq14})式。对于$\theta_{23},\theta_{13}$驱动的振荡模式，以上推导过程同样成立。由(\ref{eq7})式可知，因为约化的$\theta_{12},\theta_{23}$混合矩阵纯实，并且约化的$\theta_{13}$混合矩阵中$U_{\alpha 1}U_{\beta 1}^\ast U_{\alpha 3}^\ast U_{\beta 3}$也是实数，因此振荡概率(\ref{eq14})式对于正反中微子相同，即在两种味道的中微子振荡中不存在CP破坏，与我们之前的论述相同。此时，振荡的振幅为$\sin^22\theta$，振荡长度为：
+		\begin{equation}
+			L_\mathrm{osc.}(\mathrm{km})=2.48E(\mathrm{GeV})/\Delta m^2(\mathrm{eV}^2)\quad P(\nu_\alpha\to\nu_\beta)=\sin^22\theta\sin^2(\pi L/L_\mathrm{osc.})
+		\end{equation}
+		振荡长度$L_\mathrm{osc.}$定义为相邻两个振荡概率极大值之间的距离：
+		\begin{equation*}
+			\frac{\Delta m^2(L+L_\mathrm{osc.})}{4E}-\frac{\Delta m^2 L}{4E}=\pi\Rightarrow L_\mathrm{osc.}(\mathrm{eV}^{-1})=\frac{4\pi E}{\Delta m^2}
+		\end{equation*}
+		在自然单位制下，所有的单位都可以使用$\mathrm{eV}$表示。其中$\mathrm{eV}$与$\mathrm{m}$的换算关系为：
+		\begin{equation*}
+			1\ \mathrm{m}=(3\times 10^8)^{-1}\ \mathrm{s}=\frac{(3\times10^8)^{-1}}{1.056\times10^{-34}}\ \mathrm{J}^{-1}=(3\times10^{8})^{-1}\frac{1.6\times10^{-19}}{1.056\times10^{-34}}\ \mathrm{eV}^{-1}=5.051\times 10^6\ \mathrm{eV}^{-1}
+		\end{equation*}
+		即：$1\ \mathrm{eV}^{-1}=(5.051\times10^9)^{-1}\ \mathrm{km}$。因此：
+		\begin{equation*}
+			\begin{aligned}
+				L_\mathrm{osc.}(\mathrm{km})&=L_\mathrm{osc.}(\mathrm{eV}^{-1})\times (5.051\times10^9)^{-1}=\frac{4\pi E(\mathrm{eV})}{\Delta m^2(\mathrm{eV}^{2})}\times (5.051\times10^9)^{-1}\\
+				&=\frac{4\pi E(\mathrm{GeV})}{\Delta m^2(\mathrm{eV}^{2})}\times5.501^{-1}=\frac{2.48E(\mathrm{GeV})}{\Delta m^2(\mathrm{eV}^2)}
+			\end{aligned}
+		\end{equation*}
+		此外，自然单位制下的相位：
+		\begin{equation*}
+			\frac{\Delta m^2(\mathrm{eV}^2)L(\mathrm{eV}^{-1})}{4E(\mathrm{eV})}=\frac{\Delta m^2(\mathrm{eV}^2)\times(5.051\times10^9)^{-1}L(\mathrm{km})}{4E(\mathrm{GeV})\times10^{-9}}=\frac{1.27\Delta m^2(\mathrm{eV}^2)L(\mathrm{km})}{E(\mathrm{GeV})}
+		\end{equation*}
+		需要注意，振荡概率(\ref{eq14})式对$\Delta m^2$的符号以及$\theta$的象限（$\theta\in(0,\frac{\pi}{4})$称为第一象限，$\theta\in(\frac{\pi}{4},\frac{\pi}{2})$称为第二象限）都不灵敏。当$\theta=\frac{\pi}{4}$时，对应最大混合角。在中微子振荡实验的精确性提高一个层次，并开始对次级效应灵敏之前，以上的两种味道的振荡公式已经被使用了几十年了。特别地，太阳和大气中微子的振荡可以被两味混合的框架很好地描述（太阳中微子振荡通常与物质效应有关，详见\ref{2.5}节）。我们假设$(\Delta m_\mathrm{sol}^2,\theta_\mathrm{sol})$与$(\Delta m_\mathrm{atm}^2,\theta_\mathrm{atm})$分别表示太阳和大气中微子振荡的参数，在实验中，我们发现$\Delta m_\mathrm{sol}^2\ll\Delta m_\mathrm{atm}^2$，并且混合角$\theta_\mathrm{sol},\theta_\mathrm{atm}$都很大。根据以上的实验结果，我们通常采用如下约定定义中微子的质量与质量平方差：（1）$\Delta m_\mathrm{sol}^2$由$\nu_1,\nu_2$的质量平方差定义；（2）约定质量本征值$m_2>m_1$，即$\Delta m_{21}^2=\Delta m_\mathrm{sol}^2>0$。于是，$\Delta m_\mathrm{atm}^2$一定为$|\Delta m_{31}^2|$或$|\Delta m_{32}^2|$。由于$\Delta m_\mathrm{sol}^2\ll\Delta m_\mathrm{atm}^2$，所以有：
+		\begin{equation}
+			\Delta m_\mathrm{sol}^2=\Delta m_{21}^2\ll|\Delta m_{31}^2|\simeq|\Delta m_{32}^2|\simeq\Delta m_\mathrm{atm}^2
+			\label{eq16}
+		\end{equation}
+		即$\nu_1,\nu_2$的质量接近，且$m_1<m_2$，而$\nu_3$的质量与$\nu_1,\nu_2$差别较大。因此，三代中微子的质量顺序只有两种可能：\textbf{正序}（normal ordering/hierarchy），对应$m_1<m_2<m_3$，以及$\Delta m_{31}^2>0$；\textbf{反序}（inverted ordering/hierarchy），对应$m_3<m_1<m_2$，以及$\Delta m_{31}^2<0$。$m_1<m_3<m_2$的质量顺序与(\ref{eq16})式不符，所以被排除。
+
+		
 	
 	
 	
 	
 	
 	
-	
-	
-	
-	
-	
-	
-	
+	\subsection{中微子振荡的CP破坏与三味混合效应\label{2.3}}
+	\subsection{其它的三味混合效应}
+	\subsection{中微子在物质中的传播\label{2.5}}
 	\newpage
 	\printbibliography
 \end{document}
