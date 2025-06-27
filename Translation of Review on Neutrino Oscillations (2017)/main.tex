@@ -115,7 +115,7 @@
 		P_\mathrm{Majorana}=\begin{pmatrix}e^{\ii\alpha_1}&0&0\\0&e^{\ii\alpha_2}&0\\0&0&1\end{pmatrix},\begin{pmatrix}1&0&0\\0&e^{\ii\phi_2}&0\\0&0&e^{\ii(\phi_3+\delta_{\mathrm{CP}})}\end{pmatrix},\begin{pmatrix}e^{\ii\rho}&0&0\\0&1&0\\0&0&e^{\ii\sigma}\end{pmatrix}
 	\end{equation}
 	这些记法与带电轻子场的相位转动有关，它们彼此在物理上是完全等价的。PMNS矩阵中的$\delta_\mathrm{CP}$通常称为“Dirac相位”，而对角矩阵$P$中的相位通常称为“Majorana相位”。不失一般性地，Majorana相位的取值范围可以选为$[0,\pi)$。我们在本综述中将不会过度关注Majorana相位，因为之后我们将会看到，它并不会影响中微子的振荡概率。Majorana相位仅在轻子数破坏的过程中出现，例如无中微子双$\beta$衰变（$0\nu\beta\beta$），在这一类过程中Majorana属性将至关重要（关于$0\nu\beta\beta$的综述，理论方面可参考\cite{vergados2012theory}\cite{dell2016neutrinoless}，实验方面可参考\cite{cremonesi2018neutrino}）。而Dirac相位$\delta_\mathrm{CP}$与振荡概率相关，并且导致真空中的中微子振荡和反中微子振荡的不对称性，详见\ref{2.3}节。
-	\subsection{真空中的中微子振荡}
+	\subsection{真空中的中微子振荡\label{2.2}}
 	一般的中微子振荡实验需要包含三个步骤。第一步，从带电流过程产生一束处于纯的味本征态的中微子束流，例如$\pi^+\to\mu^+\nu_\mu$过程可以产生纯的$\nu_\mu$束流。而味本征态是质量本征态的相干叠加\footnote{注意，正中微子态的味道和质量本征态之间通过PMNS矩阵的复共轭相联系，而正中微子场的味道和质量本征态之间通过PMNS矩阵相联系，例如方程(\ref{eq2})。这是因为量子中微子场$\nu_\alpha(x)$可以湮灭一个味道为$\alpha$的中微子，而中微子态$|\nu_\alpha(\vec{p})\rangle$需要通过产生算符$a_\alpha^\dagger(\vec{p})$作用在真空态上得到。对于反中微子，我们有$\bar{\nu}_\alpha(x)=\sum_i U_{\alpha i}^*\bar{\nu}_i(x)$与$|\bar{\nu}_\alpha\rangle=\sum_i U_{\alpha i}|\bar{\nu}_i\rangle$。}：
 	\begin{equation}
 		|\nu(t=0)\rangle=|\nu_\alpha\rangle=\sum_i U_{\alpha i}^*|\nu_i\rangle
@@ -191,7 +191,8 @@
 	
 	从(\ref{eq12})式中，我们可以定性地获得一些有关中微子振荡的性质。首先，振荡发生的前提是中微子必须具有非简并的质量（$\Delta m_{ji}^2\ne0$）以及非平凡味混合（$U\ne\mathbf{1}$）。振荡概率$P(\nu_\alpha\to\nu_\beta)$依赖于3个混合角$\theta_{12},\theta_{23},\theta_{13}$和2个独立的质量平方差$\Delta m_{21}^2,\Delta m_{31}^2$（$\Delta m_{32}^2=\Delta m_{31}^2-\Delta m_{21}^2$）。振荡同样依赖于Dirac相位$\delta_\mathrm{CP}$，而与Majorana相位无关，这是因为振荡概率的公式(\ref{eq12})中只包含类似$U_{\alpha i}U_{\beta i}^*$的项，因此(\ref{eq7})中的对角矩阵$P$中的相位相互抵消，不会对振荡产生贡献。因此，Dirac中微子和Majorana中微子具有相同的振荡概率。我们可以从更一般的角度来理解这个事实，因为中微子振荡中的总轻子数是守恒的，然而中微子的Majorana属性体现在轻子数破坏的过程中，例如$0\nu\beta\beta$，所以Majorana中微子的振荡性质应该与Dirac中微子一致。从(\ref{eq12})式中我们还可以得知CP破坏（即$P(\bar{\nu}_\alpha\to\bar{\nu}_\beta)\ne P(\nu_\alpha\to\nu_\beta)$）仅在出现过程（$\beta\ne\alpha$，即从$\nu_\alpha$束流中出现了$\nu_\beta$）中发生，在消失过程（$\beta=\alpha$，由于$P(\nu_\alpha\to\nu_\alpha)<1$，说明$\nu_\alpha$消失，振荡到其它味道）中不会发生。同时，中微子和反中微子的存活（即不发生振荡）概率相等：
 		\begin{equation}
-			P(\nu_\alpha\to\nu_\alpha)=1-4\sum_{i<j}|U_{\alpha i}U_{\alpha j}|^2\sin^2\left(\frac{\Delta m_{ji}^2L}{4E}\right)=P(\bar{\nu}_\alpha\to\bar{\nu}_\beta)
+			P(\nu_\alpha\to\nu_\alpha)=1-4\sum_{i<j}|U_{\alpha i}U_{\alpha j}|^2\sin^2\left(\frac{\Delta m_{ji}^2L}{4E}\right)=P(\bar{\nu}_\alpha\to\bar{\nu}_\alpha)
+			\label{eq13}
 		\end{equation}
 		其原因是当$\alpha=\beta$时，$U_{\alpha i}U_{\beta i}^*U_{\alpha j}^*U_{\beta j}$一项为实数。
 		
@@ -238,21 +239,157 @@
 		\begin{equation*}
 			\frac{\Delta m^2(\mathrm{eV}^2)L(\mathrm{eV}^{-1})}{4E(\mathrm{eV})}=\frac{\Delta m^2(\mathrm{eV}^2)\times(5.051\times10^9)^{-1}L(\mathrm{km})}{4E(\mathrm{GeV})\times10^{-9}}=\frac{1.27\Delta m^2(\mathrm{eV}^2)L(\mathrm{km})}{E(\mathrm{GeV})}
 		\end{equation*}
-		需要注意，振荡概率(\ref{eq14})式对$\Delta m^2$的符号以及$\theta$的象限（$\theta\in(0,\frac{\pi}{4})$称为第一象限，$\theta\in(\frac{\pi}{4},\frac{\pi}{2})$称为第二象限）都不灵敏。当$\theta=\frac{\pi}{4}$时，对应最大混合角。在中微子振荡实验的精确性提高一个层次，并开始对次级效应灵敏之前，以上的两种味道的振荡公式已经被使用了几十年了。特别地，太阳和大气中微子的振荡可以被两味混合的框架很好地描述（太阳中微子振荡通常与物质效应有关，详见\ref{2.5}节）。我们假设$(\Delta m_\mathrm{sol}^2,\theta_\mathrm{sol})$与$(\Delta m_\mathrm{atm}^2,\theta_\mathrm{atm})$分别表示太阳和大气中微子振荡的参数，在实验中，我们发现$\Delta m_\mathrm{sol}^2\ll\Delta m_\mathrm{atm}^2$，并且混合角$\theta_\mathrm{sol},\theta_\mathrm{atm}$都很大。根据以上的实验结果，我们通常采用如下约定定义中微子的质量与质量平方差：（1）$\Delta m_\mathrm{sol}^2$由$\nu_1,\nu_2$的质量平方差定义；（2）约定质量本征值$m_2>m_1$，即$\Delta m_{21}^2=\Delta m_\mathrm{sol}^2>0$。于是，$\Delta m_\mathrm{atm}^2$一定为$|\Delta m_{31}^2|$或$|\Delta m_{32}^2|$。由于$\Delta m_\mathrm{sol}^2\ll\Delta m_\mathrm{atm}^2$，所以有：
+		需要注意，振荡概率(\ref{eq14})式对$\Delta m^2$的符号以及$\theta$的象限（$\theta\in(0,\frac{\pi}{4})$称为第一象限，$\theta\in(\frac{\pi}{4},\frac{\pi}{2})$称为第二象限）都不灵敏。当$\theta=\frac{\pi}{4}$时，对应最大混合角。在中微子振荡实验的精度提高一个层次，并开始对次级效应灵敏之前，以上的两种味道的振荡公式已经被使用了几十年了。特别地，太阳和大气中微子的振荡可以被两味混合的框架很好地描述（太阳中微子振荡通常与物质效应有关，详见\ref{2.5}节）。我们假设$(\Delta m_\mathrm{sol}^2,\theta_\mathrm{sol})$与$(\Delta m_\mathrm{atm}^2,\theta_\mathrm{atm})$分别表示太阳和大气中微子振荡的参数，在实验中，我们发现$\Delta m_\mathrm{sol}^2\ll\Delta m_\mathrm{atm}^2$，并且混合角$\theta_\mathrm{sol},\theta_\mathrm{atm}$都很大。根据以上的实验结果，我们通常采用如下约定定义中微子的质量与质量平方差：（1）$\Delta m_\mathrm{sol}^2$由$\nu_1,\nu_2$的质量平方差定义；（2）约定质量本征值$m_2>m_1$，即$\Delta m_{21}^2=\Delta m_\mathrm{sol}^2>0$。于是，$\Delta m_\mathrm{atm}^2$一定为$|\Delta m_{31}^2|$或$|\Delta m_{32}^2|$。由于$\Delta m_\mathrm{sol}^2\ll\Delta m_\mathrm{atm}^2$，所以有：
 		\begin{equation}
 			\Delta m_\mathrm{sol}^2=\Delta m_{21}^2\ll|\Delta m_{31}^2|\simeq|\Delta m_{32}^2|\simeq\Delta m_\mathrm{atm}^2
 			\label{eq16}
 		\end{equation}
 		即$\nu_1,\nu_2$的质量接近，且$m_1<m_2$，而$\nu_3$的质量与$\nu_1,\nu_2$差别较大。因此，三代中微子的质量顺序只有两种可能：\textbf{正序}（normal ordering/hierarchy），对应$m_1<m_2<m_3$，以及$\Delta m_{31}^2>0$；\textbf{反序}（inverted ordering/hierarchy），对应$m_3<m_1<m_2$，以及$\Delta m_{31}^2<0$。$m_1<m_3<m_2$的质量顺序与(\ref{eq16})式不符，所以被排除。
-
 		
-	
-	
-	
-	
-	
-	
+		假设振荡实验中的基线长度为$L$，束流能量为$E$，且满足$\Delta m_{21}^2L/E\ll1$，此时我们可以令公式(\ref{eq12})中的$\Delta m_{21}^2=0$作为近似，从而中微子振荡的“频率”只剩下$\Delta m_{31}^2=\Delta m_{32}^2$。由于三个混合角中，除了$\theta_{13}$较小以外，其余两个混合角的大小相当，因此这样的近似是合理的。此时，振荡（出现）概率可以表示为\cite{de1980fresh}\cite{Barger1980}：
+		\begin{equation}
+			P(\nu_\alpha\to\nu_\beta)=\sin^22\theta^\mathrm{eff}_{\alpha\beta}\sin^2\left(\frac{\Delta m_{31}^2L}{4E}\right)\quad \sin^22\theta^\mathrm{eff}_{\alpha\beta}=4|U_{\alpha3}U_{\beta3}|^2\quad (\beta\ne\alpha)
+			\label{eq17}
+		\end{equation}
+		不发生振荡（消失）的概率为：
+		\begin{equation}
+			P(\nu_\alpha\to\nu_\alpha)=1-\sin^22\theta^\mathrm{eff}_{\alpha\alpha}\sin^2\left(\frac{\Delta m_{31}^2L}{4E}\right)\quad \sin^22\theta^\mathrm{eff}_{\alpha\alpha}=4|U_{\alpha3}|^2(1-|U_{\alpha 3}|^2)
+			\label{eq18}
+		\end{equation}
+		公式(\ref{eq17})的推导过程如下：
+		\begin{equation*}
+			\begin{aligned}
+				P(\nu_\alpha\to\nu_\beta)&=\delta_{\alpha\beta}-4\sum_{i<j}\mathrm{Re}(U_{\alpha i}U_{\beta i}^\ast U_{\alpha j}^\ast U_{\beta j})\sin^2\left(\frac{\Delta m_{ji}^2}{4E}L\right)+2\sum_{i<j}\mathrm{Im}(U_{\alpha i}U_{\beta i}^\ast U_{\alpha j}^\ast U_{\beta j})\sin\left(\frac{\Delta m_{ji}^2}{2E}L\right)\\
+				&=\delta_{\alpha\beta}-4(U_{\alpha 1}U_{\beta 1}^\ast U_{\alpha 3}^\ast U_{\beta 3})\sin^2\left(\frac{\Delta m_{31}^2}{4E}L\right)-4(U_{\alpha 2}U_{\beta 2}^\ast U_{\alpha 3}^\ast U_{\beta 3})\sin^2\Big(\frac{\Delta m_{32}^2}{4E}L\Big)\\
+				&=-4[(U_{\alpha1}U_{\beta1}^\ast+U_{\alpha2}U_{\beta2}^\ast)U_{\alpha3}^\ast U_{\beta3}]\sin^2\left(\frac{\Delta m_{31}^2}{4E}L\right)\\
+				&=-4[(0-U_{\alpha3}U_{\beta3}^\ast)U_{\alpha3}^\ast U_{\beta3}]\sin^2\left(\frac{\Delta m_{31}^2}{4E}L\right)\\
+				&=4|U_{\alpha3}U_{\beta3}|^2\sin^2\left(\frac{\Delta m_{31}^2}{4E}L\right)
+			\end{aligned}
+		\end{equation*}
+		公式(\ref{eq18})的推导过程如下：
+		\begin{equation*}
+			\begin{aligned}
+				P(\nu_\alpha\to\nu_\alpha)&=\delta_{\alpha\alpha}-4\sum_{i<j}\mathrm{Re}(U_{\alpha i}U_{\alpha i}^\ast U_{\alpha j}^\ast U_{\alpha j})\sin^2\left(\frac{\Delta m_{ji}^2}{4E}L\right)+2\sum_{i<j}\mathrm{Im}(U_{\alpha i}U_{\alpha i}^\ast U_{\alpha j}^\ast U_{\alpha j})\sin\left(\frac{\Delta m_{ji}^2}{2E}L\right)\\
+				&=\delta_{\alpha\alpha}-4(U_{\alpha 1}U_{\alpha 1}^\ast U_{\alpha 3}^\ast U_{\alpha 3})\sin^2\left(\frac{\Delta m_{31}^2}{4E}L\right)-4(U_{\alpha 2}U_{\alpha 2}^\ast U_{\alpha 3}^\ast U_{\alpha 3})\sin^2\left(\frac{\Delta m_{32}^2}{4E}L\right)\\
+				&=1-4[(U_{\alpha1}U_{\alpha1}^\ast+U_{\alpha2}U_{\alpha2}^\ast)U_{\alpha3}^\ast U_{\alpha3}]\sin^2\left(\frac{\Delta m_{31}^2}{4E}L\right)\\
+				&=1-4[(1-U_{\alpha3}U_{\alpha3}^\ast)U_{\alpha3}^\ast U_{\beta3}]\sin^2\left(\frac{\Delta m_{31}^2}{4E}L\right)\\
+				&=1-4|U_{\alpha3}|^2(1-|U_{\alpha3}|^2)\sin^2\left(\frac{\Delta m_{31}^2}{4E}L\right)
+			\end{aligned}
+		\end{equation*}
+		其中，由于$|U_{\alpha3}U_{\beta3}|^2,|U_{\alpha3}|^2(1-|U_{\alpha3}|^2)$是实数，所以虚部$\mathrm{Im}(U_{\alpha i}U_{\alpha i}^\ast U_{\alpha j}^\ast U_{\alpha j})=0$。公式(\ref{eq17})、(\ref{eq18})通常可以用于描述大气中微子、长基线加速器中微子实验和短基线反应堆中微子实验主导的振荡。例如，在大气中微子振荡中，$\nu_\mu$的消失概率可以表示为（代入$U_{\mu3}=\cos\theta_{13}\sin\theta_{23}$）：
+		\begin{align}
+			P(\nu_{\mu}\rightarrow\nu_{\mu}) 
+				&= 1 - \left( \cos^{2}\theta_{13} \sin^{2}2\theta_{23} + \sin^{4}\theta_{23} \sin^{2}2\theta_{13} \right) 
+   					 \sin^{2}\left(\frac{\Delta m_{31}^{2}L}{4E}\right) \label{eq19} \\
+				&\simeq 1 - \sin^2 2\theta_{23} \sin^2\left(\frac{\Delta m_{31}^2L}{4E}\right) \label{eq20}
+		\end{align}
+		其中：
+		\begin{equation*}
+			\begin{aligned}
+				4|U_{\alpha3}|^2(1-|U_{\alpha3}|^2)&=4\cos^2\theta_{13}\sin^2\theta_{23}(1-\cos^2\theta_{13}\sin^2\theta_{23})\\
+				&=4\cos^2\theta_{13}\sin^2\theta_{23}(\sin^2\theta_{23}+\cos^2\theta_{23}-\cos^2\theta_{13}\sin^2\theta_{23})\\
+				&=4\cos^2\theta_{13}\sin^2\theta_{23}[\cos^2\theta_{23}+\sin^2\theta_{23}(1-\cos^2\theta_{13})]\\
+				&=4\cos^2\theta_{13}\sin^2\theta_{23}(\cos^2\theta_{23}+\sin^2\theta_{23}\sin^2\theta_{13})\\
+				&=\cos^2\theta_{13}\sin^22\theta_{23}+\sin^4\theta_{23}\sin^22\theta_{13}
+			\end{aligned}
+		\end{equation*}
+		在(\ref{eq20})式中，我们忽略了正比于$\sin^2 2\theta_{13}$的项。由此可以看出，大气中微子振荡由$\theta_{23}$混合角与$\Delta m_{31}^2$（或$\Delta m_{32}^2$）质量平方差主导，因此我们通常将$\theta_{23}$称为“大气混合角”，将$\Delta m_{31}^2$（或$\Delta m_{32}^2$）称为“大气质量平方差”。对于在$\nu_\mu$束流中出现的$\nu_e$与$\nu_\tau$，我们有：
+		\begin{gather}
+				\label{eq21}
+			P(\nu_\mu\to\nu_e)=\sin^2\theta_{23}\sin^22\theta_{13}\sin^2\left(\frac{\Delta m_{31}^2L}{4E}\right)\\			P(\nu_\mu\to\nu_\tau)=\cos^4\theta_{13}\sin^22\theta_{23}\sin^2\left(\frac{\Delta m_{31}^2L}{4E}\right)
+				\label{eq22}
+		\end{gather}
+		对于短基线反应堆反中微子的消失：
+		\begin{equation}
+			P(\bar{\nu}_e\to\bar{\nu}_e)=1-\sin^22\theta_{13}\sin^2\left(\frac{\Delta m_{31}^2L}{4E}\right)
+			\label{eq23}
+		\end{equation}
+		公式(\ref{eq21})的推导过程如下：
+		\begin{equation*}
+			\begin{aligned}
+				P(\nu_\mu\to\nu_e)&=4|U_{\mu3}U_{e3}|^2\sin^2\left(\frac{\Delta m_{31}^2L}{4E}\right)\\
+			&=4\sin^2\theta_{13}\cos^2\theta_{13}\sin^2\theta_{23}\sin^2\left(\frac{\Delta m_{31}^2L}{4E}\right)\\
+				&=\sin^2\theta_{23}\sin^22\theta_{13}\sin^2\left(\frac{\Delta m_{31}^2L}{4E}\right)
+			\end{aligned}
+		\end{equation*}
+		公式(\ref{eq22})的推导过程如下：
+		\begin{equation*}
+			\begin{aligned}
+				P(\nu_\mu\to\nu_\tau)&=4|U_{\mu3}U_{\tau3}|^2\sin^2\left(\frac{\Delta m_{31}^2L}{4E}\right)\\
+				&=4\cos^2\theta_{13}\sin^2\theta_{23}\cos^2\theta_{13}\cos^2\theta_{23}\sin^2\left(\frac{\Delta m_{31}^2L}{4E}\right)\\
+				&=\cos^4\theta_{13}\sin^22\theta_{23}\sin^2\left(\frac{\Delta m_{31}^2L}{4E}\right)
+			\end{aligned}
+		\end{equation*}
+		公式(\ref{eq23})的推导过程如下：
+		\begin{equation*}
+			\begin{aligned}
+				P(\bar{\nu}_e\to\bar{\nu}_e)&=1-4|U_{e3}|^2(1-|U_{e3}|^2)\sin^2\left(\frac{\Delta m_{31}^2L}{4E}\right)\\
+				&=1-4\sin^2\theta_{13}(1-\sin^2\theta_{13})\sin^2\left(\frac{\Delta m_{31}^2L}{4E}\right)\\
+				&=1-4\sin^2\theta_{13}\cos^2\theta_{13}\sin^2\left(\frac{\Delta m_{31}^2L}{4E}\right)\\
+				&=1-\sin^22\theta_{13}\sin^2\left(\frac{\Delta m_{31}^2L}{4E}\right)
+			\end{aligned}
+		\end{equation*}
+		需要注意，若考虑完整的三味混合时的振荡，那么以上的表达式需要进行一定修正。特别是对于如今的实验精度，这些修正是必须被考虑在内的。顺便指出，虽然振荡概率(\ref{eq21})、(\ref{eq22})仅由一个频率$\Delta m_{31}^2$所主导，但它们并不是简单的两味混合振荡，因为其中包含了两个混合角$\theta_{13},\theta_{23}$。特别地，振荡概率(\ref{eq21})对$\theta_{23}$的象限灵敏。
+		
+		当$\Delta m_{31}^2L/E\ll1$与$\Delta m_{21}^2L/E\gtrsim1$时，此时由$\Delta m_{31}^2$主导的高频振荡将会被平均化，$\nu_e$的振荡将由$\Delta m_{21}^2$主导而非$\Delta m_{31}^2$。忽略被$\sin^2\theta_{13}$抑制的部分，我们可以得到：
+		\begin{equation}
+			P(\nu_e\to\nu_e)=P(\bar{\nu}_e\to\bar{\nu}_e)\simeq1-\sin^22\theta_{12}\sin^2\left(\frac{\Delta m_{21}^2L}{4E}\right)
+			\label{eq24}
+		\end{equation}
+		公式(\ref{eq24})的推导过程如下。由三味混合的振荡公式(\ref{eq13})式可知：
+		\begin{equation*}
+			\begin{aligned}
+				P(\nu_e\to\nu_e)&=1-4\sum_{i<j}|U_{ei}|^2|U_{ej}|^2\sin^2\left(\frac{\Delta m_{ji}^2L}{4E}\right)\\
+				&=1-4|U_{e1}|^2|U_{e2}|^2\sin^2\left(\frac{\Delta m_{21}^2L}{4E}\right)-4|U_{e2}|^2|U_{e3}|^2\sin^2\left(\frac{\Delta m_{32}^2L}{4E}\right)\\
+				&-4|U_{e1}|^2|U_{e3}|^2\sin^2\left(\frac{\Delta m_{31}^2L}{4E}\right)\\
+				&=1-\cos^{4}\theta_{13}\sin^{2}2\theta_{12}\sin^2\left(\frac{\Delta m_{21}^2L}{4E}\right)-\sin^{2}\theta_{12}\sin^{2}2\theta_{13}\sin^2\left(\frac{\Delta m_{32}^2L}{4E}\right)\\&-\cos^{2}\theta_{12}\sin^{2}2\theta_{13}\sin^2\left(\frac{\Delta m_{31}^2L}{4E}\right)\\
+				&\simeq 1-\cos^{4}\theta_{13}\sin^{2}2\theta_{12}\sin^2\left(\frac{\Delta m_{21}^2L}{4E}\right)-\sin^{2}\theta_{12}\sin^{2}2\theta_{13}\times\frac{1}{2}\\&-\cos^{2}\theta_{12}\sin^{2}2\theta_{13}\times\frac{1}{2}
+				\end{aligned}
+		\end{equation*}
+		其中：
+		\begin{equation*}
+			\langle\sin^2x\rangle=\frac{1}{2\pi}\int_0^{2\pi}\sin^2x\ \dd x=\frac{1}{2}
+		\end{equation*}
+		取$\sin^2\theta_{13}\simeq0,\cos^2\theta_{13}\simeq1$，即可得(\ref{eq24})式。该公式适用于长基线加速器中微子实验KamLAND以及低能太阳中微子振荡（其中某些振荡项已经被平均化）。低能太阳中微子振荡中，物质效应相比于真空振荡来说属于次级效应。由于(\ref{eq24})式可以描述太阳中微子振荡，因此$\theta_{12}$通常称为“太阳混合角”，$\Delta m_{21}^2$通常称为“太阳质量平方差”。若还原(\ref{eq24})式中的$\theta_{13}$混合角，则有振荡概率：
+		\begin{equation}
+			P(\nu_e\to\nu_e)=P(\bar{\nu}_e\to\bar{\nu}_e)=\sin^4\theta_{13}+\cos^4\theta_{13}\left[1-\sin^22\theta_{12}\sin^2\left(\frac{\Delta m_{21}^2L}{4E}\right)\right]
+			\label{eq25}
+		\end{equation}
+		公式(\ref{eq25})的推导过程如下：
+		\begin{equation*}
+			\begin{aligned}
+				P(\nu_e\to\nu_e)&=1-\cos^{4}\theta_{13}\sin^{2}2\theta_{12}\sin^2\left(\frac{\Delta m_{21}^2L}{4E}\right)-\sin^{2}\theta_{12}\sin^{2}2\theta_{13}\times\frac{1}{2}\\
+				&-\cos^{2}\theta_{12}\sin^{2}2\theta_{13}\times\frac{1}{2}\\
+				&=1-\cos^{4}\theta_{13}\sin^{2}2\theta_{12}\sin^2\left(\frac{\Delta m_{21}^2L}{4E}\right)-\frac{1}{2}\sin^22\theta_{13}\\
+				&=1-\cos^{4}\theta_{13}\sin^{2}2\theta_{12}\sin^2\left(\frac{\Delta m_{21}^2L}{4E}\right)-2\sin^2\theta_{13}\cos^2\theta_{13}\\
+				&=(\sin^2\theta_{13}+\cos^2\theta_{13})^2-2\sin^2\theta_{13}\cos^2\theta_{13}-\cos^{4}\theta_{13}\sin^{2}2\theta_{12}\sin^2\left(\frac{\Delta m_{21}^2L}{4E}\right)\\
+				&=\sin^4\theta_{13}+\cos^4\theta_{13}-\cos^{4}\theta_{13}\sin^{2}2\theta_{12}\sin^2\left(\frac{\Delta m_{21}^2L}{4E}\right)
+			\end{aligned}
+		\end{equation*}
+		即(\ref{eq25})式。
 	\subsection{中微子振荡的CP破坏与三味混合效应\label{2.3}}
+	我们在\ref{2.2}节中看到，中微子振荡依赖于PMNS矩阵中的相位$\delta_\mathrm{CP}$，因此我们有可能在中微子振荡中观察到CP对称性的破坏，即正反中微子在真空中的振荡概率不同。
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	\subsection{其它的三味混合效应}
 	\subsection{中微子在物质中的传播\label{2.5}}
 	\newpage
