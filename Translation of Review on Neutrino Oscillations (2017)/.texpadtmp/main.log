@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2025.3.18)  29 JUN 2025 13:22
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2025.3.18)  29 JUN 2025 22:18
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -876,6 +876,93 @@ Overfull \hbox (18.13882pt too wide) detected at line 448
  []
 
 [13] [14]
+Overfull \hbox (16.35347pt too wide) detected at line 527
+[][]
+ []
+
+
+Overfull \hbox (3.8282pt too wide) detected at line 533
+[][]
+ []
+
+[15] [16]
+
+LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <15.05624> not available
+(Font)              size <14.4> substituted on input line 619.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 619.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\nu' on input line 619.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 619.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\nu' on input line 619.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 619.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 619.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 620.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\nu' on input line 620.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 620.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\nu' on input line 620.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 620.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 620.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 621.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\nu' on input line 621.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 621.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\nu' on input line 621.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 621.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 621.
+
+[17]
 
 Package fontspec Warning: Font "STFangsong" does not contain requested Script
 (fontspec)                "CJK".
@@ -904,11 +991,11 @@ Package fontspec Info: Font family 'STFangsong(0)' created for font
 (fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
 
 
-Overfull \hbox (1.93604pt too wide) in paragraph at lines 502--502
+Overfull \hbox (1.93604pt too wide) in paragraph at lines 625--625
 []\TU/lmr/m/n/10.53937 B Pontecorvo. “Neutrino Experiments and the Problem of Conservation of Leptonic Charge”.
  []
 
-[15] [16] [17] [18] (/Users/qixiangyin/Documents/Code/Git Project/MyRepository/Translation of Review on Neutrino Oscillations (2017)/.texpadtmp/main.aux)
+[18] [19] [20] [21] (/Users/qixiangyin/Documents/Code/Git Project/MyRepository/Translation of Review on Neutrino Oscillations (2017)/.texpadtmp/main.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2022/07/14>
@@ -916,21 +1003,21 @@ L3 programming layer <2022/07/14>
 
 
 LaTeX Font Warning: Size substitutions with differences
-(Font)              up to 0.47188pt have occurred.
+(Font)              up to 0.65625pt have occurred.
 
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 2E96AE9021B9DB413F8EAD440B78BA33;893.
+(rerunfilecheck)             Checksum: 1A7699B1352846D5733E991384040B35;1550.
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 24789 strings out of 474773
- 539348 string characters out of 5757724
+ 24817 strings out of 474773
+ 540340 string characters out of 5757724
  1958839 words of memory out of 5000000
- 46608 multiletter control sequences out of 15000+600000
- 572164 words of font info for 132 fonts, out of 8000000 for 9000
+ 46633 multiletter control sequences out of 15000+600000
+ 573898 words of font info for 142 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  93i,15n,97p,933b,4908s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on /Users/qixiangyin/Documents/Code/Git Project/MyRepository/Translation of Review on Neutrino Oscillations (2017)/.texpadtmp/main.pdf (18 pages).
+Output written on /Users/qixiangyin/Documents/Code/Git Project/MyRepository/Translation of Review on Neutrino Oscillations (2017)/.texpadtmp/main.pdf (21 pages).

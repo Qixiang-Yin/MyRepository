@@ -474,11 +474,128 @@
 		\begin{aligned}
 			J&=\mathrm{Im}(U_{e1}U_{\mu1}^*U_{e2}^*U_{\mu2})\\
 			&=\mathrm{Im}\left[c_{12}c_{13}(-s_{12}c_{23}-c_{12}s_{13}s_{23}e^{-\ii\delta_{\mathrm{CP}}})s_{12}c_{13}(c_{12}c_{23}-s_{12}s_{13}s_{23}e^{\ii\delta_{\mathrm{CP}}})\right]\\
-			&=\mathrm{Im}\left[c_{12}s_{12}c_{13}^2(-s_{12}c_{23}-c_{12}s_{13}s_{23}e^{-\ii\delta_{\mathrm{CP}}})(c_{12}c_{23}-s_{12}s_{13}s_{23}e^{\ii\delta_{\mathrm{CP}}})\right]
+			&=\mathrm{Im}\left[c_{12}s_{12}c_{13}^2(-s_{12}c_{23}-c_{12}s_{13}s_{23}e^{-\ii\delta_{\mathrm{CP}}})(c_{12}c_{23}-s_{12}s_{13}s_{23}e^{\ii\delta_{\mathrm{CP}}})\right]\\
+			&=c_{12}s_{12}c_{13}^2\mathrm{Im}(s_{12}^2c_{23}s_{23}s_{13}e^{\ii\delta_\mathrm{CP}}-c_{12}^2s_{23}c_{23}s_{13}e^{-\ii\delta_\mathrm{CP}})\\
+			&=c_{12}s_{12}c_{13}^2\mathrm{Im}(s_{12}^2c_{23}s_{23}s_{13}\ii\sin\delta_\mathrm{CP}+c_{12}^2s_{23}c_{23}s_{13}\ii\sin\delta_\mathrm{CP})\\
+			&=c_{12}s_{12}c_{13}^2s_{23}c_{23}s_{13}\sin\delta_\mathrm{CP}(s_{12}^2+c_{12}^2)\\
+			&=c_{12}s_{12}c_{13}^2s_{23}c_{23}s_{13}\sin\delta_\mathrm{CP}\\
+			&=c_{13}c_{12}s_{12}c_{13}s_{13}c_{23}s_{23}\sin\delta_\mathrm{CP}
 		\end{aligned}
 	\end{equation*}
+	即：
+	\begin{equation*}
+		J=\frac{1}{2^3}\cos\theta_{13}\sin2\theta_{12}\sin2\theta_{13}\sin2\theta_{23}\sin\delta_{\mathrm{CP}}
+	\end{equation*}
+	因此，中微子振荡中发生CP破坏的必要条件是所有混合角$\theta_{ij}$非零，相位$\delta_\mathrm{CP}$不等于$0$或$\pi$。进一步，由(\ref{eq30})式可知，发生CP破坏同时还要求质量平方差$\Delta m_{21}^2,\Delta m_{31}^2,\Delta m_{32}^2$非零，即三代中微子的质量各不相同。总结来说：
+	\begin{equation}
+		\text{Conditions for CPV in oscillations:}\quad\theta_{ij}\neq0, \delta_{\mathrm{CP}}\neq0,\pi, m_{1}\neq m_{2}, m_{2}\neq m_{3}, m_{3}\neq m_{1}
+	\end{equation}
+	以上条件与夸克区的CP破坏相同。目前，所有的混合角$\theta_{ij}$与质量平方差$\Delta m_{ji}^2$都已经被测量过了，但长期以来，我们对$\theta_{13}$的实验测量只给出了它的上界（关于$\theta_{13}$的早期实验测量与第一个非零迹象，详见\ref{5.1}节）。如果$\sin^22\theta_{13}$的值小于$10^{-4}$，即使CP破坏相位$\delta_\mathrm{CP}$最大，那么凭借我们现有的实验技术，也无法在振荡实验中观测到CP破坏。
 	
+	公式(\ref{eq30})中包含了许多信息。首先，它告诉我们CP破坏在中微子振荡中是普遍存在的，对于不同的振荡通道$\alpha\to\beta$，$\Delta P_{\alpha\beta}$最多相差一个符号。这个特性来源于PMNS矩阵的幺正性，它表明：
+	\begin{equation}
+		\mathrm{Im}(U_{e1}U_{\mu1}^*U_{e2}^*U_{\mu2})=-\mathrm{Im}(U_{e1}U_{\tau1}^*U_{e2}^*U_{\tau2})=\mathrm{Im}(U_{\mu1}U_{\tau1}^*U_{\mu2}^*U_{\tau2})
+	\end{equation}
+	于是有$\Delta P_{e\mu}=-\Delta P_{e\tau}=\Delta P_{\mu\tau}$。公式(\ref{eq30})还告诉我们CP破坏的效应正比于$\sin({\Delta m_{21}^2L}/{4E})$，即只有在对较小的$\Delta m_{21}^2$主导的次级振荡模式灵敏的实验中才能观察到CP破坏现象。这也就是为什么寻找CP破坏的实验通常需要较长的基线（数百千米）、较强的中微子束流与较大的探测器。这类典型的实验条件将使得$\Delta m_{31}^2L/E\sim 1,\delta m_{21}^2L/E\ll1$，因此公式(\ref{eq30})可以在保留较小参量$\sin(\Delta m_{21}^2L/4E)$与$\sin\theta_{13}$到二阶的情况下近似为（此时有$\Delta m_{21}^2\simeq\Delta m_{31}^2$）：
+	\begin{equation}
+		\Delta P_{\alpha\beta} \simeq \pm16J \sin\left(\frac{\Delta m_{21}^2L}{4E}\right)\sin^2\left(\frac{\Delta m_{31}^2L}{4E}\right)
+	\end{equation}
+	长基线实验通常意味着中微子将在地壳内部传播，此时它们的振荡与中微子和物质的相互作用有关（详见\ref{2.5.2}节）。物质效应将使得与长基线实验相关的$\nu_\mu-\nu_e$振荡对于正反中微子来说具有不对称性，即物质效应使得$\Delta P_{\mu e}=P(\nu_\mu\to\nu_e)-P(\bar{\nu}_\mu\to\bar{\nu}_e)\ne0$，并且$\Delta P_{\mu e}$的符号与质量顺序有关，即正序（$\Delta m_{31}^2>0$）或反序（$\Delta m_{31}^2<0$）。因此，在寻找CP破坏时，需要从实验数据中扣除因物质效应引起的不对称性。
 	
+	在忽略物质效应的情况下（对于T2K这一类长基线实验，这种近似是合理的），我们可以将$\nu_\mu\to\nu_e$的三味振荡概率展开到小量$\sin(\Delta m_{21}^2L/4E),\sin\theta_{13}$的二阶：
+	\begin{equation}
+		\begin{aligned}P(\nu_\mu\to\nu_e)&\simeq\sin^2\theta_{23}\sin^22\theta_{13}\sin^2\left(\frac{\Delta m_{31}^2L}{4E}\right)+\cos^2\theta_{23}\sin^22\theta_{12}\sin^2\left(\frac{\Delta m_{21}^2L}{4E}\right)\\&+\frac{1}{2}\cos\theta_{13}\sin2\theta_{12}\sin2\theta_{13}\sin2\theta_{23}\cos\delta_{\mathrm{CP}}\sin\left(\frac{\Delta m_{21}^2L}{4E}\right)\sin\left(\frac{\Delta m_{31}^2L}{2E}\right)\\&-\cos\theta_{13}\sin2\theta_{12}\sin2\theta_{13}\sin2\theta_{23}\sin\delta_{\mathrm{CP}}\sin\left(\frac{\Delta m_{21}^2L}{4E}\right)\sin^2\left(\frac{\Delta m_{31}^2L}{4E}\right)\end{aligned}
+		\label{eq35}
+	\end{equation}
+	公式(\ref{eq35})的推导如下。由(\ref{eq12})式可知：
+	\begin{equation*}
+		\begin{aligned}
+			P(\nu_\mu\to\nu_e)&=-4\sum_{i<j}\mathrm{Re}(U_{\mu i}U_{ei}^*U_{\mu j}^*U_{ej})\sin^2\left(\frac{\Delta m_{ji}^2L}{4E}\right)+2\sum_{i<j}\mathrm{Im}(U_{\mu i}U_{ei}^*U_{\mu j}^*U_{ej})\sin\left(\frac{\Delta m_{ji}^2L}{2E}\right)\\
+			&=-4\Bigg[\mathrm{Re}(U_{\mu 1}U_{e1}^*U_{\mu 2}^*U_{e2})\sin^2\left(\frac{\Delta m_{21}^2L}{4E}\right)+\mathrm{Re}(U_{\mu 1}U_{e1}^*U_{\mu 3}^*U_{e3})\sin^2\left(\frac{\Delta m_{31}^2L}{4E}\right)\\
+			&+\mathrm{Re}(U_{\mu 2}U_{e2}^*U_{\mu 3}^*U_{e3})\sin^2\left(\frac{\Delta m_{32}^2L}{4E}\right)\Bigg]+2\Bigg[\mathrm{Im}(U_{\mu 1}U_{e1}^*U_{\mu 2}^*U_{e2})\sin\left(\frac{\Delta m_{21}^2L}{2E}\right)\\
+			&+\mathrm{Im}(U_{\mu 1}U_{e1}^*U_{\mu 3}^*U_{e3})\sin\left(\frac{\Delta m_{31}^2L}{2E}\right)+\mathrm{Im}(U_{\mu 2}U_{e2}^*U_{\mu 3}^*U_{e3})\sin\left(\frac{\Delta m_{32}^2L}{2E}\right)\Bigg]
+		\end{aligned}
+	\end{equation*}
+	首先计算实部。已知：
+	\begin{equation*}
+		\begin{aligned}
+			\mathrm{Re}(U_{\mu 1}U_{e1}^*U_{\mu 2}^*U_{e2})&=\mathrm{Re}\left[c_{12}c_{13}(-s_{12}c_{23}-c_{12}s_{13}s_{23}e^{\ii\delta_{\mathrm{CP}}})s_{12}c_{13}(c_{12}c_{23}-s_{12}s_{13}s_{23}e^{-\ii\delta_{\mathrm{CP}}})\right]\\
+			&=c_{12}s_{12}c_{13}^2\mathrm{Re}\left[(-s_{12}c_{23}-c_{12}s_{13}s_{23}e^{\ii\delta_{\mathrm{CP}}})(c_{12}c_{23}-s_{12}s_{13}s_{23}e^{-\ii\delta_{\mathrm{CP}}})\right]\\
+			&=c_{12}s_{12}c_{13}^2(-s_{12}c_{12}c_{23}^2+c_{12}s_{12}s_{13}^2s_{23}^2-c_{12}^2s_{23}c_{23}s_{13}\cos\delta_\mathrm{CP}+s_{12}^2c_{23}s_{23}s_{13}\cos\delta_\mathrm{CP})
+		\end{aligned}
+	\end{equation*}
+	即：
+	\begin{equation*}
+		\begin{aligned}
+			\mathrm{Re}(U_{\mu 1}U_{e1}^*U_{\mu 2}^*U_{e2})&=\frac{1}{4}\sin^22\theta_{12}c_{13}^2(-c_{23}^2+s_{13}^2s_{23}^2)-\frac{1}{8}\sin2\theta_{12}\sin2\theta_{23}\sin2\theta_{13}c_{13}\cos\delta_{\mathrm{CP}}\cos2\theta_{12}
+		\end{aligned}
+	\end{equation*}
+	第二项：
+	\begin{equation*}
+		\begin{aligned}
+			\mathrm{Re}(U_{\mu 1}U_{e1}^*U_{\mu 3}^*U_{e3})&=\mathrm{Re}\left[(-s_{12}c_{23}-c_{12}s_{13}s_{23}e^{\ii\delta_{\mathrm{CP}}})c_{12}c_{13}c_{13}s_{23}s_{13}e^{-\ii\delta_\mathrm{CP}}\right]\\
+			&=-c_{12}c_{13}^2s_{13}s_{23}\mathrm{Re}\left[(s_{12}c_{23}+c_{12}s_{13}s_{23}e^{\ii\delta_\mathrm{CP}})e^{-\ii\delta_\mathrm{CP}}\right]\\
+			&=-c_{12}c_{13}^2s_{13}s_{23}(s_{12}c_{23}\cos\delta_\mathrm{CP}+c_{12}s_{13}s_{23})\\
+			&=-c_{12}s_{12}c_{23}s_{23}c_{13}s_{13}c_{13}\cos\delta_\mathrm{CP}-c_{12}^2c_{13}^2s_{13}^2s_{23}^2
+		\end{aligned}
+	\end{equation*}
+	即：
+	\begin{equation*}
+		\mathrm{Re}(U_{\mu 1}U_{e1}^*U_{\mu 3}^*U_{e3})=-\frac{1}{8}\sin2\theta_{12}\sin2\theta_{23}\sin2\theta_{13}c_{13}\cos\delta_\mathrm{CP}-\frac{1}{4}c_{12}^2s_{23}^2\sin^22\theta_{13}
+	\end{equation*}
+	第三项：
+	\begin{equation*}
+		\begin{aligned}
+			\mathrm{Re}(U_{\mu 2}U_{e2}^*U_{\mu 3}^*U_{e3})&=\mathrm{Re}\left[(c_{12}c_{23}-s_{12}s_{13}s_{23}e^{\ii\delta_{\mathrm{CP}}})s_{12}c_{13}c_{13}s_{23}s_{13}e^{-\ii\delta_\mathrm{CP}}\right]\\
+			&=s_{12}c_{13}^2s_{13}s_{23}\mathrm{Re}\left[(c_{12}c_{23}-s_{12}s_{13}s_{23}e^{\ii\delta_{\mathrm{CP}}})e^{-\ii\delta_\mathrm{CP}}\right]\\
+			&=s_{12}c_{13}^2s_{13}s_{23}(c_{12}c_{23}\cos\delta_\mathrm{CP}-s_{12}s_{13}s_{23})\\
+			&=s_{12}c_{12}c_{13}s_{13}s_{23}c_{23}c_{13}\cos\delta_\mathrm{CP}-s_{12}^2c_{13}^2s_{13}^2s_{23}^2
+		\end{aligned}
+	\end{equation*}
+	即：
+	\begin{equation*}
+		\mathrm{Re}(U_{\mu 2}U_{e2}^*U_{\mu 3}^*U_{e3})=\frac{1}{8}\sin2\theta_{12}\sin2\theta_{13}\sin2\theta_{23}c_{13}\cos\delta_\mathrm{CP}-\frac{1}{4}s_{12}^2s_{23}^2\sin^22\theta_{13}
+	\end{equation*}
+	保留到$\sin(\Delta m_{21}^2L/4E),\sin\theta_{13}$的二次项，实部可以分解为：
+	\begin{gather*}
+		\frac{1}{4}\sin^22\theta_{12}c_{13}^2(-c_{23}^2+s_{13}^2s_{23}^2)\sin^2\left(\frac{\Delta m_{21}^2L}{4E}\right)
+			\simeq-\frac{1}{4}\sin^22\theta_{12}\cos^2\theta_{23}\sin^2\left(\frac{\Delta m_{21}^2L}{4E}\right)\\
+					\left[\sin^2\theta_{13}\sin^2\left(\frac{\Delta m_{21}^2L}{4E}\right)\simeq 0,\cos^2\theta_{13}\sin^2\left(\frac{\Delta m_{21}^2L}{4E}\right)\simeq\sin^2\left(\frac{\Delta m_{21}^2L}{4E}\right)\right]
+	\end{gather*}
+	以及：
+	\begin{gather*}
+		-\frac{1}{8}\sin2\theta_{12}\sin2\theta_{23}\sin2\theta_{13}c_{13}\cos\delta_{\mathrm{CP}}\cos2\theta_{12}\sin^2\left(\frac{\Delta m_{21}^2L}{4E}\right)\simeq 0\\
+		\left[\sin2\theta_{13}\sin^2\left(\frac{\Delta m_{21}^2L}{4E}\right)\simeq0\right]
+	\end{gather*}
+	以及：
+	\begin{equation*}
+		\begin{aligned}
+			-&\frac{1}{8}\sin2\theta_{12}\sin2\theta_{23}\sin2\theta_{13}c_{13}\cos\delta_\mathrm{CP}\left[\sin^2\left(\frac{\Delta m_{31}^2L}{4E}\right)-\sin^2\left(\frac{\Delta m_{32}^2L}{4E}\right)\right]\\
+				&=-\frac{1}{8}\sin2\theta_{12}\sin2\theta_{23}\sin2\theta_{13}c_{13}\cos\delta_\mathrm{CP}\sin\left[\frac{(2m_3^2-m_1^2-m_2^2)L}{4E}\right]\sin\left(\frac{\Delta m_{21}^2L}{4E}\right)\\
+					&\simeq-\frac{1}{8}\cos\theta_{13}\sin2\theta_{12}\sin2\theta_{23}\sin2\theta_{13}\cos\delta_\mathrm{CP}\sin\left(\frac{\Delta m_{31}^2L}{2E}\right)\sin\left(\frac{\Delta m_{21}^2L}{4E}\right)
+		\end{aligned}
+	\end{equation*}
+	其中，$m_1\simeq m_2$，并且有三角恒等式$\sin^2A-\sin^2B=\sin(A+B)\sin(A-B$。以及：
+	\begin{equation*}
+		\begin{aligned}
+			-&\frac{1}{4}c_{12}^2s_{23}^2\sin^22\theta_{13}\sin^2\left(\frac{\Delta m_{31}^2L}{4E}\right)-\frac{1}{4}s_{12}^2s_{23}^2\sin^22\theta_{13}\sin^2\left(\frac{\Delta m_{32}^2L}{4E}\right)\\
+		&\simeq-\frac{1}{4}(c_{12}^2+s_{12}^2)s_{23}^2\sin^22\theta_{13}\sin^2\left(\frac{\Delta m_{31}^2L}{4E}\right)\\
+		&=-\frac{1}{4}\sin^2\theta_{23}\sin^22\theta_{13}\sin^2\left(\frac{\Delta m_{31}^2L}{4E}\right)
+		\end{aligned}
+	\end{equation*}	
+	其中，$\sin^22\theta_{13}\sin^2\left(\frac{\Delta m_{31}^2L}{4E}\right)\simeq\sin^22\theta_{13}\sin^2\left(\frac{\Delta m_{32}^2L}{4E}\right)$。对于虚部，我们可以发现它等于$\Delta P_{\mu e}$的2倍：
+	\begin{equation*}
+		\begin{aligned}
+			2\Delta P_{\mu e}&\simeq-2\times16J\sin\left(\frac{\Delta m_{21}^2L}{4E}\right)\sin^2\left(\frac{\Delta m_{31}^2L}{4E}\right)\\
+			&=-2\times16\times\frac{1}{8} \cos\theta_{13}\sin2\theta_{12}\sin2\theta_{13}\sin2\theta_{23}\sin\delta_{\mathrm{CP}}\sin\left(\frac{\Delta m_{21}^2L}{4E}\right)\sin^2\left(\frac{\Delta m_{31}^2L}{4E}\right)\\
+			&=-\cos\theta_{13}\sin2\theta_{12}\sin2\theta_{13}\sin2\theta_{23}\sin\delta_{\mathrm{CP}}\sin\left(\frac{\Delta m_{21}^2L}{4E}\right)\sin^2\left(\frac{\Delta m_{31}^2L}{4E}\right)
+		\end{aligned}
+	\end{equation*}
+	将实部与虚部结合，即可得到(\ref{eq35})式：
+	\begin{equation*}
+		\begin{aligned}P(\nu_\mu\to\nu_e)&\simeq\sin^2\theta_{23}\sin^22\theta_{13}\sin^2\left(\frac{\Delta m_{31}^2L}{4E}\right)+\cos^2\theta_{23}\sin^22\theta_{12}\sin^2\left(\frac{\Delta m_{21}^2L}{4E}\right)\\&+\frac{1}{2}\cos\theta_{13}\sin2\theta_{12}\sin2\theta_{13}\sin2\theta_{23}\cos\delta_{\mathrm{CP}}\sin\left(\frac{\Delta m_{21}^2L}{4E}\right)\sin\left(\frac{\Delta m_{31}^2L}{2E}\right)\\&-\cos\theta_{13}\sin2\theta_{12}\sin2\theta_{13}\sin2\theta_{23}\sin\delta_{\mathrm{CP}}\sin\left(\frac{\Delta m_{21}^2L}{4E}\right)\sin^2\left(\frac{\Delta m_{31}^2L}{4E}\right)\end{aligned}
+	\end{equation*}
+	其中，第一项是主要的振荡模式，由$\Delta m_{31}^2$驱动；
 	
 	
 	
@@ -496,6 +613,12 @@
 	
 	\subsection{其它的三味混合效应}
 	\subsection{中微子在物质中的传播\label{2.5}}
+	\subsubsection{基础理论}
+	\subsubsection{物质密度不变的介质\label{2.5.2}}
+	\section{$\nu_1-\nu_2$振荡}
+	\section{$\nu_2-\nu_3$振荡}
+	\section{$\nu_1-\nu_3$振荡}
+	\subsection{早期实验测量的极限与第一个非零迹象\label{5.1}}
 	\newpage
 	\printbibliography
 \end{document}

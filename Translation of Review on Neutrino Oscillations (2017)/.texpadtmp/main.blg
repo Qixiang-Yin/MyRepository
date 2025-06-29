@@ -1,23 +1,23 @@
 [0] Config.pm:307> INFO - This is Biber 2.19
 [0] Config.pm:310> INFO - Logfile is '/Users/qixiangyin/Documents/Code/Git Project/MyRepository/Translation of Review on Neutrino Oscillations (2017)/.texpadtmp/main.blg'
-[20] biber-darwin:340> INFO - === Sun Jun 29, 2025, 13:22:58
-[25] Biber.pm:419> INFO - Reading '/Users/qixiangyin/Documents/Code/Git Project/MyRepository/Translation of Review on Neutrino Oscillations (2017)/.texpadtmp/main.bcf'
-[50] Biber.pm:979> INFO - Found 55 citekeys in bib section 0
-[54] Biber.pm:4419> INFO - Processing section 0
-[57] Biber.pm:4610> INFO - Looking for bibtex file '/Users/qixiangyin/Documents/Code/Git Project/MyRepository/Translation of Review on Neutrino Oscillations (2017)/references.bib' for section 0
-[58] bibtex.pm:1713> INFO - LaTeX decoding ...
-[75] bibtex.pm:1519> INFO - Found BibTeX data source '/Users/qixiangyin/Documents/Code/Git Project/MyRepository/Translation of Review on Neutrino Oscillations (2017)/references.bib'
-[176] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[176] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[177] Biber.pm:4239> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
-[177] Biber.pm:4245> INFO - No sort tailoring available for locale 'en-US'
-[186] bbl.pm:660> INFO - Writing '/Users/qixiangyin/Documents/Code/Git Project/MyRepository/Translation of Review on Neutrino Oscillations (2017)/.texpadtmp/main.bbl' with encoding 'UTF-8'
-[193] bbl.pm:763> INFO - Output to /Users/qixiangyin/Documents/Code/Git Project/MyRepository/Translation of Review on Neutrino Oscillations (2017)/.texpadtmp/main.bbl
-[193] Biber.pm:131> WARN - ISBN '978-3540439645' in entry 'FukugitaYanagida2003' is invalid - run biber with '--validate_datamodel' for details.
-[193] Biber.pm:131> WARN - ISBN '978-9812380712' in entry 'MohapatraPal2004' is invalid - run biber with '--validate_datamodel' for details.
-[193] Biber.pm:131> WARN - ISBN '978-3642061911' in entry 'Bilenky2010' is invalid - run biber with '--validate_datamodel' for details.
-[193] Biber.pm:131> WARN - ISBN '978-1439830757' in entry 'Zuber2011' is invalid - run biber with '--validate_datamodel' for details.
-[193] Biber.pm:131> WARN - ISBN '978-0691157496' in entry 'Barger2012' is invalid - run biber with '--validate_datamodel' for details.
-[193] Biber.pm:131> WARN - ISBN '978-3527411013' in entry 'ValleRomao2015' is invalid - run biber with '--validate_datamodel' for details.
-[193] Biber.pm:131> WARN - ISBN '978-4431556962' in entry 'Suekane2015' is invalid - run biber with '--validate_datamodel' for details.
-[193] Biber.pm:133> INFO - WARNINGS: 7
+[21] biber-darwin:340> INFO - === Sun Jun 29, 2025, 22:18:12
+[27] Biber.pm:419> INFO - Reading '/Users/qixiangyin/Documents/Code/Git Project/MyRepository/Translation of Review on Neutrino Oscillations (2017)/.texpadtmp/main.bcf'
+[52] Biber.pm:979> INFO - Found 55 citekeys in bib section 0
+[57] Biber.pm:4419> INFO - Processing section 0
+[60] Biber.pm:4610> INFO - Looking for bibtex file '/Users/qixiangyin/Documents/Code/Git Project/MyRepository/Translation of Review on Neutrino Oscillations (2017)/references.bib' for section 0
+[62] bibtex.pm:1713> INFO - LaTeX decoding ...
+[78] bibtex.pm:1519> INFO - Found BibTeX data source '/Users/qixiangyin/Documents/Code/Git Project/MyRepository/Translation of Review on Neutrino Oscillations (2017)/references.bib'
+[181] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[181] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[181] Biber.pm:4239> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
+[181] Biber.pm:4245> INFO - No sort tailoring available for locale 'en-US'
+[191] bbl.pm:660> INFO - Writing '/Users/qixiangyin/Documents/Code/Git Project/MyRepository/Translation of Review on Neutrino Oscillations (2017)/.texpadtmp/main.bbl' with encoding 'UTF-8'
+[198] bbl.pm:763> INFO - Output to /Users/qixiangyin/Documents/Code/Git Project/MyRepository/Translation of Review on Neutrino Oscillations (2017)/.texpadtmp/main.bbl
+[198] Biber.pm:131> WARN - ISBN '978-3540439645' in entry 'FukugitaYanagida2003' is invalid - run biber with '--validate_datamodel' for details.
+[198] Biber.pm:131> WARN - ISBN '978-9812380712' in entry 'MohapatraPal2004' is invalid - run biber with '--validate_datamodel' for details.
+[198] Biber.pm:131> WARN - ISBN '978-3642061911' in entry 'Bilenky2010' is invalid - run biber with '--validate_datamodel' for details.
+[198] Biber.pm:131> WARN - ISBN '978-1439830757' in entry 'Zuber2011' is invalid - run biber with '--validate_datamodel' for details.
+[198] Biber.pm:131> WARN - ISBN '978-0691157496' in entry 'Barger2012' is invalid - run biber with '--validate_datamodel' for details.
+[198] Biber.pm:131> WARN - ISBN '978-3527411013' in entry 'ValleRomao2015' is invalid - run biber with '--validate_datamodel' for details.
+[198] Biber.pm:131> WARN - ISBN '978-4431556962' in entry 'Suekane2015' is invalid - run biber with '--validate_datamodel' for details.
+[198] Biber.pm:133> INFO - WARNINGS: 7
