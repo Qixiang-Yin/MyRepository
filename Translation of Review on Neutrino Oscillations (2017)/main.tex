@@ -114,7 +114,7 @@
 	\begin{equation}
 		P_\mathrm{Majorana}=\begin{pmatrix}e^{\ii\alpha_1}&0&0\\0&e^{\ii\alpha_2}&0\\0&0&1\end{pmatrix},\begin{pmatrix}1&0&0\\0&e^{\ii\phi_2}&0\\0&0&e^{\ii(\phi_3+\delta_{\mathrm{CP}})}\end{pmatrix},\begin{pmatrix}e^{\ii\rho}&0&0\\0&1&0\\0&0&e^{\ii\sigma}\end{pmatrix}
 	\end{equation}
-	这些记法与带电轻子场的相位转动有关，它们彼此在物理上是完全等价的。PMNS矩阵中的$\delta_\mathrm{CP}$通常称为“Dirac相位”，而对角矩阵$P$中的相位通常称为“Majorana相位”。不失一般性地，Majorana相位的取值范围可以选为$[0,\pi)$。我们在本综述中将不会过度关注Majorana相位，因为之后我们将会看到，它并不会影响中微子的振荡概率。Majorana相位仅在轻子数破坏的过程中出现，例如无中微子双$\beta$衰变（$0\nu\beta\beta$），在这一类过程中Majorana属性将至关重要（关于$0\nu\beta\beta$的综述，理论方面可参考\cite{vergados2012theory}\cite{dell2016neutrinoless}，实验方面可参考\cite{cremonesi2018neutrino}）。而Dirac相位$\delta_\mathrm{CP}$与振荡概率相关，并且导致真空中的中微子振荡和反中微子振荡的不对称性，详见\ref{2.3}节。
+	这些记法与带电轻子场的相位转动有关，它们彼此在物理上是完全等价的。PMNS矩阵中的$\delta_\mathrm{CP}$通常称为“Dirac相位”，而对角矩阵$P$中的相位通常称为“Majorana相位”。不失一般性地，Majorana相位的取值范围可以选为$[0,\pi)$。我们在本综述中将不会重点关注Majorana相位，因为之后我们将会看到，它并不会影响中微子的振荡概率。Majorana相位仅在轻子数破坏的过程中出现，例如无中微子双$\beta$衰变（$0\nu\beta\beta$），在这一类过程中Majorana属性将至关重要（关于$0\nu\beta\beta$的综述，理论方面可参考\cite{vergados2012theory}\cite{dell2016neutrinoless}，实验方面可参考\cite{cremonesi2018neutrino}）。而Dirac相位$\delta_\mathrm{CP}$与振荡概率相关，并且导致真空中的中微子振荡和反中微子振荡的不对称性，详见\ref{2.3}节。
 	\subsection{真空中的中微子振荡\label{2.2}}
 	一般的中微子振荡实验需要包含三个步骤。第一步，从带电流过程产生一束处于纯的味本征态的中微子束流，例如$\pi^+\to\mu^+\nu_\mu$过程可以产生纯的$\nu_\mu$束流。而味本征态是质量本征态的相干叠加\footnote{注意，正中微子态的味道和质量本征态之间通过PMNS矩阵的复共轭相联系，而正中微子场的味道和质量本征态之间通过PMNS矩阵相联系，例如方程(\ref{eq2})。这是因为量子中微子场$\nu_\alpha(x)$可以湮灭一个味道为$\alpha$的中微子，而中微子态$|\nu_\alpha(\vec{p})\rangle$需要通过产生算符$a_\alpha^\dagger(\vec{p})$作用在真空态上得到。对于反中微子，我们有$\bar{\nu}_\alpha(x)=\sum_i U_{\alpha i}^*\bar{\nu}_i(x)$与$|\bar{\nu}_\alpha\rangle=\sum_i U_{\alpha i}|\bar{\nu}_i\rangle$。}：
 	\begin{equation}
@@ -141,7 +141,7 @@
 	其中，$\Delta m_{ji}^2\equiv m_j^2-m_i^2$为质量平方差，$L\simeq ct$是中微子的传播距离。对于反中微子振荡，我们需要将方程(\ref{eq12})中的$U$替换为$U^*$，这将会改变最后一项的符号：
 	\begin{equation*}
 		\begin{aligned}
-			P(\bar{\nu}_\alpha\to\bar{\nu}_\beta)&=\delta_{\alpha\beta}-4\sum_{i<j}\mathrm{Re}(U_{\alpha i}^*U_{\beta i} U_{\alpha j} U_{\beta j}^*)\sin^2\left(\frac{\Delta m_{ji}^2L}{4E}\right)\\&-2\sum_{i<j}\mathrm{Im}(U_{\alpha i}^*U_{\beta i} U_{\alpha j} U_{\beta j}^*)\sin\left(\frac{\Delta m_{ji}^2L}{2E}\right)
+			P(\bar{\nu}_\alpha\to\bar{\nu}_\beta)&=\delta_{\alpha\beta}-4\sum_{i<j}\mathrm{Re}(U_{\alpha i}^*U_{\beta i} U_{\alpha j} U_{\beta j}^*)\sin^2\left(\frac{\Delta m_{ji}^2L}{4E}\right)\\&+2\sum_{i<j}\mathrm{Im}(U_{\alpha i}^*U_{\beta i} U_{\alpha j} U_{\beta j}^*)\sin\left(\frac{\Delta m_{ji}^2L}{2E}\right)
 		\end{aligned}
 	\end{equation*}
 	公式(\ref{eq12})的推导如下。由(\ref{eq11})式可知：
@@ -187,7 +187,7 @@
 			&=\delta_{\alpha\beta}-4\sum_{i<j}\mathrm{Re}(U_{\alpha i}U_{\beta i}^\ast U_{\alpha j}^\ast U_{\beta j})\sin^2\left(\frac{\Delta m_{ji}^2L}{4E}\right)+2\sum_{i<j}\mathrm{Im}(U_{\alpha i}U_{\beta i}^\ast U_{\alpha j}^\ast U_{\beta j})\sin\left(\frac{\Delta m_{ji}^2L}{2E}\right)
 		\end{aligned}
 	\end{equation*}
-	最后一步利用了PMNS矩阵的幺正性$\sum_iU_{\beta i}U_{\alpha i}^*=\delta_{\alpha\beta}$，以及中微子的传播距离$L\simeq ct=t$。对于反中微子振荡，我们只需将其中的$i\leftrightarrow j$交换即可。
+	最后一步利用了PMNS矩阵的幺正性$\sum_iU_{\beta i}U_{\alpha i}^*=\delta_{\alpha\beta}$，以及中微子的传播距离$L\simeq ct=t$。对于反中微子振荡，我们只需将其中的$U\to U^*$即可。
 	
 	从(\ref{eq12})式中，我们可以定性地获得一些有关中微子振荡的性质。首先，振荡发生的前提是中微子必须具有非简并的质量（$\Delta m_{ji}^2\ne0$）以及非平凡味混合（$U\ne\mathbf{1}$）。振荡概率$P(\nu_\alpha\to\nu_\beta)$依赖于3个混合角$\theta_{12},\theta_{23},\theta_{13}$和2个独立的质量平方差$\Delta m_{21}^2,\Delta m_{31}^2$（$\Delta m_{32}^2=\Delta m_{31}^2-\Delta m_{21}^2$）。振荡同样依赖于Dirac相位$\delta_\mathrm{CP}$，而与Majorana相位无关，这是因为振荡概率的公式(\ref{eq12})中只包含类似$U_{\alpha i}U_{\beta i}^*$的项，因此(\ref{eq7})中的对角矩阵$P$中的相位相互抵消，不会对振荡产生贡献。因此，Dirac中微子和Majorana中微子具有相同的振荡概率。我们可以从更一般的角度来理解这个事实，因为中微子振荡中的总轻子数是守恒的，然而中微子的Majorana属性体现在轻子数破坏的过程中，例如$0\nu\beta\beta$，所以Majorana中微子的振荡性质应该与Dirac中微子一致。从(\ref{eq12})式中我们还可以得知CP破坏（即$P(\bar{\nu}_\alpha\to\bar{\nu}_\beta)\ne P(\nu_\alpha\to\nu_\beta)$）仅在出现过程（$\beta\ne\alpha$，即从$\nu_\alpha$束流中出现了$\nu_\beta$）中发生，在消失过程（$\beta=\alpha$，由于$P(\nu_\alpha\to\nu_\alpha)<1$，说明$\nu_\alpha$消失，振荡到其它味道）中不会发生。同时，中微子和反中微子的存活（即不发生振荡）概率相等：
 		\begin{equation}
@@ -196,12 +196,12 @@
 		\end{equation}
 		其原因是当$\alpha=\beta$时，$U_{\alpha i}U_{\beta i}^*U_{\alpha j}^*U_{\beta j}$一项为实数。
 		
-		虽然在精确描述中微子振荡时，例如考虑次级效应和CP破坏效应时，我们必须使用三种味道的中微子振荡公式(\ref{eq12})式，但在许多振荡实验的条件下，我们可以考虑取(\ref{eq12})式的近似，忽略其中的次级项。此时，振荡公式就可以简化为由单一质量平方差$\Delta m^2$与单一混合角$\theta$驱动的有效振荡，这种振荡只是两种味道的中微子振荡：
+		虽然在精确描述中微子振荡时，例如考虑次级效应和CP破坏效应时，我们必须使用三种味道的中微子的振荡公式(\ref{eq12})式，但在许多振荡实验的条件下，我们可以考虑取(\ref{eq12})式的近似，忽略其中的次级项。此时，振荡公式就可以简化为由单一质量平方差$\Delta m^2$与单一混合角$\theta$驱动的有效振荡，这种振荡只是两种味道的中微子振荡：
 		\begin{equation}
 			P(\nu_\alpha\to\nu_\beta)=P(\bar{\nu}_\alpha\to\bar{\nu}_\beta)=\sin^22\theta\sin^2\left(\frac{\Delta m^2 L}{4E}\right)\quad (\beta\ne\alpha)
 			\label{eq14}
 		\end{equation}
-		若只考虑两种味道的中微子振荡的情况，令PMNS矩阵中$\theta_{13}=\theta_{23}=0$，混合矩阵可以约化成：
+		若只考虑两种味道的中微子振荡，令PMNS矩阵中$\theta_{13}=\theta_{23}=0$，混合矩阵可以约化成：
 		\begin{equation*}
 			U=\begin{pmatrix}
 				\cos\theta_{12}&\sin\theta_{12}\\
@@ -368,11 +368,115 @@
 		\end{equation*}
 		即(\ref{eq25})式。
 	\subsection{中微子振荡的CP破坏与三味混合效应\label{2.3}}
-	我们在\ref{2.2}节中看到，中微子振荡依赖于PMNS矩阵中的相位$\delta_\mathrm{CP}$，因此我们有可能在中微子振荡中观察到CP对称性的破坏，即正反中微子在真空中的振荡概率不同。
+	我们在\ref{2.2}节中看到，中微子振荡依赖于PMNS矩阵中的相位$\delta_\mathrm{CP}$，因此我们有可能在中微子振荡中观察到CP对称性的破坏\cite{cabibbo1978time}，即正反中微子在真空中的振荡概率不同。在详细讨论振荡概率之前，我们首先来讨论不同的分立对称性\footnote{需要强调，$P(\bar{\nu}_\alpha\to\bar{\nu}_\beta)$是电荷-宇称变换CP作用于$P(\nu_\alpha\to\nu_\beta)$的结果，并非是电荷共轭变换C作用的结果。$\nu_\alpha,\nu_\beta$是左手中微子，其反粒子$\bar{\nu}_\alpha,\bar{\nu}_\beta$是右手反中微子，也就是$\nu_\alpha,\nu_\beta$的CP共轭。$\nu_\alpha,\nu_\beta$的C共轭是假想的左手反中微子，它们不与$W,Z$玻色子耦合，也不能在弱作用过程中产生。}对振荡概率的作用结果（我们推荐读者阅读\cite{akhmedov2005three}，其中详细介绍了CP变换与T变换对中微子振荡的作用，包含真空振荡与物质效应）：
+	\begin{align}
+		P(\nu_\alpha\to\nu_\beta)&\stackrel{\mathrm{CP}}{\longrightarrow} P(\bar{\nu}_\alpha\to\bar{\nu}_\beta)\\
+		&\stackrel{\mathrm{T}}{\longrightarrow} P(\nu_\beta\to\nu_\alpha)\\
+		&\stackrel{\mathrm{CPT}}{\longrightarrow} P(\bar{\nu}_\beta\to\bar{\nu}_\alpha)
+	\end{align}
+	因此，如果CPT守恒成立，则$P(\nu_\alpha\to\nu_\beta)=P(\bar{\nu}_\beta\to\bar{\nu}_\alpha)$，这预示着中微子振荡中的CP不对称与T不对称的程度相同：
+	\begin{equation}
+		A_{\alpha\beta}=\frac{P(\nu_\alpha\to\nu_\beta)-P(\bar{\nu}_\alpha\to\bar{\nu}_\beta)}{P(\nu_\alpha\to\nu_\beta)+P(\bar{\nu}_\alpha\to\bar{\nu}_\beta)}=\frac{P(\nu_\alpha-\nu_\beta)-P(\nu_\beta-\nu_\alpha)}{P(\nu_\alpha-\nu_\beta)+P(\nu_\beta-\nu_\alpha)}
+	\end{equation}
+	CPT守恒同时也表明$P(\nu_\alpha\to\nu_\alpha)=P(\bar{\nu}_\alpha\to\bar{\nu}_\alpha)$，即在中微子消失的实验中不存在CP破坏，与我们之前在三味混合的公式(\ref{eq13})中看到的一致（其中我们已经隐含地假设正反中微子的质量与混合参数相同，这是CPT不变性所要求的）。
 	
-	
-	
-	
+	为了讨论中微子振荡中的CP破坏效应（CPV），我们可以引入$\Delta P_{\alpha\beta}\equiv P(\nu_\alpha\to\nu_\beta)-P(\bar{\nu}_\alpha\to\bar{\nu}_\beta)$，它等于三味振荡公式(\ref{eq12})中关于CP变换呈奇函数性质（CP-odd）的部分的2倍，即\cite{bilenky1980oscillations}\cite{barger1980cp}：
+	\begin{gather}
+		\Delta P_{\alpha\beta}=\pm 16J\sin\left(\frac{\Delta m_{21}^2L}{4E}\right)\sin\left(\frac{\Delta m_{31}^2L}{4E}\right)\sin\left(\frac{\Delta m_{32}^2L}{4E}\right) \label{eq30}\\ 
+		J\equiv\mathrm{Im}(U_{e1}U_{\mu1}^*U_{e2}^*U_{\mu2}) \notag
+	\end{gather}
+	公式(\ref{eq30})的推导过程如下。已知(\ref{eq12})式以及反中微子的振荡概率：
+	\begin{equation*}
+		\begin{aligned}
+			P(\bar{\nu}_\alpha\to\bar{\nu}_\beta)&=\delta_{\alpha\beta}-4\sum_{i<j}\mathrm{Re}(U_{\alpha i}^*U_{\beta i} U_{\alpha j} U_{\beta j}^*)\sin^2\left(\frac{\Delta m_{ji}^2L}{4E}\right)+2\sum_{i<j}\mathrm{Im}(U_{\alpha i}^*U_{\beta i} U_{\alpha j} U_{\beta j}^*)\sin\left(\frac{\Delta m_{ji}^2L}{2E}\right)\\
+			&=\delta_{\alpha\beta}-4\sum_{i<j}\mathrm{Re}(U_{\alpha i}^*U_{\beta i} U_{\alpha j} U_{\beta j}^*)\sin^2\left(\frac{\Delta m_{ji}^2L}{4E}\right)-2\sum_{i<j}\mathrm{Im}(U_{\alpha i}U_{\beta i}^\ast U_{\alpha j}^\ast U_{\beta j})\sin\left(\frac{\Delta m_{ji}^2L}{2E}\right)
+		\end{aligned}
+	\end{equation*}
+	由此可知：
+	\begin{equation*}
+		\Delta P_{\alpha\beta}\equiv P(\nu_\alpha\to\nu_\beta)-P(\bar{\nu}_\alpha\to\bar{\nu}_\beta)=4\sum_{i<j}\mathrm{Im}(U_{\alpha i}U_{\beta i}^\ast U_{\alpha j}^\ast U_{\beta j})\sin\left(\frac{\Delta m_{ji}^2L}{2E}\right)
+	\end{equation*}
+	以$\alpha=e,\beta=\tau$为例：
+	\begin{equation*}
+		\begin{aligned}
+			\Delta P_{e\mu}&=4\sum_{i<j}\mathrm{Im}(U_{ei}U_{\mu i}^*U_{ej}^*U_{\mu j})\sin\left(\frac{\Delta m_{ji}^2L}{2E}\right)\\
+			&=4\Bigg[\mathrm{Im}(U_{e1}U_{\mu1}^\ast U_{e2}^\ast U_{\mu2})\sin\left(\frac{\Delta m_{21}^2L}{2E}\right)+\mathrm{Im}(U_{e1}U_{\mu1}^\ast U_{e3}^\ast U_{\mu3})\sin\left(\frac{\Delta m_{31}^2L}{2E}\right)\\
+			&+\mathrm{Im}(U_{e2}U_{\mu2}^\ast U_{e3}^\ast U_{\mu3})\sin\left(\frac{\Delta m_{32}^2L}{2E}\right)\Bigg]
+		\end{aligned}
+	\end{equation*}
+	利用PMNS矩阵的幺正性可得$U_{e3}^\ast U_{\mu3}=-U_{e1}^\ast U_{\mu1}-U_{e2}^\ast U_{\mu2}$，于是：
+	\begin{gather*}
+		U_{e1}U_{\mu1}^\ast U_{e3}^\ast U_{\mu3}=U_{e1}U_{\mu1}^\ast(-U_{e1}^\ast U_{\mu1}-U_{e2}^\ast U_{\mu2})=-U_{e2}^*U_{\mu2} U_{e1} U_{\mu1}^*-|U_{e1}|^2|U_{\mu1}|^2 \\
+		U_{e2}U_{\mu2}^\ast U_{e3}^\ast U_{\mu3}=U_{e2}U_{\mu2}^\ast(-U_{e1}^\ast U_{\mu1}-U_{e2}^\ast U_{\mu2})=-U_{e2}U_{\mu2}^\ast U_{e1}^\ast U_{\mu1}-|U_{e2}|^2|U_{\mu2}|^2
+	\end{gather*}
+	因此：
+	\begin{equation*}
+		\begin{aligned}
+			\Delta P_{e\mu}&=4\Bigg[\mathrm{Im}(U_{e1}U_{\mu1}^\ast U_{e2}^\ast U_{\mu2})\sin\left(\frac{\Delta m_{21}^2L}{2E}\right)-\mathrm{Im}(U_{e2}^*U_{\mu2} U_{e1} U_{\mu1}^*)\sin\left(\frac{\Delta m_{31}^2L}{2E}\right)\\
+				&-\mathrm{Im}(U_{e2}U_{\mu2}^\ast U_{e1}^\ast U_{\mu1})\sin\left(\frac{\Delta m_{32}^2L}{2E}\right)\Bigg]\\
+				&=4\mathrm{Im}(U_{e1}U_{\mu1}^\ast U_{e2}^\ast U_{\mu2})\left[\sin\left(\frac{\Delta m_{21}^2L}{2E}\right)-\sin\left(\frac{\Delta m_{31}^2L}{2E}\right)+\sin\left(\frac{\Delta m_{32}^2L}{2E}\right)\right]
+		\end{aligned}
+	\end{equation*}
+	已知有三角恒等式：
+	\begin{equation*}
+		\sin(C+A-B)+\sin(C-A+B)-\sin(C+A+B)-\sin(C-A-B)=4\sin A\sin B\sin C
+	\end{equation*}
+	其中$A=\frac{\Delta m_{21}^2L}{4E},B=\frac{\Delta m_{31}^2L}{4E},C=\frac{\Delta m_{32}^2L}{4E}$，即：
+	\begin{equation*}
+		4\sin\left(\frac{\Delta m_{21}^2L}{4E}\right)\sin\left(\frac{\Delta m_{31}^2L}{4E}\right)\sin\left(\frac{\Delta m_{32}^2L}{4E}\right)=\sin\left(\frac{\Delta m_{21}^2L}{2E}\right)-\sin\left(\frac{\Delta m_{31}^2L}{2E}\right)+\sin\left(\frac{\Delta m_{32}^2L}{2E}\right)
+	\end{equation*}
+	于是上式可以化为：
+	\begin{equation*}
+		\begin{aligned}
+			\Delta P_{e\mu}&=16\times\mathrm{Im}(U_{e1}U_{\mu1}^\ast U_{e2}^\ast U_{\mu2})\sin\left(\frac{\Delta m_{21}^2L}{4E}\right)\sin\left(\frac{\Delta m_{31}^2L}{4E}\right)\sin\left(\frac{\Delta m_{32}^2L}{4E}\right)\\
+		&=16J\sin\left(\frac{\Delta m_{21}^2L}{4E}\right)\sin\left(\frac{\Delta m_{31}^2L}{4E}\right)\sin\left(\frac{\Delta m_{32}^2L}{4E}\right)
+		\end{aligned}
+	\end{equation*}
+	当$\alpha=\mu,\beta=\tau$时：
+	\begin{equation*}
+		\begin{aligned}
+			\Delta P_{\mu\tau}&=4\Bigg[\mathrm{Im}(U_{\mu1}U_{\tau1}^\ast U_{\mu2}^\ast U_{\tau2})\sin\left(\frac{\Delta m_{21}^2L}{2E}\right)+\mathrm{Im}(U_{\mu1}U_{\tau1}^\ast U_{\mu3}^\ast U_{\tau3})\sin\left(\frac{\Delta m_{31}^2L}{2E}\right)\\
+			&+\mathrm{Im}(U_{\mu2}U_{\tau2}^\ast U_{\mu3}^\ast U_{\tau3})\sin\left(\frac{\Delta m_{32}^2L}{2E}\right)\Bigg]
+		\end{aligned}
+	\end{equation*}
+	由幺正性可知：
+	\begin{gather*}
+		\mathrm{Im}(U_{\mu1}U_{\tau1}^\ast U_{\mu2}^\ast U_{\tau2})=\mathrm{Im}(U_{\mu1}U_{\mu2}^*U_{\tau1}^*U_{\tau2})=+\mathrm{Im}[U_{\mu1}U_{\mu2}^*(-U_{e1}^*U_{e2}-U_{\mu1}^*U_{\mu2})]=-\mathrm{Im}(U_{e1}^*U_{\mu1}U_{e2}U_{\mu2}^*)\\
+		\mathrm{Im}(U_{\mu1}U_{\tau1}^\ast U_{\mu3}^\ast U_{\tau3})=\mathrm{Im}[U_{\mu1}U_{\tau1}^*(-U_{\mu1}^*U_{\tau1}-U_{\mu2}^*U_{\tau2})]=-\mathrm{Im}(U_{\mu1}U_{\tau1}^*U_{\mu2}^*U_{\tau2})=+\mathrm{Im}(U_{e1}^*U_{\mu1}U_{e2}U_{\mu2}^*)\\
+		\mathrm{Im}(U_{\mu2}U_{\tau2}^\ast U_{\mu3}^\ast U_{\tau3})=\mathrm{Im}[U_{\mu2}U_{\tau2}^\ast(-U_{\mu1}^*U_{\tau1}-U_{\mu2}^*U_{\tau2})]=-\mathrm{Im}(U_{\mu2}U_{\tau2}^\ast U_{\mu1}^*U_{\tau1})=-\mathrm{Im}(U_{e1}^*U_{\mu1}U_{e2}U_{\mu2}^*)
+	\end{gather*}
+	即：
+	\begin{equation*}
+		\begin{aligned}
+			\Delta P_{\mu\tau}&=4\left[J\sin\left(\frac{\Delta m_{21}^2L}{2E}\right)-J\sin\left(\frac{\Delta m_{31}^2L}{2E}\right)+J\sin\left(\frac{\Delta m_{32}^2L}{2E}\right)\right]\\
+			&=4J\left[\sin\left(\frac{\Delta m_{21}^2L}{2E}\right)-\sin\left(\frac{\Delta m_{31}^2L}{2E}\right)+\sin\left(\frac{\Delta m_{32}^2L}{2E}\right)\right]
+		\end{aligned}
+	\end{equation*}
+	因此：
+	\begin{equation*}
+		\Delta P_{\mu\tau}=16J\left(\frac{\Delta m_{21}^2L}{4E}\right)\sin\left(\frac{\Delta m_{31}^2L}{4E}\right)\sin\left(\frac{\Delta m_{32}^2L}{4E}\right)
+	\end{equation*}
+	进一步有：
+	\begin{equation*}
+		\mathrm{Im}(U_{\alpha i}U_{\beta i}^*U_{\alpha j}^*U_{\beta j})=J\epsilon_{\alpha\beta\gamma}\epsilon_{ijk}
+	\end{equation*}
+	当$(\alpha,\beta,\gamma),(i,j,k)$为$(e,\mu,\tau),(1,2,3)$的偶置换时取$\epsilon_{\alpha\beta\gamma}=+1,\epsilon_{ijk}=+1$，为奇置换时取$\epsilon_{\alpha\beta\gamma}=-1,\epsilon_{ijk}=-1$。这样我们就证明了(\ref{eq30})式：
+	\begin{equation*}
+		\Delta P_{\alpha\beta}=\pm 16J\sin\left(\frac{\Delta m_{21}^2L}{4E}\right)\sin\left(\frac{\Delta m_{31}^2L}{4E}\right)\sin\left(\frac{\Delta m_{32}^2L}{4E}\right)
+	\end{equation*}
+	当$(\alpha,\beta,\gamma)$是$(e,\mu,\tau)$的偶置换时，(\ref{eq30})式前面取“$+$”号，为奇置换时取“$-$”号（即当$(\alpha,\beta)=(e,\mu),(\mu,\tau),(\tau,e)$时前面取正号，其余情况取负号）。(\ref{eq30})式中的$J$称为\textbf{Jarlskog不变量}\footnote{所谓“不变”，是指$J$不依赖于PMNS矩阵元的相位选择，即在轻子场的相位转动下保持不变。历史上，Jarlskog不变量首先被引入用于描述夸克区的CP破坏\cite{jarlskog1985basis}，(\ref{eq30})式中的$J$是它在轻子区的推广。}，可以衡量由Dirac相位$\delta_\mathrm{CP}$引起的CP破坏的程度。使用PMNS矩阵的标准参数化形式，我们可以将Jarlskog不变量表示为：
+	\begin{equation}
+		J=\frac{1}{8} \cos\theta_{13}\sin2\theta_{12}\sin2\theta_{13}\sin2\theta_{23}\sin\delta_{\mathrm{CP}}
+		\label{eq31}
+	\end{equation}
+	公式(\ref{eq31})的推导过程如下：
+	\begin{equation*}
+		\begin{aligned}
+			J&=\mathrm{Im}(U_{e1}U_{\mu1}^*U_{e2}^*U_{\mu2})\\
+			&=\mathrm{Im}\left[c_{12}c_{13}(-s_{12}c_{23}-c_{12}s_{13}s_{23}e^{-\ii\delta_{\mathrm{CP}}})s_{12}c_{13}(c_{12}c_{23}-s_{12}s_{13}s_{23}e^{\ii\delta_{\mathrm{CP}}})\right]\\
+			&=\mathrm{Im}\left[c_{12}s_{12}c_{13}^2(-s_{12}c_{23}-c_{12}s_{13}s_{23}e^{-\ii\delta_{\mathrm{CP}}})(c_{12}c_{23}-s_{12}s_{13}s_{23}e^{\ii\delta_{\mathrm{CP}}})\right]
+		\end{aligned}
+	\end{equation*}
 	
 	
 	

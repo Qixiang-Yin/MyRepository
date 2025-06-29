@@ -24,7 +24,7 @@
         {{hash=216e1073c2e5bdc13465c81d7a74251b}{%
            family={Pontecorvo},
            familyi={P\bibinitperiod},
-           given={B.},
+           given={B},
            giveni={B\bibinitperiod}}}%
       }
       \strng{namehash}{216e1073c2e5bdc13465c81d7a74251b}
@@ -51,7 +51,7 @@
         {{hash=216e1073c2e5bdc13465c81d7a74251b}{%
            family={Pontecorvo},
            familyi={P\bibinitperiod},
-           given={B.},
+           given={B},
            giveni={B\bibinitperiod}}}%
       }
       \strng{namehash}{216e1073c2e5bdc13465c81d7a74251b}
@@ -78,7 +78,7 @@
         {{hash=951fb69202e8f740806bc2468aeda06c}{%
            family={Fukuda},
            familyi={F\bibinitperiod},
-           given={Y.},
+           given={Y},
            giveni={Y\bibinitperiod}}}%
         {{hash=38026ba4ee6b102b47bf3ffb41325c8f}{%
            family={al.},
@@ -108,7 +108,7 @@
         {{hash=b3f3d0754e6fd3add10a7713eabe2009}{%
            family={Ahmad},
            familyi={A\bibinitperiod},
-           given={Q.},
+           given={Q},
            giveni={Q\bibinitperiod}}}%
         {{hash=38026ba4ee6b102b47bf3ffb41325c8f}{%
            family={al.},
@@ -138,7 +138,7 @@
         {{hash=50a66d76d7ddbc9eda023601f7db244f}{%
            family={Eguchi},
            familyi={E\bibinitperiod},
-           given={K.},
+           given={K},
            giveni={K\bibinitperiod}}}%
         {{hash=38026ba4ee6b102b47bf3ffb41325c8f}{%
            family={al.},
@@ -173,7 +173,7 @@
         {{hash=87ca4e44d6c1beeda93993a24d605806}{%
            family={Abe},
            familyi={A\bibinitperiod},
-           given={K.},
+           given={K},
            giveni={K\bibinitperiod}}}%
         {{hash=38026ba4ee6b102b47bf3ffb41325c8f}{%
            family={al.},
@@ -204,7 +204,7 @@
         {{hash=1bb598472c1d5151509d7f37d83550e4}{%
            family={An},
            familyi={A\bibinitperiod},
-           given={F.},
+           given={F},
            giveni={F\bibinitperiod}}}%
         {{hash=38026ba4ee6b102b47bf3ffb41325c8f}{%
            family={al.},
@@ -234,7 +234,7 @@
         {{hash=ea917da3358e6127c0bdf1c53e87d72e}{%
            family={Ahn},
            familyi={A\bibinitperiod},
-           given={J.},
+           given={J},
            giveni={J\bibinitperiod}}}%
         {{hash=38026ba4ee6b102b47bf3ffb41325c8f}{%
            family={al.},
@@ -264,7 +264,7 @@
         {{hash=f9b929e2465cdc9a24248c838a29da81}{%
            family={Abe},
            familyi={A\bibinitperiod},
-           given={Y.},
+           given={Y},
            giveni={Y\bibinitperiod}}}%
         {{hash=38026ba4ee6b102b47bf3ffb41325c8f}{%
            family={al.},
@@ -295,7 +295,7 @@
         {{hash=87ca4e44d6c1beeda93993a24d605806}{%
            family={Abe},
            familyi={A\bibinitperiod},
-           given={K.},
+           given={K},
            giveni={K\bibinitperiod}}}%
         {{hash=38026ba4ee6b102b47bf3ffb41325c8f}{%
            family={al.},
@@ -326,7 +326,7 @@
         {{hash=817ae083bd2222356a9efedab0c7fdde}{%
            family={Adamson},
            familyi={A\bibinitperiod},
-           given={P.},
+           given={P},
            giveni={P\bibinitperiod}}}%
         {{hash=38026ba4ee6b102b47bf3ffb41325c8f}{%
            family={al.},
@@ -358,17 +358,17 @@
         {{hash=9ea79070cd53e6a7749797fab81d11cf}{%
            family={Maki},
            familyi={M\bibinitperiod},
-           given={Z.},
+           given={Z},
            giveni={Z\bibinitperiod}}}%
         {{hash=761f370c8ec42cee1c27455af9207478}{%
            family={Nakagawa},
            familyi={N\bibinitperiod},
-           given={M.},
+           given={M},
            giveni={M\bibinitperiod}}}%
         {{hash=284581a755e19eba6ce23bb3c6d45f19}{%
            family={Sakata},
            familyi={S\bibinitperiod},
-           given={S.},
+           given={S},
            giveni={S\bibinitperiod}}}%
       }
       \strng{namehash}{4a842ae2d567cb6582a0b9a05aa6c4a5}
@@ -393,7 +393,7 @@
         {{hash=216e1073c2e5bdc13465c81d7a74251b}{%
            family={Pontecorvo},
            familyi={P\bibinitperiod},
-           given={B.},
+           given={B},
            giveni={B\bibinitperiod}}}%
       }
       \strng{namehash}{216e1073c2e5bdc13465c81d7a74251b}
@@ -420,12 +420,12 @@
         {{hash=d17f5208375b276b9532c8908ecfa685}{%
            family={Gribov},
            familyi={G\bibinitperiod},
-           given={V.\bibnamedelimi N.},
-           giveni={V\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
+           given={VN},
+           giveni={V\bibinitperiod}}}%
         {{hash=216e1073c2e5bdc13465c81d7a74251b}{%
            family={Pontecorvo},
            familyi={P\bibinitperiod},
-           given={B.},
+           given={B},
            giveni={B\bibinitperiod}}}%
       }
       \strng{namehash}{27e476ff2c3399c3c8290a8fd561ca70}
@@ -450,8 +450,8 @@
         {{hash=757c0ce85850aec24d1b921708ff27d3}{%
            family={Mohapatra},
            familyi={M\bibinitperiod},
-           given={R.\bibnamedelimi N.},
-           giveni={R\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
+           given={RN},
+           giveni={R\bibinitperiod}}}%
         {{hash=38026ba4ee6b102b47bf3ffb41325c8f}{%
            family={al.},
            familyi={a\bibinitperiod},
@@ -480,7 +480,7 @@
         {{hash=73e31acea8c6106363473a40291edfd6}{%
            family={Cabibbo},
            familyi={C\bibinitperiod},
-           given={N.},
+           given={N},
            giveni={N\bibinitperiod}}}%
       }
       \strng{namehash}{73e31acea8c6106363473a40291edfd6}
@@ -489,6 +489,7 @@
       \strng{authorbibnamehash}{73e31acea8c6106363473a40291edfd6}
       \strng{authornamehash}{73e31acea8c6106363473a40291edfd6}
       \strng{authorfullhash}{73e31acea8c6106363473a40291edfd6}
+      \field{extraname}{1}
       \field{sortinit}{1}
       \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
@@ -505,12 +506,12 @@
         {{hash=4e44d19b7ce67c237010638558301764}{%
            family={Kobayashi},
            familyi={K\bibinitperiod},
-           given={M.},
+           given={M},
            giveni={M\bibinitperiod}}}%
         {{hash=9dbc0f7f2526ff13b335eee248082bac}{%
            family={Maskawa},
            familyi={M\bibinitperiod},
-           given={T.},
+           given={T},
            giveni={T\bibinitperiod}}}%
       }
       \strng{namehash}{d8f8b52c191da614e927248ba56ad622}
@@ -535,12 +536,12 @@
         {{hash=72ed371dc98ba7c921bcbccbaac9b5b0}{%
            family={Fukugita},
            familyi={F\bibinitperiod},
-           given={M.},
+           given={M},
            giveni={M\bibinitperiod}}}%
         {{hash=9568fa1cfc13f0c43855036ff3d0da95}{%
            family={Yanagida},
            familyi={Y\bibinitperiod},
-           given={T.},
+           given={T},
            giveni={T\bibinitperiod}}}%
       }
       \strng{namehash}{5e889912fcb5e002bbf227bd7e103999}
@@ -566,17 +567,17 @@
         {{hash=bfe56003b501b26c95a6c74c84b3cfbc}{%
            family={Davidson},
            familyi={D\bibinitperiod},
-           given={S.},
+           given={S},
            giveni={S\bibinitperiod}}}%
         {{hash=cffe93725c5fe9375b1e3030d7d6d376}{%
            family={Nardi},
            familyi={N\bibinitperiod},
-           given={E.},
+           given={E},
            giveni={E\bibinitperiod}}}%
         {{hash=4cc03c145668f9bf68e8502d5a9dfb06}{%
            family={Nir},
            familyi={N\bibinitperiod},
-           given={Y.},
+           given={Y},
            giveni={Y\bibinitperiod}}}%
       }
       \strng{namehash}{d0e34d8696896cc4ace4efe3e0f5c14f}
@@ -601,7 +602,7 @@
         {{hash=f3c84406a8d7f3ac7bacdfc71751f081}{%
            family={Minkowski},
            familyi={M\bibinitperiod},
-           given={P.},
+           given={P},
            giveni={P\bibinitperiod}}}%
       }
       \strng{namehash}{f3c84406a8d7f3ac7bacdfc71751f081}
@@ -626,17 +627,17 @@
         {{hash=13fc9674bd1a57cf7c265f9a25b37ce7}{%
            family={Gell-Mann},
            familyi={G\bibinithyphendelim M\bibinitperiod},
-           given={M.},
+           given={M},
            giveni={M\bibinitperiod}}}%
         {{hash=76845637f6937063f6d146edc3efee01}{%
            family={Ramond},
            familyi={R\bibinitperiod},
-           given={P.},
+           given={P},
            giveni={P\bibinitperiod}}}%
         {{hash=b12839f641adb6716d0787aaf7afa8e5}{%
            family={Slansky},
            familyi={S\bibinitperiod},
-           given={R.},
+           given={R},
            giveni={R\bibinitperiod}}}%
       }
       \name{editor}{2}{}{%
@@ -683,7 +684,7 @@
         {{hash=9568fa1cfc13f0c43855036ff3d0da95}{%
            family={Yanagida},
            familyi={Y\bibinitperiod},
-           given={T.},
+           given={T},
            giveni={T\bibinitperiod}}}%
       }
       \list{location}{1}{%
@@ -712,8 +713,8 @@
         {{hash=fdc67cd69f482037e96009aec70a2312}{%
            family={Glashow},
            familyi={G\bibinitperiod},
-           given={S.\bibnamedelimi L.},
-           giveni={S\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+           given={SL},
+           giveni={S\bibinitperiod}}}%
       }
       \list{location}{1}{%
         {Plenum Press}%
@@ -742,12 +743,12 @@
         {{hash=757c0ce85850aec24d1b921708ff27d3}{%
            family={Mohapatra},
            familyi={M\bibinitperiod},
-           given={R.\bibnamedelimi N.},
-           giveni={R\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
+           given={RN},
+           giveni={R\bibinitperiod}}}%
         {{hash=b551d53991c8fea5ee64e8495c89f003}{%
            family={Senjanović},
            familyi={S\bibinitperiod},
-           given={G.},
+           given={G},
            giveni={G\bibinitperiod}}}%
       }
       \strng{namehash}{718880559ae15b07adcd735097713698}
@@ -772,12 +773,12 @@
         {{hash=72ed371dc98ba7c921bcbccbaac9b5b0}{%
            family={Fukugita},
            familyi={F\bibinitperiod},
-           given={M.},
+           given={M},
            giveni={M\bibinitperiod}}}%
         {{hash=9568fa1cfc13f0c43855036ff3d0da95}{%
            family={Yanagida},
            familyi={Y\bibinitperiod},
-           given={T.},
+           given={T},
            giveni={T\bibinitperiod}}}%
       }
       \list{location}{1}{%
@@ -806,13 +807,13 @@
         {{hash=757c0ce85850aec24d1b921708ff27d3}{%
            family={Mohapatra},
            familyi={M\bibinitperiod},
-           given={R.\bibnamedelimi N.},
-           giveni={R\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
+           given={RN},
+           giveni={R\bibinitperiod}}}%
         {{hash=52b5d260285f6ea2c067487c26b2ee3a}{%
            family={Pal},
            familyi={P\bibinitperiod},
-           given={P.\bibnamedelimi B.},
-           giveni={P\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+           given={PB},
+           giveni={P\bibinitperiod}}}%
       }
       \list{location}{1}{%
         {Singapore}%
@@ -840,13 +841,13 @@
         {{hash=ac695cbe5e51f9fc6da12ff314fff8a3}{%
            family={Giunti},
            familyi={G\bibinitperiod},
-           given={C.},
+           given={C},
            giveni={C\bibinitperiod}}}%
         {{hash=550fb2133a1e80c043d2bfefb5dd76d9}{%
            family={Kim},
            familyi={K\bibinitperiod},
-           given={C.\bibnamedelimi W.},
-           giveni={C\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+           given={CW},
+           giveni={C\bibinitperiod}}}%
       }
       \list{location}{1}{%
         {Oxford}%
@@ -873,8 +874,8 @@
         {{hash=ee4ebf10f55b82e860dace45efad0e89}{%
            family={Bilenky},
            familyi={B\bibinitperiod},
-           given={S.\bibnamedelimi M.},
-           giveni={S\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+           given={SM},
+           giveni={S\bibinitperiod}}}%
       }
       \list{location}{1}{%
         {Berlin}%
@@ -902,7 +903,7 @@
         {{hash=d0e7e7f2b85606fe573d5e88a695bd05}{%
            family={Zuber},
            familyi={Z\bibinitperiod},
-           given={K.},
+           given={K},
            giveni={K\bibinitperiod}}}%
       }
       \list{location}{1}{%
@@ -930,17 +931,17 @@
         {{hash=90901f582afc882fd70fd4bc63b94c86}{%
            family={Barger},
            familyi={B\bibinitperiod},
-           given={V.},
+           given={V},
            giveni={V\bibinitperiod}}}%
         {{hash=81ac0856291770699696b93c9ca5f797}{%
            family={Marfatia},
            familyi={M\bibinitperiod},
-           given={D.},
+           given={D},
            giveni={D\bibinitperiod}}}%
         {{hash=a5b034160e3126f6df05b0d9cd523273}{%
            family={Whisnant},
            familyi={W\bibinitperiod},
-           given={K.},
+           given={K},
            giveni={K\bibinitperiod}}}%
       }
       \list{location}{1}{%
@@ -968,13 +969,13 @@
         {{hash=27702ea2b17853b42b2fb5623353a826}{%
            family={Valle},
            familyi={V\bibinitperiod},
-           given={J.\bibnamedelimi W.\bibnamedelimi F.},
-           giveni={J\bibinitperiod\bibinitdelim W\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
+           given={JWF},
+           giveni={J\bibinitperiod}}}%
         {{hash=d1b53dbc89b9a6eec9e0d1761c8db65b}{%
            family={Romão},
            familyi={R\bibinitperiod},
-           given={J.\bibnamedelimi C.},
-           giveni={J\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+           given={JC},
+           giveni={J\bibinitperiod}}}%
       }
       \list{location}{1}{%
         {Weinheim}%
@@ -1001,7 +1002,7 @@
         {{hash=e5604642094f22ec398b61eb945891b4}{%
            family={Suekane},
            familyi={S\bibinitperiod},
-           given={F.},
+           given={F},
            giveni={F\bibinitperiod}}}%
       }
       \list{location}{1}{%
@@ -1031,7 +1032,7 @@
         {{hash=c920fcd3bc4490318639f9320a553f82}{%
            family={Patrignani},
            familyi={P\bibinitperiod},
-           given={C.},
+           given={C},
            giveni={C\bibinitperiod}}}%
       }
       \strng{namehash}{87e7f1eb970809d627a79cc35bce51e9}
@@ -1056,12 +1057,12 @@
         {{hash=24ef74298be4652ed018fd3a4dfc2716}{%
            family={Blennow},
            familyi={B\bibinitperiod},
-           given={M.},
+           given={M},
            giveni={M\bibinitperiod}}}%
         {{hash=5447098af507bb8924df18903c2be5d5}{%
            family={Smirnov},
            familyi={S\bibinitperiod},
-           given={A.\bibnamedelimi Yu.},
+           given={A\bibnamedelima Yu},
            giveni={A\bibinitperiod\bibinitdelim Y\bibinitperiod}}}%
       }
       \strng{namehash}{74d83f1069d43c2a800d292df53d1ee5}
@@ -1083,23 +1084,23 @@
     \endentry
     \entry{Kuo1989}{article}{}
       \name{author}{2}{}{%
-        {{hash=b2643d7797c4725056427c15d0a2c75e}{%
+        {{hash=1940a6cb5f9dced665425468baf61bb2}{%
            family={Kuo},
            familyi={K\bibinitperiod},
-           given={T.-K.},
-           giveni={T\bibinithyphendelim K\bibinitperiod}}}%
+           given={TK},
+           giveni={T\bibinitperiod}}}%
         {{hash=00d7c4c2ee19f2a9baaa0a3890a1e27b}{%
            family={Pantaleone},
            familyi={P\bibinitperiod},
-           given={J.T.},
+           given={JT},
            giveni={J\bibinitperiod}}}%
       }
-      \strng{namehash}{233330f7761b41448c190860ccd92d9e}
-      \strng{fullhash}{233330f7761b41448c190860ccd92d9e}
-      \strng{bibnamehash}{233330f7761b41448c190860ccd92d9e}
-      \strng{authorbibnamehash}{233330f7761b41448c190860ccd92d9e}
-      \strng{authornamehash}{233330f7761b41448c190860ccd92d9e}
-      \strng{authorfullhash}{233330f7761b41448c190860ccd92d9e}
+      \strng{namehash}{b9ae87bc556e82cc501cbb6b18c12bb0}
+      \strng{fullhash}{b9ae87bc556e82cc501cbb6b18c12bb0}
+      \strng{bibnamehash}{b9ae87bc556e82cc501cbb6b18c12bb0}
+      \strng{authorbibnamehash}{b9ae87bc556e82cc501cbb6b18c12bb0}
+      \strng{authornamehash}{b9ae87bc556e82cc501cbb6b18c12bb0}
+      \strng{authorfullhash}{b9ae87bc556e82cc501cbb6b18c12bb0}
       \field{sortinit}{3}
       \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
@@ -1116,7 +1117,7 @@
         {{hash=cb1872301e869dad352c3db33ab99da4}{%
            family={Ianni},
            familyi={I\bibinitperiod},
-           given={A.},
+           given={A},
            giveni={A\bibinitperiod}}}%
       }
       \strng{namehash}{cb1872301e869dad352c3db33ab99da4}
@@ -1141,8 +1142,11 @@
         {{hash=32147cbf039e5d872a10fb170a45eeb9}{%
            family={Lachenmaier},
            familyi={L\bibinitperiod},
-           given={T.},
+           given={T},
            giveni={T\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
       }
       \strng{namehash}{32147cbf039e5d872a10fb170a45eeb9}
       \strng{fullhash}{32147cbf039e5d872a10fb170a45eeb9}
@@ -1154,8 +1158,8 @@
       \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{journaltitle}{Prog. Part. Nucl. Phys.}
-      \field{title}{The Borexino Experiment}
+      \field{journaltitle}{Progress in Particle and Nuclear Physics}
+      \field{title}{The measurement of the neutrino mixing angle $\theta_{13}$ with reactor neutrino experiments}
       \field{volume}{83}
       \field{year}{2015}
       \field{pages}{31\bibrangedash 58}
@@ -1166,13 +1170,16 @@
         {{hash=e5891b0b53310c582812d133b7ffd2d2}{%
            family={Qian},
            familyi={Q\bibinitperiod},
-           given={X.},
+           given={X},
            giveni={X\bibinitperiod}}}%
         {{hash=ee5d1ab41d88baa14410788139a1590d}{%
            family={Vogel},
            familyi={V\bibinitperiod},
-           given={P.},
+           given={P},
            giveni={P\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
       }
       \strng{namehash}{47fbe197daebabac922f9f5bb723b4ed}
       \strng{fullhash}{47fbe197daebabac922f9f5bb723b4ed}
@@ -1184,8 +1191,8 @@
       \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{journaltitle}{Prog. Part. Nucl. Phys.}
-      \field{title}{Neutrino Mass Hierarchy}
+      \field{journaltitle}{Progress in Particle and Nuclear Physics}
+      \field{title}{Neutrino mass hierarchy}
       \field{volume}{83}
       \field{year}{2015}
       \field{pages}{1\bibrangedash 30}
@@ -1198,7 +1205,7 @@
         {{hash=ab60200ea0dd09dc21683c4ba4e78654}{%
            family={Abazajian},
            familyi={A\bibinitperiod},
-           given={K.N.},
+           given={KN},
            giveni={K\bibinitperiod}}}%
       }
       \strng{namehash}{1e50bddc07ea2636f933889e63e5847c}
@@ -1222,43 +1229,46 @@
     \endentry
     \entry{Gariazzo2016}{article}{}
       \name{author}{5}{}{%
-        {{hash=bc69bcc789d2b19edcab799ff75d959b}{%
+        {{hash=fc521a2293b6f6a22b324d766d158c25}{%
            family={Gariazzo},
            familyi={G\bibinitperiod},
-           given={S.},
+           given={Stefano},
            giveni={S\bibinitperiod}}}%
         {{hash=ac695cbe5e51f9fc6da12ff314fff8a3}{%
            family={Giunti},
            familyi={G\bibinitperiod},
-           given={C.},
+           given={C},
            giveni={C\bibinitperiod}}}%
-        {{hash=dc7e51437578a458371c659848a551b5}{%
+        {{hash=99226c85402e67798a14bb1e06532123}{%
            family={Laveder},
            familyi={L\bibinitperiod},
-           given={M.},
+           given={Marco},
            giveni={M\bibinitperiod}}}%
         {{hash=453fdbe5efe061e24506a42674e0d423}{%
            family={Li},
            familyi={L\bibinitperiod},
-           given={Y.F.},
+           given={YF},
            giveni={Y\bibinitperiod}}}%
         {{hash=48d669f9274e3bbd5b8a2405d19f0c2c}{%
            family={Zavanin},
            familyi={Z\bibinitperiod},
-           given={E.M.},
+           given={EM},
            giveni={E\bibinitperiod}}}%
       }
-      \strng{namehash}{8938b4d61dfe3ed0c1b7294d49faf251}
-      \strng{fullhash}{fe56f2ab73836274fb60df5b811afde4}
-      \strng{bibnamehash}{8938b4d61dfe3ed0c1b7294d49faf251}
-      \strng{authorbibnamehash}{8938b4d61dfe3ed0c1b7294d49faf251}
-      \strng{authornamehash}{8938b4d61dfe3ed0c1b7294d49faf251}
-      \strng{authorfullhash}{fe56f2ab73836274fb60df5b811afde4}
+      \list{publisher}{1}{%
+        {IOP Publishing}%
+      }
+      \strng{namehash}{58de0ba551a0f89c43c6cf4761c19842}
+      \strng{fullhash}{e9115470d37878c70e45331611f601f5}
+      \strng{bibnamehash}{58de0ba551a0f89c43c6cf4761c19842}
+      \strng{authorbibnamehash}{58de0ba551a0f89c43c6cf4761c19842}
+      \strng{authornamehash}{58de0ba551a0f89c43c6cf4761c19842}
+      \strng{authorfullhash}{e9115470d37878c70e45331611f601f5}
       \field{sortinit}{4}
       \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{journaltitle}{J. Phys. G}
+      \field{journaltitle}{Journal of Physics G: Nuclear and Particle Physics}
       \field{number}{3}
       \field{title}{Light sterile neutrinos}
       \field{volume}{43}
@@ -1271,8 +1281,11 @@
         {{hash=ee4ebf10f55b82e860dace45efad0e89}{%
            family={Bilenky},
            familyi={B\bibinitperiod},
-           given={S.M.},
+           given={SM},
            giveni={S\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
       }
       \strng{namehash}{ee4ebf10f55b82e860dace45efad0e89}
       \strng{fullhash}{ee4ebf10f55b82e860dace45efad0e89}
@@ -1285,12 +1298,520 @@
       \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{journaltitle}{Eur. Phys. J. H}
-      \field{title}{Introduction to the physics of massive and mixed neutrinos}
+      \field{journaltitle}{The European Physical Journal H}
+      \field{title}{Neutrino. History of a unique particle}
       \field{volume}{38}
       \field{year}{2013}
       \field{pages}{345\bibrangedash 404}
       \range{pages}{60}
+    \endentry
+    \entry{petcov2013nature}{article}{}
+      \name{author}{1}{}{%
+        {{hash=0d54d4ae0c097fe014636b4cd49dd70e}{%
+           family={Petcov},
+           familyi={P\bibinitperiod},
+           given={ST},
+           giveni={S\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Wiley Online Library}%
+      }
+      \strng{namehash}{0d54d4ae0c097fe014636b4cd49dd70e}
+      \strng{fullhash}{0d54d4ae0c097fe014636b4cd49dd70e}
+      \strng{bibnamehash}{0d54d4ae0c097fe014636b4cd49dd70e}
+      \strng{authorbibnamehash}{0d54d4ae0c097fe014636b4cd49dd70e}
+      \strng{authornamehash}{0d54d4ae0c097fe014636b4cd49dd70e}
+      \strng{authorfullhash}{0d54d4ae0c097fe014636b4cd49dd70e}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Advances in High Energy Physics}
+      \field{number}{1}
+      \field{title}{The nature of massive neutrinos}
+      \field{volume}{2013}
+      \field{year}{2013}
+      \field{pages}{852987}
+      \range{pages}{1}
+    \endentry
+    \entry{bilenky1980oscillations}{article}{}
+      \name{author}{3}{}{%
+        {{hash=4ca475a790830b36aca1ab498d0e4cee}{%
+           family={Bilenky},
+           familyi={B\bibinitperiod},
+           given={Samoil\bibnamedelima M},
+           giveni={S\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=cf8bf4606c8d107d384cf60556f11b3e}{%
+           family={Hošek},
+           familyi={H\bibinitperiod},
+           given={Jirí},
+           giveni={J\bibinitperiod}}}%
+        {{hash=4fe75492b0279639dedf09b1cb90e1ac}{%
+           family={Petcov},
+           familyi={P\bibinitperiod},
+           given={Serguey\bibnamedelima T},
+           giveni={S\bibinitperiod\bibinitdelim T\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{5f28fa7e25fbece91b243b560d9c7797}
+      \strng{fullhash}{5f28fa7e25fbece91b243b560d9c7797}
+      \strng{bibnamehash}{5f28fa7e25fbece91b243b560d9c7797}
+      \strng{authorbibnamehash}{5f28fa7e25fbece91b243b560d9c7797}
+      \strng{authornamehash}{5f28fa7e25fbece91b243b560d9c7797}
+      \strng{authorfullhash}{5f28fa7e25fbece91b243b560d9c7797}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Physics Letters B}
+      \field{number}{4}
+      \field{title}{On the oscillations of neutrinos with Dirac and Majorana masses}
+      \field{volume}{94}
+      \field{year}{1980}
+      \field{pages}{495\bibrangedash 498}
+      \range{pages}{4}
+    \endentry
+    \entry{schechter1980neutrino}{article}{}
+      \name{author}{2}{}{%
+        {{hash=e8ae2371afb73be3e17623102c0dfd2d}{%
+           family={Schechter},
+           familyi={S\bibinitperiod},
+           given={J},
+           giveni={J\bibinitperiod}}}%
+        {{hash=e222fe48df8c7fc519cf40bb3a629b4b}{%
+           family={Valle},
+           familyi={V\bibinitperiod},
+           given={José\bibnamedelima WF},
+           giveni={J\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {APS}%
+      }
+      \strng{namehash}{8173540022e6e8918562af43ed413490}
+      \strng{fullhash}{8173540022e6e8918562af43ed413490}
+      \strng{bibnamehash}{8173540022e6e8918562af43ed413490}
+      \strng{authorbibnamehash}{8173540022e6e8918562af43ed413490}
+      \strng{authornamehash}{8173540022e6e8918562af43ed413490}
+      \strng{authorfullhash}{8173540022e6e8918562af43ed413490}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Physical Review D}
+      \field{number}{9}
+      \field{title}{Neutrino masses in $SU (2)\otimes U (1)$ theories}
+      \field{volume}{22}
+      \field{year}{1980}
+      \field{pages}{2227}
+      \range{pages}{1}
+    \endentry
+    \entry{doi1981cp}{article}{}
+      \name{author}{5}{}{%
+        {{hash=3d1690890a1f0f1c85e97c49716e5b28}{%
+           family={Doi},
+           familyi={D\bibinitperiod},
+           given={Masaru},
+           giveni={M\bibinitperiod}}}%
+        {{hash=7d2d996ec79a3759f3af70df99cbc858}{%
+           family={Kotani},
+           familyi={K\bibinitperiod},
+           given={T},
+           giveni={T\bibinitperiod}}}%
+        {{hash=0710542987e366db0c36c863d3747f6c}{%
+           family={Nishiura},
+           familyi={N\bibinitperiod},
+           given={H},
+           giveni={H\bibinitperiod}}}%
+        {{hash=b1eb704ed5c01d56459fa49cd8a6f5c0}{%
+           family={Okuda},
+           familyi={O\bibinitperiod},
+           given={K},
+           giveni={K\bibinitperiod}}}%
+        {{hash=bd3ad0ad18f189c90bffa3dd8b6535d7}{%
+           family={Takasugi},
+           familyi={T\bibinitperiod},
+           given={E},
+           giveni={E\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{199af88978c6e9cef4aed66502659c32}
+      \strng{fullhash}{c6102171c39b8f3175da35c7f4f54566}
+      \strng{bibnamehash}{199af88978c6e9cef4aed66502659c32}
+      \strng{authorbibnamehash}{199af88978c6e9cef4aed66502659c32}
+      \strng{authornamehash}{199af88978c6e9cef4aed66502659c32}
+      \strng{authorfullhash}{c6102171c39b8f3175da35c7f4f54566}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Physics letters B}
+      \field{number}{5}
+      \field{title}{CP violation in Majorana neutrinos}
+      \field{volume}{102}
+      \field{year}{1981}
+      \field{pages}{323\bibrangedash 326}
+      \range{pages}{4}
+    \endentry
+    \entry{vergados2012theory}{article}{}
+      \name{author}{3}{}{%
+        {{hash=0868b02d359376a894f0b27eeea98d2f}{%
+           family={Vergados},
+           familyi={V\bibinitperiod},
+           given={John\bibnamedelima D},
+           giveni={J\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+        {{hash=735d0660a44d64454212957a5e39c3a5}{%
+           family={Ejiri},
+           familyi={E\bibinitperiod},
+           given={Hiroyasu},
+           giveni={H\bibinitperiod}}}%
+        {{hash=fd55fe4e3842b97ae92d759c44106447}{%
+           family={Šimkovic},
+           familyi={Š\bibinitperiod},
+           given={Fedor},
+           giveni={F\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {IOP Publishing}%
+      }
+      \strng{namehash}{12150a0099cb6e6747380e51efc8b418}
+      \strng{fullhash}{12150a0099cb6e6747380e51efc8b418}
+      \strng{bibnamehash}{12150a0099cb6e6747380e51efc8b418}
+      \strng{authorbibnamehash}{12150a0099cb6e6747380e51efc8b418}
+      \strng{authornamehash}{12150a0099cb6e6747380e51efc8b418}
+      \strng{authorfullhash}{12150a0099cb6e6747380e51efc8b418}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Reports on Progress in Physics}
+      \field{number}{10}
+      \field{title}{Theory of neutrinoless double-beta decay}
+      \field{volume}{75}
+      \field{year}{2012}
+      \field{pages}{106301}
+      \range{pages}{1}
+    \endentry
+    \entry{dell2016neutrinoless}{article}{}
+      \name{author}{4}{}{%
+        {{hash=c4354011a4b3d68058b7177ee7ed89fc}{%
+           family={Dell’Oro},
+           familyi={D\bibinitperiod},
+           given={Stefano},
+           giveni={S\bibinitperiod}}}%
+        {{hash=1b82736d59dc7a85a3908dd29888fe12}{%
+           family={Marcocci},
+           familyi={M\bibinitperiod},
+           given={Simone},
+           giveni={S\bibinitperiod}}}%
+        {{hash=5728eaa822896cf6d958ddb252712f65}{%
+           family={Viel},
+           familyi={V\bibinitperiod},
+           given={Matteo},
+           giveni={M\bibinitperiod}}}%
+        {{hash=31a7a10cd4b3a37ebd2eb620cec1024a}{%
+           family={Vissani},
+           familyi={V\bibinitperiod},
+           given={Francesco},
+           giveni={F\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Wiley Online Library}%
+      }
+      \strng{namehash}{dab607dd6164bcf109f3748d4ab66c70}
+      \strng{fullhash}{2550ad81ca792dd31e54a104a33aed81}
+      \strng{bibnamehash}{dab607dd6164bcf109f3748d4ab66c70}
+      \strng{authorbibnamehash}{dab607dd6164bcf109f3748d4ab66c70}
+      \strng{authornamehash}{dab607dd6164bcf109f3748d4ab66c70}
+      \strng{authorfullhash}{2550ad81ca792dd31e54a104a33aed81}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Advances in High Energy Physics}
+      \field{number}{1}
+      \field{title}{Neutrinoless double beta decay: 2015 review}
+      \field{volume}{2016}
+      \field{year}{2016}
+      \field{pages}{2162659}
+      \range{pages}{1}
+    \endentry
+    \entry{cremonesi2018neutrino}{article}{}
+      \name{author}{1}{}{%
+        {{hash=27237fb86c8857e05baaaa22ac422fdb}{%
+           family={Cremonesi},
+           familyi={C\bibinitperiod},
+           given={Oliviero},
+           giveni={O\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{27237fb86c8857e05baaaa22ac422fdb}
+      \strng{fullhash}{27237fb86c8857e05baaaa22ac422fdb}
+      \strng{bibnamehash}{27237fb86c8857e05baaaa22ac422fdb}
+      \strng{authorbibnamehash}{27237fb86c8857e05baaaa22ac422fdb}
+      \strng{authornamehash}{27237fb86c8857e05baaaa22ac422fdb}
+      \strng{authorfullhash}{27237fb86c8857e05baaaa22ac422fdb}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Hyperfine Interactions}
+      \field{number}{1}
+      \field{title}{Neutrino-less double beta decay experiments}
+      \field{volume}{239}
+      \field{year}{2018}
+      \field{pages}{54}
+      \range{pages}{1}
+    \endentry
+    \entry{akhmedov2009paradoxes}{article}{}
+      \name{author}{2}{}{%
+        {{hash=cd2a75731f332f769b7cb81f2e63f215}{%
+           family={Akhmedov},
+           familyi={A\bibinitperiod},
+           given={E\bibnamedelima Kh},
+           giveni={E\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+        {{hash=5447098af507bb8924df18903c2be5d5}{%
+           family={Smirnov},
+           familyi={S\bibinitperiod},
+           given={A\bibnamedelima Yu},
+           giveni={A\bibinitperiod\bibinitdelim Y\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{29d67d2bccfe33f7f51bcb328e1f7537}
+      \strng{fullhash}{29d67d2bccfe33f7f51bcb328e1f7537}
+      \strng{bibnamehash}{29d67d2bccfe33f7f51bcb328e1f7537}
+      \strng{authorbibnamehash}{29d67d2bccfe33f7f51bcb328e1f7537}
+      \strng{authornamehash}{29d67d2bccfe33f7f51bcb328e1f7537}
+      \strng{authorfullhash}{29d67d2bccfe33f7f51bcb328e1f7537}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Physics of Atomic Nuclei}
+      \field{title}{Paradoxes of neutrino oscillations}
+      \field{volume}{72}
+      \field{year}{2009}
+      \field{pages}{1363\bibrangedash 1381}
+      \range{pages}{19}
+    \endentry
+    \entry{de1980fresh}{article}{}
+      \name{author}{5}{}{%
+        {{hash=8311ab78d32e6cbda2bed42b59ff64e2}{%
+           family={De\bibnamedelima Rújula},
+           familyi={D\bibinitperiod\bibinitdelim R\bibinitperiod},
+           given={Alvaro},
+           giveni={A\bibinitperiod}}}%
+        {{hash=6dff9209d2174c213c278bd7294e5fb5}{%
+           family={Lusignoli},
+           familyi={L\bibinitperiod},
+           given={Maurizio},
+           giveni={M\bibinitperiod}}}%
+        {{hash=3b4be81c69f9cd45c3fae33d860eade3}{%
+           family={Maiani},
+           familyi={M\bibinitperiod},
+           given={L},
+           giveni={L\bibinitperiod}}}%
+        {{hash=0d54d4ae0c097fe014636b4cd49dd70e}{%
+           family={Petcov},
+           familyi={P\bibinitperiod},
+           given={ST},
+           giveni={S\bibinitperiod}}}%
+        {{hash=4d2cc346f48b83459fea31016da5db7e}{%
+           family={Petronzio},
+           familyi={P\bibinitperiod},
+           given={R},
+           giveni={R\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{a7ca7f3794dca40eab89ec7b3e0169ae}
+      \strng{fullhash}{5b15be6dfae6ba2f74027d16fb0e31a5}
+      \strng{bibnamehash}{a7ca7f3794dca40eab89ec7b3e0169ae}
+      \strng{authorbibnamehash}{a7ca7f3794dca40eab89ec7b3e0169ae}
+      \strng{authornamehash}{a7ca7f3794dca40eab89ec7b3e0169ae}
+      \strng{authorfullhash}{5b15be6dfae6ba2f74027d16fb0e31a5}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Nuclear Physics B}
+      \field{number}{1}
+      \field{title}{A fresh look at neutrino oscillations}
+      \field{volume}{168}
+      \field{year}{1980}
+      \field{pages}{54\bibrangedash 68}
+      \range{pages}{15}
+    \endentry
+    \entry{Barger1980}{article}{}
+      \name{author}{3}{}{%
+        {{hash=21fbee8679974617648ce61fa19f142d}{%
+           family={Barger},
+           familyi={B\bibinitperiod},
+           given={V\bibnamedelima D},
+           giveni={V\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+        {{hash=a5b034160e3126f6df05b0d9cd523273}{%
+           family={Whisnant},
+           familyi={W\bibinitperiod},
+           given={K},
+           giveni={K\bibinitperiod}}}%
+        {{hash=dbb987b17b7ccd439380c75fd02db7f6}{%
+           family={Phillips},
+           familyi={P\bibinitperiod},
+           given={R\bibnamedelima J\bibnamedelima N},
+           giveni={R\bibinitperiod\bibinitdelim J\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
+      }
+      \strng{namehash}{7db3900fd15153db5418ca4adfbc663e}
+      \strng{fullhash}{7db3900fd15153db5418ca4adfbc663e}
+      \strng{bibnamehash}{7db3900fd15153db5418ca4adfbc663e}
+      \strng{authorbibnamehash}{7db3900fd15153db5418ca4adfbc663e}
+      \strng{authornamehash}{7db3900fd15153db5418ca4adfbc663e}
+      \strng{authorfullhash}{7db3900fd15153db5418ca4adfbc663e}
+      \field{extraname}{1}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Physical Review D}
+      \field{title}{Matter effects on three-neutrino oscillations}
+      \field{volume}{22}
+      \field{year}{1980}
+      \field{pages}{1636\bibrangedash 1649}
+      \range{pages}{14}
+    \endentry
+    \entry{cabibbo1978time}{article}{}
+      \name{author}{1}{}{%
+        {{hash=d52acb8ad99f96596e5af308dc5e21af}{%
+           family={Cabibbo},
+           familyi={C\bibinitperiod},
+           given={Nicola},
+           giveni={N\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{d52acb8ad99f96596e5af308dc5e21af}
+      \strng{fullhash}{d52acb8ad99f96596e5af308dc5e21af}
+      \strng{bibnamehash}{d52acb8ad99f96596e5af308dc5e21af}
+      \strng{authorbibnamehash}{d52acb8ad99f96596e5af308dc5e21af}
+      \strng{authornamehash}{d52acb8ad99f96596e5af308dc5e21af}
+      \strng{authorfullhash}{d52acb8ad99f96596e5af308dc5e21af}
+      \field{extraname}{2}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Physics Letters B}
+      \field{number}{3}
+      \field{title}{Time reversal violation in neutrino oscillation}
+      \field{volume}{72}
+      \field{year}{1978}
+      \field{pages}{333\bibrangedash 335}
+      \range{pages}{3}
+    \endentry
+    \entry{akhmedov2005three}{article}{}
+      \name{author}{1}{}{%
+        {{hash=cd2a75731f332f769b7cb81f2e63f215}{%
+           family={Akhmedov},
+           familyi={A\bibinitperiod},
+           given={E\bibnamedelima Kh},
+           giveni={E\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {IOP Publishing}%
+      }
+      \strng{namehash}{cd2a75731f332f769b7cb81f2e63f215}
+      \strng{fullhash}{cd2a75731f332f769b7cb81f2e63f215}
+      \strng{bibnamehash}{cd2a75731f332f769b7cb81f2e63f215}
+      \strng{authorbibnamehash}{cd2a75731f332f769b7cb81f2e63f215}
+      \strng{authornamehash}{cd2a75731f332f769b7cb81f2e63f215}
+      \strng{authorfullhash}{cd2a75731f332f769b7cb81f2e63f215}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Physica Scripta}
+      \field{number}{T121}
+      \field{title}{Three-flavour effects and CP-and T-violation in neutrino oscillations}
+      \field{volume}{2005}
+      \field{year}{2005}
+      \field{pages}{65}
+      \range{pages}{1}
+    \endentry
+    \entry{barger1980cp}{article}{}
+      \name{author}{3}{}{%
+        {{hash=90901f582afc882fd70fd4bc63b94c86}{%
+           family={Barger},
+           familyi={B\bibinitperiod},
+           given={V},
+           giveni={V\bibinitperiod}}}%
+        {{hash=a5b034160e3126f6df05b0d9cd523273}{%
+           family={Whisnant},
+           familyi={W\bibinitperiod},
+           given={K},
+           giveni={K\bibinitperiod}}}%
+        {{hash=dbb987b17b7ccd439380c75fd02db7f6}{%
+           family={Phillips},
+           familyi={P\bibinitperiod},
+           given={RJN},
+           giveni={R\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {APS}%
+      }
+      \strng{namehash}{0135bc253f6aeaba8b835b311b7db829}
+      \strng{fullhash}{0135bc253f6aeaba8b835b311b7db829}
+      \strng{bibnamehash}{0135bc253f6aeaba8b835b311b7db829}
+      \strng{authorbibnamehash}{0135bc253f6aeaba8b835b311b7db829}
+      \strng{authornamehash}{0135bc253f6aeaba8b835b311b7db829}
+      \strng{authorfullhash}{0135bc253f6aeaba8b835b311b7db829}
+      \field{extraname}{2}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Physical Review Letters}
+      \field{number}{26}
+      \field{title}{CP nonconservation in three-neutrino oscillations}
+      \field{volume}{45}
+      \field{year}{1980}
+      \field{pages}{2084}
+      \range{pages}{1}
+    \endentry
+    \entry{jarlskog1985basis}{article}{}
+      \name{author}{1}{}{%
+        {{hash=85ffdf7b94e505bd8378ccf64915ba9e}{%
+           family={Jarlskog},
+           familyi={J\bibinitperiod},
+           given={C},
+           giveni={C\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{85ffdf7b94e505bd8378ccf64915ba9e}
+      \strng{fullhash}{85ffdf7b94e505bd8378ccf64915ba9e}
+      \strng{bibnamehash}{85ffdf7b94e505bd8378ccf64915ba9e}
+      \strng{authorbibnamehash}{85ffdf7b94e505bd8378ccf64915ba9e}
+      \strng{authornamehash}{85ffdf7b94e505bd8378ccf64915ba9e}
+      \strng{authorfullhash}{85ffdf7b94e505bd8378ccf64915ba9e}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Zeitschrift für Physik C Particles and Fields}
+      \field{title}{A basis independent formulation of the connection between quark mass matrices, CP violation and experiment}
+      \field{volume}{29}
+      \field{year}{1985}
+      \field{pages}{491\bibrangedash 497}
+      \range{pages}{7}
     \endentry
   \enddatalist
 \endrefsection
