@@ -504,7 +504,8 @@
 	
 	在忽略物质效应的情况下（对于T2K这一类长基线实验，这种近似是合理的），我们可以将$\nu_\mu\to\nu_e$的三味振荡概率展开到小量$\sin(\Delta m_{21}^2L/4E),\sin\theta_{13}$的二阶：
 	\begin{equation}
-		\begin{aligned}P(\nu_\mu\to\nu_e)&\simeq\sin^2\theta_{23}\sin^22\theta_{13}\sin^2\left(\frac{\Delta m_{31}^2L}{4E}\right)+\cos^2\theta_{23}\sin^22\theta_{12}\sin^2\left(\frac{\Delta m_{21}^2L}{4E}\right)\\&+\frac{1}{2}\cos\theta_{13}\sin2\theta_{12}\sin2\theta_{13}\sin2\theta_{23}\cos\delta_{\mathrm{CP}}\sin\left(\frac{\Delta m_{21}^2L}{4E}\right)\sin\left(\frac{\Delta m_{31}^2L}{2E}\right)\\&-\cos\theta_{13}\sin2\theta_{12}\sin2\theta_{13}\sin2\theta_{23}\sin\delta_{\mathrm{CP}}\sin\left(\frac{\Delta m_{21}^2L}{4E}\right)\sin^2\left(\frac{\Delta m_{31}^2L}{4E}\right)\end{aligned}
+		\begin{aligned}P(\nu_\mu\to\nu_e)&\simeq\sin^2\theta_{23}\sin^22\theta_{13}\sin^2\left(\frac{\Delta m_{31}^2L}{4E}\right)+\cos^2\theta_{23}\sin^22\theta_{12}\sin^2\left(\frac{\Delta m_{21}^2L}{4E}\right)\\&+\frac{1}{2}\cos\theta_{13}\sin2\theta_{12}\sin2\theta_{13}\sin2\theta_{23}\cos\delta_{\mathrm{CP}}\sin\left(\frac{\Delta m_{21}^2L}{4E}\right)\sin\left(\frac{\Delta m_{31}^2L}{2E}\right)\\&-\cos\theta_{13}\sin2\theta_{12}\sin2\theta_{13}\sin2\theta_{23}\sin\delta_{\mathrm{CP}}\sin\left(\frac{\Delta m_{21}^2L}{4E}\right)\sin^2\left(\frac{\Delta m_{31}^2L}{4E}\right)
+		\end{aligned}
 		\label{eq35}
 	\end{equation}
 	公式(\ref{eq35})的推导如下。由(\ref{eq12})式可知：
@@ -575,7 +576,7 @@
 					&\simeq-\frac{1}{8}\cos\theta_{13}\sin2\theta_{12}\sin2\theta_{23}\sin2\theta_{13}\cos\delta_\mathrm{CP}\sin\left(\frac{\Delta m_{31}^2L}{2E}\right)\sin\left(\frac{\Delta m_{21}^2L}{4E}\right)
 		\end{aligned}
 	\end{equation*}
-	其中，$m_1\simeq m_2$，并且有三角恒等式$\sin^2A-\sin^2B=\sin(A+B)\sin(A-B$。以及：
+	其中，$m_1\simeq m_2$，并且有三角恒等式$\sin^2A-\sin^2B=\sin(A+B)\sin(A-B)$。以及：
 	\begin{equation*}
 		\begin{aligned}
 			-&\frac{1}{4}c_{12}^2s_{23}^2\sin^22\theta_{13}\sin^2\left(\frac{\Delta m_{31}^2L}{4E}\right)-\frac{1}{4}s_{12}^2s_{23}^2\sin^22\theta_{13}\sin^2\left(\frac{\Delta m_{32}^2L}{4E}\right)\\
@@ -595,30 +596,113 @@
 	\begin{equation*}
 		\begin{aligned}P(\nu_\mu\to\nu_e)&\simeq\sin^2\theta_{23}\sin^22\theta_{13}\sin^2\left(\frac{\Delta m_{31}^2L}{4E}\right)+\cos^2\theta_{23}\sin^22\theta_{12}\sin^2\left(\frac{\Delta m_{21}^2L}{4E}\right)\\&+\frac{1}{2}\cos\theta_{13}\sin2\theta_{12}\sin2\theta_{13}\sin2\theta_{23}\cos\delta_{\mathrm{CP}}\sin\left(\frac{\Delta m_{21}^2L}{4E}\right)\sin\left(\frac{\Delta m_{31}^2L}{2E}\right)\\&-\cos\theta_{13}\sin2\theta_{12}\sin2\theta_{13}\sin2\theta_{23}\sin\delta_{\mathrm{CP}}\sin\left(\frac{\Delta m_{21}^2L}{4E}\right)\sin^2\left(\frac{\Delta m_{31}^2L}{4E}\right)\end{aligned}
 	\end{equation*}
-	其中，第一项是主要的振荡模式，由$\Delta m_{31}^2$驱动；
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+	其中，第一项是主要的振荡模式，由$\Delta m_{31}^2$驱动；第二项是由$\Delta m_{21}^2$驱动的振荡模式；第三、四项同时包含$\Delta m_{21}^2$与$\Delta m_{31}^2$，且第三项关于CP变换呈偶函数性质（CP-even），第四项关于CP变换呈奇函数性质（CP-odd）。如前所述，关于CP变换呈奇函数性质的项正比于Jarlskog不变量$J$，而CP变换呈偶函数性质的项正比于$J\cot\delta_\mathrm{CP}\propto\cos\delta_\mathrm{CP}$。同时，我们发现主要的振荡模式，即第一项对于$\theta_{23}$的象限灵敏。(\ref{eq35})式还可以被简写为：
+	\begin{equation}
+		P(\nu_\mu\to\nu_e)\simeq A_{\mathrm{atm}}^2+A_{\mathrm{sol}}^2+2\cos\theta_{13}A_{\mathrm{atm}}A_{\mathrm{sol}}\cos\left(\frac{\Delta m_{31}^2L}{4E}+\delta_{\mathrm{CP}}\right)
+		\label{eq36}
+	\end{equation}
+	其中，$A_\mathrm{atm}\equiv\sin\theta_{23}\sin2\theta_{13}\sin\left(\frac{\Delta m_{31}^2L}{4E}\right)$以及$A_\mathrm{sol}\equiv\cos\theta_{23}\sin2\theta_{12}\sin\left(\frac{\Delta m_{21}^2L}{4E}\right)$。公式(\ref{eq36})的推导过程如下：
+	\begin{equation*}
+		\begin{aligned}
+			P(\nu_\mu\to\nu_e)&\simeq A_{\mathrm{atm}}^2+A_{\mathrm{sol}}^2+2\cos\theta_{13}A_{\mathrm{atm}}A_{\mathrm{sol}}\cos\left(\frac{\Delta m_{31}^2L}{4E}+\delta_{\mathrm{CP}}\right)\\
+			&=\sin^2\theta_{23}\sin^22\theta_{13}\sin^2\left(\frac{\Delta m_{31}^2L}{4E}\right)+\cos^2\theta_{23}\sin^22\theta_{12}\sin^2\left(\frac{\Delta m_{21}^2L}{4E}\right)\\
+			&+2\cos\theta_{13}\sin\theta_{23}\cos\theta_{23}\sin2\theta_{13}\sin2\theta_{12}\sin\left(\frac{\Delta m_{31}^2L}{4E}\right)\sin\left(\frac{\Delta m_{21}^2L}{4E}\right)\cos\left(\frac{\Delta m_{31}^2L}{4E}+\delta_{\mathrm{CP}}\right)
+		\end{aligned}
+	\end{equation*}
+	对于第三项：
+	\begin{equation*}
+		\begin{aligned}
+			(\cdots)&=\cos\theta_{13}\sin2\theta_{23}\sin2\theta_{13}\sin2\theta_{12}\sin\left(\frac{\Delta m_{31}^2L}{4E}\right)\sin\left(\frac{\Delta m_{21}^2L}{4E}\right)\\
+			&\times\left[\cos\left(\frac{\Delta m_{31}^2L}{4E}\right)\cos\delta_\mathrm{CP}-\sin\left(\frac{\Delta m_{31}^2L}{4E}\right)\sin\delta_\mathrm{CP}\right]\\
+			&=\frac{1}{2}\cos\theta_{13}\sin2\theta_{23}\sin2\theta_{13}\sin2\theta_{12}\cos\delta_\mathrm{CP}\sin\left(\frac{\Delta m_{21}^2L}{4E}\right)\sin\left(\frac{\Delta m_{31}^2L}{2E}\right)\\
+			&-\cos\theta_{13}\sin2\theta_{12}\sin2\theta_{13}\sin2\theta_{23}\sin\delta_{\mathrm{CP}}\sin\left(\frac{\Delta m_{21}^2L}{4E}\right)\sin^2\left(\frac{\Delta m_{31}^2L}{4E}\right)
+		\end{aligned}
+	\end{equation*}
+	将前两项与第三项结合，即可得到(\ref{eq36})式。相应的反中微子振荡概率$P(\bar\nu_\mu\to\bar\nu_e)$可将(\ref{eq35})式中的相位$\delta_\mathrm{CP}$改变符号得到，即改变最后一项前的符号（取矩阵元的复共轭后，有$e^{\pm\ii\delta_\mathrm{CP}}=\cos\delta_\mathrm{CP}\pm\ii\sin\delta_\mathrm{CP}\to e^{\mp\ii\delta_\mathrm{CP}}=\cos\delta_\mathrm{CP}\mp\ii\sin\delta_\mathrm{CP}$）。我们可以定义描写$\nu_\mu-\nu_e$振荡通道的CP破坏程度的参数：
+	\begin{equation}
+		A_{\mu e}\equiv\frac{P(\nu_\mu\to\nu_e)-P(\bar{\nu}_\mu\to\bar{\nu}_e)}{P(\nu_\mu\to\nu_e)+P(\bar{\nu}_\mu\to\bar{\nu}_e)}\simeq-\frac{\cos\theta_{23}\sin2\theta_{12}}{\sin\theta_{23}\sin\theta_{13}}\sin\left(\frac{\Delta m_{21}^2L}{4E}\right)\sin\delta_{\mathrm{CP}}	
+		\label{eq37}
+	\end{equation}
+	公式(\ref{eq37})的推导过程如下。由(\ref{eq35})式可知：
+	\begin{equation*}
+		\begin{aligned}
+			P(\nu_\mu\to\nu_e)-P(\bar{\nu}_\mu\to\bar{\nu}_e)\simeq-2\cos\theta_{13}\sin2\theta_{12}\sin2\theta_{13}\sin2\theta_{23}\sin\delta_{\mathrm{CP}}\sin\left(\frac{\Delta m_{21}^2L}{4E}\right)\sin^2\left(\frac{\Delta m_{31}^2L}{4E}\right)
+		\end{aligned}
+	\end{equation*}
+	以及：
+	\begin{equation*}
+		\begin{aligned}
+			P(\nu_\mu\to\nu_e)+P(\bar{\nu}_\mu\to\bar{\nu}_e)&\simeq2\Bigg[\sin^2\theta_{23}\sin^22\theta_{13}\sin^2\left(\frac{\Delta m_{31}^2L}{4E}\right)+\cos^2\theta_{23}\sin^22\theta_{12}\sin^2\left(\frac{\Delta m_{21}^2L}{4E}\right)\\&+\frac{1}{2}\cos\theta_{13}\sin2\theta_{12}\sin2\theta_{13}\sin2\theta_{23}\cos\delta_{\mathrm{CP}}\sin\left(\frac{\Delta m_{21}^2L}{4E}\right)\sin\left(\frac{\Delta m_{31}^2L}{2E}\right)\Bigg]
+		\end{aligned}
+	\end{equation*}
+	若只考虑主要的振荡模式，即第一项，则有：
+	\begin{equation*}
+		A_{\mu e}\equiv\frac{P(\nu_\mu\to\nu_e)-P(\bar{\nu}_\mu\to\bar{\nu}_e)}{P(\nu_\mu\to\nu_e)+P(\bar{\nu}_\mu\to\bar{\nu}_e)}\simeq\frac{-2\cos\theta_{13}\sin2\theta_{12}\sin2\theta_{13}\sin2\theta_{23}\sin\delta_{\mathrm{CP}}\sin\left(\frac{\Delta m_{21}^2L}{4E}\right)\sin^2\left(\frac{\Delta m_{31}^2L}{4E}\right)}{2\sin^2\theta_{23}\sin^22\theta_{13}\sin^2\left(\frac{\Delta m_{31}^2L}{4E}\right)}
+	\end{equation*}
+	即：
+	\begin{equation*}
+		A_{\mu e}\simeq-\frac{\cos\theta_{13}\sin2\theta_{12}\sin2\theta_{23}}{\sin2\theta_{13}\sin^2\theta_{23}}\sin\left(\frac{\Delta m_{21}^2L}{4E}\right)\sin\delta_{\mathrm{CP}}	=-\frac{\cos\theta_{23}\sin2\theta_{12}}{\sin\theta_{23}\sin\theta_{13}}\sin\left(\frac{\Delta m_{21}^2L}{4E}\right)\sin\delta_{\mathrm{CP}}	
+	\end{equation*}
+	其中，我们多次使用了三角恒等式$\sin2x=2\sin x\cos x$。
 	\subsection{其它的三味混合效应}
+	随着短基线反应堆中微子实验精度的提高，由$\bar{\nu}_e$消失主导的测定质量平方差的实验已经逐渐可以分辨$\Delta m_{31}^2$与$\Delta m_{32}^2$之间的差异。此时，两味振荡公式(\ref{eq23})式不再精确，我们必须使用三味振荡的存活概率作为替代：
+	\begin{equation}
+		\begin{aligned}
+		P(\bar{\nu}_e\to\bar{\nu}_e)&=1-\cos^4\theta_{13}\sin^22\theta_{12}\sin^2\left(\frac{\Delta m_{21}^2L}{4E}\right)-\cos^2\theta_{12}\sin^22\theta_{13}\sin^2\left(\frac{\Delta m_{31}^2L}{4E}\right)\\&-\sin^2\theta_{12}\sin^22\theta_{13}\sin^2\left(\frac{\Delta m_{32}^2L}{4E}\right)
+		\end{aligned}
+		\label{eq38}
+	\end{equation}
+	公式(\ref{eq38})的推导过程详见公式(\ref{eq24})的推导。参考文献\cite{nunokawa2005another}中指出，(\ref{eq38})式在短距离的情况下可以被很好地近似为：
+	\begin{equation}
+		P(\bar{\nu}_e\to\bar{\nu}_e)\simeq1-\cos^4\theta_{13}\sin^22\theta_{12}\sin^2\left(\frac{\Delta m_{21}^2L}{4E}\right)-\sin^22\theta_{13}\sin^2\left(\frac{\Delta m_{ee}^2L}{4E}\right)
+		\label{eq39}
+	\end{equation}
+	其中，$\Delta m_{ee}^2\equiv\cos^2\theta_{12}\Delta m_{31}^2+\sin^2\theta_{12}\Delta m_{32}^2$可以被看作是$\Delta m_{31}^2$与$\Delta m_{32}^2$的$\nu_e$加权平均值。公式(\ref{eq39})的推导过程如下，对于(\ref{eq38})式的后两项：
+	\begin{equation*}
+		\begin{aligned}
+			(\cdots)&=\sin^22\theta_{13}\left[\cos^2\theta_{12}\sin^2\left(\frac{\Delta m_{31}^2 L}{4E}\right)+\sin^2\theta_{12}\sin^2\left(\frac{\Delta m_{32}^2 L}{4E}\right)\right]
+		\end{aligned}
+	\end{equation*}
+	对于短距离的情形，有：
+	\begin{equation*}
+		\begin{aligned}
+			(\cdots)&\simeq\cos^2\theta_{12}\left(\frac{\Delta m_{31}^2 L}{4E}\right)+\sin^2\theta_{12}\left(\frac{\Delta m_{32}^2 L}{4E}\right)\\
+			&=(\cos^2\theta_{12}\Delta m_{31}^2+\sin^2\theta_{12}\Delta m_{32}^2)\frac{L}{4E}=\frac{\Delta m_{ee}^2L}{4E}\simeq\sin^2\left(\frac{\Delta m_{ee}^2L}{4E}\right)
+		\end{aligned}
+	\end{equation*}
+	当$L/E<1\ \mathrm{km/MeV}$时，公式(\ref{eq39})的精度高于万分之一（即相对于(\ref{eq38})式的误差小于$10^{-4}$）。这样使得我们可以通过测量$|\Delta m_{ee}^2|$进而去确定$|\Delta m_{31}^2|$（假设已经给定质量顺序，并使用从其它实验测得的$\theta_{12}$与$\Delta m_{21}^2$），其精度比(\ref{eq23})式更高。对于更精确的反应堆中微子实验，我们可以使用比(\ref{eq39})式更精确的公式来测定$|\Delta m_{ee}^2|$\cite{parke2016delta}。
+	
+	若长基线反应堆中微子实验满足$\Delta m_{21}^2L/E\sim1$，则它对$\Delta m_{21}^2$驱动的振荡模式灵敏，而由$\Delta m_{31}^2,\Delta m_{32}^2$驱动的次级振荡模式由于探测器的能量分辨率极限而被平均化。因此，长基线反应堆中微子实验的振荡存活概率为(\ref{eq25})式。然而，随着探测器能量分辨率的提高，实验原则上可以对由$\Delta m_{31}^2,\Delta m_{32}^2$驱动的快速、低幅度的次级振荡模式灵敏。有研究表明，我们可以通过在远点探测器上精确测量反应堆反中微子的能谱进而去确定中微子的质量顺序（详见第\ref{9}节）。的确，对于不同的质量顺序（正序：$|\Delta m_{31}^2|>|\Delta m_{32}^2|$；反序：$|\Delta m_{32}^2|>|\Delta m_{31}^2|$），(\ref{eq38})式中的后两项将有所不同，进而使得能谱对于不同的质量顺序有所不同。
 	\subsection{中微子在物质中的传播\label{2.5}}
+	中微子与物质中的电子、质子和中子的相互作用将会影响它在物质中的传播
+	
+		
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	\subsubsection{基础理论}
 	\subsubsection{物质密度不变的介质\label{2.5.2}}
 	\section{$\nu_1-\nu_2$振荡}
 	\section{$\nu_2-\nu_3$振荡}
 	\section{$\nu_1-\nu_3$振荡}
 	\subsection{早期实验测量的极限与第一个非零迹象\label{5.1}}
+	\section{三味混合效应}
+	\section{PMNS模型的全局拟合}
+	\section{超出PMNS模型的实验反常}
+	\section{PMNS范式的未来\label{9}}
 	\newpage
 	\printbibliography
 \end{document}
