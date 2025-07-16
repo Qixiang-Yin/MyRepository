@@ -8,9 +8,19 @@
 \usepackage{float}
 \usepackage{caption}
 
+
 %\usepackage{mathptmx} % 公式字体
+%\usepackage{newpxmath} % 公式字体
+%\let\sum\relax % 保持求和号与原始字体一致
+%\let\prod\relax % 保持连乘号与原始字体一致
+%\usepackage{exscale} % 支持大型符号缩放
+%\DeclareSymbolFont{cmex}{OMX}{cmex}{m}{n}
+%\DeclareMathSymbol{\sum}{\mathop}{cmex}{"50}
+%\DeclareMathSymbol{\prod}{\mathop}{cmex}{"51}
+
 \usepackage[colorlinks=true, linkcolor=blue]{hyperref}
 \usepackage{mathrsfs} % 花写字体
+\usepackage[bottom]{footmisc} % 页下注释
 
 \usepackage[backend=biber, style=numeric, sorting=none]{biblatex}
 \addbibresource{references.bib}
@@ -670,12 +680,159 @@
 			&=(\cos^2\theta_{12}\Delta m_{31}^2+\sin^2\theta_{12}\Delta m_{32}^2)\frac{L}{4E}=\frac{\Delta m_{ee}^2L}{4E}\simeq\sin^2\left(\frac{\Delta m_{ee}^2L}{4E}\right)
 		\end{aligned}
 	\end{equation*}
-	当$L/E<1\ \mathrm{km/MeV}$时，公式(\ref{eq39})的精度高于万分之一（即相对于(\ref{eq38})式的误差小于$10^{-4}$）。这样使得我们可以通过测量$|\Delta m_{ee}^2|$进而去确定$|\Delta m_{31}^2|$（假设已经给定质量顺序，并使用从其它实验测得的$\theta_{12}$与$\Delta m_{21}^2$），其精度比(\ref{eq23})式更高。对于更精确的反应堆中微子实验，我们可以使用比(\ref{eq39})式更精确的公式来测定$|\Delta m_{ee}^2|$\cite{parke2016delta}。
+	当$L/E<1\ \mathrm{km/MeV}$时，公式(\ref{eq39})的精度高于万分之一（即相对于(\ref{eq38})式的误差小于$10^{-4}$）。这样使得我们可以通过测量$|\Delta m_{ee}^2|$进而去确定$|\Delta m_{31}^2|$（假设已经给定质量顺序，并使用从其它实验测得的$\theta_{12}$与$\Delta m_{21}^2$），其精度比(\ref{eq23})式更高。对于更精确的反应堆中微子实验，我们可以使用比(\ref{eq39})式更精确的公式来确定$|\Delta m_{ee}^2|$\cite{parke2016delta}。
 	
-	若长基线反应堆中微子实验满足$\Delta m_{21}^2L/E\sim1$，则它对$\Delta m_{21}^2$驱动的振荡模式灵敏，而由$\Delta m_{31}^2,\Delta m_{32}^2$驱动的次级振荡模式由于探测器的能量分辨率极限而被平均化。因此，长基线反应堆中微子实验的振荡存活概率为(\ref{eq25})式。然而，随着探测器能量分辨率的提高，实验原则上可以对由$\Delta m_{31}^2,\Delta m_{32}^2$驱动的快速、低幅度的次级振荡模式灵敏。有研究表明，我们可以通过在远点探测器上精确测量反应堆反中微子的能谱进而去确定中微子的质量顺序（详见第\ref{9}节）。的确，对于不同的质量顺序（正序：$|\Delta m_{31}^2|>|\Delta m_{32}^2|$；反序：$|\Delta m_{32}^2|>|\Delta m_{31}^2|$），(\ref{eq38})式中的后两项将有所不同，进而使得能谱对于不同的质量顺序有所不同。
+	若长基线反应堆中微子实验满足$\Delta m_{21}^2L/E\sim1$，则它对$\Delta m_{21}^2$驱动的振荡模式最为灵敏，而由$\Delta m_{31}^2,\Delta m_{32}^2$驱动的次级振荡模式由于探测器的能量分辨率极限而被平均化。因此，长基线反应堆中微子实验的振荡存活概率为(\ref{eq25})式。然而，随着探测器能量分辨率的提高，实验原则上可以对由$\Delta m_{31}^2,\Delta m_{32}^2$驱动的快速、低幅度的次级振荡模式灵敏。有研究表明，我们可以通过在远点探测器上精确测量反应堆反中微子的能谱进而去确定中微子的质量顺序（详见第\ref{9}节）。的确，对于不同的质量顺序（正序：$|\Delta m_{31}^2|>|\Delta m_{32}^2|$；反序：$|\Delta m_{32}^2|>|\Delta m_{31}^2|$），(\ref{eq38})式中的后两项将有所不同，进而使得能谱对于不同的质量顺序有所差异。
 	\subsection{中微子在物质中的传播\label{2.5}}
-	中微子与物质中的电子、质子和中子的相互作用将会影响它在物质中的传播
+	中微子与物质中的电子、质子和中子的相互作用将会影响它在物质中的传播，从而导致一系列的新现象，其中包括：（1）与真空中的振荡相比，物质中的振荡参数有所不同\cite{wolfenstein2018neutrino}\cite{barger1980matter}；（2）在恒定密度的介质中，振荡的共振放大\cite{Mikheev:1985zog}\cite{Mikheev:1986wj}；（3）在例如太阳这种密度变化的介质中，绝热的味道转换\cite{Mikheev:1985zog}\cite{Mikheev:1986wj}；（4）在密度交替变化的多层介质中，振荡参数的增强\cite{Akhmedov:1988hd}\cite{krastev1989parametric}，例如中微子穿越地核的过程\cite{petcov1998diffractive}\cite{akhmedov1999parametric}；（5）核心坍缩超新星（II型超新星）和早期宇宙中，由中微子-中微子相互作用而产生的集体效应\cite{pantaleone1992neutrino}\cite{samuel1993neutrino}；（6）如果存在新的、味道破坏（味道改变）的中微子相互作用，那么将会导致非标准的物质效应\cite{wolfenstein2018neutrino}。在本节中，我们将主要讨论效应（1）～（3）（有关物质效应的专题讨论可以参考\cite{Blennow2013}\cite{Kuo1989}）。关于本文中未涉及到的物质效应，我们推荐读者阅读其它综述，例如关于效应（4）的讨论可以参考\cite{Patrignani2016}\cite{Blennow2013}，关于效应（5）的讨论可以参考\cite{mirizzi2016supernova}的第4节。
+	\subsubsection{基本理论}
+	中微子在物质中的传播可以由类Schrödinger方程描述：
+	\begin{equation}
+		\ii\frac{\dd}{\dd t}|\nu(t)\rangle=H|\nu(t)\rangle
+		\label{eq40}
+	\end{equation}
+	其中，$|\nu(t)\rangle$是中微子在$t$时刻的态矢量，哈密顿量$H$可以被分解成自由（动能）部分$H_0$与势能项$V$，$H_0$描述中微子在真空中的传播，$V$描述中微子与介质的相互作用：
+	\begin{equation}
+		H=H_0+V
+	\end{equation}
+	在味道本征态的基矢中，我们可以将含时演化方程(\ref{eq40})写作矩阵形式：
+	\begin{equation}
+		\ii\frac{\dd}{\dd t}\nu_\beta(t)=\sum_\gamma H_{\beta\gamma}\nu_\gamma(t)\quad (\beta,\gamma=e,\mu,\tau)
+		\label{eq42}
+	\end{equation}
+	在方程(\ref{eq42})中，$H_{\beta\gamma}\equiv\langle\nu_\beta|H|\nu_\gamma\rangle$是味道表象下的哈密顿算符矩阵元，$\nu_\beta(t)\equiv\langle\nu_\beta|\nu(t)\rangle$是中微子的态矢量在味道本征态基矢上的投影，即在$t$时刻发现中微子处于味本征态$|\nu_\beta\rangle$的概率振幅。因此，如果中微子在$t=0$时刻以味道本征态$|\nu_\alpha\rangle$产生，则振荡概率为$P(\nu_\alpha\to\nu_\beta;t)=|\nu_\beta(t)|^2$。
 	
+	让我们首先考虑真空哈密顿量，在味道表象下\footnote{在质量本征态下，真空哈密顿量是对角的：$\langle\nu_i|H|\nu_j\rangle=E_i\delta_{ij}$。使用$|\nu_\beta\rangle=\sum_iU_{\beta i}^*|\nu_i\rangle$，即可得到$H_{\beta\gamma}=\langle\nu_\beta|H|\nu_\gamma\rangle=\sum_{i,j}U_{\beta i}U_{\gamma j}^*\langle\nu_i|H|\nu_j\rangle=\sum_iU_{\beta i}U_{\gamma i}^*E_i=\sum_i U_{\beta i}E_iU_{i\gamma}^\dagger$。}：
+	\begin{equation}
+		H_0=U
+		\begin{pmatrix}
+			E_1 &\quad &\quad\\
+			\quad& E_2 &\quad\\
+			\quad &\quad & E_3
+		\end{pmatrix}
+		U^\dagger\quad \left(E_i=\sqrt{p^2+m_i^2}\right)
+	\end{equation}
+	其中，$p$是中微子动量的模长，$m_i\ (i=1,2,3)$是中微子的质量本征值，$U$是轻子混合矩阵。在极端相对论的情形下，中微子的能量可以展开为$E_i\simeq p+m_i^2/(2E)\ (E\simeq p)$，因此我们可以将哈密顿量重新定义为$H_0\to H_0-p\mathbf{1}$。此时：
+	\begin{equation}
+		H_0=\frac{1}{2E}\cdot U
+		\begin{pmatrix}
+			m_1^2 &\quad &\quad\\
+			\quad& m_2^2 &\quad\\
+			\quad &\quad & m_3^2
+		\end{pmatrix}
+		U^\dagger=\frac{M_\nu^\dagger M_\nu}{2E}
+		\label{eq44}
+		\end{equation}
+		其中，$M_\nu=U\cdot\mathrm{diag}(m_1,m_2,m_3)$是味道表象下的中微子质量矩阵。当哈密顿量减去一个正比于单位矩阵的项时，只会影响中微子态矢量的整体相位，而整体相位是不具有可观测效应的\footnote{即使正比于单位矩阵的项是含时的，以上结论依然成立。当$\nu_\beta(t)$满足哈密顿量为$H$的含时演化方程(\ref{eq42})式时，则$\nu_\beta'(t)=e^{\ii\int_0^t E_0(t')\dd t'}$满足哈密顿量为$H'=H_0-E_0(t)\mathbf{1}$的含时演化方程。并且，$H$与$H'$对应的振荡概率相同：$|\nu_\beta(t)|^2=|\nu_\beta'(t)|^2$。}。在两味振荡的情形下，方程(\ref{eq44})可以被约化为（从$H_0$中减去另一个正比于$\mathbf{1}$的项）：
+		\begin{equation}
+			H_0=\begin{pmatrix}-\displaystyle\frac{\Delta m^2}{2E}\cos2\theta&\displaystyle\frac{\Delta m^2}{4E}\sin2\theta\\\\\displaystyle\frac{\Delta m^2}{4E}\sin2\theta&0\end{pmatrix}
+			\label{eq45}
+		\end{equation}
+		其中，$\Delta m^2=m_2^2-m_1^2$，$\theta$是$2\times 2$的轻子混合矩阵参数化后的混合角（忽略了与振荡无关的Majorana相位）：
+		\begin{equation}
+			\begin{pmatrix}|\nu_\alpha\rangle\\|\nu_\beta\rangle\end{pmatrix}=\begin{pmatrix}\cos\theta&\sin\theta\\-\sin\theta&\cos\theta\end{pmatrix}\begin{pmatrix}|\nu_1\rangle\\|\nu_2\rangle\end{pmatrix}
+		\end{equation}
+		公式(\ref{eq45})的推导过程如下。已知：
+		\begin{equation*}
+			\begin{aligned}
+			H_0&=\frac{1}{2E}\cdot U
+			\begin{pmatrix}
+				m_1^2 &\quad\\
+				\quad& m_2^2
+			\end{pmatrix}
+			U^\dagger\\
+			&=\frac{1}{2E}\begin{pmatrix}\cos\theta&\sin\theta\\-	\sin\theta&\cos\theta\end{pmatrix}\begin{pmatrix}
+			m_1^2 &\quad\\
+			\quad& m_2^2
+			\end{pmatrix}\begin{pmatrix}\cos\theta&-\sin\theta\\\sin\theta&\cos\theta\end{pmatrix}
+			\end{aligned}
+		\end{equation*}
+		即：
+		$$
+		H_0=\frac{1}{2E}\begin{pmatrix}m_1^2\cos^2\theta+m_2^2\sin^2\theta&(m_2^2-m_1^2)\cos\theta\sin\theta\\(m_2^2-m_1^2)\sin\theta\cos\theta& m_1^2\sin^2\theta+m_2^2\cos^2\theta\end{pmatrix}
+		$$
+		当哈密顿量$H_0$减去$(m_1^2\sin^2\theta+m_2^2\cos^2\theta)\mathbf{1}$时，有：
+		\begin{equation*}
+			\begin{aligned}
+				H_0&=\frac{1}{2E}\begin{pmatrix}m_1^2(\cos^2\theta-\sin^2\theta)+m_2^2(\sin^2\theta-\cos^2\theta)&(m_2^2-m_1^2)\cos\theta\sin\theta\\(m_2^2-m_1^2)\sin\theta\cos\theta& 0\end{pmatrix}\\
+					&=\frac{1}{2E}\begin{pmatrix}(m_1^2-m_2^2)(\cos^2\theta-\sin^2\theta)&(m_2^2-m_1^2)\cos\theta\sin\theta\\(m_2^2-m_1^2)\sin\theta\cos\theta& 0\end{pmatrix}\\
+					&=\frac{1}{2E}\begin{pmatrix}-\Delta m^2\cos2\theta&\Delta m^2\sin2\theta/2\\\Delta m^2\sin2\theta/2& 0\end{pmatrix}\\
+			\end{aligned}
+		\end{equation*}
+		即得到(\ref{eq45})式。
+		
+		物质势$V$来源于中微子与介质中的电子或核子发生的相干向前散射。在向前散射的过程中，中微子的动量不会改变，因此它们可以与未被散射的中微子发生干涉\cite{wolfenstein2018neutrino}。在中微子与物质发生相互作用的过程中，由于通常的物质里并不包含$\mu$与$\tau$，因此只有$\nu_e$参与$W$玻色子的交换（带电流），而三种味道的中微子同时参与$Z$玻色子的交换（中性流），因此中性流的作用对于三种中微子是相同的。在味道表象下，物质势是对角的：
+		\begin{equation}
+			V_{\alpha\beta}=\langle\nu_\alpha|V|\nu_\beta\rangle=V_{\alpha}\delta_{\alpha\beta}=(V_{\mathrm{CC},\alpha}+V_{\mathrm{NC},\alpha})\delta_{\alpha\beta}
+		\end{equation}
+		其中，带电流的贡献$V_{\mathrm{CC},\alpha}$与中微子的味道$\alpha$有关，而中性流的贡献$V_{\mathrm{NC},\alpha}$对于三种味道是普适的（关于物质势的详细推导，详见综述\cite{gonzalez2008phenomenology}）：
+		\begin{equation}
+			V_{\mathrm{CC},\alpha}=\begin{cases}\sqrt{2}G_Fn_e(x)&\alpha=e\\0&\alpha=\mu,\tau\end{cases}\quad V_{\mathrm{NC},\alpha}=-\frac{G_F}{\sqrt{2}}n_n(x)\quad(\alpha=e,\mu,\tau)
+		\end{equation}
+		其中，$G_F=1.166\times10^{-5}\ \mathrm{GeV}^{-2}$是Fermi耦合常数，$n_e(x),n_n(x)$分别表示介质中的电子和中子的密度\footnote{注意，中性流的贡献$V_{\mathrm{NC},\alpha}$只与中子密度有关：我们假设在中性介质中，质子和电子对$V_\mathrm{NC}$的贡献恰好抵消，即$n_p=n_e$。}，它们与空间坐标$x$有关。对于反中微子，物质势具有相反的符号：
+		\begin{equation}
+			V_\alpha(\bar\nu)=-V_\alpha(\nu)
+		\end{equation}
+		前面我们提到，哈密顿量可以减去一个正比于单位矩阵的项而不改变可观测的振荡概率。因此，当我们从哈密顿量中减去对三种味道普适的中性流的贡献后，中微子在物质中的哈密顿量在味道表象下为：
+		\begin{equation}
+			H_{\beta\gamma}=\frac{1}{2E}\sum_i U_{\beta i}U_{\gamma i}^*m_i^2+V_{\mathrm{CC},\beta}\delta_{\beta\gamma}
+			\label{eq50}
+		\end{equation}
+		对于反中微子，我们可以将(\ref{eq50})式中的项做如下替换：
+		\begin{equation}
+			U\to U^*\quad V\to -V
+		\end{equation}
+		
+		在物质中，中微子传播的本征态并不是真空中的质量本征态$|\nu_i\rangle$，而是物质哈密顿量的本征态$|\nu_i^m\rangle$，称为\textbf{物质本征态}。物质本征态与味道本征态之间通过物质中的混合矩阵$U_m$相联系，它可以使得$H$对角化：
+		\begin{equation}
+			\begin{aligned}&H=U_m\begin{pmatrix}E_1^m& & \\ &E_2^m& \\ & &E_3^m\end{pmatrix}U_m^\dagger&&\quad\begin{pmatrix}|\nu_e\rangle\\|\nu_\mu\rangle\\|\nu_\tau\rangle\end{pmatrix}=U_m^*\begin{pmatrix}|\nu_1^m\rangle\\|\nu_2^m\rangle\\|\nu_3^m\rangle\end{pmatrix}\end{aligned}
+		\end{equation}
+		物质哈密顿量$H$的本征值$E_i^m$称为\textbf{物质中的能级}。在$t$时刻发现中微子处于$|\nu_i^m\rangle$状态的概率振幅为$\nu_i^m(t)=\langle\nu_i^m|\nu(t)\rangle$，它与发现中微子处于味道本征态$|\nu_\beta\rangle$中的概率振幅$\nu_\beta(t)$通过物质中的混合矩阵相关联：
+		\begin{equation}
+			\nu_\beta(t)=\langle\nu_\beta|\nu(t)\rangle=\sum_i\langle\nu_\beta|\nu_i^m\rangle\langle\nu_i^m|\nu(t)\rangle=\sum_i(U_m)_{\beta i}\nu_i^m(t)
+			\label{eq53}
+		\end{equation}
+		(\ref{eq53})式其实就是真空中的关系$\nu_\beta(t)=\sum_i U_{\beta i}\nu_i(t)$在物质中的推广。
+		
+		在许多物理条件下，两味振荡的框架可以作为一个很好的近似，例如中微子在太阳中的传播。在味道本征态的基矢$\{|\nu_e\rangle,|\nu_\beta\rangle\}\ (\beta=\mu,\tau)$下，物质哈密顿量可以表示为：
+		\begin{equation}
+			H=H_0+V_{\mathrm{CC}}=\begin{pmatrix}-\displaystyle\frac{\Delta m^2}{2E}\cos2\theta\pm\sqrt{2}G_Fn_e&\displaystyle\frac{\Delta m^2}{4E}\sin2\theta\\\\\displaystyle\frac{\Delta m^2}{4E}\sin2\theta&0\end{pmatrix}
+			\label{eq54}
+		\end{equation}
+		其中，$\Delta m^2$与$\theta$是真空中的振荡参数，物质势前的符号$\pm$分别对应正、反中微子。哈密顿量(\ref{eq54})式可以使用物质中的混合矩阵进行对角化，其中的混合角是物质中的混合角$\theta_m$\cite{wolfenstein2018neutrino}：
+		\begin{equation}
+			H=U_m\begin{pmatrix}
+				E_1^m & \\ & E_2^m
+			\end{pmatrix}
+			U_m^\dagger\quad
+			U_m=\begin{pmatrix}
+				\cos\theta_m & \sin\theta_m\\ -\sin\theta_m & \cos\theta_m
+			\end{pmatrix}
+		\end{equation}
+		其中（符号$\mp$分别对应正、反中微子）：
+		\begin{equation}
+			E_2^m-E_1^m=\frac{\Delta m^2}{2E}\sqrt{\left(1\mp\frac{n_e}{n_{\mathrm{res}}}\right)^2\cos^22\theta+\sin^22\theta}
+		\end{equation}
+		物质中的混合角：
+		\begin{gather}
+			\sin2\theta_m=\frac{\sin2\theta}{\sqrt{\left(1\mp\dfrac{n_e}{n_{\mathrm{res}}}\right)^2\cos^22\theta+\sin^22\theta}}\\
+			\cos2\theta_m=\frac{\left(1\mp\dfrac{n_e}{n_{\mathrm{res}}}\right)\cos2\theta}{\sqrt{\left(1\mp\dfrac{n_e}{n_{\mathrm{res}}}\right)^2\cos^22\theta+\sin^22\theta}}
+		\end{gather}
+		其中，我们引入了\textbf{共振密度}：
+		\begin{equation}
+			n_\mathrm{res}=\frac{\Delta m^2\cos2\theta}{2\sqrt{2}G_FE}
+		\end{equation}
+		若$\Delta m^2\cos2\theta>0$（中微子的共振条件），则当$n_e=n_\mathrm{nes}$时，物质中的混合角$\theta_m$最大，与真空混合角$\theta$的取值（非零）无关\cite{Mikheev:1985zog}\cite{Mikheev:1986wj}：
+		\begin{equation}
+			\sin^22\theta_m=1\quad \mathrm{for}\ n_e=n_\mathrm{res}\quad (\mathrm{case}\ \Delta m^2\cos2\theta>0)
+		\end{equation}
+		这就是著名的\textbf{MSW（Mikheev–Smirnov–Wolfenstein）共振}。对于反中微子，共振条件为$\Delta m^2\cos2\theta<0$，共振发生在$n_e=-n_\mathrm{res}$（此时，$-n_\mathrm{nes}$为正，可以诠释为共振密度）。
+		
+		中微子在物质中的味道转换与物质密度是否恒定有关，下面我们将依次讨论两种情况。
+		
+		\subsubsection{物质密度恒定的介质\label{2.5.2}}
+		我们首先考虑物质密度不变的情形，即$n_e(x)=n_e=\mathrm{const}$。
+		
 		
 	
 	
@@ -693,8 +850,12 @@
 	
 	
 	
-	\subsubsection{基础理论}
-	\subsubsection{物质密度不变的介质\label{2.5.2}}
+	
+	
+	
+	
+	
+	
 	\section{$\nu_1-\nu_2$振荡}
 	\section{$\nu_2-\nu_3$振荡}
 	\section{$\nu_1-\nu_3$振荡}
