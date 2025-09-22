@@ -59,7 +59,7 @@
 
 	自从中微子振荡被超级神冈实验和SNO实验证实以后，有关中微子振荡的实验进展迅速。先前的实验测量了$\theta_{12}$与$\theta_{23}$，而$\theta_{13}$是我们最后一个未知的混合角。长基线的加速器中微子实验—T2K实验（Tokai-to-Kamioka）\cite{Abe2011}首次发现了$\theta_{13}$非零的迹象，随后的反应堆实验—大亚湾实验（Daya Bay）\cite{An2012}、RENO实验（Reactor Experiment for Neutrino Oscillations）\cite{Ahn2012}与Double Chooz实验\cite{Abe2012D}发现了由$\theta_{13}$驱动的振荡。2013年，T2K实验首次发现了$\nu_\mu\to\nu_e$的出现\cite{Abe2014}，随后被NO$\nu$A实验（NuMI Off-Axis $\nu_e$ Appearance）证实\cite{Adamson2017}，这是我们首次以直接的方式探测到中微子的出现而非消失，并为我们探测中微子三种味道的效应开辟了道路。发现中微子振荡的实验多以天然的中微子源作为基础，但精确测量中微子振荡参数的实验多以人工中微子源作为来源，例如核反应堆或加速器中微子束流。
 	
-	在理论方面，Pontecorvo受到$K-\bar{K}$介子振荡的启发，于1957年首次提出若轻子数发生破坏，将会发生$\nu-\bar{\nu}$振荡的现象\cite{Pontecorvo1957}\cite{Pontecorvo1958b}。这个现象我们在今天描述为活性-惰性中微子的振荡，这需要中微子具有质量，与当时人们普遍认为的中微子无质量相矛盾。不久之后，随着$\nu_\mu$的发现，Maki、Nakagawa和Sakata首次提出了中微子味混合的概念\cite{Maki1962}。随后，1967年，Pontecorvo提出了中微子味振荡的概念\cite{Pontecorvo1967}，并由Gribov和Pontecorvo在1969年表述成了如今的形式\cite{Gribov1969}。
+	在理论方面，Pontecorvo受到$K-\bar{K}$介子振荡的启发，于1957年首次提出若轻子数发生破坏，将会出现$\nu-\bar{\nu}$振荡的现象\cite{Pontecorvo1957}\cite{Pontecorvo1958b}。这个现象我们在今天描述为活性-惰性中微子的振荡，这需要中微子具有质量，与当时人们普遍认为的中微子无质量相矛盾。不久之后，随着$\nu_\mu$的发现，Maki、Nakagawa和Sakata首次提出了中微子味混合的概念\cite{Maki1962}。随后，1967年，Pontecorvo提出了中微子味振荡的概念\cite{Pontecorvo1967}，并由Gribov和Pontecorvo在1969年表述成了如今的形式\cite{Gribov1969}。
 	
 	目前，我们观察到的一系列中微子振荡的实验结果都可以使用包含三个有质量的活性中微子的模型来解释，其质量本征态与味道本征态之间可以使用一个$3\times3$幺正混合矩阵—PMNS矩阵相联系，并且PMNS矩阵可以被参数化为3个混合角$\theta_{12},\theta_{23},\theta_{13}$和1个CP破坏相位$\delta_\mathrm{CP}$（对于Majorana中微子的情形，将会引入额外2个相位，但它们不会对振荡产生影响）。除此之外，中微子的质量平方差$\Delta m_{ji}^2=m_j^2-m_i^2$也主导着中微子振荡，其中$m_i$是中微子的第$i$个质量本征态的本征值。三种味道的中微子发生味混合从而引起振荡的模型（PMNS范式）在过去的20年里经过了许多实验的验证，在未来的几年里，一系列的中微子振荡实验将会取得丰硕的成果，最终将解决中微子振荡剩下的三个谜题，即$\theta_{23}$的象限与精确值、三代中微子的质量顺序与CP破坏相位$\delta_\mathrm{CP}$的测量。
 	
@@ -786,6 +786,7 @@
 		在物质中，中微子传播的本征态并不是真空中的质量本征态$|\nu_i\rangle$，而是物质哈密顿量的本征态$|\nu_i^m\rangle$，称为\textbf{物质本征态}。物质本征态与味道本征态之间通过物质中的混合矩阵$U_m$相联系，它可以使得$H$对角化：
 		\begin{equation}
 			\begin{aligned}&H=U_m\begin{pmatrix}E_1^m& & \\ &E_2^m& \\ & &E_3^m\end{pmatrix}U_m^\dagger&&\quad\begin{pmatrix}|\nu_e\rangle\\|\nu_\mu\rangle\\|\nu_\tau\rangle\end{pmatrix}=U_m^*\begin{pmatrix}|\nu_1^m\rangle\\|\nu_2^m\rangle\\|\nu_3^m\rangle\end{pmatrix}\end{aligned}
+			\label{eq52}
 		\end{equation}
 		物质哈密顿量$H$的本征值$E_i^m$称为\textbf{物质中的能级}。在$t$时刻发现中微子处于$|\nu_i^m\rangle$状态的概率振幅为$\nu_i^m(t)=\langle\nu_i^m|\nu(t)\rangle$，它与发现中微子处于味道本征态$|\nu_\beta\rangle$中的概率振幅$\nu_\beta(t)$通过物质中的混合矩阵相关联：
 		\begin{equation}
@@ -812,16 +813,73 @@
 		其中（符号$\mp$分别对应正、反中微子）：
 		\begin{equation}
 			E_2^m-E_1^m=\frac{\Delta m^2}{2E}\sqrt{\left(1\mp\frac{n_e}{n_{\mathrm{res}}}\right)^2\cos^22\theta+\sin^22\theta}
+			\label{eq56}
 		\end{equation}
 		物质中的混合角：
 		\begin{gather}
-			\sin2\theta_m=\frac{\sin2\theta}{\sqrt{\left(1\mp\dfrac{n_e}{n_{\mathrm{res}}}\right)^2\cos^22\theta+\sin^22\theta}}\\
-			\cos2\theta_m=\frac{\left(1\mp\dfrac{n_e}{n_{\mathrm{res}}}\right)\cos2\theta}{\sqrt{\left(1\mp\dfrac{n_e}{n_{\mathrm{res}}}\right)^2\cos^22\theta+\sin^22\theta}}
+			\sin2\theta_m=\frac{\sin2\theta}{\sqrt{\left(1\mp\frac{n_e}{n_{\mathrm{res}}}\right)^2\cos^22\theta+\sin^22\theta}}\label{eq57}\\
+			\cos2\theta_m=\frac{\left(1\mp\frac{n_e}{n_{\mathrm{res}}}\right)\cos2\theta}{\sqrt{\left(1\mp\frac{n_e}{n_{\mathrm{res}}}\right)^2\cos^22\theta+\sin^22\theta}}
+			\label{eq58}
 		\end{gather}
 		其中，我们引入了\textbf{共振密度}：
 		\begin{equation}
 			n_\mathrm{res}=\frac{\Delta m^2\cos2\theta}{2\sqrt{2}G_FE}
 		\end{equation}
+		(\ref{eq56})、(\ref{eq57})和(\ref{eq58})式的推导过程如下。对于物质哈密顿量$H$所满足的的矩阵方程：
+		\begin{equation*}
+			\begin{pmatrix}E_1^m\cos^2\theta_m+E_2^m\sin^2\theta_m&(E_2^m-E_1^m)\cos\theta_m\sin\theta_m\\(E_2^m-E_1^m)\sin\theta_m\cos\theta_m& E_1^m\sin^2\theta_m+E_2^m\cos^2\theta_m\end{pmatrix}=\begin{pmatrix}-\displaystyle\frac{\Delta m^2}{2E}\cos2\theta\pm\sqrt{2}G_Fn_e&\displaystyle\frac{\Delta m^2}{4E}\sin2\theta\\\displaystyle\frac{\Delta m^2}{4E}\sin2\theta&0\end{pmatrix}
+		\end{equation*}
+		已知物质哈密顿量的本征值为$E_1^m,E_2^m$，则由哈密顿矩阵(\ref{eq54})式的本征值方程可知：
+		\begin{equation*}
+			\det(H-E^m\mathbf{1})=\begin{vmatrix}-\displaystyle\frac{\Delta m^2}{2E}\cos2\theta\pm\sqrt{2}G_Fn_e-E^m&\displaystyle\frac{\Delta m^2}{4E}\sin2\theta\\\displaystyle\frac{\Delta m^2}{4E}\sin2\theta&-E^m\end{vmatrix}=0
+		\end{equation*}
+		已知对于二阶矩阵：
+		\begin{equation*}
+			H=\begin{pmatrix}
+				H_{11}&H_{12}\\H_{12}&H_{22}
+			\end{pmatrix}
+		\end{equation*}
+		其本征值方程满足：
+		\begin{equation*}
+			\det(H-\lambda\mathbf{1})=\begin{vmatrix}
+				H_{11}-\lambda & H_{12}\\ H_{12}&H_{22}-\lambda
+			\end{vmatrix}=(H_{11}-\lambda)(H_{22}-\lambda)-H_{12}^2=\lambda^2-(H_{11}+H_{22})\lambda+(H_{11}H_{22}-H_{12}^2)=0
+		\end{equation*}
+		则本征值为：
+		\begin{equation*}
+			\lambda_{1,2}=\frac{H_{11}+H_{22}}{2}\pm\frac{1}{2}\sqrt{(H_{11}-H_{22})^2+4H_{12}^2}
+		\end{equation*}
+		于是本征值之差为：
+		\begin{equation*}
+			\lambda_2-\lambda_1=\sqrt{(H_{11}-H_{22})^2+4H_{12}^2}
+		\end{equation*}
+		若取：
+		\begin{equation*}
+			H_{11}=-\frac{\Delta m^2}{2E}\cos2\theta\pm\sqrt{2}G_Fn_e\quad H_{12}=\frac{\Delta m^2}{4E}\sin2\theta\quad H_{22}=0
+		\end{equation*}
+		则：
+		\begin{equation*}
+			\begin{aligned}
+				E_2^m-E_1^m&=\sqrt{\left(-\frac{\Delta m^2}{2E}\cos2\theta\pm\sqrt{2}G_Fn_e\right)^2+4\left(\frac{\Delta m^2}{4E}\sin2\theta\right)^2}\\
+				&=\sqrt{\left(\frac{\Delta m^2}{2E}\cos2\theta\mp\sqrt{2}G_Fn_e\right)^2+4\left(\frac{\Delta m^2}{4E}\sin2\theta\right)^2}
+			\end{aligned}
+		\end{equation*}
+		提取公因子，可得：
+		\begin{equation*}
+			\begin{aligned}
+			E_2^m-E_1^m
+				&=\frac{\Delta m^2}{2E}\sqrt{\left(\cos2\theta\mp\frac{2\sqrt{2}G_FEn_e}{\Delta m^2}\right)^2+\sin^22\theta}\\
+				&=\frac{\Delta m^2}{2E}\sqrt{\left(1\mp\frac{2\sqrt{2}G_FEn_e}{\Delta m^2\cos2\theta}\right)^2\cos^22\theta+\sin^22\theta}
+			\end{aligned}
+		\end{equation*}
+		令$n_\mathrm{res}=\frac{\Delta m^2\cos2\theta}{2\sqrt{2}G_FE}$，即可得到(\ref{eq56})式。由方程：
+		\begin{equation*}
+			(E_2^m-E_1^m)\cos\theta_m\sin\theta_m=\frac{\Delta m^2}{4E}\sin2\theta
+		\end{equation*}
+		即可解得(\ref{eq57})式。再由$\sin^22\theta_m+\cos^22\theta_m=1$即可解得(\ref{eq58})式。其中的共振密度为：
+		\begin{equation*}
+			n_\mathrm{res}=\frac{\Delta m^2\cos2\theta}{2\sqrt{2}G_FE}
+		\end{equation*}
 		若$\Delta m^2\cos2\theta>0$（中微子的共振条件），则当$n_e=n_\mathrm{nes}$时，物质中的混合角$\theta_m$最大，与真空混合角$\theta$的取值（非零）无关\cite{Mikheev:1985zog}\cite{Mikheev:1986wj}：
 		\begin{equation}
 			\sin^22\theta_m=1\quad \mathrm{for}\ n_e=n_\mathrm{res}\quad (\mathrm{case}\ \Delta m^2\cos2\theta>0)
@@ -831,7 +889,174 @@
 		中微子在物质中的味道转换与物质密度是否恒定有关，下面我们将依次讨论两种情况。
 		
 		\subsubsection{物质密度恒定的介质\label{2.5.2}}
-		我们首先考虑物质密度不变的情形，即$n_e(x)=n_e=\mathrm{const}$。
+		我们首先考虑物质密度不变的情形，即$n_e(x)=n_e=\mathrm{const}$。此时，哈密顿量在中微子的传播过程中保持不变，因此物质本征态$|\nu_i^m\rangle$、能级$E_i^m$与混合矩阵$U_m$不含时间。将(\ref{eq53})式插入(\ref{eq42})式中，我们即可得到$n$个相互解耦的关于概率振幅$\nu_i^m(t)$的演化方程：
+		\begin{equation}
+			\ii\frac{\dd}{\dd t}\nu_i^m(t)=E_i^m\nu_i^m(t)
+			\label{eq61}
+		\end{equation}
+		方程(\ref{eq61})的推导过程如下，由(\ref{eq53})式、(\ref{eq42})式可知：
+		\begin{gather*}
+			\nu_\beta(t)=\sum_i(U_m)_{\beta i}\nu_i^m(t)\\
+			\ii\frac{\dd}{\dd t}\nu_\beta(t)=\sum_\gamma H_{\beta\gamma}\nu_\gamma(t)
+		\end{gather*}
+		其中，哈密顿量为：
+		\begin{equation*}
+			H_{\beta\gamma}=\sum_jU_{\beta j}U_{\gamma j}^*E_j
+		\end{equation*}
+		将(\ref{eq53})式代入(\ref{eq42})式，再由混合矩阵的幺正性可得：
+		\begin{gather*}
+			\sum_i(U_m)_{\beta i}\ii\frac{\dd}{\dd t}\nu_i^m(t)=\sum_{\gamma,j,k} (U_m)_{\beta j}(U_m^*)_{\gamma j}E_j^m(U_m)_{\gamma k}\nu_k^m(t)\\
+			\sum_i(U_m)_{\beta i}\ii\frac{\dd}{\dd t}\nu_i^m(t)=\sum_{j,k}(U_m)_{\beta j} \delta_{jk}E_j^m\nu_k^m(t)\\
+			\sum_i(U_m)_{\beta i}\ii\frac{\dd}{\dd t}\nu_i^m(t)=\sum_{j}(U_m)_{\beta j}E_j^m\nu_j^m(t)\\
+			\sum_i(U_m)_{\beta i}\ii\frac{\dd}{\dd t}\nu_i^m(t)=\sum_{i}(U_m)_{\beta i}E_i^m\nu_i^m(t)
+		\end{gather*}
+		即可得到方程(\ref{eq61})：
+		\begin{equation*}
+			\ii\frac{\dd}{\dd t}\nu_i^m(t)=E_i^m\nu_i^m(t)
+		\end{equation*}
+		显然，方程(\ref{eq61})的解为$\nu_i^m(t)=e^{-\ii E_i^mt}\nu_i^m(0)$。利用(\ref{eq53})式，并且已知有$\nu_i^m(0)=\langle\nu_i^m|\nu(0)\rangle=\sum_j(U_m)_{\alpha j}^*\langle\nu_i^m|\nu_j^m\rangle=(U_m)_{\alpha i}^*$，所以我们可以得到物质中的振荡概率：
+		\begin{equation}
+			P_m(\nu_\alpha\to\nu_\beta)=|\nu_\beta(t)|^2=\left|\sum_i(U_m)_{\beta i}\nu_i^m(t)\right|^2=\left|\sum_i(U_m)_{\beta i}(U_m)_{\alpha i}^*e^{-\ii E_i^mt}\right|^2
+		\end{equation}
+		因此，密度恒定介质中的中微子振荡与真空振荡概率(\ref{eq11})式相同，只不过是将真空振荡的参数替换为物质中的振荡参数。特别地，类似(\ref{eq14})式，在两味振荡的情况下\cite{wolfenstein2018neutrino}：
+		\begin{equation}
+			P_m(\nu_\alpha\to\nu_\beta)=\sin^22\theta_m\sin^2\frac{(E_2^m-E_1^m)t}{2}\quad (\alpha\ne\beta)
+			\label{eq63}
+		\end{equation}
+		我们可以定义物质中的振荡长度：
+		\begin{equation}
+			L_\mathrm{osc.}^m=\frac{2\pi}{|E_2^m-E_1^m|}
+		\end{equation}
+		振荡长度在发生共振时达到最大，即$n_e=n_\mathrm{res}$。此时，它与真空中的振荡长度之间的关系为$L^m_\mathrm{osc.}=\frac{4\pi E}{|\Delta m^2|\sin2\theta}=\frac{L_\mathrm{osc.}}{\sin2\theta}$。
+		
+		当真空混合角较小时（例如$\theta_{13}$），物质效应将会对振荡产生显著的影响。假设中微子在真空中的混合是非最大的，即$\sin^22\theta<1$，此时我们可以将振荡分为三类情况：
+		\begin{itemize}
+			\item [(1)] 低密度（$n_e\ll |n_\mathrm{res}|$）：$\sin^22\theta_m\simeq\sin^22\theta\left(1\pm\frac{2n_e}{n_\mathrm{res}}\cos^22\theta\right)$，其中符号$\pm$分别对应正反中微子。此时，真空振荡是主导效应，物质效应属于次级效应；
+				
+				已知物质混合角：
+				\begin{equation*}
+					\sin^22\theta_m=\frac{\sin^22\theta}{{\left(1\mp\frac{n_e}{n_{\mathrm{res}}}\right)^2\cos^22\theta+\sin^22\theta}}
+				\end{equation*}
+				当$n_e\ll |n_\mathrm{res}|$时，令$\epsilon=\frac{n_e}{n_\mathrm{res}}$，则有$\epsilon\ll1$，对于分母中的平方项：
+				\begin{equation*}
+					(1\mp\epsilon)^2=1\mp2\epsilon+\epsilon^2\simeq1\mp2\epsilon
+				\end{equation*}
+				因此：
+				\begin{equation*}
+					{(1\mp\epsilon)^2\cos^22\theta+\sin^22\theta}\simeq{(1\mp\epsilon)\cos^22\theta+\sin^22\theta}={1\mp2\epsilon\cos^22\theta}
+				\end{equation*}
+				因此：
+				\begin{equation*}
+					\sin^22\theta_m\simeq\frac{\sin^22\theta}{1\mp2\epsilon\cos^22\theta}\simeq\sin^22\theta\left(1\pm2\epsilon\cos^22\theta\right)\quad \left(\frac{1}{1+x}\simeq 1-x\right)
+				\end{equation*}
+			\item [(2)] 接近共振（$n_e\simeq|n_\mathrm{res}|$）：当共振条件（$\frac{n_e}{n_\mathrm{res}}\simeq+1,\sin^22\theta_m\simeq1$）满足时，振荡相对于真空振荡将会增强。但如果不满足共振条件（$\frac{n_e}{n_\mathrm{res}}\simeq-1,\sin^22\theta_m\simeq\frac{\tan^22\theta}{4+\tan^22\theta}$），振荡将会被抑制；
+			
+				当$\frac{n_e}{n_\mathrm{res}}\simeq-1$时，对于正中微子：
+				\begin{equation*}
+					\sin^22\theta_m=\frac{\sin^22\theta}{{\left(1-\frac{n_e}	{n_{\mathrm{res}}}\right)^2\cos^22\theta+\sin^22\theta}}\simeq\frac{\sin^22\theta}{4\cos^22\theta+\sin^22\theta}=\frac{\tan^22\theta}{4+\tan^22\theta}
+				\end{equation*}
+			\item [(3)] 高密度（$n_e\gg |n_\mathrm{res}|$）：$\sin^22\theta_m\simeq\frac{\tan^22\theta}{\left(\frac{n_e}{n_\mathrm{res}}\right)^2}$，振荡被物质效应所抑制。
+				
+				当$n_e\gg |n_\mathrm{res}|$时，有$\frac{n_e}{n_\mathrm{res}}\gg1$：
+				\begin{equation*}
+					\sin^22\theta_m=\frac{\sin^22\theta}{{\left(1\mp\frac{n_e}{n_{\mathrm{res}}}\right)^2\cos^22\theta+\sin^22\theta}}\simeq\frac{\sin^22\theta}{\left(\frac{n_e}{n_\mathrm{res}}\right)^2\cos^22\theta+\sin^22\theta}\simeq\frac{\sin^22\theta}{\left(\frac{n_e}{n_\mathrm{res}}\right)^2\cos^22\theta}
+				\end{equation*}
+				即：
+				\begin{equation*}
+					\sin^22\theta_m\simeq\frac{\tan^22\theta}{\left(\frac{n_e}{n_\mathrm{res}}\right)^2}
+				\end{equation*}
+		\end{itemize}
+		
+		由于正反中微子与物质的相互作用不同，所以即使当不存在CP破坏时，它们在物质中的振荡概率也并不相同。这种效应在发生共振时达到最大，其中中微子或反中微子的共振增强取决于$\Delta m^2\cos2\theta$的符号。在实验中，该效应可以被用于测定中微子的质量顺序，即$\Delta m_{31}^2>0$或$\Delta m_{31}^2<0$。对于第一种情形（正序），正中微子的振荡将会比反中微子增强，而对于第二种情形（逆序），情况正好相反。
+		
+		在太阳和大气中微子的数据分析中，地球的物质效应必须被考虑在内\footnote{虽然地球的电子密度并不是恒定的，但将其视为由密度恒定的各层（地壳、地幔、外核与内核）所组成是一个很好的近似。为了研究地球中的中微子振荡，通常采用所谓的两层近似（地幔-地核）\cite{Patrignani2016}。}。的确，在夜间，太阳产生的中微子在到达探测器前将穿越地球，导致所谓的\textbf{地球再生效应}\cite{mikheyev198686}：部分振荡到$\nu_\mu$或$\nu_\tau$的太阳中微子在地球内部又转变回$\nu_e$，这将会导致太阳中微子数据的日-夜不对称性（实际上数值很小，详见第\ref{3}节）。这种效应的起源简单来说是由于物质中的振荡参数与真空不同。特别地，高能太阳中微子在离开太阳时处于质量本征态$|\nu_2\rangle$（见\ref{2.5.3}节），这是在真空中的质量本征态，并非是在物质中的质量本征态。因此，高能太阳中微子将在从太阳到地球的途中将保持相同状态（处于真空），直到穿越地球时发生振荡（在物质中，$|\nu_2\rangle$不再是质量本征态）（详见\cite{Patrignani2016}）。从地球的另一侧向上传播的大气中微子同样也受到地球物质效应的影响，与真空振荡相比，这种效应将会改变它们的天顶角分布。利用这一特性，我们可以使用中微子望远镜来测定中微子的质量顺序（见第\ref{9}节）。
+		
+		\subsubsection{物质密度变化的介质\label{2.5.3}}
+		当中微子传播路径上的物质密度发生变化时，$n_e(x)\ne\mathrm{const}$，主导系统演化的哈密顿量将与时间有关。这将导致物质本征态、能级与物质中的混合角全部与时间有关，因此它们被称为\textbf{瞬时}量。此时，(\ref{eq52})与(\ref{eq53})式依然可用，但其中的能级、混合矩阵与物质本征态需要改写为瞬时能级$E_i^m(t)$、混合矩阵$U_m(t)$与物质本征态$|\nu_i^m(t)\rangle$。并且，概率振幅$\nu_i^m(t)=\langle\nu_i^m(t)|\nu(t)\rangle$的含时演化方程此时在不同的质量本征态之间是相互耦合的：
+		\begin{equation}
+			\ii\frac{\dd}{\dd t}\nu_i^m(t)=E_i^m(t)\nu_i^m(t)-\ii\sum_{\gamma,j}(U_m^*)_{\gamma i}(t)(\dot{U}_m)_{\gamma j}(t)\nu_j^m(t)
+			\label{eq65}	
+		\end{equation}
+		(\ref{eq65})式的推导过程如下。由(\ref{eq61})式的推导过程：
+		\begin{gather*}
+			\ii\frac{\dd}{\dd t}\nu_\beta(t)=\ii\sum_i(\dot{U}_m)_{\beta i}\nu_i^m(t)+\sum_i(U_m)_{\beta i}\ii\frac{\dd}{\dd t}\nu_i^m(t)=\sum_\gamma H_{\beta\gamma}\nu_\gamma(t)\\
+			\ii\sum_i(\dot{U}_m)_{\beta i}\nu_i^m(t)+\sum_i(U_m)_{\beta i}\ii\frac{\dd}{\dd t}\nu_i^m(t)=\sum_{\gamma,j,k} (U_m)_{\beta j}(U_m^*)_{\gamma j}E_j^m(U_m)_{\gamma k}\nu_k^m(t)\\
+			\ii\sum_i(\dot{U}_m)_{\beta i}\nu_i^m(t)+\sum_i(U_m)_{\beta i}\ii\frac{\dd}{\dd t}\nu_i^m(t)=\sum_{i}(U_m)_{\beta i}E_i^m\nu_i^m(t)\\
+			\ii\sum_{i,\gamma}\delta_{\beta\gamma}(\dot{U}_m)_{\gamma i}\nu_i^m(t)+\sum_i(U_m)_{\beta i}\ii\frac{\dd}{\dd t}\nu_i^m(t)=\sum_{i}(U_m)_{\beta i}E_i^m\nu_i^m(t)\\
+			\ii\sum_{j,\gamma}\delta_{\beta\gamma}(\dot{U}_m)_{\gamma j}\nu_j^m(t)+\sum_i(U_m)_{\beta i}\ii\frac{\dd}{\dd t}\nu_i^m(t)=\sum_{i}(U_m)_{\beta i}E_i^m\nu_i^m(t)\\
+			\ii\sum_{i,j,\gamma}(U_m)_{\beta i}(U_m^*)_{\gamma i}(\dot{U}_m)_{\gamma j}\nu_j^m(t)+\sum_i(U_m)_{\beta i}\ii\frac{\dd}{\dd t}\nu_i^m(t)=\sum_{i}(U_m)_{\beta i}E_i^m\nu_i^m(t)
+		\end{gather*}
+		等式两侧约去$(U_m)_{\beta i}$，即可得到(\ref{eq65})式。其中，符号上带有一点表示该物理量对时间的导数，例如$\dot{U}_m(t)\equiv\frac{\dd}{\dd t}U_m(t)$。在两味振荡的情形下，以上方程可以约化为：
+		\begin{equation}
+			\ii\frac{\dd}{\dd t}\begin{pmatrix}\nu_1^m(t)\\\nu_2^m(t)\end{pmatrix}=\begin{pmatrix}E_1^m(t)&-\ii\dot{\theta}_m(t)\\\ii\dot{\theta}_m(t)&E_2^m(t)\end{pmatrix}\begin{pmatrix}\nu_1^m(t)\\\nu_2^m(t)\end{pmatrix}
+			\label{eq66}
+		\end{equation}
+		(\ref{eq66})式的推导过程如下。在两味情形下，混合矩阵的形式为：
+		\begin{equation*}
+			U_m(t)=\begin{pmatrix}
+				\cos\theta_m(t) & \sin\theta_m(t)\\ -\sin\theta_m(t) & \cos\theta_m(t)
+			\end{pmatrix}
+		\end{equation*}
+		当$i=1$时：
+		\begin{equation*}
+			\begin{aligned}
+				\ii\frac{\dd}{\dd t}\nu_1^m(t)&=E_1^m(t)\nu_1^m(t)-\ii[(U_m^*)_{e1}(t)(\dot{U}_m)_{e1}(t)\nu_1^m(t)+(U_m^*)_{e1}(t)(\dot{U}_m)_{e2}(t)\nu_2^m(t)\\&+(U_m^*)_{\mu 1}(t)(\dot{U}_m)_{\mu 1}(t)\nu_1^m(t)+(U_m^*)_{\mu 1}(t)(\dot{U}_m)_{\mu 2}(t)\nu_2^m(t)]\\
+				&=E_1^m(t)\nu_1^m(t)-\ii[-\cos\theta_m\sin\theta_m\dot{\theta}_m\nu_1^m(t)+\cos^2\theta_m\dot{\theta}_m\nu_2^m(t)\\
+				&+\sin\theta_m\cos\theta_m\dot{\theta}_m\nu_1^m(t)+\sin^2\theta_m\dot{\theta}_m\nu_2^m(t)]\\
+				&=E_1^m(t)\nu_1^m(t)-\ii\dot{\theta}_m\nu_2^m(t)
+			\end{aligned}
+		\end{equation*}
+		当$i=2$时：
+		\begin{equation*}
+			\begin{aligned}
+				\ii\frac{\dd}{\dd t}\nu_2^m(t)&=E_2^m(t)\nu_2^m(t)-\ii[(U_m^*)_{e2}(t)(\dot{U}_m)_{e1}(t)\nu_1^m(t)+(U_m^*)_{e2}(t)(\dot{U}_m)_{e2}(t)\nu_2^m(t)\\&+(U_m^*)_{\mu 2}(t)(\dot{U}_m)_{\mu 1}(t)\nu_1^m(t)+(U_m^*)_{\mu 2}(t)(\dot{U}_m)_{\mu 2}(t)\nu_2^m(t)]\\
+				&=E_2^m(t)\nu_2^m(t)-\ii[-\sin^2\theta_m\dot{\theta}_m\nu_1^m(t)+\sin\theta_m\cos\theta_m\dot{\theta}_m\nu_2^m(t)\\
+				&-\cos^2\theta_m\dot{\theta}_m\nu_1^m(t)-\cos\theta_m\sin\theta_m\dot{\theta}_m\nu_2^m(t)]\\
+				&=E_2^m(t)\nu_2^m(t)+\ii\dot{\theta}_m\nu_1^m(t)
+			\end{aligned}
+		\end{equation*}
+		以上两式分别对应矩阵方程(\ref{eq66})式的两个分量。中微子在传播过程中的状态是质量本征态（真空中）或物质本征态（物质中）的叠加，质量与物质本征态占总状态的成分随时间的演化分别由方程(\ref{eq61})与(\ref{eq65})式描述。在演化方程(\ref{eq65})式中，正比于$\dot{\theta}_m(t)$（或在三味情形中，正比于$\sum_{\gamma}(U_m^*)_{\gamma i}(t)(\dot{U}_m)_{\gamma j}(t)$）的项引起了物质本征态$|\nu_1^m(t)\rangle$与$|\nu_2^m(t)\rangle$之间的转换，因此它们不再是传播过程中的本征态：一个中微子在密度变化的介质中传播时，有一定概率从一个质量本征态转换到另一个质量本征态\cite{mikheyev198686}\cite{Messiah1986}\cite{parke1986nonadiabatic}。这种转换在中微子穿越共振层时更容易发生，由(\ref{eq56})式可知，在发生共振时，能级$E_1^m$与$E_2^m$之间的差异最小，因此更容易发生能级的转换。然而，在绝大多数物理环境中（特别是在太阳中），物质密度的变化足够小，以至于我们可以忽略(\ref{eq66})式矩阵中的非对角项，即$|\dot{\theta}_m(t)|\ll|E_2^m-E_1^m|$。物理上，这意味着发生共振时的振荡长度（远）小于共振区域的空间宽度（在密度变化的介质中，共振可能只在一定区域内发生）\cite{Mikheev:1985zog}。在这种情况下，我们将中微子系统的演化称为是\textbf{绝热}的\footnote{\label{fn11}我们可以通过引入参数$\gamma(t)\equiv\frac{|E_2^m(t)-E_1^m(t)|}{2|\dot{\theta}_m(t)|}$来定义绝热判据：当$\gamma\gg1$时，演化是绝热的\cite{mikheyev198686}\cite{Messiah1986}。当$\gamma<1$时，演化是\textbf{非绝热}的，此时将可能发生物质本征态的转换。若中微子穿越共振层，则绝热参数应在共振处取值：$\gamma\equiv\left|\frac{E_2^m-E_1^m}{2\dot{\theta}_m}\right|_\mathrm{res}=\left|\frac{\Delta m^2\sin^22\theta}{2E\cos2\theta}\right|\left|\frac{1}{n_\mathrm{res}}\left(\frac{\dd n}{\dd x}\right)_\mathrm{res}\right|^{-1}$。对于太阳中的电子密度以及振荡参数$\Delta m_{21}^2$和$\theta_{12}$，由此可知所有太阳中微子的能量都满足这一判据。}：一个中微子以一个给定的瞬时物质本征态产生，在密度变化的介质中传播时，将始终保持在相同的物质本征态中（$|\nu_i^m\rangle$）。然而，它的味道组成将会随时间演化，因为当中微子传播路径上的物质密度发生变化时，其瞬时物质本征态也将发生变化（$|\nu_i^m\rangle=|\nu_i^m(t)\rangle$）。定性上，中微子味道改变的这种机制不同于中微子在密度恒定介质中的振荡，因此被称为\textbf{绝热味道转换}或\textbf{MSW效应}\cite{Mikheev:1985zog}\cite{Mikheev:1986wj}。注释\ref{fn11}中的绝热参数表达式的推导如下。在共振处，由(\ref{eq56})、(\ref{eq57})式可知：
+		\begin{gather*}
+			E_2^m-E_1^m=\frac{\Delta m^2\sin2\theta}{2E}\\
+			\frac{\dd(\sin2\theta_m)}{\dd t}=\frac{\dd(\sin2\theta_m)}{\dd (x/c)}=\frac{\dd(\sin2\theta_m)}{\dd x}=\frac{-\frac{\sin2\theta\cdot2\cos^22\theta\left(1-\frac{n_e}{n_\mathrm{res}}\right)\left(-\frac{1}{n_\mathrm{res}}\right)\frac{\dd n_e}{\dd x}}{2\sqrt{\left(1-\frac{n_e}{n_\mathrm{res}}\right)^2\cos^22\theta+\sin^22\theta}}}{\left(1-\frac{n_e}{n_\mathrm{res}}\right)^2\cos^22\theta+\sin^22\theta}
+		\end{gather*}
+		因此：
+		\begin{gather*}
+			2\cos2\theta_m\dot{\theta}_m=\frac{-\frac{\sin2\theta\cdot2\cos^22\theta\left(1-\frac{n_e}{n_\mathrm{res}}\right)\left(-\frac{1}{n_\mathrm{res}}\right)\frac{\dd n_e}{\dd x}}{2\sqrt{\left(1-\frac{n_e}{n_\mathrm{res}}\right)^2\cos^22\theta+\sin^22\theta}}}{\left(1-\frac{n_e}{n_\mathrm{res}}\right)^2\cos^22\theta+\sin^22\theta}\\
+			\frac{2\left(1-\frac{n_e}{n_{\mathrm{res}}}\right)\cos2\theta}{\sqrt{\left(1-\frac{n_e}{n_{\mathrm{res}}}\right)^2\cos^22\theta+\sin^22\theta}}\dot{\theta}_m=\frac{-\frac{\sin2\theta\cdot2\cos^22\theta\left(1-\frac{n_e}{n_\mathrm{res}}\right)\left(-\frac{1}{n_\mathrm{res}}\right)\frac{\dd n_e}{\dd x}}{2\sqrt{\left(1-\frac{n_e}{n_\mathrm{res}}\right)^2\cos^22\theta+\sin^22\theta}}}{\left(1-\frac{n_e}{n_\mathrm{res}}\right)^2\cos^22\theta+\sin^22\theta}
+		\end{gather*}
+		于是：
+		\begin{gather*}
+			\dot{\theta}_m=-\frac{\sin2\theta\cos2\theta}{2\left[\left(1-\frac{n_e}{n_\mathrm{res}}\right)^2\cos^22\theta+\sin^22\theta\right]}\left(-\frac{1}{n_\mathrm{res}}\right)\frac{\dd n_e}{\dd x}
+		\end{gather*}
+		在共振处：
+		\begin{equation*}
+			\dot{\theta}_m=\frac{\sin2\theta\cos2\theta}{2\sin^22\theta}\frac{1}{n_\mathrm{res}}\frac{\dd n_e}{\dd x}=\frac{\cos2\theta}{2\sin2\theta}\frac{1}{n_\mathrm{res}}\frac{\dd n_e}{\dd x}
+		\end{equation*}
+		绝热参数：
+		\begin{equation*}
+			\gamma=\left|\frac{E_2^m-E_1^m}{2\dot{\theta}_m}\right|_\mathrm{res}=\frac{\Delta m^2\sin2\theta}{2E}\frac{\sin2\theta}{\cos2\theta}\left|\frac{1}{n_\mathrm{res}}\frac{\dd n_e}{\dd x}\right|^{-1}=\frac{\Delta m^2\sin^22\theta}{2E\cos2\theta}\left|\frac{1}{n_\mathrm{res}}\frac{\dd n_e}{\dd x}\right|^{-1}
+		\end{equation*}
+		
+		在高密度的天体中，例如在超新星或太阳中，将会出现一种特殊的情况，即所谓的\textbf{能级交叉}。这种情况发生在中微子产生区域（例如太阳的中心）的电子密度远大于共振密度时\footnote{之所以使用术语“能级交叉”，是因为共振区域的能级（能级定义为当介质密度$n\to\infty$时，中微子能量的渐进极限$E_i^m$）趋于交叉（发生共振时，能级差$E_2^m-E_1^m$最小）。}，因此中微子将在传播时穿越共振层。此时，物质本征态近似与中微子产生时的味道本征态一致，这可以从取(\ref{eq57})、(\ref{eq58})式中$n_e/n_\mathrm{res}\to\infty$的极限看出。此时，$\sin2\theta_m\to0,\cos2\theta_m\to-1$，即$2\theta_m\to\pi,\theta_m\to\frac{\pi}{2}$。对于两味混合的情形，混合矩阵的形式为：
+		\begin{equation*}
+			\begin{pmatrix}
+				\nu_e\\\nu_\beta
+			\end{pmatrix}=\begin{pmatrix}
+				\cos\theta_m & \sin\theta_m\\ -\sin\theta_m & \cos\theta_m
+			\end{pmatrix}\begin{pmatrix}
+				\nu_1^m\\\nu_2^m
+			\end{pmatrix}\simeq\begin{pmatrix}
+				0 & 1\\ -1 & 0
+			\end{pmatrix}\begin{pmatrix}
+				\nu_1^m\\\nu_2^m
+			\end{pmatrix}
+		\end{equation*}
+		例如，在太阳中心，对于能量$E\gg2\ \mathrm{MeV}$的中微子，当$n_e(r=0)\gg n_\mathrm{res}$时，有$|\nu_e\rangle\simeq|\nu_2^m(r=0)\rangle,|\nu_\beta\rangle\simeq-|\nu_1^m(r=0)\rangle$（其中，$\nu_\beta$描述$\nu_\mu$或$\nu_\tau$）。因此，高能太阳中微子（主要是$|\nu_e\rangle$）以近似纯的物质中的传播本征态$|\nu_2^m\rangle$产生，由于它们的演化是绝热的，因此它们在传播时将保持在瞬时物质本征态$|\nu_2^m(r)\rangle$。最终，它们以质量本征态$|\nu_2\rangle$离开太阳，根据连续性，在电子密度变为零的位置$r$，有$|\nu_2^m(r)\rangle=|\nu_2\rangle$。换言之，由于中微子瞬时物质本征态的演化，它们的味组成将因此改变：太阳中微子产生时是纯的$\nu_e$，而在离开太阳时却是质量本征态$|\nu_2\rangle$，即所有味道的混合。最终，质量本征态是中微子在真空中传播时的本征态，它们以状态$|\nu_2\rangle$到达地球，此时的振荡概率为$P_{ee}=|\langle\nu_e|\nu_2\rangle|^2\simeq\sin^2\theta_{12}$（两味混合）\cite{Mikheev:1985zog}\cite{Mikheev:1986wj}。 这个公式很好地描述了${}^8\mathrm{B}$中微子谱的高能部分，它们已经被超级神冈实验和SNO实验所测量。然而，对于低能太阳中微子（$pp$中微子，即质子-质子中微子），它们并未经历绝热味道转换的过程，它们的演化主要由真空振荡主导。事实上，低能太阳中微子的共振密度更高。满足$n_e(r=0)\ll n_\mathrm{res}$，因此作为一个很好的近似，物质效应可以被忽略（由于低能太阳中微子的物质效应可以忽略，因此它们的混合角就是真空中的混合角$\theta$，所以它们在产生时是$\nu_1,\nu_2$的混合，而非是纯的$\nu_2$，因此它们并不会经历绝热味道转换的过程，而是一般的真空振荡），与之对应的存活概率为$P_{ee}\simeq1-\frac{1}{2}\sin^22\theta_{12}$（见(\ref{eq24})式，对于低能情形，$\frac{\Delta m_{21}^2L}{4E}$较大，将会引起高频振荡，此时$\langle\sin^2(\frac{\Delta m_{21}^2L}{4E})\rangle\simeq\frac{1}{2}$）。
+		
+
+		
+		
 		
 		
 	
@@ -856,7 +1081,8 @@
 	
 	
 	
-	\section{$\nu_1-\nu_2$振荡}
+	
+	\section{$\nu_1-\nu_2$振荡\label{3}}
 	\section{$\nu_2-\nu_3$振荡}
 	\section{$\nu_1-\nu_3$振荡}
 	\subsection{早期实验测量的极限与第一个非零迹象\label{5.1}}
